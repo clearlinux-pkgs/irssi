@@ -1,3 +1,5 @@
 PKG_NAME := irssi
-URL :=http://irssi.org/files/irssi-0.8.10.tar.bz2
+URL := https://github.com/irssi-import/irssi/releases/download/0.8.17/irssi-0.8.17.tar.bz2
+ARCHIVES :=
+
 include ../common/Makefile.common
