@@ -1,3 +1,2987 @@
+commit c43831574187cdb2323d123702aa687af24664d8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Mar 23 00:08:24 2016 +0100
+
+    tag as 0.8.19
+
+commit 6c0c0c60ad62e45664ee0c77ae3c926892de267c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 16:54:34 2016 +0100
+
+    Make use of terminal application keys configurable
+    
+    adds a new setting term_appkey_mode which can enable or disable the use
+    of keyboard transmit (application keys) mode. Fixes #430
+
+commit 6572005d3d8071dc7faa1637986ed81692203e13
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 22:54:43 2016 +0100
+
+    Merge pull request #458 from ailin-nemui/fix_449
+    
+    Properly toggle bracketed paste mode on stop/cont
+
+commit 5ef2b958d94af940746f607fb56776852c6b0a4d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 22:57:28 2016 +0100
+
+    Merge pull request #457 from ailin-nemui/fix_450
+    
+    fix race condition in terminal init
+
+commit c657b9c3b1bf867722f63892251b2294d6a87d56
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 15:25:13 2016 +0100
+
+    Merge pull request #447 from ailin-nemui/fix_dcc_help
+    
+    correct quoting in /help dcc
+
+commit 4a2ee3c34471c29b884f5b0bc2b6ad95b56f500b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 15:23:37 2016 +0100
+
+    Merge pull request #446 from ailin-nemui/fix_445
+    
+    strip less whitespace from commands
+
+commit fe600dd5dc11c839c1fd90e77c4020c937e7c453
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Mar 20 22:06:41 2016 +0100
+
+    Merge pull request #442 from LemonBoy/fix-435
+    
+    Do not assume any default value for statusmsg.
+
+commit 15296a0165007aece5ac732c1f53b0fc78ba9ba1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Mar 20 22:00:43 2016 +0100
+
+    Merge pull request #444 from LemonBoy/timeout-id
+    
+    Use 0 as a sentinel value for sasl_timeout
+
+commit 7d3fe66e50fc3c47783d9beb0474a4ed9d2d9953
+Author: TheLemonMan <LemonBoy@users.noreply.github.com>
+Date:   Thu Mar 17 22:07:57 2016 +0100
+
+    Merge pull request #439 from horgh/ssl-errors
+    
+    Clear error queue before SSL I/O operations
+
+commit d20872ac27c63f2c92775a12c99a7494148901ca
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 17 16:14:34 2016 +0100
+
+    Merge pull request #438 from dequis/sasl-timeout-disconnect
+    
+    Remove sasl timeout source when the server disconnects
+
+commit 4416942fcdd426385cc3ef7a912f9260627b8a39
+Author: Giuseppe <LemonBoy@users.noreply.github.com>
+Date:   Tue Mar 8 22:49:05 2016 +0100
+
+    Merge pull request #432 from grawity/fix-external
+    
+    fix SASL EXTERNAL
+
+commit 025f08d5fc69d6e9c28004f8f7af26f613b0e0fb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 29 05:33:14 2016 +0100
+
+    Merge pull request #407 from irssi/ailin-nemui-perl-bugs
+    
+    Mention known Perl Bugs in perl.txt
+
+commit 22d772890e6f3b9622485fd83529f73891567e71
+Author: dx <dx@dxzone.com.ar>
+Date:   Tue Jan 26 03:25:07 2016 -0300
+
+    Merge pull request #405 from LemonBoy/serialize-channel-name
+    
+    Serialize the 'name' attribute of the CHANNEL_REC.
+
+commit 15f79a713f3e100a3b96b65e951fb37ae8994bdd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Mar 23 00:07:43 2016 +0100
+
+    set version to 0.8.18a-head
+
+commit b91f3c3025dc5cace2c14cb5b2da005400b5cd6a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 8 14:53:17 2016 +0100
+
+    tag as 0.8.18
+
+commit 8ab537cf22371f9115002484b320719676dab86b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 8 21:03:35 2016 +0100
+
+    sync docs
+
+commit 06fdfd617e3944e5ed07aa0e230d71a1e76384c3
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 8 14:38:33 2016 +0100
+
+    sync scriptassist.pl
+
+commit 38b1121989afcd1f8592e78f9fed0bc67e74814c
+Merge: 424675f c6a8572
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 12 23:34:44 2016 +0100
+
+    Merge branch '0.8.18-beta1' into 0.8.18-beta2
+
+commit 424675f9df536eadab4e0945288ed411c7d02d00
+Merge: 62cab9d 45f8d5b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 12 23:27:43 2016 +0100
+
+    Merge branch '0.8.18-beta1' (early part) into 0.8.18-beta2
+
+commit 62cab9d662d7f8875de8ee186cbbe4ea6cb891cd
+Merge: bd2c549 cfb6123
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 11 21:19:35 2016 +0100
+
+    Merge pull request #393 from ailin-nemui/moduleversion-perl
+    
+    forward ABI to perl modules
+
+commit bd2c549064314cbff8ff0a52842d410d59f74ae6
+Merge: 8f37095 ad842ea
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 11 21:04:48 2016 +0100
+
+    Merge pull request #394 from ailin-nemui/reset-history
+    
+    option to clear the history
+
+commit 8f370959691185127a38f70a7de002e64a65310e
+Merge: d16f57b 7cc85b9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 11 21:04:43 2016 +0100
+
+    Merge pull request #389 from ailin-nemui/hilight2-up
+    
+    keep track of address in text_dest for hilight purposes
+
+commit d16f57b3788ed780940151454be355923512c9f3
+Merge: 12f4f1f dbee606
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 11 21:04:27 2016 +0100
+
+    Merge pull request #390 from LemonBoy/ignore-find
+    
+    Clean up the ignore_find API to make it more powerful.
+
+commit 12f4f1fa24943e4a46e4223d7c98d5fcf721f906
+Merge: 83a7ce2 41088b6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 8 20:27:47 2016 +0100
+
+    Merge pull request #396 from mauke/master
+    
+    make /knockout use /unban to remove bans
+
+commit 41088b6f65674d48edfe4d5667a03d1389617d34
+Author: Lukas Mai <l.mai@web.de>
+Date:   Fri Jan 8 19:37:29 2016 +0100
+
+    make /knockout use /unban to remove bans
+    
+    /knockout uses /ban to set bans but calls ban_remove() directly to
+    remove them. This commit makes it use /unban instead. This allows
+    scripts that hook ban/unban to work automatically with /knockout.
+
+commit 83a7ce2e00f418560ad2566c9b06ddf523148a91
+Merge: be6d762 cf90b21
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 8 19:28:46 2016 +0100
+
+    Merge pull request #395 from mauke/master
+    
+    irc/core/irc-commands.c: fix indentation
+
+commit cf90b2122efdc2a6fc5246e3c538af3c71f38988
+Author: Lukas Mai <l.mai@web.de>
+Date:   Fri Jan 8 18:52:59 2016 +0100
+
+    irc/core/irc-commands.c: fix indentation
+
+commit ad842ea8a60f107d68df4298a8914e66edf95c3b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 8 15:42:59 2016 +0100
+
+    reorder history add and fixes
+
+commit 4659cea65a663b11f3cc16e1d03c9955a4135238
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 01:52:44 2015 +0100
+
+    option to clear the history
+
+commit cfb6123a7ab56e12136711a7e088424c9f68fd26
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 6 17:25:53 2016 +0100
+
+    forward ABI to perl modules
+
+commit be6d7629e3e58102e5c7599943974cc39c9b172c
+Merge: 787956a 837e03b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 6 12:57:20 2016 +0100
+
+    Merge pull request #392 from mauke/master
+    
+    irssiproxy: avoid using pointer after freeing it
+
+commit 837e03bd8f1be71ca26e3c2581b5444dcb5fe73f
+Author: Lukas Mai <l.mai@web.de>
+Date:   Wed Jan 6 12:45:18 2016 +0100
+
+    irssiproxy: avoid using pointer after freeing it
+
+commit dbee606c60c4d8d7c6e5cabd1241fc182ae6c4a3
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jan 3 21:19:46 2016 +0100
+
+    Don't break the API.
+    
+    Have a ignore_find_full method that is the one that all the new code
+    should be using and provide some working stubs for ignore_find and
+    ignore_find_noact.
+
+commit 609f3ba6c2db4f04e1e11304459d4fc42babd8ff
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jan 3 19:49:18 2016 +0100
+
+    Clean up the ignore_find API to make it more powerful.
+    
+    This way we prevent the creation of duplicate ignores since the old code
+    skipped the ignore_find call when a pattern was specified.
+    It should also cover all the cases where the ignores would be wrongly
+    overwritten, such as the case outlined in #78.
+
+commit 7cc85b9427887c4f77b8a5706b148371e713828b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Dec 28 00:07:42 2015 +0100
+
+    keep track of address in text_dest for hilight purposes
+
+commit c6a85721a6e9d5a6f67f76f0062c750146c6805f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Dec 28 00:07:42 2015 +0100
+
+    keep track of address in text_dest for hilight purposes
+
+commit f6d4b11079e0e8c2619989e3550a8ebd161eb1ae
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 22 00:51:57 2015 +0100
+
+    correct incorrect pre-release tag in NEWS
+
+commit 787956af3aac001755ec87d52cbb28f7c91800e1
+Merge: 665f0b8 6446393
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 22 00:18:41 2015 +0100
+
+    Merge pull request #387 from ailin-nemui/import-beta-news
+    
+    list NEWS and AUTHORS since 0.8.17
+
+commit 64463933fdb923cdc55fcd105c8e35d61546e62e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Dec 13 14:14:41 2015 +0100
+
+    list NEWS since 0.8.17
+
+commit 74eb556c504271129f44268870d34c011804d7e4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Dec 13 12:35:27 2015 +0100
+
+    add new authors since 0.8.17
+
+commit d495111bde29796430e34832f15025f3708a7166
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 10:59:23 2015 +0100
+
+    tag as 0.8.18-beta1
+
+commit 77143aee7dcff85f0b8656543c185a9e6a8131bb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Dec 13 14:17:33 2015 +0100
+
+    remove mention of ./autogen.sh from releases INSTALL
+
+commit ab809d8d2a9cfb3f0d879c098f2d2d88ce60d3fe
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Dec 13 14:14:41 2015 +0100
+
+    list NEWS since 0.8.17
+
+commit 653fd590aff1d2f602ceef999b3df2719e0835b1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Dec 13 12:35:27 2015 +0100
+
+    add new authors since 0.8.17
+
+commit 45f8d5bd6a2f98a4d211df8c51c602a84f6777e4
+Merge: 311b01e e4e0409
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 11:12:09 2015 +0100
+
+    Merge pull request #385 from ailin-nemui/master
+    
+    option to clear the history
+
+commit 311b01e72a81a6fdef1c477d3255b76e545d49f1
+Merge: 665f0b8 ff8ccaf
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 11:09:48 2015 +0100
+
+    Merge pull request #377 from ailin-nemui/moduleversion2
+    
+    module check irssi version (manual way)
+
+commit e4e040929b247b2432190b84b6edca997dacd600
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 01:52:44 2015 +0100
+
+    option to clear the history
+
+commit 665f0b83d7f055892abbae573b599eb02a5be0cb
+Merge: 2fbdadf 620d0a9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 00:10:27 2015 +0100
+
+    Merge pull request #383 from mh-source/patch-1
+    
+    script should be plural
+
+commit 2fbdadf124b4e07997dd30d550d68beec8af2ae1
+Merge: 074af68 5fbad76
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 00:08:50 2015 +0100
+
+    Merge pull request #384 from ailin-nemui/master
+    
+    clean up after #303
+
+commit 5fbad764df7b96618553a45facde73edb5e7bb9c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 00:08:44 2015 +0100
+
+    clean up after #303
+
+commit 074af68578766b32bfc589089e290614b5ba6a8d
+Merge: 38720e0 deb6ca1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 00:07:18 2015 +0100
+
+    Merge pull request #303 from vague666/fs275
+    
+    Applied patch from fs#275 to make /hilight -mask -line work properly
+
+commit 38720e0ecbf346c2a3c45e0d2f7584091794edb8
+Merge: 7b69b98 ce77842
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 15 00:06:48 2015 +0100
+
+    Merge pull request #306 from dequis/bracketed-paste
+    
+    Implement paste detection via the bracketed paste mode 2: bracket pasterer
+
+commit 620d0a9299d31e3f9b59233904151cdce4519526
+Author: mh <mh-source@users.noreply.github.com>
+Date:   Mon Dec 14 19:12:47 2015 +0100
+
+    script should be plural
+
+commit 7b69b98812c2be31dcd1875fc2ef90a20af8a15e
+Merge: 4dd7f2b 6e01a23
+Author: dx <dx@dxzone.com.ar>
+Date:   Mon Dec 14 10:27:39 2015 -0300
+
+    Merge pull request #382 from ailin-nemui/staticperl
+    
+    ensure staticlib perl works on 5.22
+
+commit ce77842a985edc82aa1ca30c83c4edfe904872aa
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Dec 13 13:56:09 2015 -0300
+
+    Bracketed paste: fix nitpick from ahf's review
+    
+    Thanks ahf
+
+commit 6e01a2313439bb02a66a52db645f63f078c2c4b0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Dec 13 01:08:53 2015 +0100
+
+    ensure staticlib perl works on 5.22 (for now)
+
+commit 4dd7f2b18f9895e440e84c563cfd5c997cac317f
+Merge: 18c3ea2 9dd2b7c
+Author: dx <dx@dxzone.com.ar>
+Date:   Sat Dec 12 12:40:38 2015 -0300
+
+    Merge pull request #378 from ailin-nemui/staticperl
+    
+    deinit perl on staticperl builds
+
+commit 18c3ea24b6377c3e1820e8c49c137260dcbbdc6b
+Merge: 40e5dfa 0b1a912
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Dec 12 11:29:40 2015 +0100
+
+    Merge pull request #380 from dequis/makefile-cleanfiles
+    
+    Makefile.am: Add default-config.h and default-theme.h to CLEANFILES
+
+commit e6fa311590da78d05e9eea42d3664cec01c9b1ae
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Dec 12 01:44:05 2015 -0300
+
+    Bracketed paste: Adjust paste line count if there's text after newlines
+    
+    With bracketed paste, "a\nb" will result in two lines being pasted,
+    because it's a single thing, with an end marker which the timeout based
+    pastes don't have.
+    
+    Due to the way term_gets() counts lines, that input will have
+    paste_line_count == 1. This can be misleading.
+    
+    This code adjusts it by looking at the last character, and increasing
+    the count if it finds anything that isn't a newline.
+
+commit 38d372eccb3745a7734b8f8963ae572d1343c5b1
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Dec 12 01:17:48 2015 -0300
+
+    Disable timeout-based paste detection if paste_use_bracketed_mode is on
+
+commit 0b1a912f822b21e5c4dfc18436ab5b90f079e19b
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Dec 11 21:31:04 2015 -0300
+
+    Makefile.am: Add default-config.h and default-theme.h to CLEANFILES
+    
+    Fixes issues when building from other directories when the source tree
+    was already configured before, as found in the comments of PR #375
+
+commit 40e5dfa7767c7e13ff920dc4b4afb34510765edf
+Merge: 4dc2bab 0fcfd37
+Author: dx <dx@dxzone.com.ar>
+Date:   Fri Dec 11 21:30:30 2015 -0300
+
+    Merge pull request #375 from ailin-nemui/objdir-build
+    
+    Fix Out-of-tree build
+
+commit 9dd2b7c616e48a7525e72d6798a0adae34720616
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Dec 10 14:02:59 2015 +0100
+
+    deinit perl on staticperl builds
+
+commit ff8ccaf08b60d88a67ddf810f8229f910f016cf7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Nov 24 00:08:20 2015 +0100
+
+    module check irssi version
+    
+    Add explicit checks into every module to match the ABI version defined
+    in common.h
+
+commit 4dc2bab4b4ae7ff05220c1121f0f11097f77b265
+Merge: 3468a32 1749a7a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 9 23:07:48 2015 +0100
+
+    Merge pull request #371 from LemonBoy/rampage
+    
+    Rewrite some faulty logic handling the saved channels. Fixes #340
+
+commit 3468a326242066743803ea0b19f0359cec0ce398
+Merge: 544d5a8 96766b7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 9 23:04:25 2015 +0100
+
+    Merge pull request #376 from dequis/win32-ifdefs
+    
+    Remove all WIN32 ifdefs (unifdef -UWIN32)
+
+commit 96766b7f0530ca2e5b4d0fde68337f956e46eb0e
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Dec 9 15:20:59 2015 -0300
+
+    Remove all WIN32 ifdefs (unifdef -UWIN32)
+    
+    Just use cygwin.
+    
+    This looks like it wasn't enough to do anything useful, and I don't
+    think anyone cares about supporting win32 the hard way.
+
+commit 544d5a8bba7e00f8b4a8433faea907abce27f557
+Merge: 3eecb4e 20fe5d0
+Author: dx <dx@dxzone.com.ar>
+Date:   Wed Dec 9 15:07:44 2015 -0300
+
+    Merge pull request #374 from ailin-nemui/dist-fix
+    
+    add missing file to Makefile
+
+commit 1749a7a5abf9801bb663b74d4b3e7c3bcbfeb271
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Dec 9 16:16:03 2015 +0100
+
+    Minor adjustments.
+    
+    Use g_strcmp0 instead of strcmp.
+    Explicit checks added for the g_strcmp0 clauses.
+
+commit 971417caa342881780b347f6aca728d962d710ee
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Dec 9 16:02:37 2015 +0100
+
+    Rewrite some faulty logic handling the saved servers.
+
+commit 60c501625bbc450b8bd443a7cbccf897810634fc
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Dec 9 15:43:31 2015 +0100
+
+    Better function naming
+
+commit 0fcfd37b83afb3ca9abe4cce6630080b850df2be
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 9 15:00:25 2015 +0100
+
+    Fix Out-of-tree build
+    
+    Symlink irssi-version.h into build dir, restoring 550df275580b253e8c3ebb5dbfceef87311a63c9
+
+commit 20fe5d0c7feea176129b6a31f2983b1b17689866
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 9 14:23:15 2015 +0100
+
+    add missing file to Makefile
+
+commit 3eecb4e12107bfe51ddcee265af00b232ba6b495
+Merge: 229c600 3532fc4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 9 12:33:53 2015 +0100
+
+    Merge pull request #131 from ailin-nemui/fe-exec-perl
+    
+    Add bindings for exec-type window items to Perl
+
+commit 3532fc46719ebbcfe83b5814f93ac9cb58eea220
+Author: Ailin Nemui <ailin@esf51.localdomain>
+Date:   Fri Aug 22 13:48:17 2014 +0200
+
+    Add bindings for exec-type window items to Perl
+    
+    These bindings were missing and resulted in non-hash non-undef active
+    entries when an interactive process is executing.
+
+commit 229c600e9963452689669a8466b1c7f49912125e
+Merge: 57576bb b03805e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 9 12:01:00 2015 +0100
+
+    Merge pull request #174 from ailin-nemui/entry-prompt-colours
+    
+    reimplement format and length logic for the entry prompt
+
+commit 57576bb75f976d7ba80976b12160661809412357
+Merge: ef6b7f9 ccc64c0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 9 12:00:30 2015 +0100
+
+    Merge pull request #65 from ailin-nemui/perl-irc-poly
+    
+    forward alternate_nick to Irc::Server attributes
+
+commit ef6b7f91f57e510b429ba437e5e208820f5fc340
+Merge: b5cfa55 ca96444
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 9 11:58:23 2015 +0100
+
+    Merge pull request #373 from mineo/dcc-doc
+    
+    DCC close always requires a type
+
+commit ca96444784535222e41606bd179f511fca097057
+Author: Wieland Hoffmann <themineo@gmail.com>
+Date:   Wed Dec 9 11:21:51 2015 +0100
+
+    DCC close always requires a type
+
+commit 750df38e8ccd59d7cb3a11e09a682755060f7283
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Dec 6 22:31:49 2015 +0100
+
+    Rewrite some faulty logic handling the saved channels.
+    
+    Issue #340 brought to our attention the fact that under certain
+    circumstances irssi would go on a wild rampage and carelessly overwrite
+    some saved channel records in the configuration file.
+    This happened because the code didn't take into account the case where
+    the channel index in setupchannels wouldn't match the one in the
+    configuration; this actually happens when the user removes a chatnet
+    without removing the associated channels.
+
+commit b5cfa55d9be3d7cd74628215ba5dd126c4e18342
+Merge: 99193e9 82ce1de
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Nov 27 00:07:15 2015 +0100
+
+    Merge pull request #370 from dequis/irc-cap-space
+    
+    irc-cap: Don't send a space at the beginning of the CAP REQ parameter
+
+commit 82ce1de5b004d27b8a742a72065feebf6d96f3ae
+Author: dequis <dx@dxzone.com.ar>
+Date:   Thu Nov 26 19:50:58 2015 -0300
+
+    irc-cap: Don't send a space at the beginning of the CAP REQ parameter
+    
+    Turns out it confuses inspircd, making it reply a NAK with empty
+    parameter. The rest is ACKed anyway. I've already whined at saberuk
+    and there's a pending pull request over there fixing this issue.
+    
+    And, of course, this is cleaner.
+
+commit 99193e99718630b90f52e5a25c19dd9b6b7229f6
+Merge: c10188e d7ef9c5
+Author: dx <dx@dxzone.com.ar>
+Date:   Thu Nov 26 19:25:16 2015 -0300
+
+    Merge pull request #357 from LemonBoy/fix-99+1
+    
+    Correctly alias 'channel' to '#channel'
+
+commit c10188e45e1bf84053d711fa5b50aac2e4436c3c
+Merge: 7ffc755 54153e6
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Wed Nov 25 19:49:25 2015 +0100
+
+    Merge pull request #368 from incertia/random-fixes
+    
+    Random fixes (improve INSTALL)
+
+commit 54153e6d887545b5f2b46580ce1f7eba2f7c702b
+Author: Will Song <incertia9474@gmail.com>
+Date:   Wed Nov 25 12:25:55 2015 -0600
+
+    revise INSTALL to be more clear regarding which script to use
+
+commit c52e6ebc992a317bfa3c1a67b8931e2e6cc40215
+Author: Will Song <incertia9474@gmail.com>
+Date:   Wed Nov 25 11:55:18 2015 -0600
+
+    change ./configure to ./autogen.sh because ./configure does not exist in
+    a fresh clone of the repository
+
+commit 6ac6fcec469227971e7856201c27de09e1773ae4
+Author: Will Song <incertia9474@gmail.com>
+Date:   Wed Nov 25 11:53:48 2015 -0600
+
+    ignore MYMETA.* generated by scripts in project root
+
+commit 7ffc755448353a198889169f55731276987b656f
+Merge: 8014162 11ad4da
+Author: dx <dx@dxzone.com.ar>
+Date:   Wed Nov 25 10:11:53 2015 -0300
+
+    Merge pull request #367 from ailin-nemui/perl_warn
+    
+    more perl inheritance warning fixes
+
+commit 11ad4da0e33f565e83008045fe2532bb713f1f6b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Nov 25 12:16:42 2015 +0100
+
+    more perl inheritance warning fixes
+
+commit 80141622ed3833670120cae0df10765dcf3775c5
+Merge: 4c816c2 a941329
+Author: dx <dx@dxzone.com.ar>
+Date:   Mon Nov 23 21:02:48 2015 -0300
+
+    Merge pull request #365 from ailin-nemui/perl_nick
+    
+    fix nick class hierarchy
+
+commit 4c816c287a499023424dc42dfd09c75cd896e607
+Merge: 0ca0c88 877ff07
+Author: dx <dx@dxzone.com.ar>
+Date:   Mon Nov 23 20:56:33 2015 -0300
+
+    Merge pull request #364 from ailin-nemui/no_cap_sasl
+    
+    stop cap_sasl
+
+commit a941329b4140b436d0bd5316a29d8be47019d1ea
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Nov 24 00:40:19 2015 +0100
+
+    fix nick class hierarchy
+
+commit 877ff075bde3dee9da01f53e1afcf18be7ddf703
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Nov 24 00:30:12 2015 +0100
+
+    stop cap_sasl
+
+commit 0ca0c882a578a6b82b9bad648b831da7b44421f1
+Merge: f9654a7 50fae42
+Author: dx <dx@dxzone.com.ar>
+Date:   Mon Nov 23 13:08:13 2015 -0300
+
+    Merge pull request #360 from LemonBoy/backport-patch
+    
+    Save a patch from the Flyspray oblivion, plus a nice unrelated commit to make everyone (un)happy
+
+commit f9654a7e0c0db48514e2b678a2f0ee4c61da39d9
+Merge: 3ed21a5 8701cbc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Nov 23 10:05:05 2015 +0100
+
+    Merge pull request #359 from LemonBoy/dcc-assert
+    
+    Let ignore_check do its work when server is NULL
+
+commit 3ed21a530366c6ed13f3549d41219c690040053b
+Merge: fbb838b 0171b1a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Nov 22 23:02:04 2015 +0100
+
+    Merge pull request #361 from LemonBoy/awaylog-format
+    
+    Use the expanded filename when picking the awaylog
+
+commit 0171b1a6343434477845ac5365e5ee20ceef7904
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Nov 22 21:59:28 2015 +0100
+
+    Use the expanded filename when picking the awaylog
+    
+    This fixes a long-standing bug where 'fname' was being feed to cat
+    instead of 'real_fname', causing it to quit with a 'No such file or directory'
+    error.
+    
+    FS#377
+
+commit 50fae4212ec5fbb9931093b1c31bbeda97ddfbb3
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Nov 22 21:33:44 2015 +0100
+
+    Use 'isblank()' instead of a custom macro
+
+commit 011eda7d9e755d1df82b678c05c0cb9b1aaa1e29
+Author: Fabian Kurz <fabian@fkurz.net>
+Date:   Sun Nov 22 21:24:05 2015 +0100
+
+    Correct a wrong use of the 'paste_buffer' variable
+    
+    The function "static void paste_buffer_join_lines(GArray *buf)" in
+    "src/fe-text/gui-readline.c" is supposed to join lines from the GArray
+    pointed to by *buf under certain circumstances.
+    
+    In the code of the function "buf" is actually used for getting the length
+    of the GArray, but to get a pointer to the data, "paste_buffer->data" is
+    used; paste_buffer is defined in the scope of the whole file.
+    
+    This delivers the desired result, because this function is only called
+    once, with "paste_buffer" as the argument. If paste_buffer_join_lines()
+    will ever be used with a different argument, it will fail.
+
+commit 8701cbc972955ba7522390988e3c0e0c62770fa4
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Nov 22 16:57:45 2015 +0100
+
+    Let ignore_check do its work when server is NULL
+    
+    A NULL-check has been added to the ignore_match_server macro, making the
+    function safe from a pointer perspective.
+    Fixes #193 in the meanwhile.
+
+commit d7ef9c590fa679403da103f8e89042aad6abb919
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Nov 19 15:31:32 2015 +0100
+
+    Correctly alias 'channel' to '#channel'
+    
+    Use the same approach used in 'irc_channels_join'.
+    Remove 'irc_nick_strip' since it was unused.
+
+commit fbb838b3b0d30ee41de648d667fa89a2d6b41076
+Merge: ac04fa7 d4676c9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Nov 18 22:01:29 2015 +0100
+
+    Merge pull request #350 from LemonBoy/fix-99
+    
+    Strip trailing whitespace from commands
+
+commit ac04fa741355888d814c693e7e2b793c5413c3eb
+Merge: 6d6e672 b333d10
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Nov 10 11:07:16 2015 +0100
+
+    Merge pull request #351 from vague666/hilight_default_behaviour
+    
+    Fix /hilight list output behaviour depending on enabled flags
+
+commit b333d103641b48b77ab76c6d31b1f3788192268f
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Mon Nov 9 23:06:56 2015 +0100
+
+    /hilight list print output with enabled flags, except when -word and -nick are used
+
+commit d4676c985553dc957e863e814097beba9bcc279e
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Nov 9 23:02:41 2015 +0100
+
+    Use the PARAM_FLAG_STRIP_TRAILING_WS flag wherever possible.
+
+commit 3d9b9d473fdd2ec6af367df27cfc26a90a3f4375
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Nov 9 18:39:13 2015 +0100
+
+    Strip the trailing whitespace from /join commands.
+    
+    Fixes #99 for great good.
+
+commit 1006fee8027936c68e0f0b2f8dae766ad090764a
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Nov 9 17:32:51 2015 +0100
+
+    Add an option to strip trailing whitespace when parsing commands
+
+commit 6d6e672e8e27469bd08704edb96c3e0fa9ef898f
+Merge: 0188c1f ef1a09b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Nov 9 16:45:19 2015 +0100
+
+    Merge pull request #313 from isundil/master
+    
+    Fix #45 Make it easy to delete default channels, servers and networks
+
+commit 0188c1fb5d85fa0dc05114afaff44ff0aa9d7f87
+Merge: 50775e9 b054ade
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Nov 9 16:21:33 2015 +0100
+
+    Merge pull request #341 from dequis/strsplit-len-fix
+    
+    Fix invalid reads in strsplit_len when splitting on spaces
+
+commit b054ade4b90a05d778a64c63c0c834a126884aaa
+Author: dequis <dx@dxzone.com.ar>
+Date:   Mon Nov 9 06:46:40 2015 -0300
+
+    strsplit_len: make it look more like the original version
+
+commit 8736c12fc95ca977f4fc4a947c760bac651cd3af
+Author: dequis <dx@dxzone.com.ar>
+Date:   Mon Nov 9 06:33:08 2015 -0300
+
+    strsplit_len: use strlen() directly instead of a remaining_len variable
+
+commit 8c98e07eab423ad7926d8e4fa742b60117652eb1
+Merge: 7866d2b 50775e9
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Nov 8 14:28:18 2015 -0300
+
+    Merge remote-tracking branch 'origin/master' into bracketed-paste
+
+commit 50775e92e64561837e6c805fc8fef19aedaafeb4
+Merge: 8d1f667 58a1664
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Nov 2 00:15:58 2015 +0100
+
+    Merge pull request #330 from dequis/xterm-keypad-enter
+    
+    Add xterm's keypad enter, meta-O-M to "key return" bindings
+
+commit 8d1f667100fdd5ff331f4f9e4b922c4a9db7c53d
+Merge: 897ceed 2127fd3
+Author: dx <dx@dxzone.com.ar>
+Date:   Sun Nov 1 13:40:54 2015 -0300
+
+    Merge pull request #320 from irssi/ahf/add-setting-type-any
+    
+    Fix warnings
+
+commit 897ceedc16fd2a24e75529480a7b7bc6ca769073
+Merge: 0184b4c 06bf25b
+Author: dx <dx@dxzone.com.ar>
+Date:   Fri Oct 30 04:09:00 2015 -0300
+
+    Merge pull request #344 from rrebello/m4-quote-fix
+    
+    Fix quote around macro argument
+
+commit 0184b4c3bf8a03af1f8840a549b050487a85dcd1
+Merge: 7ab38f2 8094e87
+Author: dx <dx@dxzone.com.ar>
+Date:   Wed Oct 28 18:22:04 2015 -0300
+
+    Merge pull request #345 from LemonBoy/sasl-reconnect
+    
+    Preserve the sasl_ options across reconnects.
+
+commit 8094e87cdf78bd864ffb37351ff4853cb127d8d1
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Oct 28 21:56:35 2015 +0100
+
+    Preserve the sasl_ options across reconnects.
+
+commit 06bf25bfbaaf33772e36317dba28ce5b6a301616
+Author: Rodrigo Rebello <rprebello@gmail.com>
+Date:   Wed Oct 28 13:38:21 2015 -0200
+
+    Fix quote around macro argument
+    
+    In m4/curses.m4, line 134, the 5th argument passed to AC_NCURSES was
+    surrounded by '"' instead of '[' and ']'. Because of that, the expansion
+    of AC_NCURSES in that case would produce the following line inside the
+    configure script (note the repeated double quotes):
+    
+      screen_manager=""ncurses on $withval/include""
+    
+    That would cause the following error when configure was executed with
+    the "--with-ncurses=dir" argument:
+    
+      ./configure: line 13468: on: command not found
+    
+    Although in the case above the error doesn't actually influence the
+    build process ('screen_manager' isn't used anywhere in the script),
+    trying to execute 'on' might be harmful if it corresponded to an
+    existing command in the user's environment.
+
+commit ed28483e7509f0a7a75716f2651f603824fd9817
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Oct 23 04:25:57 2015 -0300
+
+    Fix invalid reads in strsplit_len when splitting on spaces
+    
+    The symptom for this one is randomly getting lines split before the last
+    word, even if there's no need for splitting. Also, this function is only
+    reached if recode is on, and iconv failed (for example, due to an
+    incorrect source charset). Thanks to vague for finding this and
+    providing valgrind logs.
+    
+    The loop that looks for spaces tried to read backwards from the end of
+    the current line, with the end being determined by len. Assuming
+    strsplit_len() with len=400, this meant accessing str[399] in the first
+    iteration. For strings that don't need splitting, this means an invalid
+    read always.
+    
+    If that invalid read happens to hit garbage that has a space character,
+    (len - offset) points after the end of string, which isn't a problem for
+    g_strndup() since it stops at the first null, and no splitting happens.
+    If the garbage doesn't have any spaces, it splits by the last word.
+    
+    This commit avoids that loop entirely if (remaining_len > len). It also
+    changes the way it iterates over the string to be much less confusing.
+
+commit 7ab38f29edb59941281723d7031d41d93fae06bd
+Merge: 79fa2fc f540ec9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Oct 8 09:18:04 2015 +0200
+
+    Merge pull request #333 from dequis/recon-tag-fix
+    
+    Fix /reconnect RECON-1 saying "Reconnection tag 1 not found"
+
+commit f540ec9de1bb35b226e3c97e763238072fe295dd
+Author: dequis <dx@dxzone.com.ar>
+Date:   Thu Oct 8 00:06:17 2015 -0300
+
+    Fix /reconnect RECON-1 saying "Reconnection tag 1 not found"
+    
+    Turns out it was fixing the wrong string, and trying to do
+    atoi("RECON-1") instead of atoi("1").
+    
+    "/reconnect 1" worked, but "/reconnect RECON-1" gave that confusing
+    error message.
+
+commit 58a166484ad7eab33c1ad72b64016e5aacebfaf5
+Author: dequis <dx@dxzone.com.ar>
+Date:   Tue Oct 6 04:51:16 2015 -0300
+
+    Add xterm's keypad enter, meta-O-M to "key return" bindings
+    
+    From the 'kent' terminfo entry. Also applies to putty.
+    
+    Fixes #327
+
+commit 79fa2fcb598ac4a9c6caa4d94162ec98f14dfee5
+Merge: 15a40ea 0140e7c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Oct 4 20:22:36 2015 +0200
+
+    Merge pull request #318 from LemonBoy/fix-utf8-elements
+    
+    Fix the display of utf8 sequences in the gui
+
+commit 0140e7c6b23ff1490965b080a7882b2508677d55
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Oct 4 11:56:54 2015 +0200
+
+    Fix the indentation.
+
+commit 15a40ea6d34ac159dd7cc80bcee38ff3c0850a01
+Merge: 48375c3 a475d57
+Author: dx <dx@dxzone.com.ar>
+Date:   Sat Oct 3 22:15:17 2015 -0300
+
+    Merge pull request #314 from LemonBoy/sasl_session
+    
+    Save the sasl state in the session
+
+commit 2127fd362e240a9fed09dff9044fe5c477fc2bf8
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Oct 3 19:07:08 2015 +0200
+
+    Add -Wall and -Werror as CFLAGS to make.
+
+commit 5f35fbc57a18eabc68723f1b82aacbfd84f637d1
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Oct 2 20:29:19 2015 +0200
+
+    Remove check for >= 0 for unsigned unichar.
+
+commit 685d8fe5b033ffce40b02aaf4ec3341f5cf3350c
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Oct 2 20:25:14 2015 +0200
+
+    Add SETTING_TYPE_ANY and replace -1 with it.
+
+commit 48375c3f900f56434441caa0161c0531fd0ce435
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Oct 3 18:50:23 2015 +0200
+
+    Simplify Travis config.
+
+commit 5e8523c037bc55aaf8d00a35433657d568dfdeb0
+Merge: da3f2f0 b68a30c
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Oct 3 14:33:02 2015 +0200
+
+    Merge pull request #322 from LemonBoy/fix-warning-awaylog
+    
+    Include write-buffer.h in log-away.c
+
+commit b68a30cdfe43bec9cdb0e7c822b66d90ccf8982d
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Oct 3 14:32:38 2015 +0200
+
+    Include write-buffer.h in log-away.c
+    
+    Silence a warning and make the world a better place.
+
+commit da3f2f0d0174675faa1a092722e8298460254112
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Oct 2 19:51:54 2015 +0200
+
+    Set HOST_NAME_MAX to 255, if it's undefined.
+    
+    Thanks to Jilles and dx.
+    
+    Fixes #309
+
+commit a66bb95d0e3d76dfb6abda88d6f128540279b461
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Oct 2 18:57:06 2015 +0200
+
+    Use silent rules.
+
+commit ef55e0f6534a5b790131c320fd0490a5beb21a68
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Oct 2 13:48:23 2015 -0300
+
+    Add missing null terminator to the g_build_path() varargs
+    
+    Lemon broke it a few commits ago.
+
+commit 9c5f6780b286a919bc625011e8571af206e26e86
+Merge: bd696a0 b545bc9
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Oct 2 09:39:10 2015 -0700
+
+    Merge pull request #316 from LemonBoy/fix_mem_leak
+    
+    Fix a memory leak.
+
+commit bd696a096ee782c3662a0bd81e0939357fdfb447
+Merge: c3e4664 db5ae4a
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Oct 2 09:33:03 2015 -0700
+
+    Merge pull request #319 from LemonBoy/awaylog-flush
+    
+    Flush the dirty buffer to disk
+
+commit db5ae4adce6ad82150a4fef01c8b141631f89d96
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Oct 2 17:13:49 2015 +0200
+
+    Flush the dirty buffer to disk
+    
+    Given a big enough write_buffer_size and a long enough
+    write_buffer_timeout it might be possible to show the user an incomplete
+    or empty awaylog.
+    
+    Patch by: Petteri Aimonen
+
+commit 48ab298a67151e6fce33c1d7b34f4f83796b8d9a
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Oct 2 15:08:48 2015 +0200
+
+    Kill an unneeded declaration
+
+commit c7646dc58d1e70abc8d2981e08baa83e459affdb
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Oct 2 15:07:59 2015 +0200
+
+    Even simpler logic
+
+commit c351c448b8dd2b9759e46c0c6e73ed5ead936ffc
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Oct 2 15:02:43 2015 +0200
+
+    Rework the logic to avoid allocating memory
+
+commit 2e860abd2b8b3a30f74005450830c34a318b64a3
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Oct 2 14:04:04 2015 +0200
+
+    Fix the display of utf8 sequences in the gui
+    
+    term_addstr() had a long-standing fixme that suggested it didn't
+    take into account the string encoding when calculating the string
+    length.
+    The BIG5 code path is untested.
+
+commit b545bc96a9e1a875beb50d9202161864ca8164d8
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Oct 2 12:39:08 2015 +0200
+
+    Fix a memory leak.
+    
+    g_get_current_dir() returns a heap-allocated string.
+
+commit c3e466487044b38923efce58f9db3a6d0b6d6fee
+Merge: acbe2ec 0823289
+Author: dx <dx@dxzone.com.ar>
+Date:   Fri Oct 2 07:22:48 2015 -0300
+
+    Merge pull request #294 from dequis/key-states-rescan-recursion-limit
+    
+    Limit recursion depth of key/combo expansion in key_states_scan()
+
+commit acbe2ecac299d4f6770c60747776cbea290bee3f
+Merge: 8217147 cfff402
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 2 11:48:11 2015 +0200
+
+    Merge pull request #315 from LemonBoy/prevent_blank_usermode
+    
+    Don't set the usermode field if blank
+
+commit cfff402fe677316d286ce6663b8afeee4be95526
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Oct 2 11:25:30 2015 +0200
+
+    Don't set the usermode field if blank
+    
+    Fixes FS#919
+
+commit a475d57183bcbfd6e540dba5cd7894d8c38b53b7
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Oct 1 22:25:40 2015 +0200
+
+    Save the sasl state in the session
+    
+    This is seemingly required to have irssi re-authenticate after a
+    restart.
+
+commit ef1a09b87d5df7fcaeced70e09312c225d99c4b6
+Author: isundil <isundill@gmail.com>
+Date:   Thu Oct 1 22:53:34 2015 +0200
+
+    Fix return value of server_setup_remove_chatnet
+
+commit 6ca7dc68478772258dea114d29625dc2c87999f9
+Author: isundil <isundill@gmail.com>
+Date:   Thu Oct 1 22:36:02 2015 +0200
+
+    Updated server removal
+    Removing network will also remove attached channels
+
+commit 2ad6bb12955b3e9bfa43628e6dbfc984537f8b26
+Author: isundil <isundill@gmail.com>
+Date:   Thu Oct 1 21:14:30 2015 +0200
+
+    Fix #45 Make it easy to delete default channels, servers and networks
+    Removing network will now also remove all attached servers
+
+commit 8217147a805af081010578b0dcd7fe42fede1425
+Merge: fb6375c 00176db
+Author: dx <dx@dxzone.com.ar>
+Date:   Thu Oct 1 01:48:06 2015 -0300
+
+    Merge pull request #312 from Jellyfrog/patch-1
+    
+    Switch to modern Travis CI infrastructure
+
+commit 00176dbff5af1a649a1f45972c45d661912aa8be
+Author: Jellyfrog <Jellyfrog@users.noreply.github.com>
+Date:   Tue Sep 29 17:34:35 2015 +0200
+
+    Switch to modern Travis CI infrastructure
+    
+    Fixes #310
+
+commit fb6375c6f9c1191590420482aea634644aa228eb
+Merge: 3e4926d b04b5f0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 29 12:00:44 2015 +0200
+
+    Merge pull request #308 from vague666/sasl_in_network_list
+    
+    Add sasl info to /network list output if available
+
+commit b04b5f0f1d03be6282f7ba835b8a4f29b18b9c69
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Tue Sep 29 11:44:11 2015 +0200
+
+    Make sure sasl settings are defined before printing them out
+
+commit cff536ab7091e79747352ff1f1d1d832870b2fb4
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Tue Sep 29 10:39:49 2015 +0200
+
+    Add sasl info to /network list output if available
+
+commit 3e4926d87bb1f5a54d188a2cb6b15f223e01c444
+Merge: 696bc43 0f066aa
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 28 05:34:38 2015 +0200
+
+    Merge pull request #307 from chi6rag/master
+    
+    Remove Typo from Startup FAQs
+
+commit 0f066aac11e9a56f394330a8d7dab3428594a623
+Author: Chirag Aggarwal <chi6rag@gmail.com>
+Date:   Mon Sep 28 08:54:19 2015 +0530
+
+    Remove Typo from FAQs
+
+commit 7866d2bcd6797b8279238ffb2f710bd9ea599cc8
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Sep 25 03:22:02 2015 -0300
+
+    Handle empty bracketed pastes (or sequences of those)
+    
+    Both cases were off-by-one mistakes erring on the side of being too
+    conservative. This fixes these two harmless issues:
+    
+    - For a single empty paste, it required another keystroke before
+      processing it
+    - For a sequence of themcase, a single '~' was left in the input
+
+commit c721d57688e8f5413df7c179eac54c315343fbb0
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Sep 25 03:09:14 2015 -0300
+
+    Handle a paste start marker right after an end one (ignore both)
+    
+    This actually workarounds a bug with the "st" terminal, for which i've
+    already submitted a patch, but irssi needs to be able to handle it
+    decently too.
+
+commit 7d062a313add81584608f2b0abf086f2b73e8098
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Sep 25 02:27:59 2015 -0300
+
+    Create paste_bracketed_middle() function to handle small pastes
+    
+    "Small" as in ending in the same sig_input() call where they started
+
+commit 83f9772e213b6b1e181338738c2997150162c871
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Sep 25 02:23:38 2015 -0300
+
+    Fix some minor style issues
+
+commit 79987d87f37f37ce07171ad4c6b94ffbab77b36d
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Sep 25 02:21:27 2015 -0300
+
+    Send last line of bracketed paste together with the rest
+
+commit 3b01198f0306676425f2bf90db2ca9c7179b014e
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Sep 25 01:37:06 2015 -0300
+
+    paste_bracketed_end: Fix rest length calculation
+
+commit 52729ca3da6ca594d710f58f252ac6cd6952fab0
+Author: dequis <dx@dxzone.com.ar>
+Date:   Thu Sep 17 00:54:13 2015 -0300
+
+    Save the part of the paste buffer after the bp_end marker for later
+    
+    Also move relevant code to a paste_bracketed_end() function
+
+commit 9a6b2dedcce165211892b39cf7455314dfde57fb
+Author: dequis <dx@dxzone.com.ar>
+Date:   Thu Sep 17 00:52:55 2015 -0300
+
+    Improve bracketed paste start/end detection
+    
+    - Use a keybinding to detect the start of a bracketed paste
+    - Iterate over the paste buffer looking for the end marker
+
+commit 6888fc5fc74936af74fd30042e45652951648ea4
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Sep 9 22:41:17 2015 +0200
+
+    Get rid of the non-portable memmem
+    
+    The sequences we're after are found at the beginning or at the end of the
+    buffer, there's no need to scan the whole thing.
+
+commit 4764b102ff274f4a8695ced2ff2ebb39bf8d7bc2
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Sep 9 22:35:11 2015 +0200
+
+    Enable the bracketed paste mode on demand
+
+commit 15dad291c7829c4ae7855880654b94d6edb4f17f
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Sep 8 00:55:34 2015 +0200
+
+    Replace some hairy logic with g_array_remove_range
+    
+    In the hope it'll do the same under the hood.
+
+commit f1eead7b4a7cdcae6d71dba6e97d38e9d34fcf95
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Sep 8 00:48:13 2015 +0200
+
+    Toggles
+
+commit 72ac27e5a030b7c9207ecd00b8c2d092d28da644
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Sep 8 00:40:25 2015 +0200
+
+    Implement the bracketed paste mode
+    
+    As an alternative method of paste detection, more reliable but might not be
+    supported by all the VTs.
+
+commit 696bc43baca1b7be2711046803a58856eedc5e6b
+Merge: 18989e7 6f9fc5d
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Sun Sep 27 10:04:24 2015 +0200
+
+    Merge pull request #305 from dequis/install-doc-mention-local-lib
+    
+    INSTALL: mention local::lib for home directory installations
+
+commit 6f9fc5d5230f6d094130bd4f0ce659b740ed2a54
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Sep 27 02:15:14 2015 -0300
+
+    INSTALL: mention local::lib for home directory installations
+    
+    I had problems installing this and this file didn't have the answer.
+    So I'm adding what nei told me to do.
+
+commit 18989e76dbf42d39ce1906d37cf5bfcc43422f32
+Merge: 815862b 1a2c479
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Sep 26 19:07:54 2015 +0200
+
+    Merge pull request #304 from LemonBoy/sasl_user_options
+    
+    Allow the user to set and modify the SASL parameters
+
+commit 1a2c479bc04cdb6758ca9f1976e235b092cc83fb
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Sep 26 18:53:10 2015 +0200
+
+    Allow the user to set and modify the SASL parameters
+    
+    The /NETWORK ADD command now is able to modify the SASL mechanism, the
+    username and the password on a chatnet basis.
+
+commit 815862b68899c72e5587002c37cec286df0c82f2
+Merge: fc3c0a8 a2277e8
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Thu Sep 24 18:04:29 2015 +0200
+
+    Merge pull request #302 from vague666/rawlog_save_with_dir
+    
+    Added functionality to create dir if dir specified in rawlog filename
+
+commit deb6ca1b1a676fae094253fc55519e2a60c206d1
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Thu Sep 24 13:03:02 2015 +0200
+
+    Applied patch from fs#275 to make /hilight -mask -line work properly
+
+commit a2277e84bd390b9eaca906541f32e5d60e529f7f
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Thu Sep 24 11:59:18 2015 +0200
+
+    Added functionality to create dir if dir specified in rawlog filename
+
+commit fc3c0a84205885e5914c7e0812b35a4acbabc3b0
+Merge: 3daadfa b984f1f
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Thu Sep 24 10:05:30 2015 +0200
+
+    Merge pull request #301 from dequis/dcc-get-ntfs-temp-bug
+    
+    dcc-get: close() the temp fd so we don't get ETXTBSY in ntfs mounts
+
+commit b984f1fa250fd87b2808bed6826f17386ddb30ce
+Author: Robert C Jensen <jensen.r@husky.neu.edu>
+Date:   Wed Sep 23 23:39:37 2015 -0300
+
+    dcc-get: close() the temp fd so we don't get ETXTBSY in ntfs mounts
+    
+    Patch from debian bug 696963 [1]
+    
+    Fixes github bug #220 and flyspray bug 867 [2]
+    
+    [1]: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=696963
+    [2]: http://bugs.irssi.org/index.php?do=details&task_id=867
+
+commit 3daadfa4a2c19757050ba934c5c112905763db9b
+Merge: 33e90c5 7ae7422
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Wed Sep 23 20:13:25 2015 +0200
+
+    Merge pull request #298 from dequis/multi-prefix
+    
+    Add multi-prefix to list of capabilities to request
+
+commit 33e90c5ae3b91577c0caa6390c7f7fd6186768f1
+Merge: ce70288 9da445a
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Wed Sep 23 20:11:47 2015 +0200
+
+    Merge pull request #300 from dequis/drop-centos5
+    
+    Drop centos 5 support, bump glib requirement to 2.16
+
+commit 9da445ab86740be13f47da7eb540fb9e4b962085
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Sep 23 13:42:00 2015 -0300
+
+    Drop some glib version checks that are not needed anymore
+    
+    The g_strcmp0 fallback in particular was broken since it was used in a
+    few places as a GCompareFunc, and macros don't work that way.
+    
+    Yes, that one was my fault, but nobody complained :D
+
+commit e833521cefdedcdbc0e4382715a36ea5f8276a86
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Sep 23 13:39:07 2015 -0300
+
+    Bump glib2 requirement from 2.6 to 2.16
+    
+    This drops support for rhel/centos 5 (18 months left of its 10 year
+    support cycle)
+    
+    Keeps support for debian 5.0 (lenny) and ubuntu 8.04 LTS, both of
+    which are unsupported, so bumping up to glib 2.24 wouldn't be a problem,
+    but it's not needed atm.
+
+commit c9be1a7a80974858a21fc74191198189030df40b
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Sep 23 13:37:14 2015 -0300
+
+    Revert "Revert "Bug fix - docdir is ignored during installation.""
+    
+    This reverts commit d222c11f74a5662df59e00e7ae6c8105179a804e.
+
+commit ce702884889165a775d66b0eb248009cd0ac75bb
+Merge: f247a43 d3df165
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Wed Sep 23 18:52:14 2015 +0200
+
+    Merge pull request #264 from ailin-nemui/window-help
+    
+    Improve the WINDOW help
+
+commit d3df165e0b067461e49d7f065f3820739e9ba229
+Author: Ailin Nemui <ailin@linux.localdomain>
+Date:   Sun Jul 12 19:03:58 2015 +0200
+
+    Improve the WINDOW help
+    
+    Properly describe the window command.
+    Make help sort order deterministic.
+
+commit 7ae742293926dde06be5563efb5acd19dc2c3a75
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Sep 23 03:17:29 2015 -0300
+
+    Add multi-prefix to list of capabilities to request
+    
+    Turns out event_names_list() in irc-nicklist.c already handles this.
+    
+    event_who() just ignores it, which is probably a good idea since some of
+    the irc servers I tested this with have a bug that results in sending
+    multiple prefixes in the NAMES reply but not in the WHO one (they were
+    forks of ircd-hybrid before 7.3.0)
+    
+    And NAMES always happens, anyway. WHO is omitted sometimes for huge
+    channels.
+
+commit f247a43b97731cd1d58ec765dd2d10f885ef66dc
+Author: dequis <dx@dxzone.com.ar>
+Date:   Tue Sep 22 19:35:10 2015 -0300
+
+    sig_message_irc_op_public: fix nickmode lookup, use cleantarget instead
+
+commit 618a636f7ca2a7b915bedc1cba2860e2b948a2a2
+Merge: f326206 3f2eaf1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 23 00:07:03 2015 +0200
+
+    Merge pull request #297 from vague666/hilight_nick_matches
+    
+    Add new setting to modify behaviour of hilight_nick_matches to match anywhere in message
+    
+    Fixes #56
+
+commit 3f2eaf1d3a67eddd42dd88eccb39402d45297fcb
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Tue Sep 22 23:16:41 2015 +0200
+
+    Fix return value from nick_match_msg_everywhere, remove #include 'settings.h'
+
+commit b5c3e90802e926e35ad9a4f1f02403578a3ff392
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Tue Sep 22 23:09:55 2015 +0200
+
+    Fix return value from nick_match_msg_everywhere
+
+commit 5a4be0f4f5f36787e98215d87b88a50a5f7e7e01
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Tue Sep 22 22:39:44 2015 +0200
+
+    Add new setting to optionally modify behaviour of hilight_nick_matches
+    
+    Fix indentation
+    
+    Remove unused variables that crept into the nick_match_msg_everywhere function
+
+commit f32620673ed26e9e4e730b021b46dc1a4e6cb720
+Merge: 2d69deb f5f3d7c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 22 22:00:31 2015 +0200
+
+    Merge pull request #296 from irssi/revert-290-ipv6
+    
+    Revert "Network and IPv{4,6} related changes"
+    
+    it wasn't ready yet and I merged this in error
+
+commit f5f3d7cc98f24799f562e8d3126ea1c2786a6547
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 22 21:59:17 2015 +0200
+
+    Revert "Network and IPv{4,6} related changes"
+
+commit 2d69deb0a36516bac9514c6d53a1389b0a4b031a
+Merge: 5ced71e 5648296
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 22 17:43:31 2015 +0200
+
+    Merge pull request #290 from LemonBoy/ipv6
+    
+    Network and IPv{4,6} related changes
+
+commit 5ced71e1ac5cf74e46115ade90fa9004e6fe1493
+Merge: 85223a9 99f074b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 22 12:20:35 2015 +0200
+
+    Merge pull request #295 from dequis/fix-bug-291
+    
+    Fix #291, "/msg +#channel incorrectly shows up as Nick:@#channel"
+
+commit 99f074b0db2d723c3a1ddbdc5226f54f24b01989
+Author: dequis <dx@dxzone.com.ar>
+Date:   Tue Sep 22 01:17:15 2015 -0300
+
+    fe_channel_skip_prefix: fix return value (FALSE/NULL isn't valid)
+    
+    The return value is a char*, and here it was false which is 0 which is
+    more or less the same as null.
+    
+    That could have been a crash somewhere, the functions that call this
+    don't expect null ever.
+
+commit bf36f71b99b18401dbc6105509b0285146b37286
+Author: dequis <dx@dxzone.com.ar>
+Date:   Tue Sep 22 00:01:04 2015 -0300
+
+    Fix #291, "/msg +#channel incorrectly shows up as Nick:@#channel"
+    
+    Just passing the full target to the "message irc op_public" signal
+    handler and letting it do the cleanup.
+    
+    The fe_channel_skip_prefix() call in event_privmsg() is kept because
+    recode_in() needs a real channel name, but
+    
+    There was similar code in sig_message_own_wall(), but that one is
+    correct - the /wall command always sends NOTICE @#chan, so I added a
+    comment down there to make it clear.
+
+commit 0823289fd9c6a2eec7ff04581426856d1dbb15e5
+Author: dequis <dx@dxzone.com.ar>
+Date:   Mon Sep 21 22:53:53 2015 -0300
+
+    Limit recursion depth of key/combo expansion in key_states_scan()
+    
+    Fixes FS#817 - "SegFault when executing bind command", which provides
+    the test case "/bind cleft key meta", which is stupid but now it doesn't
+    break things.
+    
+    The limit of 100 is arbitrary, it means roughly 140 stack frames total.
+    The flyspray ticket mentions it crashes at 512, in my system it goes all
+    the way to 149677 stack frames.
+    
+    http://bugs.irssi.org/index.php?do=details&task_id=817
+
+commit 85223a9b6b0c8a68abba367756763e3fd641be89
+Merge: 211e84c f39723f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 21 23:00:31 2015 +0200
+
+    Merge pull request #292 from dequis/mangled-text-paste-fix
+    
+    Fix FS#905, mangled text when pasted line length exceeds 400
+
+commit f39723f6510bf57c5d21d62d55be6eefb6305078
+Author: dequis <dx@dxzone.com.ar>
+Date:   Thu Sep 17 00:55:31 2015 -0300
+
+    Fix FS#905, mangled text when pasted line length exceeds 400
+    
+    http://bugs.irssi.org/index.php?do=details&task_id=905
+    
+    Not using the patch from that ticket, the issue turned out to be that
+    (dest - last_lf_pos) returned number of unichr, not bytes, so that's 4
+    times less than what the size parameter of memmove() should be.
+
+commit 211e84c1e968b0b13ecb0921479bc862ed76df3c
+Merge: 0912a11 2f9cca8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 21 18:47:09 2015 +0200
+
+    Merge pull request #267 from kyak/master
+    
+    Add expandos for hostname
+
+commit 564829610de20f75ec667f1943524c3a49b9ea3f
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Sep 21 14:38:10 2015 +0200
+
+    Ding dong the switch is dead
+
+commit ffaa890e99e2176ff3d2dec0ab5a8136e1e946ff
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Sep 21 13:54:13 2015 +0200
+
+    Initial work to make irssi respect the resolved ip order
+    
+    Ip's aren't selected using random() anymore, also select the ip version
+    by using getaddrinfo and some proper hints.
+
+commit 0912a1105058829559529e2ae7d62daccb8337f6
+Merge: a44c4b8 203c009
+Author: dx <dx@dxzone.com.ar>
+Date:   Sun Sep 20 19:19:49 2015 -0300
+
+    Merge pull request #278 from LemonBoy/sasl
+    
+    SASL support
+
+commit 203c00938acad1da4a91a2c21afdac4ede08572a
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Sep 20 23:13:43 2015 +0200
+
+    Use formats instead of g_warning
+    
+    Add some copyright headers here and there too.
+
+commit a44c4b82de44af9aec59c542f3212795ecc52b57
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Sep 20 23:11:39 2015 +0200
+
+    More format warnings removed.
+
+commit 5c3ef84a0ba3cde0d9e2586fcb618d81851776f5
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Sep 20 23:02:51 2015 +0200
+
+    Undefine PACKAGE_VERSION before overwriting it.
+
+commit 6c9dcffb5ef6b0f024f5ab6d335b69ef79e4daa5
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Sep 20 22:51:13 2015 +0200
+
+    Fix formatting warnings.
+
+commit 9cf4dfd23d10e735d43f7e7355fe718f2a7995cb
+Merge: 519955e 29cf546
+Author: dx <dx@dxzone.com.ar>
+Date:   Sun Sep 20 16:49:48 2015 -0300
+
+    Merge pull request #288 from irssi/ahf/kill-gc
+    
+    Remove Garbage Collection support.
+
+commit 519955ebe4a421e8027c3dd09af9ea76d949d259
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Sep 20 21:45:33 2015 +0200
+
+    Fix warning.
+    
+    Add comment on the use of ??) in C, since that string isn't entirely
+    obvious to people who are reading the code.
+
+commit 29cf546ee4d5c1af1042d6fbeaae150ecc545d4a
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Sep 20 20:54:29 2015 +0200
+
+    Remove Garbage Collection support.
+    
+    GC support was never enabled by default and nobody in the current
+    development team seems to care about it.
+
+commit be977bf1b795c93dbff4fa52f04b5d425a3f3648
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Sep 20 21:21:40 2015 +0200
+
+    Fix warning.
+
+commit 1079ad46d21198b26649c2a81a692781e22336aa
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Sep 20 21:12:07 2015 +0200
+
+    Use g_string_append() instead of g_string_append_c() for string.
+
+commit ca363efe00a05682acf9de828d55e991657b9e4b
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Sep 20 21:01:25 2015 +0200
+
+    Use g_string_append() instead of g_string_append_c() for string.
+
+commit 06040fb30bc0503696794ff6097cd55eff332bb5
+Merge: 24d32c2 9586766
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Sep 19 23:58:16 2015 +0200
+
+    Merge remote-tracking branch 'origin' into sasl
+
+commit 9586766d87820bdfa9e7cbe805f5ed4b7b0378e5
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sat Sep 19 18:27:48 2015 -0300
+
+    Add setting to configure rejoin on reconnect behaviour
+    
+    Closes #169
+
+commit efc8f5f18758dc27c93f7f4b662daceada583257
+Merge: 9556062 061fb34
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Sep 19 23:09:29 2015 +0200
+
+    Merge pull request #283 from LemonBoy/unset-crnl
+    
+    Clear the ICRNL flag
+
+commit 9556062a9d6a47a051d3d8d8737f918f27b66101
+Merge: 3e7c8a6 f37f6ac
+Author: dx <dx@dxzone.com.ar>
+Date:   Sat Sep 19 17:02:11 2015 -0300
+
+    Merge pull request #286 from dequis/missing-fe-irc-channels-include
+    
+    Add two missing #include "fe-irc-channels.h"
+
+commit 3e7c8a6f26f399578dbffd4b60405a5b21b4acba
+Merge: 2b13e79 54a2faf
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Sat Sep 19 13:24:19 2015 +0200
+
+    Merge pull request #284 from ailin-nemui/document-perl-crashes
+    
+    Document some shortcomings in perl.txt
+
+commit 061fb347502bd0b98f4587cfdce6612808d0c989
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Sep 16 15:31:51 2015 +0200
+
+    Modify the terminal initialization sequence
+    
+    We disable the ICRNL flag to make Enter independent from ^J from the
+    keybinding point of view since the former will now send ^M, leaving the
+    user free to remap ^J without trapping itself into the irssi session
+    because of a broken Enter key.
+    Also disable the software flow control because we don't expect anyone to
+    run irssi over a serial console; we gain some more freedom by having ^Q
+    and ^S freely mappable by the user.
+
+commit f37f6ac0edadf12476fba962d582bc43876f0be6
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Sep 18 23:56:17 2015 -0300
+
+    Add two missing #include "fe-irc-channels.h"
+    
+    Fixes #285
+
+commit 2b13e793c4872711bc046363303cca4bc060e017
+Merge: 7b46dae 51496cd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Sep 19 02:53:25 2015 +0200
+
+    Merge pull request #259 from dequis/irssiproxy
+    
+    Updates for irssiproxy
+
+commit 54a2fafbde593f63811da711c6a5f95ba58c818a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Sep 18 23:33:52 2015 +0200
+
+    Update perl.txt
+
+commit 24d32c28ee2d5dbd001cbe29fa5d90077c6be107
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Sep 11 23:21:33 2015 +0200
+
+    Don't handle 908 as a critical failure
+    
+    "if the mechanism is unknown, 908 is optional, 904 (or equivalent error condition) is required"
+
+commit 49c4ea5fd94c9eee17dc5a8e0691ba1da9bf33b7
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Sep 11 23:20:07 2015 +0200
+
+    Parse the error string received by the server
+    
+    So that in case of SASL failure the user sees a nice error message.
+
+commit 1f114d75c6db16726bcb930044b7312e4c851eaa
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Sep 11 23:17:46 2015 +0200
+
+    Consider the SASL handshake successful on 903
+
+commit 55387dd93df4cff349c5696ab1bcb87801f4443f
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Sep 11 22:23:38 2015 +0200
+
+    Handle event 906 and 908
+
+commit 6645d0d38dc4627a9553235a98df4f4717a1fc6f
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Sep 11 22:09:47 2015 +0200
+
+    Explicitly set the authorization id during the PLAIN handshake
+    
+    On error show the user the message sent by the server.
+
+commit 171b67441d64a85a23daf5018159f167eb7fe583
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Sep 11 01:17:18 2015 +0200
+
+    Replace spaces with tabs
+
+commit c90c7deac37bea6754c9c2715230429fd49e8e81
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Sep 11 00:58:01 2015 +0200
+
+    Address all the points outlined in the first review
+    
+    Replace G_SOURCE_REMOVE with FALSE for the compatibility sake.
+    Zero the timeout id after g_source_remove and when exipred.
+    Save the sasl_* options in sig_chatnet_saved().
+
+commit b8d3301d34f383f039071214872570385de1bb59
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Sep 10 01:02:44 2015 +0200
+
+    SASL support
+    
+    The only supported methods are PLAIN and EXTERNAL, the latter is untested as of
+    now.
+    The code gets the values from the keys named sasl_{mechanism,username,password}
+    specified for each chatnet.
+
+commit 7b46dae1825fc90d97163b40cdca2ffaceb2e13c
+Merge: 762c1d7 4346c2a
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Thu Sep 10 01:37:08 2015 +0200
+
+    Merge pull request #248 from LemonBoy/chantypes
+    
+    Implement CHANTYPES support
+
+commit 4346c2a6d479b9c4d94fabc35ade324fdbe0e0d0
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Sep 9 23:55:00 2015 +0200
+
+    Move the function prototypes in a separate header
+
+commit 762c1d7f2c7478f1e98f847352e6cb3ca889c580
+Merge: a8ec9aa b5b73cb
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Wed Sep 9 22:55:24 2015 +0200
+
+    Merge pull request #276 from LemonBoy/terminfo-application-mode
+    
+    Send smkx/rmkx sequence at terminal init
+
+commit a8ec9aa3d88f39ba6963eb239a36bb961fca47bb
+Merge: e948aaa 21c1e4e
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Wed Sep 9 22:51:40 2015 +0200
+
+    Merge pull request #275 from LemonBoy/cap-support-nitpicks
+    
+    Fix two minor issues outlined in the PR#222
+
+commit b5b73cb471e5dff6f8c872071c7cb8678e4142ea
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Sep 6 15:47:08 2015 +0200
+
+    Send smkx/rmkx sequence at terminal init
+    
+    Enter the "application" mode when setting up the terminal, this improves the
+    compatiblity with the standards; as a side effect now DEL key works ootb when
+    irssi is run in the suckless's st terminal.
+
+commit 21c1e4e9f80409b81cb3b8243c904ccf74d8d529
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Sep 2 22:40:10 2015 +0200
+
+    Fix two minor issues outlined in the PR#222
+    
+    irc-cap.c has now a licence header.
+    A minor style fix in misc.c
+
+commit 57d645f24603e8c7d2cfe7098b3dbb1359cd8d22
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Sep 2 21:50:40 2015 +0200
+
+    Introduce some more chantypes awareness
+
+commit 35d30c19a1fa5413a26a04885ed6cb05af4e2565
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Sep 2 20:24:47 2015 +0200
+
+    Whitespace fix
+
+commit 2f9cca8ec6e491759583c1de3bd74fbef0d6e2a1
+Author: kyak <bas@bmail.ru>
+Date:   Sat Aug 29 15:40:17 2015 +0300
+
+    Remove extra line break
+    
+    How did this extra break cripple in here?
+
+commit b065f2a0112fe733878c17375d16cf12a3457e09
+Author: kyak <bas@bmail.ru>
+Date:   Sat Aug 29 15:36:05 2015 +0300
+
+    Use HOST_NAME_MAX for userhost and hostname expandos
+    
+    Use HOST_NAME_MAX instead of hardcoded 100 for userhost
+    and hostname expandos.
+
+commit b7d82ecdcee3224ca5280977d0ffd7b5e0fb07d2
+Author: kyak <bas@bmail.ru>
+Date:   Sat Aug 29 15:32:22 2015 +0300
+
+    Use "(none)" as fallback for hostname and userhost expandos
+    
+    Use "(none)" instead of "??" for hostname and userhost expandos
+    when these can't be reliably detected.
+
+commit 19760679eb141baf3bff2110ee03aec90c653a2a
+Author: kyak <bas@bmail.ru>
+Date:   Sat Aug 29 15:29:57 2015 +0300
+
+    In expando_hostname, set *free_ret to TRUE
+    
+    *free_ret must be set to TRUE in both cases, since we return
+    some newly initialised memory
+
+commit 0435331912f5d975c4cbef9b018bb89c07e610eb
+Author: kyak <bas@bmail.ru>
+Date:   Wed Aug 26 09:34:48 2015 +0300
+
+    Clean up in hostname expando before return
+    
+    Clean up the vector resulting from g_strsplit before
+    returning from expando_hostname(). Also, use g_strdup()
+    instead of g_strconcat() to return the pointer to hostname.
+
+commit e948aaa4bab4064e0ff492906bdd301a9a38799e
+Merge: d2c9f30 a393c67
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Mon Aug 24 22:27:51 2015 +0200
+
+    Merge pull request #263 from ailin-nemui/git-clone-check
+    
+    Introduce check for git commands in autogen
+
+commit d2c9f309775b0263937c0e0c8a9b15496d46135a
+Merge: 14c7c04 b0e7c18
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Mon Aug 24 22:22:01 2015 +0200
+
+    Merge pull request #222 from LemonBoy/cap-support
+    
+    [RFC] CAP support
+
+commit b0e7c183764e696b1e1a79c51651bc6573257bf8
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Aug 20 23:37:34 2015 +0200
+
+    Send the CAP LS after sending the proxy strings
+    
+    Patch by @dequis
+
+commit 14c7c0484c79ac42df2b17241e584c0c30c3b4ef
+Merge: 6fcafc5 92d03fe
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Tue Jul 28 18:48:04 2015 +0200
+
+    Merge pull request #269 from blha303/master
+    
+    Replace \n with \r\n in irssiproxy source, fixes bug
+
+commit 92d03fe11ed2e4837d0137893fafd758ff0434d5
+Author: blha303 <stevensmith.ome@gmail.com>
+Date:   Sat Jul 25 02:41:26 2015 -0400
+
+    Replace \n with \r\n in irssiproxy source, fixes bug
+
+commit 8e71d6ec739ec74fbb5c712e9341d4319a17d8f5
+Author: kyak <bas@bmail.ru>
+Date:   Sun Jul 19 09:45:50 2015 +0300
+
+    Add expandos for hostname
+    
+    See http://bugs.irssi.org/index.php?do=details&task_id=829
+
+commit a393c675400a41f7cc3df988c25242857da678a4
+Author: Ailin Nemui <ailin@linux.localdomain>
+Date:   Thu Jul 9 14:20:30 2015 +0200
+
+    Introduce check for git commands in autogen
+    
+    This avoids a misleading compile error when users try to `make` an
+    incomplete (or non-git) check-out.
+
+commit 51496cd09f5d2f2da0a4ae678663c66e2ceae17c
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Jun 14 16:41:52 2015 -0300
+
+    Fix 'address already in use' when changing irssiproxy_ports
+    
+    When changing the value of irssiproxy_ports to use a different network
+    name in a port that was already bound (so like changing from asd=6667 to
+    sdf=6667) it would throw "address already in use".
+    
+    This fixes it by delaying the add_listen() calls after all the
+    remove_listen() were called.
+
+commit a47f45b5b7438209177d76f3efde559e61e5bdb7
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Jun 14 11:57:11 2015 -0300
+
+    Rename /proxy command to /irssiproxy for clarity
+
+commit 29fb0d98023de26e643b213177ecb9fbb73d83f8
+Merge: 7beffbd 6fcafc5
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Jun 14 10:42:41 2015 -0300
+
+    Merge branch 'master' into irssiproxy
+    
+    Conflicts:
+    	src/irc/proxy/listen.c
+
+commit 6fcafc599350737d0d14f3c863af594efc391124
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 21:13:27 2015 +0200
+
+    1k+ windows are now the default formatting (#223)
+    
+    1k+ windows are now the default formatting (#223)
+
+commit fb5513ef4ae6a8b4e325a973d8f9e63d0e2487d5
+Merge: b90402b a79f150
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 20:48:50 2015 +0200
+
+    Merge pull request #257 from GeertHauwaerts/master
+    
+    Clarify the help for /LIST (#228)
+
+commit b90402b7fcc1d2d0b1d07fee973af3aa75c50bfa
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 20:44:32 2015 +0200
+
+    Proper removal of sb_search.pl (#143)
+    
+    Proper removal of sb_search.pl (#143)
+
+commit e2eb2483b7d642e8dee31735f70cfb963d16323c
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 20:41:47 2015 +0200
+
+    Updated the man page (#251)
+    
+    Updated the man page (#251)
+
+commit a663d2f674f1408fcd54a3d1f8823dffdcc8123f
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 19:40:15 2015 +0200
+
+    Updated the bundled scripts to their latest version (#143)
+    
+    Updated the bundled scripts to their latest version (#143)
+    
+    Removed sb_search.pl which is not contributed into the script archive, I
+    will poke coekie about it.
+
+commit 788f181ecb956addf17fe3c5bddc6a56a97b8681
+Merge: 4cc6fda d222c11
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 19:06:48 2015 +0200
+
+    Merge pull request #258 from irssi/revert-232-master
+    
+    Revert "Bug fix - docdir is ignored during installation."
+
+commit d222c11f74a5662df59e00e7ae6c8105179a804e
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 18:50:55 2015 +0200
+
+    Revert "Bug fix - docdir is ignored during installation."
+
+commit 4cc6fdaaab5db3d22e195b1d0912dae40348e140
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 17:44:13 2015 +0200
+
+    Add server check in irc_server_connect (#208)
+    
+    Fail instead of crash, if irc_server_connect is called without object.
+    (#208)
+
+commit a79f150a768b66b04f1edbc6ddf27afe13f2e2c1
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 17:23:49 2015 +0200
+
+    Clarify the help for /LIST (#228)
+    
+    Clarify the help for /LIST (#228)
+
+commit 01510b7d9efd4caa1e41780488658c130224d9cd
+Merge: 7978d58 ae742f3
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 16:44:07 2015 +0200
+
+    Merge pull request #247 from FreeFull/patch-1
+    
+    lastlog doc fix
+
+commit 7978d5820223347b16a19f45bda23dee2fc98ec1
+Merge: c122a2a fa782ae
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Fri Jun 12 16:43:43 2015 +0200
+
+    Merge pull request #252 from ailin-nemui/patch-2
+    
+    Update sb_search.pl
+
+commit e480b9b16579a0434dba61c58dec362511062cb8
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun May 31 15:30:21 2015 +0200
+
+    Improve ischannel_func (#253)
+    
+    The function now skips all the leading characters that are in the STATUSMSG. If
+    the server didn't send the STATUSMSG option then it's assumed to be "@+" for
+    compatibility with bahamut 2.4 (sic).
+
+commit fa782ae6bce1efd19f41f3b225e13e390d7629b2
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri May 29 14:09:55 2015 +0200
+
+    Update sb_search.pl
+    
+    make it easier to bind sb search to a key
+
+commit 16c71cf1fbc1e7987fdde821813005b87237e951
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri May 15 16:42:51 2015 +0200
+
+    Implement CHANTYPES support
+
+commit ae742f3f13f0d941f3a099740afddcb9d73c446b
+Author: Filip Szczepański <jazz2rulez@gmail.com>
+Date:   Thu May 14 13:06:50 2015 +0100
+
+    lastlog doc fix
+    
+    Only the filename can come right after `-file`. Having `-force` in that position causes an `Irssi: Could not open lastlog: No such file or directory` error.
+
+commit 2d7030a84445ee4547af43970cfb252b36246e62
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Feb 12 00:07:22 2015 +0100
+
+    Implement support for IRCv3.1 CAP negotiation
+
+commit c122a2a226363114e11f32072395e2f06ad6a450
+Merge: 9540a60 6b56f09
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Apr 21 00:17:40 2015 +0200
+
+    Merge pull request #241 from pstray/master
+    
+    Change a hash lookup so it compiles
+
+commit 9540a60c5267055e1dfea0aca179da3172f70c69
+Merge: c7b428b be8c3c3
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Apr 21 00:14:39 2015 +0200
+
+    Merge pull request #232 from dimkr/master
+    
+    Bug fix - docdir is ignored during installation.
+
+commit 6b56f098e941563258a9a7fb207f1df6de7cbb11
+Author: Peder Stray <peder.stray@gmail.com>
+Date:   Sun Apr 19 13:14:54 2015 +0200
+
+    Change g_hash_table_contains() for compatibility with glib < 2.32
+
+commit c7b428bdafc749ec3a2407c3dc1f271a013c1702
+Merge: eb0f090 9f77dd8
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Apr 18 16:25:18 2015 +0200
+
+    Merge pull request #240 from hloeung/master
+    
+    trivial: Minor cosmetic changes fixing docs as per review from ahf.
+
+commit 9f77dd802dfe63b79c0d82d4b9ecc0974e354a59
+Author: Haw Loeung <h.loeung@unixque.com>
+Date:   Sat Apr 18 13:53:07 2015 +1000
+
+    trivial: Minor cosmetic changes fixing docs as per review from ahf.
+
+commit eb0f09073cf15eb033f098d716006a9a1d67fdef
+Merge: 03be286 ee3eaa5
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Apr 17 21:23:03 2015 +0200
+
+    Merge pull request #199 from ailin-nemui/config-parser
+    
+    Make config parser more robust
+
+commit 03be2861dcec9e8d088be6a0cae2848388923dab
+Merge: ef5ac43 9890dac
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Apr 17 21:13:18 2015 +0200
+
+    Merge pull request #235 from dequis/g_strcmp0
+    
+    Change all strcmp() to g_strcmp0() to handle nulls gracefully
+
+commit ef5ac430c75a3a551991aff8dae08ceeaca25d3f
+Merge: 9ffe52e 349ed35
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Apr 17 21:10:00 2015 +0200
+
+    Merge pull request #238 from hloeung/master
+    
+    ssl: Add option to specify SSL cipher suite preference list
+
+commit 349ed35ce099d9003078e000acf5d95b5fd644e8
+Author: Haw Loeung <h.loeung@unixque.com>
+Date:   Wed Apr 15 00:44:07 2015 +1000
+
+    ssl: Fixed call to SSL_CTX_set_cipher_list() only when ssl_ciphers specified and warn when no cipher suite could be selected.
+
+commit 50e955e342c02ac55c48d5be71a940596ff72ac8
+Author: Haw Loeung <h.loeung@unixque.com>
+Date:   Tue Apr 14 18:07:35 2015 +1000
+
+    ssl: Add option to specify SSL cipher suite preference.
+
+commit 9890daca797b31d34d97d953c512378aabe3d51f
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Apr 11 15:09:49 2015 -0300
+
+    Handle nulls properly in the g_strcmp0() for glib<2.16
+    
+    I wrote some tests to compare the behavior but I don't know where to put
+    them, so i'm including them here:
+    
+        assert(g_strcmp0("a", "b") == -1);
+        assert(g_strcmp0(NULL, "a") == -1);
+        assert(g_strcmp0("a", NULL) == 1);
+        assert(g_strcmp0("b", "a") == 1);
+        assert(g_strcmp0("a", "a") == 0);
+        assert(g_strcmp0(NULL, NULL) == 0);
+
+commit ef0877f4849a73ba43e886a9faafb321d3559e43
+Author: dequis <dx@dxzone.com.ar>
+Date:   Tue Apr 7 23:01:09 2015 -0300
+
+    Define g_strcmp0 to strcmp if the glib version is older than 2.16
+
+commit f14199d9c15a8062b5663fa6fcdae00390473b15
+Author: dequis <dx@dxzone.com.ar>
+Date:   Tue Apr 7 22:39:05 2015 -0300
+
+    Change all strcmp() to g_strcmp0() to handle nulls gracefully
+    
+    Just a string replacement (but i did check every one of them)
+    
+        sed -i 's/strcmp(/g_strcmp0(/g' **/*.c
+
+commit 9ffe52ec5e3f0643e7ddd12f4d21c0788d2f8cea
+Merge: 8d2ea2d f5331a3
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Wed Apr 8 03:32:45 2015 +0200
+
+    Merge pull request #233 from dgl/hilight-fix
+    
+    Make sure NO_ACT isn't cleared when -actcolor %n is used
+
+commit 8d2ea2d7cea464a583a22fe8a6dffb420fbdfe72
+Merge: ac5aebb 28aaa65
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Apr 7 21:19:43 2015 +0200
+
+    Merge pull request #234 from Adam-/master+sni
+    
+    Add SNI support
+
+commit 28aaa653cf681b7bf8500b073f74a255a6fb15eb
+Author: Adam <Adam@anope.org>
+Date:   Tue Apr 7 15:01:57 2015 -0400
+
+    Add SNI support
+
+commit f5331a3df5f06e8ebe389aee7c91a355d5918d7c
+Author: David Leadbeater <dgl@dgl.cx>
+Date:   Tue Apr 7 10:26:28 2015 +0100
+
+    Make sure NO_ACT isn't cleared when -actcolor %n is used
+    
+    Fixes issue #227.
+
+commit be8c3c378ad8deea40973083412be3e7a9def2c1
+Author: Dima Krasner <dima@dimakrasner.com>
+Date:   Tue Apr 7 12:13:45 2015 +0300
+
+    Bug fix - docdir is ignored during installation.
+
+commit ac5aebb91f2743326015d0f790a383767cbf7115
+Merge: 1f87dd3 895ac10
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Mar 1 11:44:28 2015 +0100
+
+    Merge pull request #217 from Lohhari/lastlog-date
+    
+    Added a -date parameter to /lastlog to prepend each row with the ...
+
+commit 7beffbdcc5d9ca7433f6617a652ed0b2feca3677
+Author: Hans Nielsen <hans@stackallocated.com>
+Date:   Tue Feb 24 19:46:59 2015 -0800
+
+    Add help files for proxy module
+
+commit bbf404b6112aac5cde9732d893e440d9bf363565
+Author: Hans Nielsen <hans@stackallocated.com>
+Date:   Mon Dec 15 18:41:45 2014 -0800
+
+    Fix whitespace
+
+commit 178d595c96dafe36a7041864a00e1e45375dab76
+Author: Hans Nielsen <hans@stackallocated.com>
+Date:   Tue Jul 1 21:21:03 2014 -0700
+
+    Add port to proxy client struct for Perl scripts
+
+commit ee3f059e6d895cda94bee0a2df7136108012b910
+Author: Hans Nielsen <hans@stackallocated.com>
+Date:   Wed Jun 25 22:38:03 2014 -0700
+
+    Update proxy documentation with changes
+
+commit 6a28bad81440290e799c4d4985f31bea6493f58b
+Author: Hans Nielsen <hans@stackallocated.com>
+Date:   Wed Jun 25 22:29:05 2014 -0700
+
+    Add boolean toggle for irssiproxy being enabled
+
+commit aaa0f73eac88316978c65fb0f0c8b5d23d1dc100
+Author: Hans Nielsen <hans@stackallocated.com>
+Date:   Tue Jun 24 23:45:35 2014 -0700
+
+    Make proxy messages include more detail and add status command
+
+commit d27c54486f3e5656445b43affd37f17d1338a6ce
+Author: Hans Nielsen <hans@stackallocated.com>
+Date:   Tue Jun 24 23:01:06 2014 -0700
+
+    Change around connection signals in proxy module
+    
+    Change "proxy client connected" to "proxy client connecting" to avoid being confused by clients that have connected but not necessarily authenticated. Emit "proxy client connected" once authenticated, keeping the name for backwards compatibility.
+
+commit 1f87dd361eabf3b161014d8466aaaa466a76300f
+Merge: 8657cd2 6ce8a64
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Feb 21 11:59:59 2015 +0100
+
+    Merge pull request #226 from ailin-nemui/scriptassist
+    
+    Sync from scripts: Fix scriptassist broken on unload
+
+commit 6ce8a64118023f79e715fc7f1e50c5ce1f4bf557
+Author: Ailin Nemui <ailin@linux.site>
+Date:   Fri Feb 20 14:05:58 2015 +0100
+
+    Fix scriptassist broken on unload
+    
+    This is a regression introduced in
+    c5ad61b4b0166f7cb769f23dfece2a5d4e62bd6e where one `defined' statement
+    got removed in error while cleaning up warnings.
+
+commit 8657cd22cfc538275b5a4ebd85406fc5bdf39aca
+Merge: 6b08cbe 8e8bc5f
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Feb 17 11:04:49 2015 +0100
+
+    Merge pull request #225 from dequis/silence-unused-value-warnings
+    
+    Silence unused value warnings in perl binding code
+
+commit ee3eaa5428c7a574ad3d34602230f3168f204414
+Author: Ailin Nemui <ailin@esf51.localdomain>
+Date:   Wed Jan 7 04:12:55 2015 +0100
+
+    fix crash in layout code when encountering wrong config
+
+commit fef25d6a35d23f885937b087ed7642b327279df5
+Author: Ailin Nemui <ailin@linux.site>
+Date:   Tue Feb 17 09:46:52 2015 +0100
+
+    Make the config parser more robust
+    
+    We add some additional checks into the config parser's
+    node_section_index, node_traverse and node_set_str functions. In
+    particular, we check if the requested node is of scalar or complex type
+    and whether this matches the value found in the config. If it does not
+    match, then a warning is issued appropriately and the config is
+    corrected.
+
+commit 1e4f7e63249b0300cac27e725e14a0134260a387
+Author: Ailin Nemui <ailin@linux.site>
+Date:   Tue Feb 17 09:44:33 2015 +0100
+
+    Refuse to load broken configs on irssi start
+    
+    By temporarily raising the fatal log level to critical during irssi
+    start-up, we make it fail when the config file is broken. This is then
+    re-set so that /reload of a broken config file will not crash irssi and
+    just report the errors and gracefully continue instead.
+
+commit af6b789d2a6cadce0b8050f9233cacb1d0595913
+Author: Ailin Nemui <ailin@linux.site>
+Date:   Tue Feb 17 09:41:26 2015 +0100
+
+    Warn the user instead of crashing on wrong config
+    
+    The change introduced in #191 will crash irssi immediately if you
+    accidentally try to /reload certain broken config files. It is enough to
+    warn the user in this case, so we turn g_error into g_critical.
+
+commit 96d4fb9156bcef6fc14dbec43dfa0fcd0226d46f
+Author: Ailin Nemui <ailin@esf51.localdomain>
+Date:   Wed Jan 7 03:40:34 2015 +0100
+
+    add CONFIG_REC to config_node_section* APIs
+    
+    this adds the CONFIG_REC * to the config_node_section and
+    config_node_section_index APIs as they will require access to the config
+    cache later on to make the config parser more robust.
+
+commit 6b08cbe906bc2f13a34aca3195f8808d709c160c
+Merge: 8e64aee 1b3e746
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Feb 17 01:10:38 2015 +0100
+
+    Merge pull request #124 from dgl/git-version
+    
+    Include commit and if the tree is dirty in builds of -head versions
+
+commit 8e64aee42a0692360ef108b11aa035fdd04b0a89
+Merge: dd58bd5 09f23d0
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Mon Feb 16 22:15:04 2015 +0100
+
+    Merge pull request #115 from ailin-nemui/fix-hat-key
+    
+    Make ^ key and Ctrl+^ key usable with /BIND
+
+commit 8e8bc5fdbc4894e87a195caee83c551a0e983275
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Dec 20 19:46:12 2014 -0300
+
+    Silence unused value warnings in perl binding code
+    
+    sed -i 's/hv_store/(void) &/'
+    
+    This only results in a warning in older gcc versions, but that includes
+    the one used in the Travis CI environment by default
+
+commit dd58bd5f7b616dbdd927d7828205b8635d3f76f9
+Merge: e2462b7 b4b4ebf
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Mon Feb 16 17:28:08 2015 +0100
+
+    Merge pull request #218 from mauke/patch-1
+    
+    accept freenode extbans in /ban [#150]
+
+commit 895ac10c4eaa347cf2dbe184fc9480a8f47168ee
+Author: Vesa Pirila <vesa@pirila.fi>
+Date:   Mon Feb 16 09:49:22 2015 +0200
+
+    lastlog.c is a mix of tab and space indentation. My changes now use tabs.
+
+commit b4b4ebfadfb580b76e2a2aee301ae7a61dde775e
+Author: mauke <l.mai@web.de>
+Date:   Sun Feb 8 22:16:01 2015 +0100
+
+    accept freenode extbans in /ban [#150]
+
+commit cd5a571fd8aba12b6b8ddbf54e947ac4cc1e516e
+Author: Vesa Pirila <vesa@pirila.fi>
+Date:   Sun Feb 8 16:58:30 2015 +0200
+
+    Added customization possibility for the lastlog date format, lastlog_date
+
+commit 466166010b751efc622af444e00c33a843c98063
+Author: Vesa Pirila <vesa@pirila.fi>
+Date:   Sun Feb 8 12:39:23 2015 +0200
+
+    Added a -date parameter to /lastlog to prepend each row with the row's date
+
+commit e2462b78399af7ce5339d97b0ae87aa280d608c6
+Merge: 93ef4d0 378cab2
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Sun Feb 1 23:39:15 2015 +0100
+
+    Merge pull request #214 from pierrot14/master
+    
+    Fix comment in default.theme: msgownnick -> ownnick
+
+commit 378cab29f42beb75b6168afdc342ce1b2c21fcdd
+Author: Pablo Martín Báez Echevarría <pab_24n@hotmail.com>
+Date:   Sun Feb 1 20:24:05 2015 -0200
+
+    Fix comment in default.theme: msgownnick -> ownnick
+
+commit 93ef4d0aa676498cbd1218258d72aebd76245720
+Merge: dff7e04 a26a909
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Sun Feb 1 22:51:49 2015 +0100
+
+    Merge pull request #213 from ailin-nemui/patch-1
+    
+    Fix the lastlog help
+
+commit a26a909af0cd7e75af4b7fa5a209301455a33c36
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Feb 1 19:21:59 2015 +0100
+
+    Fix the lastlog help
+    
+    Correct some confusing inaccuracies and document a parameters that got lost on the rewrite.
+
+commit dff7e049b8c4406ea718955a147032196b5b708c
+Merge: 2027e73 7ca9c86
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Sat Jan 31 16:40:18 2015 +0100
+
+    Merge pull request #212 from dequis/lastleg
+    
+    /help lastlog: Clarify usage of -<level> parameter
+
+commit 7ca9c86445daff6232f8b876b27e7d10f9d5be5c
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Jan 31 11:49:01 2015 -0300
+
+    /help lastlog: Clarify usage of -<level> parameter
+
+commit 2027e73977388ec79deeefb63ec2f932443c76f9
+Merge: b1de3c3 4bf9e1f
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Jan 17 23:33:32 2015 +0100
+
+    Merge pull request #204 from KindOne-/master
+    
+    Do not let the ctcp action of an inital query go into the status window.
+
+commit 4bf9e1f16aa1d41407ece0d61148907eae666783
+Author: KindOne <lostinwhatever@outlook.com>
+Date:   Sat Jan 17 08:11:10 2015 -0500
+
+    Do not let the ctcp action of an inital query go into the status window.
+
+commit b1de3c3f38e8ce78f5072d801d362cc69ce3a40e
+Merge: b2fe861 dfc65d9
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Tue Jan 13 19:26:19 2015 +0100
+
+    Merge pull request #202 from incognico/remove-splitlong-pl
+    
+    Remove splitlong.pl, it is enabled natively (#1)
+
+commit dfc65d959e474d1235f894dc3b5631cb7ad48c2c
+Author: Nico R. Wohlgemuth <nico@lifeisabug.com>
+Date:   Tue Jan 13 18:44:16 2015 +0100
+
+    Remove splitlong.pl, it is enabled natively (#1)
+
+commit b2fe8611563c6478fd856f825eb5c5cc3e3f100b
+Merge: 9abdeb8 db62ddf
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Mon Jan 5 01:05:14 2015 +0100
+
+    Merge pull request #191 from dgl/config-error
+    
+    Die if the wrong type of node is found when traversing config
+
+commit 9abdeb8611977e0ab56ce3e30ee9561a7e8cb204
+Merge: 1136ea9 f81a54b
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Mon Jan 5 01:03:58 2015 +0100
+
+    Merge pull request #152 from sebth/master
+    
+    Try to split long lines on spaces
+
+commit 1136ea915a3ba4345d59c2863c83f12e41f72069
+Merge: 89cdcec 77a90ef
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Dec 16 20:41:22 2014 +0100
+
+    Merge pull request #164 from ailin-nemui/fix-ansi-reset
+    
+    Fix reset of attributes with ansi
+
+commit 89cdcecf76ffeaa24761a71399a475830e6bd012
+Merge: cd7a30b d9deafe
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Dec 16 20:39:33 2014 +0100
+
+    Merge pull request #133 from pjcj/master
+    
+    Speed up /reload when there are many ignores.
+
+commit cd7a30bf9ade0e979b47c1b67bf770e13bfe82d6
+Merge: bbf84d4 367d8ef
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Dec 16 20:28:56 2014 +0100
+
+    Merge pull request #189 from dequis/colorless-green-ideas-blink-furiously
+    
+    Fix blinking/bold text in terminals with no color support
+
+commit bbf84d41a48f7e76487d8a4bfd5345fc252c7d9c
+Merge: 1c4495e 9d4ea89
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Dec 16 19:47:23 2014 +0100
+
+    Merge pull request #107 from mmuman/lynx-references
+    
+    Include references when generating FAQ with Lynx
+
+commit 1c4495ec77265dd6c1c2c1fa7c88426fc68f5450
+Merge: 1f2b171 c855fef
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Tue Dec 16 19:44:20 2014 +0100
+
+    Merge pull request #108 from mmuman/buildsystem-cleanup
+    
+    Buildsystem cleanup
+
+commit db62ddfd557799981d779914a5e82473a6b22df8
+Author: David Leadbeater <dgl@dgl.cx>
+Date:   Tue Dec 16 12:14:23 2014 +0000
+
+    Die if the wrong type of node is found when traversing config
+    
+    Fixes issue #187. It's a bit annoying this can't do anything other than
+    exit, however as there's no schema for the config it's only possible to
+    validate on use. This level of config can't be accessed from Perl so a
+    script can't cause Irssi to die (via this method at least).
+
+commit 367d8efc5ffca32ce6a6407fddb5253ed9eab1a4
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Dec 14 18:21:40 2014 -0300
+
+    Fix blinking/bold text in terminals with no color support
+    
+    Before this, doing "TERM=vt100 irssi" showed all text as bold and
+    blinking because of a failed check of window->term->TI_colors that
+    was doing (value & 8) and not expecting a value of 0.
+    
+    The changed lines themselves look a bit weird, but they make more sense
+    in the context of the original commit, 96a292d4.
+
+commit 1f2b17181963d81ef431f8cbb900efdf3369203c
+Merge: 08b390b a057cfe
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Thu Dec 11 23:26:40 2014 +0100
+
+    Merge pull request #92 from ailin-nemui/travis-perlbrew-up
+    
+    test newer perls now available on travis
+
+commit 08b390b11b327f33f77a79816409b595775d4194
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Mon Dec 8 21:28:02 2014 +0100
+
+    Documentation fix for #185
+    
+    Documentation fix for #185
+
+commit dbcfb7060b48a9618d226daaa9fe407dc684ecc5
+Merge: d87c494 8e29a70
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Dec 6 16:12:03 2014 +0100
+
+    Merge pull request #161 from anadrome/patch-1
+    
+    Update old bug URLs
+
+commit d87c494d893e22bb172f9f9e8f2378606b29114a
+Merge: bbd7333 1edfced
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Dec 6 16:11:15 2014 +0100
+
+    Merge pull request #162 from dequis/self-messages
+    
+    Receive 'self messages' in the right query window
+
+commit bbd733392446951f41d04c88cbab9a46ccec31d5
+Merge: c01e026 f285332
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Dec 6 16:09:11 2014 +0100
+
+    Merge pull request #171 from vlajos/typofixes-vlajos-20141108
+    
+    typo fixes - https://github.com/vlajos/misspell_fixer
+
+commit c01e026c73bb0a030e2d104e73db70c1b2795512
+Merge: 8c477f4 86d263d
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Wed Dec 3 16:58:35 2014 +0100
+
+    Merge pull request #178 from guiniol/master
+    
+    Correctly parse unix sockets servers in the config
+
+commit 86d263dd7dd39bbb768284fb6b586d1979a821cd
+Author: Guillaume BROGI <guillaume.brogi@yahoo.com>
+Date:   Wed Dec 3 09:43:24 2014 +0100
+
+    Check for unix sockets when reconnecting
+
+commit 8c477f498a2556a2bd37ac5afacc1fc999ea7153
+Merge: 688fc81 0bba34b
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Wed Nov 26 17:34:31 2014 +0100
+
+    Merge pull request #176 from dequis/ssl-pass-doc-fix
+    
+    Fix -ssl_pass documentation in /server and /connect
+
+commit f0a6e5f82a909b5789dfdfa4928ad3d8c4b078a3
+Author: Guillaume BROGI <guillaume.brogi@yahoo.com>
+Date:   Thu Nov 20 17:01:07 2014 +0100
+
+    Correctly parse unix sockets servers in the config
+
+commit 0bba34bbe9b3510ae71cfb83e686de3d3cfb9376
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Nov 14 03:46:02 2014 -0300
+
+    Fix -ssl_pass documentation in /server and /connect
+    
+    Copied text from 68f8229 (SVN r5231)
+
+commit b03805eeb916712815971ac6bcfffe10cc16711f
+Author: Ailin Nemui <ailin@esf51.localdomain>
+Date:   Tue Nov 4 12:08:27 2014 +0100
+
+    reimplement format and length logic for the entry prompt
+
+commit f285332c5bb98c22952779f6d13664d3b2e3b847
+Author: Veres Lajos <vlajos@gmail.com>
+Date:   Sat Nov 8 22:26:53 2014 +0000
+
+    typo fixes - https://github.com/vlajos/misspell_fixer
+
+commit 77a90effe305a0d39ce33fe187bb2e0c0125da36
+Author: Ailin Nemui <ailin@esf51.localdomain>
+Date:   Tue Oct 28 10:50:26 2014 +0100
+
+    Fix reset of attributes with ansi
+    
+    reported by Christopher Ohlsson (dmnc)
+
+commit 688fc817dd9958f66e3be603dd0ee8ecc97d649d
+Merge: 65a2ff6 3ea2a8d
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Mon Oct 27 12:37:54 2014 +0100
+
+    Merge pull request #163 from lewellyn/patch-1
+    
+    Remove duplicate example from ignore.in
+
+commit 3ea2a8dab8212d5155014a9aa1aee3f2e456cd94
+Author: Matt Lewandowsky <matt@greenviolet.net>
+Date:   Mon Oct 27 03:44:28 2014 -0700
+
+    Remove duplicate example from ignore.in
+    
+    Duplicated line inserted in commit 66f5fb6. Reported by @sharethebug on IRC.
+
+commit 1edfcedda1105d79fa6b92d77a8fb60f296abe1e
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Oct 26 00:12:30 2014 -0300
+
+    Receive 'self messages' in the right query window
+    
+    Original patch by hondza <sedaj2@gmail.com>, from FS#833. I applied
+    several needed style changes, and rebased to current HEAD.
+    
+    This implements the IRCv3.2 self-message extension partially (we can't
+    announce its support through CAP yet). This is also the format used by
+    the 'privmsg' znc module, and is already implemented by several other
+    clients.
+
+commit 8e29a70a82ee3dd02f996a7bd3a86954564c6b4a
+Author: mjn <mjn@anadrome.org>
+Date:   Sat Oct 25 17:00:27 2014 +0200
+
+    Update old bug URLs
+    
+    At some point in the past few years, Flyspray changed its URL scheme from id=nnn to task_id=nnn, which broke some old comments in the source. Update those comments to URLs that still work.
+
+commit 65a2ff645926259f04c2683f742a6f7ad0bbc86d
+Merge: 31ee20e 7938af8
+Author: tomaw <tom@tomaw.net>
+Date:   Mon Oct 20 21:16:36 2014 +0100
+
+    Merge pull request #155 from dgl/server-remove
+    
+    Actually fix the params for /SERVER REMOVE
+
+commit 7938af8092fc5bc682bb9017b87eeb7ce0a2e428
+Author: David Leadbeater <dgl@dgl.cx>
+Date:   Mon Oct 20 21:11:20 2014 +0100
+
+    Actually fix the params for /SERVER REMOVE
+
+commit f81a54b937b16ebabc05a01d3053a49b3341ac8c
+Author: Sebastian Thorarensen <sebth@naju.se>
+Date:   Sat Oct 11 18:47:39 2014 +0200
+
+    Try to split long lines on spaces
+    
+    Try to split long lines on spaces to avoid words being splitted. This
+    can be turned off with the option `split_line_on_space'. The code
+    assumes that the terminal encoding has ASCII spaces.
+
+commit 31ee20e559bea19ed77376c4758e44c457eb9fb4
+Merge: 136efda 7847bdf
+Author: Geert Hauwaerts <geert@hauwaerts.be>
+Date:   Thu Oct 16 09:27:06 2014 +0200
+
+    Merge pull request #153 from dequis/help-server-remove-fix
+    
+    Tiny fix to the param order in the /SERVER REMOVE help
+
+commit 7847bdf67cab8579679d830787929468cbc45139
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Oct 15 23:52:55 2014 -0300
+
+    Tiny fix to the param order in the /SERVER REMOVE help
+
+commit 136efda1bc54a49c89bbb3967d55b735e2788f72
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Wed Oct 15 20:14:17 2014 +0200
+
+    Add NEWS entry on SSLv3
+
+commit 8bd575df2ec0d4a17b6f59116d555b64f5bb1312
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Wed Oct 15 10:00:30 2014 +0200
+
+    Disable SSLv3
+
+commit 971b1e57ab762fce967f15c28e7b6e6a826a0188
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Oct 11 12:16:43 2014 +0200
+
+    Add header for v0.8.18-head
+
+commit 10078407f6cab2e25e35be37dba903d91126f561
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Oct 11 12:13:22 2014 +0200
+
+    Remove unnecessary NULL check
+    
+    Fixes: #135
+
+commit 3f50b8f2ad7e9a10aab1ff88c58141563c4dd68a
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sat Oct 11 11:12:43 2014 +0200
+
+    HEAD's now 0.8.18-head.
+
 commit df1df75ca2cc461360e336ce83052366002b1b8a
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Oct 11 10:44:46 2014 +0200
@@ -104,6 +3088,22 @@ Date:   Mon Aug 25 14:50:41 2014 +0200
     
     Now properly sends "gui print text after finished" signal when using
     the printtext_after API that was fixed after 0.8.16
+
+commit d9deafe57ccf2fc2191f48c989859e87b7daab06
+Author: Paul Johnson <paul@pjcj.net>
+Date:   Sat Aug 23 21:08:17 2014 +0200
+
+    Speed up /reload when there are many ignores.
+    
+    With many ignores (a few thousand) /reload could take so long that connections
+    were dropped.  The problem is that nickmatch_rebuild() was being called for
+    every ignore.  The easy solution is to only call it once at the end.
+
+commit 1b3e74645af996a3ec46a72bfb098f1506515f8a
+Author: David Leadbeater <dgl@dgl.cx>
+Date:   Sat Aug 9 12:05:28 2014 +0100
+
+    Include commit and if the tree is dirty in builds of -head versions
 
 commit d40c0704f0bc5df3ac3b0ae7dcbfbf5f83a8f840
 Merge: 2346d3b 836d386
@@ -227,6 +3227,12 @@ Date:   Wed Jul 30 22:21:37 2014 +0200
     
     Removed the default autojoin channels.
 
+commit a057cfecf7687caa658ed1be240c22f81a2f27a5
+Author: Ailin Nemui <ailin@esf51.localdomain>
+Date:   Wed Jul 9 22:05:52 2014 +0200
+
+    test newer perls now available on travis
+
 commit 822db3090f8c144833459cb7d3ed9e0422749f5e
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Jul 30 14:29:06 2014 +0200
@@ -243,6 +3249,23 @@ Date:   Wed Jul 30 13:02:26 2014 +0200
     
     Removed the obsolete SQUERY and SERVLIST commands.
 
+commit 09f23d06b5262c53b65fa04d4f83cfd170d919c5
+Author: Ailin Nemui <ailin@esf51.localdomain>
+Date:   Mon Jul 28 13:58:13 2014 +0200
+
+    Modify escape of ^ key so it can be used as well as Ctrl+^
+    
+    Fixes FS#721
+    
+    This makes Ctrl+^ and ^ bindable again as different keys. We do this
+    by escaping single `^` as `^-`, which is not a valid control character
+    (unlike `^^`)
+    
+    The original approach suggested in FS#721 is insufficient, it will
+    break bindings such as `meta-^` because Irssi is convinced that `^`
+    introduces a Control-key ("key combo") so it is waiting for what may
+    follow.
+
 commit cb6266f212e35c4ebe954f89cdd0230cf6ec3aba
 Author: tomaw <tom@tomaw.net>
 Date:   Fri Jul 25 17:05:19 2014 +0100
@@ -257,6 +3280,17 @@ Date:   Thu Jul 24 21:52:01 2014 +0200
     Merge pull request #111 from ailin-nemui/colour-break
     
     fix colour 0 again
+
+commit 9d4ea891b91b6cf514a3c70dc68a22feafb17d8d
+Author: François Revol <revol@free.fr>
+Date:   Tue Jul 22 01:38:13 2014 +0200
+
+    Also try links for docs generation
+    
+    Haiku has links (links2) but not elinks.
+    
+    Links doesn't seem to generate references however,
+    but it's the 2nd fallback so it's better than nothing.
 
 commit 07e37c23297201f1584c00233a54ed2a2ab50ad5
 Author: Ailin Nemui <ailin@esf51.localdomain>
@@ -308,6 +3342,67 @@ Date:   Tue Jul 22 22:03:46 2014 -0400
     
     Fix proposed by ailin-nemui, built and tested on Debian Jessie using
     0.8.15 source, tested by GeertHauwaerts as well.
+
+commit c855fef06405e720cb1ceea98665af74136b61ef
+Author: François Revol <revol@free.fr>
+Date:   Tue Jul 22 23:14:12 2014 +0200
+
+    Drop AC_ISC_POSIX which is obsolete
+    
+    It's actually a NOOP in latest autoconf.
+    
+    cf.
+    https://www.gnu.org/software/autoconf/manual/autoconf-2.69/html_node/Obsolete-Macros.html#index-AC_005fISC_005fPOSIX-2084
+
+commit 1f9ad64ee559b05463c09796ef20b4dbe0daa37d
+Author: François Revol <revol@free.fr>
+Date:   Tue Jul 22 22:36:49 2014 +0200
+
+    Simplify socklen_t type detection
+    
+    The previous version of AC_CHECK_TYPE() which didn't accept passing headers
+    is obsolete anyway. The new one can be told which headers to include.
+    
+    Also test for sys/socket.h just for sanity.
+    
+    cf.
+    https://www.gnu.org/software/autoconf/manual/autoconf-2.69/html_node/Obsolete-Macros.html
+    https://www.gnu.org/software/autoconf/manual/autoconf-2.64/html_node/Generic-Types.html
+    https://svn.opendnssec.org/home/jerry/memory-usage/ldns-1.6.10/acx_nlnetlabs.m4
+
+commit 9af3df4e9d1ecfc070fe79d0cd20e035986b33b2
+Author: François Revol <revol@free.fr>
+Date:   Tue Jul 22 21:59:31 2014 +0200
+
+    Simplify network libraries detection with AC_SEARCH_LIBS
+    
+    AC_SEARCH_LIBS first tries to link without any lib, then tries each
+    library, and sets $LIBS correctly in any case.
+    
+    cf.
+    https://www.flameeyes.eu/autotools-mythbuster/autoconf/finding.html
+
+commit 103b0e22eb7a463ee22398132449a05de96cada3
+Author: François Revol <revol@free.fr>
+Date:   Tue Jul 22 19:58:51 2014 +0200
+
+    Force default locale when calling lynx
+    
+    Else it ends up saying "Références" or other translation for the word.
+    
+    Might want to do the same for elinks...
+
+commit 7099ae0466a6003f789393f3494c28980ddb0103
+Author: François Revol <revol@free.fr>
+Date:   Tue Jul 22 19:55:44 2014 +0200
+
+    Disable -nolinks for lynx-generated text FAQ
+    
+    This way lynx also emits URLs for references at the bottom,
+    like elinks does.
+    
+    The formating is a little different though (word wrapping),
+    and elinks adds a "Visible links" line as well.
 
 commit 5ddf127f6d5e32450ce4db10d756f924cdbc946b
 Merge: 6e68b83 8e062b7
@@ -1255,6 +4350,16 @@ Author: David Leadbeater <dgl@dgl.cx>
 Date:   Sun Jun 29 22:01:05 2014 +0100
 
     Make it more obvious if -pattern wasn't provided to a regexp /ignore
+
+commit ccc64c0050478dc0567ce9bb22dc75d541f8477e
+Author: Ailin Nemui <ailin@esf51.localdomain>
+Date:   Thu Jun 26 10:26:59 2014 +0200
+
+    forward alternate_nick to Irc::Server attributes
+    
+    add the missing alternate_nick in Irc::Server by making an additional
+    call to the Irc::Connect filler. this is not quite ideal but might
+    need bigger refactoring otherwise.
 
 commit 2d4edc51877719c49d712271967313310f4796fb
 Author: Tom Feist <shabble@metavore.org>
