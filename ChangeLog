@@ -1,3 +1,93 @@
+commit 13f4026ae0f0d5422f3163576d4c2eff8754176a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 14 13:55:20 2016 +0200
+
+    tag as 0.8.20
+
+commit 9de7a9b3284b06631a47609a83e608cfe0541de1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 14 13:44:51 2016 +0200
+
+    Merge branch 'quarkslab'
+
+commit 52fedeaf0229e27f9d86b72b23f16120c92c1fea
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 14 13:34:39 2016 +0200
+
+    Update NEWS for 0.8.20
+
+commit 7455ad51d43ad925a613ff90e3b6d3c866b2fe7b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Apr 30 10:19:57 2016 +0200
+
+    Merge pull request #477 from dennisschagt/master
+    
+    Correct error/typo "You"->"Your" in help message
+
+commit 2c5856d832c9cc7f2a995e9017b4436d752c68c3
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Apr 7 12:33:03 2016 +0200
+
+    Merge pull request #467 from dequis/EAI_SYSTEM
+    
+    net_gethosterror: Handle EAI_SYSTEM ("System error") properly
+
+commit 8cbf5f28f2028fd6fc58232c76f67ab574ecab11
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 29 22:45:47 2016 +0200
+
+    Merge pull request #461 from ailin-nemui/fix_squery
+    
+    Revert "Removed the obsolete SQUERY and SERVLIST commands"
+
+commit e68817f82bc9dde71bb28975cee7ed70cc98ff30
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jul 12 16:11:04 2016 +0200
+
+    Merge pull request #515 from LemonBoy/signal-proto
+    
+    Correct the prototype for the 'message private' signal.
+
+commit 6b212be112e33a536d08f31abf186a699ee8da51
+Author: dx <dx@dxzone.com.ar>
+Date:   Sun Jul 17 12:37:57 2016 -0300
+
+    Merge pull request #518 from vague666/hilight_help
+    
+    Wrong order in the arguments in /hilight example, -mask doesn't take …
+
+commit 3c29b4440841e867fe804ec5351884d90d9d8bcf
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Aug 25 04:24:07 2016 +0200
+
+    Merge pull request #529 from ailin-nemui/issue500
+    
+    fix nick->host == NULL crash
+
+commit 31c0a9d7e8368e8cfa10356bd9dbc1f9024d9c70
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Sun Sep 4 12:11:02 2016 +0200
+
+    Merge pull request #533 from dequis/statusmess
+    
+    Set the default STATUSMSG to @ instead of @+ if it's missing
+
+commit 750e3249038409607b0a57d21e21612e546539ed
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jun 1 22:56:26 2016 +0200
+
+    Merge pull request #484 from LemonBoy/sasl-misc-adj
+    
+    Correct the name of the emitted signal.
+
+commit 97e9347ee704bdcd790002f2629cf6cea3e2bf40
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jun 7 02:47:57 2016 +0200
+
+    Merge pull request #485 from ailin-nemui/bdo826525
+    
+    Do not crash on OPTCHAN when item has no server
+
 commit c43831574187cdb2323d123702aa687af24664d8
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Mar 23 00:08:24 2016 +0100
@@ -2130,7 +2220,7 @@ Date:   Sun Jun 14 10:42:41 2015 -0300
     Merge branch 'master' into irssiproxy
     
     Conflicts:
-    	src/irc/proxy/listen.c
+            src/irc/proxy/listen.c
 
 commit 6fcafc599350737d0d14f3c863af594efc391124
 Author: Geert Hauwaerts <geert@hauwaerts.be>
