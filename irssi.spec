@@ -4,7 +4,7 @@
 #
 Name     : irssi
 Version  : 0.8.20
-Release  : 5
+Release  : 6
 URL      : https://github.com/irssi-import/irssi/releases/download/0.8.20/irssi-0.8.20.tar.gz
 Source0  : https://github.com/irssi-import/irssi/releases/download/0.8.20/irssi-0.8.20.tar.gz
 Summary  : No detailed summary available
