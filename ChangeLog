@@ -1,3 +1,865 @@
+commit ea7826b0ec097b9fdc29336ff7fe7074052773f5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 3 16:41:41 2017 +0100
+
+    tag as 1.0.0
+
+commit fdd870695ba9711800d90c7f025733654a8f8620
+Merge: f852ccae 33107be7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 5 13:07:30 2017 +0100
+
+    Merge branch 'gregex-gerror'
+
+commit 33107be74888ea08411904193f2832fcc7747692
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 3 17:04:24 2017 +0100
+
+    fix GRegex GError problem
+
+commit f852ccae6855e6d2bc8952aa1d081b3fc65f9ec8
+Merge: 78ba0598 a96b1e43
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 3 14:39:10 2017 +0100
+
+    Merge branch 'integrate/0.8.21'
+
+commit a96b1e4328e910582e39b4519fbb9bb8d976888c
+Merge: 78ba0598 7cac3541
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 3 14:38:02 2017 +0100
+
+    Merge tag '0.8.21' into integrate/0.8.21
+
+commit 7cac354161a8914712264408347a9a2882aab22f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 3 14:24:55 2017 +0100
+
+    tag as 0.8.21
+
+commit 6c6c42e3d1b49d90aacc0b67f8540471cae02a1d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 3 13:44:58 2017 +0100
+
+    Merge branch 'security' into 'master'
+    
+    See merge request !7
+
+commit 78ba05985d8fed883a8b26ffef4878acdae58fff
+Merge: 01163710 7a112e02
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 3 13:44:58 2017 +0100
+
+    Merge branch 'security' into 'master'
+    
+    See merge request !7
+
+commit 7a112e021724af582a06eed8f92fafb772438c13
+Merge: 1b99299e 01163710
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Mon Jan 2 17:03:31 2017 +0000
+
+    Merge branch 'master' into 'security'
+    
+    Sync to master
+    
+    See merge request !6
+
+commit 01163710e71318c6c2fd3f797f6b878f92b7f97b
+Merge: 5787e2b4 9151f871
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 3 12:45:50 2017 +0100
+
+    Merge pull request #585 from ailin-nemui/win_seq
+    
+    g_sequence backing for window list
+
+commit 5787e2b4befb61585fc312843bd7a5efd0101dce
+Merge: 91f48c6f 1f72b8e6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 3 12:45:27 2017 +0100
+
+    Merge pull request #412 from LemonBoy/pcre-regexp
+    
+    Use GLib's regexp interface (backed by PCRE)
+
+commit 1f72b8e66a06b484dde20b6031c766a2129e0bd2
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Tue Jan 3 12:29:52 2017 +0100
+
+    up abi version
+
+commit f5cbbebc2ee858e8792ab40eea6abc9fd7865a28
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Tue Jan 3 12:04:56 2017 +0100
+
+    switch for gregex and regex.h
+
+commit 1b99299ed2af2ae459edbeb96f2a7b7886cc22c9
+Merge: 124bcd48 7dc2f832
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Mon Jan 2 17:01:47 2017 +0000
+
+    Merge branch 'percent_flag' into 'security'
+    
+    fix %[
+    
+    See merge request !5
+
+commit 124bcd48048762de9d17ff4f46df1cbfda9c1fb5
+Merge: c3cca5ec 77aab790
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Mon Jan 2 17:01:29 2017 +0000
+
+    Merge branch '4-use-after-free-when-receiving-numeric-432-invalid-nick' into 'security'
+    
+    avoid server_disconnect
+    
+    See merge request !4
+
+commit c3cca5ecf3bd86da5056b8d706a300422e59594b
+Merge: 24d2d039 508d2e08
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Mon Jan 2 17:01:05 2017 +0000
+
+    Merge branch '1-null-pointer-dereference-in-irc_nickcmp_rfc1459' into 'security'
+    
+    bail out if nick is NULL
+    
+    See merge request !3
+
+commit 24d2d039b5bed6e42727784a15e67094dde69b1c
+Merge: 7daa7a6a 8007e9e6
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Mon Jan 2 17:00:44 2017 +0000
+
+    Merge branch '3-out-of-bounds-read-with-invalid-utf8-in-term_addstr' into 'security'
+    
+    Fix oob read on invalid utf8 in term_addstr
+    
+    See merge request !2
+
+commit 7daa7a6aa95fc80bc82b5de60d11d03483289400
+Merge: 1c669510 7b856d62
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Mon Jan 2 17:00:15 2017 +0000
+
+    Merge branch '2-out-of-bounds-read-of-one-byte-with-x1b-48-in-truecolor-builds' into 'security'
+    
+    check for end of string in ansi 48
+    
+    See merge request !1
+
+commit 5dcf291f2144564363f734dba15760d3a82b61c2
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Jun 23 13:25:23 2016 +0200
+
+    Use the RAW flag when building the regexps.
+    
+    Also, plugged a memory leak when retrieving the match position.
+
+commit 5eaead761f1812fb9d4058b2bc38468521794693
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 19 21:08:25 2016 +0200
+
+    Rebase against master.
+
+commit 3fcd3cd2b9fae07a0b7cd3e5ba91049f19cc6501
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Jan 29 16:22:14 2016 +0100
+
+    Remove the regexp_compiled field.
+    
+    It was made redundant by the introduction of the pointer to the GRegex
+    structure.
+    Silence the compiler warning in textbuffer.c about preg being
+    initialized by setting it to NULL.
+
+commit b5a727c87cf7db944ade9c6714385f1e8598d37e
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Jan 29 16:08:40 2016 +0100
+
+    Remove unused references to regex.h
+    
+    Also remove the prototype for regex_match since it has been removed.
+
+commit 8e5db471e4d8b052f072ce8a351222c6edb42d19
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Jan 14 14:10:00 2016 +0100
+
+    Use GLib's regexp interface (backed by PCRE)
+
+commit 91f48c6f0e03e53c0968a5433d672ea966006e59
+Merge: 29ad8bae 0d6add02
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 2 14:44:07 2017 +0100
+
+    Merge pull request #586 from LemonBoy/fix-580
+    
+    Process the nick changes in queries before the PRIVMSG is handled.
+
+commit 29ad8baedcf79a9ab50c2d118750969031a35042
+Merge: ae48e493 0a46a166
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 2 14:39:30 2017 +0100
+
+    Merge pull request #593 from LemonBoy/crown
+    
+    Welcome TheLemonMan on board
+
+commit ae48e493506018d4545e0d8de69588bc4bba12f0
+Merge: 77ff8f5b 7e22d051
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 2 14:39:01 2017 +0100
+
+    Merge pull request #594 from LemonBoy/sasl_fail_fix
+    
+    Make sure SASL was actually requested before failing.
+
+commit 7e22d051ae699467575d1feeec6d8e2e2f16721f
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Dec 23 17:59:55 2016 +0100
+
+    Make sure SASL was actually requested before failing.
+
+commit 0a46a1664ab2d5c914ab378d56e0d22825f06522
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Dec 22 15:38:43 2016 +0100
+
+    Add myself to the core team members
+
+commit 77ff8f5b7467dceb2e2f90e0e0aa5157cbb909ec
+Merge: 07050e2a 7a7f6abc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 21 15:29:26 2016 +0100
+
+    Merge pull request #514 from LemonBoy/sasl_fail
+    
+    Add an option to stop the connection when SASL fails.
+
+commit 07050e2a3cca9688dde42a38ba4f76b02e7eed8c
+Merge: 1c669510 59242cb5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Dec 21 15:28:17 2016 +0100
+
+    Merge pull request #587 from ailin-nemui/sbar_crash
+    
+    add assertion to statusbar_read_group
+
+commit 9151f87145e6c9ea40192e0e7c8266eacaaa335f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 20 21:40:18 2016 +0100
+
+    remove some for loops
+
+commit 9a018a782c40ed9da88ae88a7f1c01265f3342de
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 20 21:36:56 2016 +0100
+
+    sort windows_seq helpers to top
+
+commit 03f5dc63fee7c60bb5d5c29698c975073e365b88
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 20 21:33:51 2016 +0100
+
+    nits
+
+commit 9004265e5417c509e55c5141d5880ebd1e1c3281
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 20 21:01:16 2016 +0100
+
+    clean up window_refnum_{prev,next}
+
+commit 7dc2f832c19d8b5c682f5c9abd106ab6be53bf62
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 20 16:41:57 2016 +0100
+
+    fix %[
+
+commit 2f59fe206233c0f45256e9e541c121f4d63385dd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Dec 19 22:03:46 2016 +0100
+
+    add some sequence helper functions
+
+commit 8007e9e61d67044a6b29a266300a936e4c86fdd9
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Mon Dec 19 09:31:38 2016 -0500
+
+    Fix oob read on invalid utf8 in term_addstr
+
+commit 508d2e0860992d6906b5a7b73017edbaa8c94d98
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Dec 19 16:06:13 2016 +0100
+
+    bail out if nick is NULL in irc_query_find
+    
+    Closes #1
+
+commit 77aab7905791823f6ce2c19b4aaacd4231324841
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Dec 19 21:16:37 2016 +0100
+
+    avoid server_disconnect
+    
+    Closes #4
+
+commit 7a7f6abc168b571a0db4fa65c760fe6e46edf199
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Dec 15 22:41:57 2016 +0100
+
+    Prevent a UaF by calling server_disconnect in a signal handler.
+
+commit 1c6695107c09e8861a696d66b029e7df62589fcd
+Merge: 618c8bd1 17e42649
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Thu Dec 15 19:57:57 2016 +0100
+
+    Merge pull request #588 from ailin-nemui/mirc_99
+    
+    reset background for mirc colour 99
+
+commit 0d6add02cf1a1e0dc3905a482d259a8851b4939c
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Dec 15 15:22:30 2016 +0100
+
+    Process the nick changes in queries before the PRIVMSG is handled.
+    
+    Otherwise we end up with the message in the status window since the
+    frontend knows jack shit about the casemapping option when it tries to
+    find the associated window for the query.
+
+commit 7b856d628bfd6c775dfaee2138a3542ee13b1960
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Dec 15 18:01:26 2016 +0100
+
+    check for end of string in ansi 48
+
+commit 17e42649bb514fa0e12e094032cb27e3289204c6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Dec 15 17:06:40 2016 +0100
+
+    reset background for mirc colour 99
+    
+    fix #571
+
+commit 59242cb595716bf34966ee71aca81e0c9a2a5284
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Dec 15 16:59:38 2016 +0100
+
+    add assertion to statusbar_read_group
+    
+    fix #564
+
+commit 365097319f2bf57d7d01c2c4c912fca124fbedf9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 13 03:04:01 2016 +0100
+
+    manually redraw the activity list on expose only
+    
+    might speed up /foreach query /unquery
+
+commit 560283ba4e4d355daa32dc970021845260d2dca9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Dec 12 21:07:56 2016 +0100
+
+    g_sequence backing for window list
+
+commit 4ccffd85ffd06325687546f78b78e3e7fce575c5
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Oct 20 21:41:36 2016 +0200
+
+    Expose 'sasl_success' to the perl side.
+
+commit 91c9e871c78e203aed834edd1e1f558680a6ccfa
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Jul 12 13:59:46 2016 +0200
+
+    Add an option to stop the connection when SASL fails.
+
+commit 618c8bd10e45b3132d356e2f6bec290a63b8a9fa
+Merge: 964f423f 7fb84b5b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Dec 8 12:29:52 2016 +0100
+
+    Merge pull request #581 from LemonBoy/set-contract
+    
+    Enforce the is_node_list contract in lib-config setters.
+
+commit 964f423fed72914fdfc1aed9993a5c63894592bb
+Merge: 955cf622 c98f5f23
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Dec 8 12:11:59 2016 +0100
+
+    Merge pull request #570 from josephbisch/fix-issue-563
+    
+    enforce check that chatnets are nodelists to handle invalid config
+
+commit 7fb84b5b7d471d62333a94bc0d6e5032ede7c2c7
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Nov 29 23:08:45 2016 +0100
+
+    Enforce the is_node_list contract in lib-config setters.
+    
+    An assertion failure is better than a segfault.
+
+commit 955cf622a558022fbd952e07b7462206743562e8
+Merge: 5efb3077 0d7b3877
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Tue Nov 29 22:26:45 2016 +0100
+
+    Merge pull request #579 from mmuman/haiku-libnetwork
+    
+    Check for socket() in libnetwork for Haiku
+
+commit 5efb3077d5c055475644dac8c5e0aa48b308d456
+Merge: 22ce6637 6a6196ee
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Tue Nov 29 22:13:53 2016 +0100
+
+    Merge pull request #565 from ahf/bug/524
+    
+    Kill bell_beeps.
+
+commit 0d7b3877e46cda8e960cab30397f15003e9c7527
+Author: François Revol <revol@free.fr>
+Date:   Tue Jul 22 01:39:16 2014 +0200
+
+    Check for socket() in libnetwork for Haiku
+
+commit 22ce6637c7acbdda27395521cc7dce23fa98b8b9
+Merge: 1c0f048d 5f0e755a
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Fri Nov 25 21:52:42 2016 +0100
+
+    Merge pull request #577 from LemonBoy/flagz
+    
+    Minor corrections to the netsplit code.
+
+commit 1c0f048d2cc0184105f6e2fff835be7efa633a7b
+Merge: 1aff5c2c dcffa98d
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Fri Nov 25 21:52:30 2016 +0100
+
+    Merge pull request #578 from ailin-nemui/dcc_buffer
+    
+    add a static buffer for dcc received data
+
+commit 5f0e755a00c7cb0e85e167cd455bb3ce16b4d14b
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Nov 23 22:22:37 2016 +0100
+
+    Don't shadow the 'channel' variable when printing the netjoins.
+    
+    This is the root cause of #567
+
+commit dcffa98d4629ee1810900d0dde1234050e68d39e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Nov 23 16:23:35 2016 +0100
+
+    add a static buffer for dcc received data
+    
+    increased buffersize might make irssi freeze less / #159
+
+commit 7574bed26c98069945b3fbc3938819c10e65b045
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Nov 23 16:11:38 2016 +0100
+
+    Minor corrections to the netsplit code.
+
+commit 1aff5c2c97b452ffdb5c59cf62f29048731b9f40
+Merge: c1a28770 4cbf279d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Nov 11 12:18:35 2016 +0100
+
+    Merge pull request #574 from lotheac/master
+    
+    add completion_empty_line setting
+
+commit 4cbf279d88248d600d22b8cff474a9dc4a455b31
+Author: Lauri Tirkkonen <lotheac@iki.fi>
+Date:   Tue Nov 8 16:27:38 2016 +0200
+
+    add completion_empty_line setting
+
+commit c1a28770fb92e26bae3a37b4b6069e8c59e6390c
+Merge: 1652c8a5 43934ae9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Nov 2 13:24:21 2016 +0100
+
+    Merge pull request #573 from ailin-nemui/master
+    
+    add missing inheritance to Exec item from 3532fc46
+
+commit 43934ae9ad00d911a0347360479f15946344ffad
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Nov 1 17:08:28 2016 +0100
+
+    add missing inheritance to Exec item from 3532fc46
+
+commit 1652c8a561486c630e573002af7d43a34915c871
+Merge: fb78787d bc4e2c9a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Oct 31 15:15:45 2016 +0100
+
+    Merge pull request #557 from irssi/ahf/tls-pr
+    
+    TLS enhancements
+
+commit c98f5f23ea6c711898288779d1d1670b81770317
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Thu Oct 27 11:18:37 2016 -0400
+
+    enforce check that chatnets are nodelists to handle invalid config
+
+commit 6a6196eebe791e193d5f625c0a87f381b4100f30
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 23 21:23:52 2016 +0200
+
+    Kill bell_beeps.
+    
+    Fixes #524
+
+commit bc4e2c9ade41182ff643a94bbcb72ffe86b0e67c
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 23 02:51:08 2016 +0200
+
+    Shorten the certificate chain output.
+
+commit 322625b5487527420cae0a6a1c0da8ecdc87fd4b
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Oct 21 17:58:28 2016 +0200
+
+    Only do checks for SSL_get_server_tmp_key in network-openssl.c.
+
+commit 0a6e66f8b794de76bd48bda199977b977a377e2e
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Oct 21 17:56:29 2016 +0200
+
+    Kill do { ... } while (0); and replace it with goto's.
+
+commit d501a54f4f256d55ae0a3cd5272d5bb8a42daee3
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Oct 21 01:22:09 2016 +0200
+
+    Emit the TLS handshake finished signal before we do verification.
+    
+    This patch moves the emitted "tls handshake finished" signal to before
+    we do validation of the given TLS certificate. This ensures that we
+    display certificate information before we possibly error out and
+    disconnects from the server.
+
+commit 5a04430998ada5ae800aa0a88638206de51287ca
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Fri Oct 21 01:17:35 2016 +0200
+
+    Kill support for DANE.
+    
+    This patch removes support for DANE validation of TLS certificates.
+    
+    There wasn't enough support in the IRC community to push for this on the
+    majority of bigger IRC networks. If you believe this should be
+    reintroduced into irssi, then please come up with an implementation that
+    does not rely on the libval library. It is causing a lot of troubles for
+    our downstream maintainers.
+
+commit f533baa191428b3cbdbba151d575b69e3a783f68
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Wed Oct 19 23:38:21 2016 +0200
+
+    Lift EC_KEY declaration onto the entry of the function.
+
+commit 25824e2d3fb42def5efbb59ff34a51e31af04ec8
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Wed Oct 19 23:37:04 2016 +0200
+
+    Lift ASN1_STRING declaration onto the entry of the function.
+
+commit 4e170c52335d06456aba65b46842aa98f8aabe7b
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 15:18:47 2016 +0200
+
+    Declare variables in the beginning of the function.
+
+commit 53d772e48b16e34a82bd9b051f02252f900bb8ef
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 15:04:55 2016 +0200
+
+    Make sure we clean-up after ourself upon failure.
+
+commit 5146ce96318bc9a2513d104ea76ab3277a540074
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 14:39:00 2016 +0200
+
+    Add x509 certificate and public key pinning support.
+    
+    This patch adds two new options to /CONNECT and /SERVER to let the user
+    pin either an x509 certificate and/or the public key of a given server.
+    
+    It is possible to fetch the certificate outside of Irssi itself to
+    verify the checksum. To fetch the certificate call:
+    
+        $ openssl s_client -connect chat.freenode.net:6697 < /dev/null 2>/dev/null | \
+          openssl x509 > freenode.cert
+    
+    This will download chat.freenode.net:6697's TLS certificate and put it into the
+    file freenode.cert.
+    
+    -tls_pinned_cert
+    ----------------
+    
+    This option allows you to specify the SHA-256 hash of the x509
+    certificate. When succesfully connected to the server, irssi will verify
+    that the given server certificate matches the pin set by the user.
+    
+    The SHA-256 hash of a given certificate can be verified outside of irssi
+    using the OpenSSL command line tool:
+    
+        $ openssl x509 -in freenode.cert -fingerprint -sha256 -noout
+    
+    -tls_pinned_pubkey
+    ------------------
+    
+    This option allows you to specify the SHA-256 hash of the subject public key
+    information section of the server certificate. This section contains both the
+    cryptographic parameters for the public key, but also information about the
+    algorithm used together with the public key parameters.
+    
+    When succesfully connected to the server, irssi will verify that the
+    given public key matches the pin set by the user.
+    
+    The SHA-256 hash of a public key can be verified outside of irssi using
+    the OpenSSL command line tool:
+    
+        $ openssl x509 -in freenode.cert -pubkey -noout | \
+          openssl pkey -pubin -outform der | \
+          openssl dgst -sha256 -c | \
+          tr a-z A-Z
+    
+    It is possible to specify both -tls_pinned_cert and -tls_pinned_pubkey
+    together.
+
+commit c6c2e795376e4659810360deaa3dd28475d0f7c7
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 14:33:25 2016 +0200
+
+    Display TLS connection information when connected to a TLS enabled server.
+
+commit 1d101afe0d5e552f08bf87bcc242bcaf2db972f7
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 14:25:19 2016 +0200
+
+    s/SSL/TLS/ for warning strings.
+
+commit 13f75d49e05b4e29104ef52ee1742564c7eed8df
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 14:15:29 2016 +0200
+
+    Simplify TLS verification error handling.
+
+commit b630fd1703ef3a87060bb6d2acbc562b9c1c9081
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 14:14:07 2016 +0200
+
+    Populate and emit TLS_REC after TLS handshake have completed.
+
+commit 99d017720dd162122754bfbedc96744f4af8ce6c
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 14:07:22 2016 +0200
+
+    Add TLS_REC.
+    
+    This patch adds the TLS_REC structure. This structure is used to emit
+    information about the TLS handshake from the core of irssi to the
+    front-end layers such that we can display connection information to the
+    user.
+
+commit 6a286a4eb284cda4dce9ed97fec2aca643a139b0
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 13:48:43 2016 +0200
+
+    Use TLS by default for Freenode, IRC6, OFTC, EsperNet, EFnet, and Rizon.
+
+commit 2be7289085d6969e6774ce3909f0224b1d689f93
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 13:46:58 2016 +0200
+
+    Rename SSL to TLS.
+    
+    This patch changes the internal name of SSL to TLS. We also add -tls_*
+    options to /CONNECT and /SERVER, but make sure that the -ssl_* versions
+    of the commands continue to work like before.
+
+commit da67d3e8e69eb5fb702a3dd39356d38a1ee9d8cd
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 13:20:14 2016 +0200
+
+    Add function to convert a buffer to a colon-delimited hex string.
+    
+    This patch adds binary_to_hex(), which can take an input buffer and
+    convert it to colon-delimited hex strings suitable for printing for
+    fingerprints.
+
+commit 6300dfec71d376c96351708f76a6c4ee4a187eb5
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Oct 16 13:13:02 2016 +0200
+
+    Always build irssi with TLS support.
+    
+    This patch removes the optional checks for whether to build irssi with
+    TLS support or not. This will allow us to ship a default configuration
+    file where we connect to TLS enabled IRC servers out of the box.
+
+commit fb78787d4e2098612979b45df3237b67effbbc3a
+Merge: 61590f31 d02ef83d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Oct 12 09:48:09 2016 +0200
+
+    Merge pull request #556 from koollman/master
+    
+    update INSTALL requirement: terminfo or ncurses for text frontend
+
+commit 61590f31df3c93d04b056fd89c6632f9d89feb51
+Merge: 0fce47a5 c0f66c95
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Oct 11 16:12:35 2016 +0200
+
+    Merge pull request #465 from LemonBoy/netsplit-print
+    
+    Some small adjustments to the netsplit code.
+
+commit 0fce47a5ad29a31400b01a80be45aa6da9d221b3
+Merge: 8d4d313c 3667fd9f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 7 12:56:12 2016 +0200
+
+    Merge pull request #555 from LemonBoy/attr-signedness
+    
+    Make the cap_complete field unsigned.
+
+commit d02ef83d03d8ef1c8bd577ef3bbb8325ed3ca8d3
+Author: Thomas Samson <tsamson@advanced-schema.com>
+Date:   Wed Oct 5 01:01:25 2016 +0200
+
+    update INSTALL requirement: terminfo or ncurses for text frontend
+
+commit 3667fd9fd1decef637ef28fdc8d89fe3595e009a
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Sep 30 19:30:43 2016 +0200
+
+    Make the cap_complete field unsigned.
+    
+    Fixes a problem where the field would end up as a negative number when
+    exposed to the perl scripts.
+    And move it near the other bit-packed fields so we take advantage of the
+    packing.
+
+commit 8d4d313cc9853a62a2901d99b7c555e5c0d730b7
+Merge: 2216ed19 60d9ec62
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 26 16:43:33 2016 +0200
+
+    Merge pull request #506 from kruton/sasl-400-byte-chunk
+    
+    SASL: handle fragmentation
+
+commit 2216ed19da3dd6cd72ed93f212acee2fe08bcc2f
+Merge: 31044ec0 f9fd50a3
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 26 15:44:47 2016 +0200
+
+    Merge pull request #551 from ailin-nemui/fix-550
+    
+    nullptr when doing module backward compat on invalid config
+
+commit eb20a6c846373bbfba4cd80e6aef017b56409047
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Sep 22 04:27:35 2016 +0200
+
+    Merge pull request #548 from ailin-nemui/buf-fix
+    
+    sync buf.pl
+
+commit f9fd50a35711f8f5637c57c276f12410dde9ec9e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Sep 25 23:17:20 2016 +0200
+
+    nullptr when doing module backward compat on invalid config
+
+commit 31044ec00477a2fc89064e6b54c933c2c59fc076
+Merge: 1405a87b 0e0d9958
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Sep 22 17:10:33 2016 +0200
+
+    Merge pull request #542 from LemonBoy/xs-add
+    
+    Expose the CAP fields to the perl scripts.
+
+commit 1405a87b56c3d71e63a647f71cadcd67f8300040
+Merge: c98f896d d39ad6e5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Sep 22 04:27:35 2016 +0200
+
+    Merge pull request #548 from ailin-nemui/buf-fix
+    
+    sync buf.pl
+
+commit d39ad6e559ae91cf1654c1c8371ad75f8ae7afad
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Sep 22 04:21:15 2016 +0200
+
+    sync buf.pl
+
+commit c98f896dfcceaa28e9a75ca1ef7171b45bfe6d49
+Merge: d9b4cb34 ac732554
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 21 16:00:04 2016 +0200
+
+    Merge branch 'integrate/0.8.20'
+
+commit ac73255483a42851db6a54ae4f0d5040e94608a2
+Merge: 13f4026a d9b4cb34
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 21 15:59:33 2016 +0200
+
+    Merge branch 'master' into integrate/0.8.20
+
+commit d9b4cb34dccd7fb77e1d222333f3018ff947899c
+Merge: 20b5d4d9 295a4b77
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Sep 15 09:56:32 2016 +0200
+
+    Merge branch 'quarkslab'
+
+commit 20b5d4d9826add4f1fc6949a0b1406953fa7bacb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 14 13:34:39 2016 +0200
+
+    Update NEWS for 0.8.20
+
+commit 295a4b77f07f14602eeaa371f00ddbf09910c82b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 14 13:37:29 2016 +0200
+
+    Patches for heap corruption and missing bounds check
+    
+    By Gabriel Campana and Adrien Guinet from Quarkslab.
+
+commit b3c6cdbb9172af1de2e8572ee48edce84f9caca5
+Merge: b58be939 f492ec8a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 19 22:14:57 2016 +0200
+
+    Merge pull request #540 from LemonBoy/reset-autorun
+    
+    /script reset can now also run the autorun scripts
+
+commit 0e0d99587a9e2daa091d48adedfbf420cad21758
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Sep 15 13:59:52 2016 +0200
+
+    Expose 'cap_toggle' to the perl scripts.
+
 commit 13f4026ae0f0d5422f3163576d4c2eff8754176a
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Sep 14 13:55:20 2016 +0200
@@ -72,6 +934,504 @@ Date:   Sun Sep 4 12:11:02 2016 +0200
     
     Set the default STATUSMSG to @ instead of @+ if it's missing
 
+commit b58be939d269c72e7f00e75e18fb0619d1dae432
+Merge: ae5e4a94 dab3246d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 13 23:29:09 2016 +0200
+
+    Merge pull request #516 from LemonBoy/comp-file
+    
+    Fix the tab completion for paths starting with ./
+
+commit ae5e4a94da82082188286604c3d406e15a46e4e0
+Merge: d2c5939d 21539019
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 13 23:27:43 2016 +0200
+
+    Merge pull request #543 from LemonBoy/script-error-message
+    
+    Make sure to make a copy of ERRSV content.
+
+commit 21539019dd46ec88a3369b53cc0069b372c6d7d1
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Sep 13 17:11:05 2016 +0200
+
+    Make sure to make a copy of ERRSV content.
+    
+    Otherwise we might end up showing an empty message.
+    Fixes #522.
+
+commit 9591afcb4b7157dd4b06b9c6390f70c725067b50
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Sep 13 16:07:48 2016 +0200
+
+    Expose the CAP fields to the perl scripts.
+
+commit d2c5939de0e875806d07cce4753ccc1a10ac6252
+Merge: e4f8abc9 5d9af40e
+Author: dx <dx@dxzone.com.ar>
+Date:   Sun Sep 11 13:17:03 2016 -0300
+
+    Merge pull request #535 from irssi/ailin-nemui-install-local-lib
+    
+    Update INSTALL to reflect perl changes
+
+commit f492ec8abfad770e2566188e7d8721d75680e28e
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Sep 11 17:05:03 2016 +0200
+
+    Document the addition of the -autorun switch for /script reset.
+
+commit b2424f31933309a0b3dfa6cb541c2917443a38d4
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Sep 11 16:59:21 2016 +0200
+
+    Add a '-autorun' switch to /script reset
+    
+    This way we reload all the scripts in the autorun folder.
+
+commit e4f8abc973872d5a7b2de98d269a924b97d428ab
+Merge: c8630acb 3429c1a0
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Sun Sep 4 12:11:02 2016 +0200
+
+    Merge pull request #533 from dequis/statusmess
+    
+    Set the default STATUSMSG to @ instead of @+ if it's missing
+
+commit 60d9ec621ff81ac68b9d2066fb77eaefc8d02ccb
+Author: Kenny Root <kenny@the-b.org>
+Date:   Sun Jul 3 22:02:02 2016 -0700
+
+    SASL: handle fragmentation
+    
+    The IRCv3 SASL extension says that AUTHENTICATION payloads of exactly
+    400 bytes in length indicate that the message is fragmented and will
+    continue in a subsequent message. Handle the reassembly and splitting of
+    these messages so that we are compliant with the specification.
+
+commit 5d9af40ea761850839fc22e495e68d90663c012d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Aug 29 23:25:26 2016 +0200
+
+    Update INSTALL
+
+commit c8630acbafd6341cbf908ab7d011d87a8fd68b56
+Merge: 2b7f3263 681caf2b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Aug 25 04:24:07 2016 +0200
+
+    Merge pull request #529 from ailin-nemui/issue500
+    
+    fix nick->host == NULL crash
+
+commit 3429c1a0a0dd336505e068dcea2a15efbf5a3c57
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Aug 24 19:48:35 2016 -0300
+
+    Set the default STATUSMSG to @ instead of @+ if it's missing
+    
+    This fixes two issues:
+    
+    - IRCNet doesn't have STATUSMSG, but it supports +channels, and
+      including + in the default value meant processing those incorrectly
+    
+    - The "bahamut hack", for old servers that support but don't advertise
+      STATUSMSG, didn't work since ischannel_func doesn't use the default.
+    
+    The choice of @ intentionally leaves out support for other STATUSMSG
+    (for example, AzzurraNet's bahamut 1.4 fork seemed to support + and % in
+    any order, contradicting the comment in the code).
+    
+    I think this is a decent tradeoff, given how those servers are uncommon
+    and relying on +# or %# is even less common than @#.
+    
+    Fixes #531
+
+commit 2b7f32633c07de9fc4b8751ac73cf3049976b007
+Merge: 17f4bd20 251d8a68
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Aug 24 22:49:20 2016 +0200
+
+    Merge pull request #532 from LemonBoy/x1x2
+    
+    Fix an OOB access in the cutbuffer implementation.
+
+commit 251d8a686a2717c4b1ab9dfc3599eab75105c076
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Aug 24 22:29:52 2016 +0200
+
+    Fix an OOB access in the cutbuffer implementation.
+
+commit 681caf2b587b88d1fcf953386b2432ce5b9bbea4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Aug 22 12:27:10 2016 +0200
+
+    fix nick->host == NULL crash
+
+commit 17f4bd20601eb5af59567b68c69c396e65274327
+Merge: c284309d de11e0f4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Aug 14 23:35:41 2016 +0200
+
+    Merge pull request #526 from ailin-nemui/ax-dummy
+    
+    remove broken dummy mode
+
+commit c284309d36dfa620faae5dad66a3aba78d8ad17a
+Merge: 61fa6eb3 b411f943
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Aug 14 23:35:23 2016 +0200
+
+    Merge pull request #525 from ailin-nemui/issue522
+    
+    fix use after free in expando error
+
+commit de11e0f4f2196d5bbb692ffe6fd0dd9afaa69e46
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Aug 12 19:33:56 2016 +0200
+
+    remove broken dummy mode
+
+commit b411f943a081b7c7fde0548f8c7ee5e93c0638a9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Aug 12 18:24:58 2016 +0200
+
+    fix use after free in expando error
+
+commit 61fa6eb35b065299e76456a3b20e6f17d15b5016
+Merge: 3e28bf7a 9ee48037
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Aug 11 15:41:12 2016 +0200
+
+    Merge pull request #521 from ailin-nemui/ax_curses2
+    
+    remove curses terminal and ncurses macro
+
+commit 9ee480377055c04ae687c08d17f2c6b191d34db0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Mar 30 10:14:57 2016 +0200
+
+    remove curses terminal and ncurses macro
+
+commit 3e28bf7a94eea8e75bf70ef322769991b05c2a65
+Merge: 8b471967 ccf1ca12
+Author: dx <dx@dxzone.com.ar>
+Date:   Sun Jul 17 12:37:57 2016 -0300
+
+    Merge pull request #518 from vague666/hilight_help
+    
+    Wrong order in the arguments in /hilight example, -mask doesn't take …
+
+commit ccf1ca124b780d18caad88d3c460d066c12e3eec
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sun Jul 17 17:28:21 2016 +0200
+
+    Wrong order in the arguments in /hilight example, -mask doesn't take a parameter
+
+commit 8b471967452781d2bc355d3463ba31c2fcdf4377
+Merge: 4be256fc bd418990
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jul 13 15:26:37 2016 +0200
+
+    Merge pull request #517 from LemonBoy/unignore
+    
+    Minor cosmetic fix in /unignore error message.
+
+commit bd4189907eceed6a2c3252c7099985f975fc1654
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Jul 12 17:38:05 2016 +0200
+
+    Minor cosmetic fix in /unignore error message.
+    
+    Reported here:
+    https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=577202
+
+commit dab3246db91a6f17a7da192c10f9b369fa057ef5
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Jul 12 16:35:43 2016 +0200
+
+    Fix the tab completion for paths starting with ./
+
+commit 4be256fcf0723610e30ff30694736d2e1dec9b70
+Merge: 7cf9326c 9559a8ea
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jul 12 16:11:41 2016 +0200
+
+    Merge pull request #512 from LemonBoy/coderef
+    
+    Allow Irssi::signal_remove to work properly with coderefs
+
+commit 7cf9326cad623804bba0c794ec065191c7fe0ba1
+Merge: b8f7eaad 0fe81cae
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jul 12 16:11:04 2016 +0200
+
+    Merge pull request #515 from LemonBoy/signal-proto
+    
+    Correct the prototype for the 'message private' signal.
+
+commit 0fe81cae83f1b981e6544be6fcaa924f2ce7caad
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Jul 12 15:46:36 2016 +0200
+
+    Correct the prototype for the 'message private' signal.
+
+commit 9559a8ead9048433783a453ca47c63514a39b205
+Author: Tom Feist <shabble@metavore.org>
+Date:   Tue Jul 12 12:42:15 2016 +0200
+
+    Allow Irssi::signal_remove to work properly with coderefs
+
+commit c0f66c95ff00bdc22155a8ac53d887a9c1bbc90f
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 26 21:44:40 2016 +0200
+
+    Such draft. Very wow.
+
+commit 8f5e2005516023f5c96cf95ac5e9f917bda33172
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Apr 19 15:29:16 2016 +0200
+
+    Avoid entering an endless loop while traversing the channel list
+
+commit ed06e43ec816eb4b9f1a736ecba6802a586887a8
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Apr 2 16:14:01 2016 +0200
+
+    Some small adjustments to the netsplit code.
+    
+    By making the signal handler hooked to the "print starting" event
+    smarter we can avoid dumping the whole netsplit stats for every
+    server/channel when a message arrives.
+    
+    Issue #420
+
+commit b8f7eaad40d66b653fa1ff2ed366954e6e8d9732
+Merge: f264a789 c2c32e39
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Sun Jun 26 21:09:01 2016 +0200
+
+    Merge pull request #501 from ailin-nemui/more-crash
+    
+    check for NULL in statusbar_more_updated
+
+commit c2c32e39559e4081ea2ebfecbfc67d9553a9ad12
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Jun 25 16:06:50 2016 +0200
+
+    check for NULL in statusbar_more_updated
+    
+    fixes crash due to invalid access of active_win members when the more
+    indicator is triggered without an active window
+
+commit f264a789478757da0d27507c7c85a37f450c83c0
+Merge: 798ce006 77ad62fa
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jun 24 10:05:15 2016 +0200
+
+    Merge pull request #496 from ailin-nemui/comp
+    
+    completion fixes
+
+commit 798ce006c224ef220c2643b43976818253864b84
+Merge: fd371cc3 a4223a3b
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Tue Jun 21 22:46:52 2016 +0200
+
+    Merge pull request #498 from vague666/add_modify_functions
+    
+    Add modify to /channel, /server and /network
+
+commit a4223a3b2e5f5689c61633542f05e70c28226717
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Tue Jun 21 22:05:21 2016 +0200
+
+    use TRUE/FALSE in if statements for gboolean
+
+commit 2bb913f0c128dbb37737b7c2d7af99ed70801993
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sun Jun 19 16:35:13 2016 +0200
+
+    Fix minor nits
+
+commit 4292dbd20250faa4736ab9871bddd97dd7d6c80a
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sat Jun 18 18:47:11 2016 +0200
+
+    Add command_set_options for modify commands to allow completion
+
+commit 79e30405e6b22b116d9d2c8ac5af0f4a4dfdc9c7
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sat Jun 18 18:02:04 2016 +0200
+
+    Let ADD still work as modify
+
+commit 054a98b0ac9bd7f828cd0878687d53e01a3438da
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sat Jun 18 17:59:59 2016 +0200
+
+    Add info about MODIFY to help files
+
+commit 1d2113a6387d70caa399cb3311b15203d2d99fda
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sat Jun 18 17:53:35 2016 +0200
+
+    Add /server modify SYNTAX
+
+commit 421288cf5066267b60580af2b6ae511c46570bf0
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sat Jun 18 17:52:47 2016 +0200
+
+    Add /network modify
+
+commit 1dd1dde1d46439dac17bb7f053f2665ed31a4a5e
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sat Jun 18 17:52:26 2016 +0200
+
+    Add /server modify
+
+commit 92a2384ab06c542c8f6a3d0f80a54892d74dc649
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sat Jun 18 17:51:58 2016 +0200
+
+    Add /channel modify
+
+commit 77ad62fadbcd9d5ce33889417de0099e035d8ddc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jun 16 21:30:46 2016 +0200
+
+    completion fixes
+
+commit fd371cc345aeb0254750c801f6570b5208974ce4
+Merge: 700a0d52 9fd286fe
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jun 14 12:35:30 2016 +0200
+
+    Merge pull request #422 from LemonBoy/misc-cleanup
+    
+    Clean up misc.c
+
+commit 700a0d52a57265d9adc8195198fcdf6822c38414
+Merge: 52ced072 2da49e3c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jun 14 06:15:02 2016 +0200
+
+    Merge pull request #488 from LemonBoy/completion_smart
+    
+    Be smart about case-matching the nicks.
+
+commit 2da49e3ca6357b65e31fb494b2edb0d22e73c62c
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Jun 13 22:14:08 2016 +0200
+
+    Don't crash when the key isn't found.
+
+commit 862729d7a39be25aee3524a52e19f9735dec6e1f
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Jun 7 15:45:39 2016 +0200
+
+    Add a completion_match_case setting.
+
+commit 78c1c1518a7382628368b09f8744189edf3ceef3
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Jun 6 22:25:32 2016 +0200
+
+    Be smart about case-matching the nicks.
+    
+    If the prefix contains an uppercase letter then don't use the
+    case-insensitive search functions.
+
+commit 52ced0728b81421c128c5f976d79a5dd43b0ac80
+Merge: e5f7b786 5c8423a0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jun 13 21:47:39 2016 +0200
+
+    Merge pull request #492 from LemonBoy/enum
+    
+    Enum setting implementation
+
+commit 5c8423a08cd9ffbe3363f3b0e5722e4a32157914
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Jun 13 20:27:37 2016 +0200
+
+    Add a space after the comma when listing the options.
+
+commit 439e21f12746519d36e205a3ac053c882d67c024
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Jun 13 14:07:04 2016 +0200
+
+    Use ; as separator instead of ,
+
+commit 9a30ab53df226acb4586a2f214f3994a7b8b32ea
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Jun 13 14:03:00 2016 +0200
+
+    Move the validation of the CHOICE setting value
+    
+    Also, use a FORMAT to show the error message.
+
+commit e5f7b786c08d14f8531f2388f26ebf8e82d1716c
+Merge: 0fad2cd8 9ea155f8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jun 13 01:37:30 2016 +0200
+
+    Merge pull request #493 from dequis/unix-reconnect
+    
+    servers-reconnect: pass unix_socket attribute to new connection
+
+commit 9ea155f8df5fe9b3d67e8729f611b87a0c2a82c9
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Jun 12 20:28:06 2016 -0300
+
+    servers-reconnect: pass unix_socket attribute to new connection
+    
+    Trying to /reconnect unix sockets turned them into inet.
+
+commit 6f795f020d5c374023dc9ca647b267aef0a76950
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 12 23:39:22 2016 +0200
+
+    Strip the surrounding whitespace.
+
+commit 7307b48bd6928207ded9e186af3f3b97625f00bb
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 12 22:58:35 2016 +0200
+
+    Sort the completion results
+    
+    Make sure the current option is shown first.
+
+commit 31f12c10df52e44e7cef0245fc55ae38159ce9e3
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 12 16:38:34 2016 +0200
+
+    Use strarray_find instead of g_strv_contains
+
+commit 86c5e56ef41c70030e43d03b4c01e2df8188c30b
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 12 16:26:18 2016 +0200
+
+    Make rejoin_channels_mode of type CHOICE
+
+commit bf9d9494db89e7de45653e4797e2977c6e185c13
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 12 15:26:07 2016 +0200
+
+    Add a CHOICE type to the settings system.
+    
+    This is useful to let the user choose an option between a finite set of
+    valid alternatives.
+
+commit 0fad2cd8427a35f6b2de46fa8bd38437b9695495
+Merge: 6e13862c e0c8a9f3
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jun 9 22:02:22 2016 +0200
+
+    Merge pull request #352 from ailin-nemui/silent_perl
+    
+    silent make perl
+
 commit 750e3249038409607b0a57d21e21612e546539ed
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Jun 1 22:56:26 2016 +0200
@@ -87,6 +1447,456 @@ Date:   Tue Jun 7 02:47:57 2016 +0200
     Merge pull request #485 from ailin-nemui/bdo826525
     
     Do not crash on OPTCHAN when item has no server
+
+commit 6e13862cfe4d724a6c0bac72be12cb9009216563
+Merge: f72608ba d6d74c0d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jun 7 02:47:57 2016 +0200
+
+    Merge pull request #485 from ailin-nemui/bdo826525
+    
+    Do not crash on OPTCHAN when item has no server
+
+commit d6d74c0da981af22fb8cbfa68d3bdc5446c55155
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jun 6 16:58:40 2016 +0200
+
+    Do not crash on OPTCHAN when item has no server
+    
+    May fix bugs.debian.org#826525
+
+commit 9fd286fed8d231f9c78353f5d746ed82e3bc05c4
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 5 22:47:29 2016 +0200
+
+    Bump the ABI
+
+commit 98fce5f8074abcf5d35a1834952e42cd79384db2
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 5 22:47:04 2016 +0200
+
+    Deprecate net_connect()
+
+commit 0060f682c213dc25901f4c0ab01a01176e14da9e
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 5 17:24:27 2016 +0200
+
+    Factor out some redundant code and remove hashtable_get_keys
+
+commit 2e8744319d5e5e47799ec20b2f737c437e8c6398
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 5 16:54:20 2016 +0200
+
+    str_to_uofft is a tiny wrapper over strtoul{,l}
+
+commit cc70e8c581713309c64eb15c3999341d17988e19
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jun 5 16:48:27 2016 +0200
+
+    Clean up some GTimeVal juggling
+
+commit e0b290c34fc116c043f51396e2770821ec357522
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Feb 17 23:21:38 2016 +0100
+
+    Update the g_istr_hash function to use the djb hash
+
+commit 0f9d2b35700db69c66c5878b5562852565753dd2
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Feb 13 16:26:36 2016 +0100
+
+    Remove unused regexp_match
+
+commit 7a3c6fe86ca55b4ef69b11443b87359b333bc20b
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Feb 13 14:16:05 2016 +0100
+
+    Replace strarray_length with g_strv_length
+
+commit 72712a0c62b0403f0fa472ccbe34fda8fb2cd530
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Feb 13 13:18:24 2016 +0100
+
+    Replace strocpy with g_strlcpy
+    
+    The only difference was that the former returned 1 if the buffer was
+    overflown, but the return value was never checked.
+
+commit 8289f360757870b56a15576a20e79e1f2ca30fef
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Feb 13 13:15:33 2016 +0100
+
+    Check the return value of open() in rawlog.c
+
+commit bb190be0bfac956ada4f74a514ff70f28b114efa
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Feb 13 13:12:29 2016 +0100
+
+    Replace mkpath with g_mkdir_with_parents
+
+commit e0c8a9f3986249d8abde462bccdb00cd3d914ebc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Jun 5 11:36:13 2016 +0200
+
+    perl 5.10 fix
+
+commit 03aec7d3b369231b52960db7238f30cc46dd8e01
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Dec 10 14:07:07 2015 +0100
+
+    silent make perl
+
+commit f72608ba24454402df27477471223ce15cc2926e
+Merge: 1a6ec1b0 f1d0c8ff
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jun 1 22:56:26 2016 +0200
+
+    Merge pull request #484 from LemonBoy/sasl-misc-adj
+    
+    Correct the name of the emitted signal.
+
+commit f1d0c8ff99c4a0627d96c6ae0db39d917689fb07
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Jun 1 22:29:13 2016 +0200
+
+    Correct the name of the emitted signal.
+    
+    There's a typo in 'sasl_fail', the signal that's emitted should be
+    'server sasl failure' and not 'server sasl fail'.
+
+commit 1a6ec1b0b63c4ffbaf22137157a6fae3570b6839
+Merge: f43040b9 02221eae
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed May 18 16:57:47 2016 +0200
+
+    Merge pull request #482 from ailin-nemui/travis-test-dist
+    
+    test make dist in travis
+
+commit 02221eae373c5db93d1c715d836d79c724d361c7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed May 18 15:42:09 2016 +0200
+
+    fix dist compilation failure
+    
+    remove illegal wcwidth.c include and compile wcwidth.c
+    correct #include in wcwidth.c
+    fallout from #480
+
+commit 36beddc64f881c2c9618b449ed5c590d41872455
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed May 18 15:32:35 2016 +0200
+
+    test make dist in travis
+
+commit f43040b926a290a7ae582e669cb1985ee852682a
+Merge: 74d38683 8d5edff5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed May 18 14:49:50 2016 +0200
+
+    Merge pull request #481 from ailin-nemui/master
+    
+    Missing ABI update and NEWS update
+
+commit 8d5edff5151761d5b069badad836cb26724ae1ae
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed May 18 14:43:54 2016 +0200
+
+    update news and authors
+
+commit 5995c0619dc2bf6d789e5b93abe8a531ceb1f45a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed May 18 14:39:52 2016 +0200
+
+    abi increase for #480
+
+commit 8b847034efa20f23c96f35522f9f7615a5ab498c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed May 11 21:51:41 2016 +0200
+
+    update news and authors
+
+commit 74d38683bf5f20142b14dcd5162fd258d8fb2f37
+Merge: 5564f850 5d69b4c4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed May 18 09:18:21 2016 +0200
+
+    Merge pull request #480 from xavierog/handle-utf8-nicks-with-mk_wcwidth
+    
+    Handle utf8 nicks with mk_wcwidth()
+
+commit 5564f850418d54f13befe15bec5481d29026b7d3
+Merge: 1cfec5f6 affbf71f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue May 17 16:15:06 2016 +0200
+
+    Merge pull request #479 from ailin-nemui/improve-perl-lib
+    
+    improve perl @INC detection
+
+commit 5d69b4c4a7d334ca29e61969712f5f8eedfa5cd9
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 17:35:47 2016 +0200
+
+    Convert string policies from #define to enum.
+
+commit a26a387545ae530cb3222fd4daa5ed088e068de2
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 17:31:11 2016 +0200
+
+    Adjust some conditions.
+
+commit 72064de9fe064a7536b501fc470edf75fc393314
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 04:19:38 2016 +0200
+
+    Simplify scrlen_str() using string_width().
+
+commit 29beafcf6fd50ecb8a9f3b2b642c2d29c022a4e3
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 04:08:15 2016 +0200
+
+    Improve UTF-8 handling in display_sorted_nicks().
+
+commit f1b5b515b9f91866d241ba6dbf5e1db6827ff61a
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 03:51:48 2016 +0200
+
+    Make get_alignment() available outside special-vars.c
+
+commit 97a4ee78fd08e58fce62c6c0b22de94b625c90f6
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 03:42:56 2016 +0200
+
+    get_alignment: handle UTF-8 strings.
+    
+    get_alignment now works with columns (width), not bytes, although it is liable
+    to work with bytes if the given text is not a valid UTF-8 string.
+
+commit 09ca3ad48f57b7febd6ad353fb38dbe9234e7e70
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 03:31:23 2016 +0200
+
+    Fix indentation of display_sorted_nicks().
+    
+    This was done assuming an "indent with tab, align with spaces" approach.
+    get_alignment also benefited from a minor indentation fix.
+
+commit 719efc44a3c3c3db8f12b6ff40d2021837d9a902
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 03:04:08 2016 +0200
+
+    Introduce string_chars_for_width().
+
+commit 35b3ccc6a407f83eba4f0c3787cc5c174bd3385c
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 02:47:26 2016 +0200
+
+    Introduce string_length() and string_width().
+
+commit 21c07c006066115af4604e26cd89cf60f94a7d53
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 02:27:19 2016 +0200
+
+    Leverage string_policy().
+
+commit 2c8648a9c889fc0a7c4b24367a3f81f08dedccb2
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 02:10:02 2016 +0200
+
+    Introduce string_policy().
+
+commit b0afcc96dbc13cf3a5ed94686bb227ab0d86ceaa
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 01:52:37 2016 +0200
+
+    Rename advance() into string_advance().
+
+commit 5c74a3bb88db0fa32c459f8494e9f5a62a821baa
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 01:39:14 2016 +0200
+
+    Move advance() from fe-common/core to core.
+
+commit 5538578820550c1a62dc4d0e6451332229eeee75
+Author: Xavier G <xavier.github@kindwolf.org>
+Date:   Fri May 13 01:26:33 2016 +0200
+
+    Move utf8.{h,c} from fe-common/core to core.
+
+commit affbf71f102cc740aeda180fd3297c1cc6c8f7de
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed May 11 11:43:08 2016 +0200
+
+    add silent flag to make, should stop GNU make from turning on -w
+
+commit 3376d324e1e174e2885efbb7f1f056bc2a0d2857
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon May 9 16:55:35 2016 +0200
+
+    improve perl @INC detection
+
+commit 1cfec5f63d4adf32117f68638fb35802146e2784
+Merge: cf98260e 47e792da
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue May 3 20:58:23 2016 +0200
+
+    Merge pull request #478 from pisculichi/fix-ansic-issues
+    
+    Fix some ANSI-C issues
+
+commit 47e792da05f79c624a190fd5780e07f171fd7bd1
+Author: pisculichi <pisculichi@openmailbox.com>
+Date:   Mon May 2 16:01:48 2016 +0000
+
+    Fix some ANSI C issues.
+
+commit cf98260eded9150d4ce1f3c5184ae5f3463d9c21
+Merge: 907a8ce8 b63339af
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Apr 30 21:46:18 2016 +0200
+
+    Merge pull request #476 from isundil/master
+    
+    Add an option to make /hilight case sensitive
+
+commit b63339af89abc9830ecf8c56916db9eb1a42e005
+Author: isundil <isundil@knacki.info>
+Date:   Sat Apr 30 18:26:26 2016 +0000
+
+    Increased ABI version
+
+commit 907a8ce8abdaaef0f35e7a82e8d4d482bc244d30
+Merge: 0e5a32fb b24921db
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Apr 30 10:19:57 2016 +0200
+
+    Merge pull request #477 from dennisschagt/master
+    
+    Correct error/typo "You"->"Your" in help message
+
+commit b24921db7a49d01ce30245999483589bcea47d53
+Author: dennisschagt <dennisschagt@gmail.com>
+Date:   Sat Apr 30 09:44:26 2016 +0200
+
+    Correct error/typo "You"->"Your" in help message
+
+commit e7a18759ecb02a0b1fcbb118b9e732e604268afd
+Author: isundil <isundil@knacki.info>
+Date:   Fri Apr 29 22:17:48 2016 +0000
+
+    Added case-sensitive regexp matching for hilights
+
+commit ddd54164304e8d4bc3b709dbe6d2eca7832cff81
+Author: B Thibault <isundil@knacki.info>
+Date:   Fri Apr 29 11:00:34 2016 +0200
+
+    changed command-line -case to -matchcase
+
+commit d8a6e666994ec4265459ed1e6665c01eb651eb82
+Author: B Thibault <isundil@knacki.info>
+Date:   Fri Apr 29 01:01:34 2016 +0200
+
+    Ref #421 (Add an option to make /hilight case sensitive)
+    Allow use of /hilight -case exAMPle (compatible with other options)
+    Added matchcase to hilight config file (exemple: { text = exAMPle; matchcase = yes; } )
+
+commit 9fa3869a97be7b79c0aa5f7a7e80d655b0a7f8d8
+Author: B Thibault <isundil@knacki.info>
+Date:   Fri Apr 29 00:12:28 2016 +0200
+
+    retab
+
+commit 0e5a32fb624892131b6138652061bd1611c11db8
+Merge: 1349755b 2ba4b9d2
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Apr 7 12:33:03 2016 +0200
+
+    Merge pull request #467 from dequis/EAI_SYSTEM
+    
+    net_gethosterror: Handle EAI_SYSTEM ("System error") properly
+
+commit 2ba4b9d26afb87c2e661b1c07313ca78b3c5618e
+Author: dequis <dx@dxzone.com.ar>
+Date:   Mon Apr 4 03:47:48 2016 -0300
+
+    net_gethosterror: Handle EAI_SYSTEM ("System error") properly
+    
+    That error code means "check errno". A few users got it and we never
+    figured out what happened - it usually fixed itself after restarting
+    something - so hopefully with this we'll have more information the next
+    time.
+
+commit 1349755bb57a5f1f3a101b3382b550da50854957
+Merge: 26f87526 be93c8d5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Apr 5 22:39:54 2016 +0200
+
+    Merge pull request #453 from LemonBoy/dcc-quote
+    
+    Support quoted filenames in some /DCC commands
+
+commit 26f875263ab940751528b2c80429a33d059c6c6b
+Merge: 70a44daa aec2466e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 31 19:13:53 2016 +0200
+
+    Merge pull request #455 from ailin-nemui/cutbuffer
+    
+    improved cutbuffer handling
+
+commit 70a44daad2477167fce0ff93473ae2e8b0527869
+Merge: 0c69b75f ec4ecd84
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 29 22:45:47 2016 +0200
+
+    Merge pull request #461 from ailin-nemui/fix_squery
+    
+    Revert "Removed the obsolete SQUERY and SERVLIST commands"
+
+commit ec4ecd844bbc9c3254963862b0fff6be290db4ad
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 24 16:01:07 2016 +0100
+
+    Revert "Removed the obsolete SQUERY and SERVLIST commands"
+    
+    This reverts commit 4beebe3238dda96efd4c3a0a6f6002ad5afc96e7.
+
+commit aec2466e36ec32e97ec2eb8e1279e27a3d0fe0cb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 21 09:14:01 2016 +0100
+
+    Improve cutbuffer handling
+    
+    * Adds two new keys which you can bind in /bind:
+      yank_next_cutbuffer: Revert to the previous last deleted text
+      append_next_kill: Append next deletion
+    * Consecutive kills are now appended to the current cutbuffer
+
+commit 0c69b75f77e2eebd7af754afe4f1fb224c9a63c6
+Merge: ce5a6929 bab60daa
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 24 15:24:08 2016 +0100
+
+    Merge pull request #460 from ailin-nemui/integrate/0.8.19
+    
+    Merge tag '0.8.19'
+
+commit bab60daa1734e4df9adffa0bd470c0549d6ef751
+Merge: ce5a6929 c4383157
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 24 15:02:33 2016 +0100
+
+    Merge tag '0.8.19'
+
+commit ce5a6929f5b145943a95ba218a162379961bed9d
+Merge: b1ffd5f6 b9914abb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 24 14:52:53 2016 +0100
+
+    Merge pull request #459 from ailin-nemui/fix_430
+    
+    Make use of terminal application keys configurable
 
 commit c43831574187cdb2323d123702aa687af24664d8
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
@@ -197,6 +2007,446 @@ Date:   Wed Mar 23 00:07:43 2016 +0100
 
     set version to 0.8.18a-head
 
+commit b9914abbf3a7fae6d15f26650a98d8e74aa1fa05
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 16:54:34 2016 +0100
+
+    Make use of terminal application keys configurable
+    
+    adds a new setting term_appkey_mode which can enable or disable the use
+    of keyboard transmit (application keys) mode. Fixes #430
+
+commit b1ffd5f6472584aa3966746da9728c5afefcc4ce
+Merge: 9cb04194 89701613
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 23:05:27 2016 +0100
+
+    Merge pull request #452 from LemonBoy/terminfo-cup
+    
+    Don't call terminfo_cont() twice on resume
+
+commit 9cb0419435d1ad331c1f55361a003d9682fae9a8
+Merge: 29e160f0 e5ee243a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 23:00:01 2016 +0100
+
+    Merge pull request #443 from LemonBoy/chatnet
+    
+    Throw an error when a chatnet has no available url
+
+commit 29e160f0bf9e2c42c88c756b4fc61af29a7bfd59
+Merge: 3bc8afa7 938d0071
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 22:57:28 2016 +0100
+
+    Merge pull request #457 from ailin-nemui/fix_450
+    
+    fix race condition in terminal init
+
+commit 3bc8afa740fdf775022c9fd3d92b2dfcb3c9804e
+Merge: d36d34fe 35d255fc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 22:54:43 2016 +0100
+
+    Merge pull request #458 from ailin-nemui/fix_449
+    
+    Properly toggle bracketed paste mode on stop/cont
+
+commit 897016131eb2712095a7facaf9ab307164976450
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Mar 21 14:19:43 2016 +0100
+
+    Don't call terminfo_cont() twice on resume
+    
+    Fixes some weirdness when using ^Z with zsh.
+
+commit d36d34fe0432fc24d75791f2aba9e626a535f478
+Merge: 83bee9c6 117c890d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 22:47:42 2016 +0100
+
+    Merge pull request #456 from ailin-nemui/fix_454
+    
+    cutbuffer: do not unconditionally use replace when noop was requested
+
+commit 35d255fc8c2bc585bacbe59afb8cf9c6cc3cadc8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 16:05:14 2016 +0100
+
+    Properly toggle bracketed paste mode on stop/cont
+    
+    Fixes #449
+
+commit be93c8d5bee1b923faa63e13957764e3f06e2ded
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Mar 22 16:03:05 2016 +0100
+
+    Update the documentation about DCC
+
+commit 8b54366d9525d94ae4b1d0d6914b22b7bf73112e
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Mar 21 15:23:12 2016 +0100
+
+    Support quoted filenames in some /DCC commands
+
+commit e5ee243ab6ff7f640bdd45a232ad81ed97520a46
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Mar 22 15:45:08 2016 +0100
+
+    Simplify some logic in server_create_conn
+
+commit 83bee9c6b73d01b749e3c8a56e0683569e6a1ae2
+Merge: 195c44a7 7baf3a28
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 15:25:13 2016 +0100
+
+    Merge pull request #447 from ailin-nemui/fix_dcc_help
+    
+    correct quoting in /help dcc
+
+commit 195c44a76ed31b6a0804d93ec8e7ac1b69f07a3d
+Merge: f7658640 132d3c49
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 15:23:37 2016 +0100
+
+    Merge pull request #446 from ailin-nemui/fix_445
+    
+    strip less whitespace from commands
+
+commit 938d0071c6119f7ec9aeaa88913c47f7af267131
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 15:21:20 2016 +0100
+
+    fix race condition in terminal init
+    
+    remove the tcgetattr call to a single time on irssi load instead of
+    querying it each time. Fixes #450
+
+commit 117c890d98d54fdee85a56f851acd6f4b3bd3be3
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 22 14:43:31 2016 +0100
+
+    cutbuffer: do not unconditionally use replace when noop was requested
+
+commit f7658640fba5536e6dbfc2014b28523d8510e970
+Merge: 2ab26367 857e27ae
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 21 11:21:01 2016 +0100
+
+    Merge pull request #437 from vague666/glob_matching
+    
+    Use glob matching for activity_hide_targets
+
+commit 7baf3a28bbcc1f92707ecb06f1d8e648388a474c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Mar 20 22:43:12 2016 +0100
+
+    correct quoting in /help dcc
+
+commit 132d3c49f302a87d1357ba91ba715faa6bfcea29
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Mar 20 22:39:06 2016 +0100
+
+    strip less whitespace from commands
+    
+    fixes #445
+
+commit 2ab26367139ebc6173cc117334e3f5d19ee0f071
+Merge: c5e2f449 f31d37a8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Mar 20 22:06:41 2016 +0100
+
+    Merge pull request #442 from LemonBoy/fix-435
+    
+    Do not assume any default value for statusmsg.
+
+commit c5e2f449847f8663d53bcd6dab64efa297a2ab70
+Merge: 795b7de8 550fe6f0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Mar 20 22:00:43 2016 +0100
+
+    Merge pull request #444 from LemonBoy/timeout-id
+    
+    Use 0 as a sentinel value for sasl_timeout
+
+commit 550fe6f010f682d352077579d5056609a68e9814
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Mar 20 21:47:02 2016 +0100
+
+    Use 0 as a sentinel value for sasl_timeout
+    
+    If sasl_timeout is never initialized with a valid timeout id then
+    calling /disconnect on the server calls g_source_remove() with 0 as tag,
+    causing an harmless error message to be printed.
+    Beside that, the sasl_timeout field is defined as a unsigned int.
+    We can use 0 as sentiel since g_timeout_add returns tags that are always
+    greater than zero.
+
+commit 8394973d5a3f37523e95fb5b51620de9284d743f
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Mar 20 12:16:48 2016 +0100
+
+    Bump the ABI version
+    
+    Since a new format has been added.
+
+commit 6745dd6159afc6ff220d09d7adc1923218fa756b
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Mar 18 20:18:58 2016 +0100
+
+    Throw an error when a chatnet has no available url
+    
+    If you type /connect <CN> and the chatnet <CN> has no url available
+    let's just throw an error instead of trying to process <CN> as a url.
+
+commit f31d37a85271e0196aeefd409f0ab361ffd8c2ff
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Mar 18 22:50:00 2016 +0100
+
+    Make ischannel_func return false for empty strings
+
+commit 857e27aef6d04edc1e47d52d74031ba279d2da1a
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Thu Mar 17 23:58:46 2016 +0100
+
+    Don't use glob matching, just regular string comparisons
+
+commit f6c2805b91161a01378c9bbe853521c08d460c60
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Mar 17 22:27:05 2016 +0100
+
+    Do not assume any default value for statusmsg.
+    
+    If the server didn't send it then just skip the check, the old value it
+    defaulted to was possibly overlapping with the CHANTYPES leading to an
+    incorrect behaviour. Fixes #435.
+
+commit 795b7de80891d51adfb912798ca954431cbf702b
+Merge: 49bdd179 8ab6bdf2
+Author: TheLemonMan <LemonBoy@users.noreply.github.com>
+Date:   Thu Mar 17 22:07:57 2016 +0100
+
+    Merge pull request #439 from horgh/ssl-errors
+    
+    Clear error queue before SSL I/O operations
+
+commit 49bdd179b2663d3853b38673f93df97c994f0dae
+Merge: ff4d3307 e853392f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 17 16:14:34 2016 +0100
+
+    Merge pull request #438 from dequis/sasl-timeout-disconnect
+    
+    Remove sasl timeout source when the server disconnects
+
+commit ff4d33071db09a027917dadf1977972cfb9cd2bc
+Merge: 6aa33c4a bcebed5a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Mar 16 12:05:44 2016 +0100
+
+    Merge pull request #441 from KindOne-/master
+    
+    Replace spaces with tabs
+
+commit bcebed5a72308f57de8f96f6ab9ad5ccad93a811
+Author: KindOne <lostinwhatever@outlook.com>
+Date:   Mon Mar 14 21:23:37 2016 -0400
+
+    Replace spaces with tabs
+
+commit 6aa33c4aae0479cca24cb5e581e83b3b5e509134
+Merge: 66e9c4bb 27c37cb3
+Author: Giuseppe <LemonBoy@users.noreply.github.com>
+Date:   Mon Mar 14 22:37:05 2016 +0100
+
+    Merge pull request #440 from vague666/strarray_find_bugfix
+    
+    Return -1 from null-test to comply with the rest of strarray_find
+
+commit 94b823c3cd410abb2fa54ecbcf298550d5e2ba88
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Fri Mar 11 09:12:38 2016 +0100
+
+    Use glob matching for activity_hide_targets
+    
+    spaces vs tabs!
+    
+    strarray_find* needs to return -1 if no index found
+
+commit 27c37cb3f39578b473a0684e6e55bf23d1910903
+Author: Jari Matilainen <jari.matilainen@gmail.com>
+Date:   Sun Mar 13 22:04:59 2016 +0100
+
+    Return -1 from null-test to comply with the rest of strarray_find
+
+commit 8ab6bdf2ce884fa7363272805287c341b2b2fb01
+Author: Will Storey <will@summercat.com>
+Date:   Sun Mar 13 15:09:52 2016 -0700
+
+    Add clear error calls to irssi_ssl_get_iochannel
+
+commit be733d24824fe2a3502a1e4ab76d50699052dd65
+Author: Will Storey <will@summercat.com>
+Date:   Sun Mar 13 13:28:04 2016 -0700
+
+    Clear error queue before SSL I/O operations
+    
+    Otherwise we can see errors that are not related to the operation
+    we check for. SSL_get_error() inspects the thread's error queue.
+    See https://www.openssl.org/docs/manmaster/ssl/SSL_get_error.html for
+    more information.
+
+commit e853392f430b9635cd7e8ada28c68426c2625298
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Mar 11 14:55:31 2016 -0300
+
+    Remove sasl timeout source when the server disconnects
+
+commit 66e9c4bb39ed5c0b2d9b81e8610e894af82abd8e
+Merge: 8f1f1d87 4baefd25
+Author: Giuseppe <LemonBoy@users.noreply.github.com>
+Date:   Tue Mar 8 22:49:05 2016 +0100
+
+    Merge pull request #432 from grawity/fix-external
+    
+    fix SASL EXTERNAL
+
+commit 8f1f1d879fc93a03d456bf8444381e023f4b24dc
+Merge: 64bac950 ef0c7d3e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 8 22:17:06 2016 +0100
+
+    Merge pull request #426 from Manishearth/paste-split
+    
+    Make pasting warning appear when long pastes are going to be split into many lines
+
+commit 4baefd25747df116c19ea1301c5fe8fb7eef3716
+Author: Mantas Mikulėnas <grawity@gmail.com>
+Date:   Tue Mar 8 23:00:20 2016 +0200
+
+    Fix SASL EXTERNAL authentication
+    
+    The "AUTHENTICATE" command is always required – it's part of the IRCv3
+    SASL framing. RFC 4422 only documents the Base64 payload.
+
+commit 64bac950fc2325a0ec8bb4369e64124cb85c2753
+Merge: 9174ec58 8c1da289
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Mar 2 11:07:39 2016 +0100
+
+    Merge pull request #427 from mauke/irssiproxy-unix-sockets
+    
+    irssi proxy: allow listening on unix sockets
+
+commit 8c1da2890c4ccbeac70d7798f29f00a81a770728
+Author: Lukas Mai <l.mai@web.de>
+Date:   Wed Feb 24 19:00:31 2016 +0100
+
+    irssi proxy: allow listening on unix sockets
+
+commit 3fc7e4d4ea7faaf3a14206c8b7c46ccc4b96309c
+Author: Lukas Mai <l.mai@web.de>
+Date:   Wed Feb 24 18:59:00 2016 +0100
+
+    reindent
+
+commit 9174ec584fdcbed8b9fc89fc10cf4df776e5214e
+Merge: 843e0c08 b91f3c30
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 29 22:45:54 2016 +0100
+
+    Merge tag '0.8.18'
+    
+    master now on 0.8.19-head
+
+commit 843e0c0884e1b512293c9b622d06a01f0f2b2776
+Merge: f83a29b7 4d234c17
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 26 20:46:09 2016 +0100
+
+    Merge pull request #428 from mauke/irssiproxy-multiplex-2
+    
+    fix proxy server name
+
+commit 4d234c175c69d3bcc80d9918fad98e3c6f69d23e
+Author: Lukas Mai <l.mai@web.de>
+Date:   Fri Feb 26 18:40:51 2016 +0100
+
+    fix proxy server name
+
+commit f83a29b764d099513c4aef86a65814f8b2d2585d
+Merge: 4650665e 3167ccfb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Feb 24 16:14:43 2016 +0100
+
+    Merge pull request #425 from mauke/irssiproxy-multiplex
+    
+    irssi proxy: allow multiplexing multiple networks over a single port
+
+commit ef0c7d3e7a6df6de1f8280ae8ae777a068d073c7
+Author: Manish Goregaokar <manishsmail@gmail.com>
+Date:   Wed Feb 24 00:36:35 2016 +0530
+
+    Make pasting warning appear when long pastes are going to be split into many lines
+
+commit 9f0e5da208f9ee775b82d50ff959d8599d1e1151
+Author: Manish Goregaokar <manishsmail@gmail.com>
+Date:   Wed Feb 24 00:35:27 2016 +0530
+
+    use a #define'd LINE_SPLIT_LIMIT instead of hardcoding 400
+
+commit 3167ccfbc21e6918133e5898f5e76596bb6de788
+Author: Lukas Mai <l.mai@web.de>
+Date:   Thu Feb 18 02:23:09 2016 +0100
+
+    remove redundant check
+
+commit c9ce0c521a559727493b42f422b5cc10ede2d9b2
+Author: Lukas Mai <l.mai@web.de>
+Date:   Thu Feb 18 02:23:00 2016 +0100
+
+    make pointer check explicit
+
+commit effb00b858db17b3abf27661682255bd8139a95a
+Author: Lukas Mai <l.mai@web.de>
+Date:   Thu Feb 18 01:17:24 2016 +0100
+
+    add some documentation
+
+commit 4732e33ca9c9f9a48b57062ab254bf3aa90078bf
+Author: Lukas Mai <l.mai@web.de>
+Date:   Wed Feb 17 23:06:51 2016 +0100
+
+    irssi proxy: allow multiplexing multiple networks over a single port
+
+commit 88e2449f832d5c64b8ea30047f15319a66b17c1f
+Author: Lukas Mai <l.mai@web.de>
+Date:   Wed Feb 17 22:34:44 2016 +0100
+
+    fix formatting
+
+commit 4650665ee482d4d7c3a44948070076d4fa2c745a
+Merge: 6d8b92af 8723c0fb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 18 00:18:24 2016 +0100
+
+    Merge pull request #414 from toddpratt/master
+    
+    add an append operation to cut buffer handling
+
+commit 8723c0fb339dcf58c164fbc741122f9c3657ddea
+Author: Todd A. Pratt <toddpratt978@gmail.com>
+Date:   Wed Feb 10 09:47:10 2016 -0500
+
+    fix whitespace
+
+commit 0ca534c345c79b06ca8eefa0c46ff7ed1439be0c
+Merge: 43186385 6d8b92af
+Author: Todd A. Pratt <toddpratt978@gmail.com>
+Date:   Wed Feb 10 09:42:42 2016 -0500
+
+    Merge branch 'master' of github.com:irssi/irssi
+
 commit b91f3c3025dc5cace2c14cb5b2da005400b5cd6a
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Feb 8 14:53:17 2016 +0100
@@ -215,22 +2465,232 @@ Date:   Mon Feb 8 14:38:33 2016 +0100
 
     sync scriptassist.pl
 
+commit 6d8b92af8a95443bbcdc65072c41ce9c4d1bfecd
+Merge: 08604699 8708d8da
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Feb 7 11:48:27 2016 +0100
+
+    Merge pull request #415 from lanurmi/gitattributes
+    
+    Add .gitattributes to ensure all shell scripts have LF as eol-style.
+
+commit 086046990012b9634848e6a5018f56c8d11ff9bd
+Merge: af229a8b 7674fd59
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 5 21:39:20 2016 +0100
+
+    Merge pull request #413 from dequis/completion-list-crash-fix
+    
+    completion: Fix crash when the complist provided by a script has nulls
+
+commit 431863852c1cb4eb5a8c2ca9d132cedc8181cbe1
+Merge: 966d002b af229a8b
+Author: Todd A. Pratt <toddpratt978@gmail.com>
+Date:   Thu Feb 4 21:48:41 2016 -0500
+
+    Merge branch 'master' of github.com:irssi/irssi
+
+commit af229a8bb76d3dc964be2bbab3db75d6a9225532
+Merge: 16177289 0cc8276e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Feb 3 11:45:11 2016 +0100
+
+    Merge pull request #410 from LemonBoy/getaddrinfo-v6-flag
+    
+    Getaddrinfo v6 flag
+
+commit 8708d8da49d68057ee8f32e64415c7109d237bd7
+Author: Lauri Nurmi <lanurmi@iki.fi>
+Date:   Sun Jan 31 20:49:59 2016 +0200
+
+    Add .gitattributes to ensure all shell scripts have LF as eol-style.
+    
+    Some Git clients on Windows may use CRLF otherwise, which effectively prevents running such scripts.
+
+commit 966d002b55eb0b49a04833e5a51b9ab265013eab
+Author: Todd A. Pratt <toddpratt978@gmail.com>
+Date:   Sat Jan 30 11:32:08 2016 -0500
+
+    remove memory allocation check, spaces to tabs
+
+commit 876609901a5476ab2764a8002b9c57d25dc34f20
+Author: Todd A. Pratt <toddpratt978@gmail.com>
+Date:   Sat Jan 30 09:34:46 2016 -0500
+
+    add an append operation to cut buffer handling
+
+commit 7674fd5936de3190f1fd3bba3ef82370a2941064
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Jan 29 10:40:18 2016 -0300
+
+    completion: Fix crash when the complist provided by a script has nulls
+    
+    Can be reproduced with aspell_complete.pl 1.00 by setting an invalid
+    dictionary with "/set spell_dict a"
+
+commit 161772892f5525f5565a2e00fe1181adbc5c3976
+Merge: 16766d83 118eb0a6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 29 14:03:40 2016 +0100
+
+    Merge pull request #409 from LemonBoy/reverse-lookup-flags
+    
+    Reverse lookup flags
+
+commit 16766d83fffd134a6f563bb61c600ac1f2d4aa33
+Merge: 26431133 b229138b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 29 05:33:14 2016 +0100
+
+    Merge pull request #407 from irssi/ailin-nemui-perl-bugs
+    
+    Mention known Perl Bugs in perl.txt
+
+commit 26431133aaaea042d5149473b50bf1b191bd6a87
+Merge: dc03baa0 f31b2026
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 29 05:32:52 2016 +0100
+
+    Merge pull request #408 from LemonBoy/delete-ipv6-ifdef
+    
+    Delete the HAVE_IPV6 ifdef.
+
+commit 0cc8276e896441a186a8080f127e35d60112d758
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Jan 27 16:16:27 2016 +0100
+
+    Add AI_ADDRCONFIG to the getaddrinfo hints.
+    
+    A first step to untangle the ipv4 vs ipv6 mess.
+    At the time of writing Linux, OpenBSD and FreeBSD all support the
+    AI_ADDRCONFIG flag.
+
+commit 118eb0a68ce3250aa4528e6086b2bd0567e7638c
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Jan 27 15:54:29 2016 +0100
+
+    Call getnameinfo with NI_NAMEREQD flag.
+    
+    This way net_gethostbyaddr will fail when the system is unable to
+    resolve the address to a valid host name.
+    Without this flag in case of failure the function would return the ip
+    address instead of failing.
+
+commit f31b2026b4732e57f88af14796ac0dea4b2d0131
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Jan 27 15:04:07 2016 +0100
+
+    Minor style fix in net_ip2host.
+
+commit 70c7949cfe2f07545e5eeb4291631916ab28d07f
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Jan 27 14:42:50 2016 +0100
+
+    Update the configure script and INSTALL.
+    
+    Now that HAVE_IPV6 is gone remove all the references from the
+    buildscript and documentation.
+
+commit 87c0827471763ad5c086d1377ed91980e4b6c8d1
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Jan 27 14:31:55 2016 +0100
+
+    Delete the HAVE_IPV6 ifdef.
+    
+    Welcome to the future.
+
+commit b229138b2ef6efc4ab91504801e27e9922b766b4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 26 09:33:46 2016 +0100
+
+    Update perl.txt
+    
+    Mention known Perl Bugs (#386)
+
+commit dc03baa0d3df171ff7f802ef915c3a6aa88bdda0
+Merge: c7a3d282 5d99a3d5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 26 09:02:38 2016 +0100
+
+    Merge pull request #353 from toddpratt/master
+    
+    Allow for prepending to the cutbuffer in addition to replacing it.
+
+commit c7a3d2822cc9f32d394843296ecff259273d2827
+Merge: 18287781 eba160ca
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 26 09:00:29 2016 +0100
+
+    Merge pull request #399 from LemonBoy/bots
+    
+    Change when the autocmds are sent.
+
+commit 18287781f627c1dd5acb62d7cc83efeb392e7abc
+Merge: 4af3a473 d964950e
+Author: dx <dx@dxzone.com.ar>
+Date:   Tue Jan 26 03:25:07 2016 -0300
+
+    Merge pull request #405 from LemonBoy/serialize-channel-name
+    
+    Serialize the 'name' attribute of the CHANNEL_REC.
+
+commit d964950e5ddf9b83c67326b3a45108de4e5a44f2
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jan 24 23:53:31 2016 +0100
+
+    Serialize the 'name' attribute of the CHANNEL_REC.
+    
+    This way the code doing the serialization in 'sig_layout_save_item' is
+    now symmetric with the loading code loading the data in
+    'sig_layout_restore'.
+
+commit eba160ca6df194913d80df67c19e929b9428d77e
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jan 24 23:02:40 2016 +0100
+
+    Duplicate the code paths for autocommands.
+
+commit 4af3a4731ee21f063b90fdb051efa90f6788d99f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 12 23:38:50 2016 +0100
+
+    continue head
+
+commit b837751b2df2041e916b300dfaf38d895ba454a5
+Merge: 62cab9d6 38b11219
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 18 10:41:38 2016 +0100
+
+    Merge pull request #401 from irssi/0.8.18-beta2
+    
+    integrate 0.8.18 beta2
+
+commit 25020808710f359e75a85a5252bf0f72443d09ee
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Jan 14 23:54:42 2016 +0100
+
+    Change when the autocmds are sent.
+    
+    As per #175 if a -botcmd is specified for a given channel without a
+    -bots parameter then the command is sent right after joining the
+    channel.
+
 commit 38b1121989afcd1f8592e78f9fed0bc67e74814c
-Merge: 424675f c6a8572
+Merge: 424675f9 c6a85721
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Jan 12 23:34:44 2016 +0100
 
     Merge branch '0.8.18-beta1' into 0.8.18-beta2
 
 commit 424675f9df536eadab4e0945288ed411c7d02d00
-Merge: 62cab9d 45f8d5b
+Merge: 62cab9d6 45f8d5bd
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Jan 12 23:27:43 2016 +0100
 
     Merge branch '0.8.18-beta1' (early part) into 0.8.18-beta2
 
 commit 62cab9d662d7f8875de8ee186cbbe4ea6cb891cd
-Merge: bd2c549 cfb6123
+Merge: bd2c5490 cfb6123a
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Jan 11 21:19:35 2016 +0100
 
@@ -239,7 +2699,7 @@ Date:   Mon Jan 11 21:19:35 2016 +0100
     forward ABI to perl modules
 
 commit bd2c549064314cbff8ff0a52842d410d59f74ae6
-Merge: 8f37095 ad842ea
+Merge: 8f370959 ad842ea8
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Jan 11 21:04:48 2016 +0100
 
@@ -248,7 +2708,7 @@ Date:   Mon Jan 11 21:04:48 2016 +0100
     option to clear the history
 
 commit 8f370959691185127a38f70a7de002e64a65310e
-Merge: d16f57b 7cc85b9
+Merge: d16f57b3 7cc85b94
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Jan 11 21:04:43 2016 +0100
 
@@ -257,7 +2717,7 @@ Date:   Mon Jan 11 21:04:43 2016 +0100
     keep track of address in text_dest for hilight purposes
 
 commit d16f57b3788ed780940151454be355923512c9f3
-Merge: 12f4f1f dbee606
+Merge: 12f4f1fa dbee606c
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Jan 11 21:04:27 2016 +0100
 
@@ -266,7 +2726,7 @@ Date:   Mon Jan 11 21:04:27 2016 +0100
     Clean up the ignore_find API to make it more powerful.
 
 commit 12f4f1fa24943e4a46e4223d7c98d5fcf721f906
-Merge: 83a7ce2 41088b6
+Merge: 83a7ce2e 41088b6f
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Jan 8 20:27:47 2016 +0100
 
@@ -285,7 +2745,7 @@ Date:   Fri Jan 8 19:37:29 2016 +0100
     scripts that hook ban/unban to work automatically with /knockout.
 
 commit 83a7ce2e00f418560ad2566c9b06ddf523148a91
-Merge: be6d762 cf90b21
+Merge: be6d7629 cf90b212
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Jan 8 19:28:46 2016 +0100
 
@@ -318,7 +2778,7 @@ Date:   Wed Jan 6 17:25:53 2016 +0100
     forward ABI to perl modules
 
 commit be6d7629e3e58102e5c7599943974cc39c9b172c
-Merge: 787956a 837e03b
+Merge: 787956af 837e03bd
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Jan 6 12:57:20 2016 +0100
 
@@ -372,7 +2832,7 @@ Date:   Tue Dec 22 00:51:57 2015 +0100
     correct incorrect pre-release tag in NEWS
 
 commit 787956af3aac001755ec87d52cbb28f7c91800e1
-Merge: 665f0b8 6446393
+Merge: 665f0b83 64463933
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Dec 22 00:18:41 2015 +0100
 
@@ -417,7 +2877,7 @@ Date:   Sun Dec 13 12:35:27 2015 +0100
     add new authors since 0.8.17
 
 commit 45f8d5bd6a2f98a4d211df8c51c602a84f6777e4
-Merge: 311b01e e4e0409
+Merge: 311b01e7 e4e04092
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Dec 15 11:12:09 2015 +0100
 
@@ -426,7 +2886,7 @@ Date:   Tue Dec 15 11:12:09 2015 +0100
     option to clear the history
 
 commit 311b01e72a81a6fdef1c477d3255b76e545d49f1
-Merge: 665f0b8 ff8ccaf
+Merge: 665f0b83 ff8ccaf0
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Dec 15 11:09:48 2015 +0100
 
@@ -441,7 +2901,7 @@ Date:   Tue Dec 15 01:52:44 2015 +0100
     option to clear the history
 
 commit 665f0b83d7f055892abbae573b599eb02a5be0cb
-Merge: 2fbdadf 620d0a9
+Merge: 2fbdadf1 620d0a92
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Dec 15 00:10:27 2015 +0100
 
@@ -450,7 +2910,7 @@ Date:   Tue Dec 15 00:10:27 2015 +0100
     script should be plural
 
 commit 2fbdadf124b4e07997dd30d550d68beec8af2ae1
-Merge: 074af68 5fbad76
+Merge: 074af685 5fbad764
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Dec 15 00:08:50 2015 +0100
 
@@ -465,7 +2925,7 @@ Date:   Tue Dec 15 00:08:44 2015 +0100
     clean up after #303
 
 commit 074af68578766b32bfc589089e290614b5ba6a8d
-Merge: 38720e0 deb6ca1
+Merge: 38720e0e deb6ca1b
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Dec 15 00:07:18 2015 +0100
 
@@ -474,7 +2934,7 @@ Date:   Tue Dec 15 00:07:18 2015 +0100
     Applied patch from fs#275 to make /hilight -mask -line work properly
 
 commit 38720e0ecbf346c2a3c45e0d2f7584091794edb8
-Merge: 7b69b98 ce77842
+Merge: 7b69b988 ce77842a
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Dec 15 00:06:48 2015 +0100
 
@@ -489,7 +2949,7 @@ Date:   Mon Dec 14 19:12:47 2015 +0100
     script should be plural
 
 commit 7b69b98812c2be31dcd1875fc2ef90a20af8a15e
-Merge: 4dd7f2b 6e01a23
+Merge: 4dd7f2b1 6e01a231
 Author: dx <dx@dxzone.com.ar>
 Date:   Mon Dec 14 10:27:39 2015 -0300
 
@@ -512,7 +2972,7 @@ Date:   Sun Dec 13 01:08:53 2015 +0100
     ensure staticlib perl works on 5.22 (for now)
 
 commit 4dd7f2b18f9895e440e84c563cfd5c997cac317f
-Merge: 18c3ea2 9dd2b7c
+Merge: 18c3ea24 9dd2b7c6
 Author: dx <dx@dxzone.com.ar>
 Date:   Sat Dec 12 12:40:38 2015 -0300
 
@@ -521,7 +2981,7 @@ Date:   Sat Dec 12 12:40:38 2015 -0300
     deinit perl on staticperl builds
 
 commit 18c3ea24b6377c3e1820e8c49c137260dcbbdc6b
-Merge: 40e5dfa 0b1a912
+Merge: 40e5dfa7 0b1a912f
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Sat Dec 12 11:29:40 2015 +0100
 
@@ -561,7 +3021,7 @@ Date:   Fri Dec 11 21:31:04 2015 -0300
     was already configured before, as found in the comments of PR #375
 
 commit 40e5dfa7767c7e13ff920dc4b4afb34510765edf
-Merge: 4dc2bab 0fcfd37
+Merge: 4dc2bab4 0fcfd37b
 Author: dx <dx@dxzone.com.ar>
 Date:   Fri Dec 11 21:30:30 2015 -0300
 
@@ -575,6 +3035,13 @@ Date:   Thu Dec 10 14:02:59 2015 +0100
 
     deinit perl on staticperl builds
 
+commit 5d99a3d59a58bfc074fdcbae7d493d4d7c91ef7d
+Merge: 15dfb27f 4dc2bab4
+Author: Todd A. Pratt <ae88925@gmail.com>
+Date:   Wed Dec 9 20:48:21 2015 -0500
+
+    Merge branch 'master' of github.com:irssi/irssi
+
 commit ff8ccaf08b60d88a67ddf810f8229f910f016cf7
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Nov 24 00:08:20 2015 +0100
@@ -585,7 +3052,7 @@ Date:   Tue Nov 24 00:08:20 2015 +0100
     in common.h
 
 commit 4dc2bab4b4ae7ff05220c1121f0f11097f77b265
-Merge: 3468a32 1749a7a
+Merge: 3468a326 1749a7a5
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Dec 9 23:07:48 2015 +0100
 
@@ -594,7 +3061,7 @@ Date:   Wed Dec 9 23:07:48 2015 +0100
     Rewrite some faulty logic handling the saved channels. Fixes #340
 
 commit 3468a326242066743803ea0b19f0359cec0ce398
-Merge: 544d5a8 96766b7
+Merge: 544d5a8b 96766b7f
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Dec 9 23:04:25 2015 +0100
 
@@ -614,7 +3081,7 @@ Date:   Wed Dec 9 15:20:59 2015 -0300
     think anyone cares about supporting win32 the hard way.
 
 commit 544d5a8bba7e00f8b4a8433faea907abce27f557
-Merge: 3eecb4e 20fe5d0
+Merge: 3eecb4e1 20fe5d0c
 Author: dx <dx@dxzone.com.ar>
 Date:   Wed Dec 9 15:07:44 2015 -0300
 
@@ -658,7 +3125,7 @@ Date:   Wed Dec 9 14:23:15 2015 +0100
     add missing file to Makefile
 
 commit 3eecb4e12107bfe51ddcee265af00b232ba6b495
-Merge: 229c600 3532fc4
+Merge: 229c600e 3532fc46
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Dec 9 12:33:53 2015 +0100
 
@@ -676,7 +3143,7 @@ Date:   Fri Aug 22 13:48:17 2014 +0200
     entries when an interactive process is executing.
 
 commit 229c600e9963452689669a8466b1c7f49912125e
-Merge: 57576bb b03805e
+Merge: 57576bb7 b03805ee
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Dec 9 12:01:00 2015 +0100
 
@@ -685,7 +3152,7 @@ Date:   Wed Dec 9 12:01:00 2015 +0100
     reimplement format and length logic for the entry prompt
 
 commit 57576bb75f976d7ba80976b12160661809412357
-Merge: ef6b7f9 ccc64c0
+Merge: ef6b7f91 ccc64c00
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Dec 9 12:00:30 2015 +0100
 
@@ -694,7 +3161,7 @@ Date:   Wed Dec 9 12:00:30 2015 +0100
     forward alternate_nick to Irc::Server attributes
 
 commit ef6b7f91f57e510b429ba437e5e208820f5fc340
-Merge: b5cfa55 ca96444
+Merge: b5cfa55d ca964447
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Dec 9 11:58:23 2015 +0100
 
@@ -723,7 +3190,7 @@ Date:   Sun Dec 6 22:31:49 2015 +0100
     without removing the associated channels.
 
 commit b5cfa55d9be3d7cd74628215ba5dd126c4e18342
-Merge: 99193e9 82ce1de
+Merge: 99193e99 82ce1de5
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Nov 27 00:07:15 2015 +0100
 
@@ -744,7 +3211,7 @@ Date:   Thu Nov 26 19:50:58 2015 -0300
     And, of course, this is cleaner.
 
 commit 99193e99718630b90f52e5a25c19dd9b6b7229f6
-Merge: c10188e d7ef9c5
+Merge: c10188e4 d7ef9c59
 Author: dx <dx@dxzone.com.ar>
 Date:   Thu Nov 26 19:25:16 2015 -0300
 
@@ -753,7 +3220,7 @@ Date:   Thu Nov 26 19:25:16 2015 -0300
     Correctly alias 'channel' to '#channel'
 
 commit c10188e45e1bf84053d711fa5b50aac2e4436c3c
-Merge: 7ffc755 54153e6
+Merge: 7ffc7554 54153e6d
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Nov 25 19:49:25 2015 +0100
 
@@ -781,7 +3248,7 @@ Date:   Wed Nov 25 11:53:48 2015 -0600
     ignore MYMETA.* generated by scripts in project root
 
 commit 7ffc755448353a198889169f55731276987b656f
-Merge: 8014162 11ad4da
+Merge: 80141622 11ad4da0
 Author: dx <dx@dxzone.com.ar>
 Date:   Wed Nov 25 10:11:53 2015 -0300
 
@@ -796,7 +3263,7 @@ Date:   Wed Nov 25 12:16:42 2015 +0100
     more perl inheritance warning fixes
 
 commit 80141622ed3833670120cae0df10765dcf3775c5
-Merge: 4c816c2 a941329
+Merge: 4c816c28 a941329b
 Author: dx <dx@dxzone.com.ar>
 Date:   Mon Nov 23 21:02:48 2015 -0300
 
@@ -805,7 +3272,7 @@ Date:   Mon Nov 23 21:02:48 2015 -0300
     fix nick class hierarchy
 
 commit 4c816c287a499023424dc42dfd09c75cd896e607
-Merge: 0ca0c88 877ff07
+Merge: 0ca0c882 877ff075
 Author: dx <dx@dxzone.com.ar>
 Date:   Mon Nov 23 20:56:33 2015 -0300
 
@@ -826,7 +3293,7 @@ Date:   Tue Nov 24 00:30:12 2015 +0100
     stop cap_sasl
 
 commit 0ca0c882a578a6b82b9bad648b831da7b44421f1
-Merge: f9654a7 50fae42
+Merge: f9654a7e 50fae421
 Author: dx <dx@dxzone.com.ar>
 Date:   Mon Nov 23 13:08:13 2015 -0300
 
@@ -835,7 +3302,7 @@ Date:   Mon Nov 23 13:08:13 2015 -0300
     Save a patch from the Flyspray oblivion, plus a nice unrelated commit to make everyone (un)happy
 
 commit f9654a7e0c0db48514e2b678a2f0ee4c61da39d9
-Merge: 3ed21a5 8701cbc
+Merge: 3ed21a53 8701cbc9
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Nov 23 10:05:05 2015 +0100
 
@@ -844,7 +3311,7 @@ Date:   Mon Nov 23 10:05:05 2015 +0100
     Let ignore_check do its work when server is NULL
 
 commit 3ed21a530366c6ed13f3549d41219c690040053b
-Merge: fbb838b 0171b1a
+Merge: fbb838b3 0171b1a6
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Sun Nov 22 23:02:04 2015 +0100
 
@@ -908,7 +3375,7 @@ Date:   Thu Nov 19 15:31:32 2015 +0100
     Remove 'irc_nick_strip' since it was unused.
 
 commit fbb838b3b0d30ee41de648d667fa89a2d6b41076
-Merge: ac04fa7 d4676c9
+Merge: ac04fa74 d4676c98
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Nov 18 22:01:29 2015 +0100
 
@@ -916,8 +3383,45 @@ Date:   Wed Nov 18 22:01:29 2015 +0100
     
     Strip trailing whitespace from commands
 
+commit 15dfb27f80922f6f3b751da9e1395994c3026a62
+Author: Todd A. Pratt <ae88925@gmail.com>
+Date:   Sat Nov 14 09:07:35 2015 -0500
+
+    use the enum name which was the original intended change
+
+commit bb8c0bbf4caf87172255993ce8a86f91a8cd4208
+Author: Todd A. Pratt <ae88925@gmail.com>
+Date:   Fri Nov 13 20:33:57 2015 -0500
+
+    fix indentation, undelete line not meant to be deleted.
+
+commit f90e10c5d27ee7d8a6663a432238cf487e7d372f
+Author: Todd A. Pratt <ae88925@gmail.com>
+Date:   Fri Nov 13 14:01:25 2015 -0500
+
+    remove more cruft from previous implementation
+
+commit 7768f3e52074715e9c83bcded8607500e4434468
+Author: Todd A. Pratt <ae88925@gmail.com>
+Date:   Fri Nov 13 13:51:56 2015 -0500
+
+    remove cruft from previous implementation
+
+commit 1199ecc62f137eedb388b3dbd9b003cf1a8280f7
+Author: Todd A. Pratt <ae88925@gmail.com>
+Date:   Fri Nov 13 13:42:28 2015 -0500
+
+    a facility for prepending or replacing the cutbuffer
+
+commit 0b2b3a0b85157cd7731775384f50ca6aca08cc14
+Merge: ac04fa74 4f8974f6
+Author: Todd A. Pratt <ae88925@gmail.com>
+Date:   Fri Nov 13 10:59:21 2015 -0500
+
+    Merge branch 'master' of github.com:toddpratt/irssi
+
 commit ac04fa741355888d814c693e7e2b793c5413c3eb
-Merge: 6d6e672 b333d10
+Merge: 6d6e672e b333d103
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Nov 10 11:07:16 2015 +0100
 
@@ -952,7 +3456,7 @@ Date:   Mon Nov 9 17:32:51 2015 +0100
     Add an option to strip trailing whitespace when parsing commands
 
 commit 6d6e672e8e27469bd08704edb96c3e0fa9ef898f
-Merge: 0188c1f ef1a09b
+Merge: 0188c1fb ef1a09b8
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Nov 9 16:45:19 2015 +0100
 
@@ -961,7 +3465,7 @@ Date:   Mon Nov 9 16:45:19 2015 +0100
     Fix #45 Make it easy to delete default channels, servers and networks
 
 commit 0188c1fb5d85fa0dc05114afaff44ff0aa9d7f87
-Merge: 50775e9 b054ade
+Merge: 50775e92 b054ade4
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Nov 9 16:21:33 2015 +0100
 
@@ -982,14 +3486,27 @@ Date:   Mon Nov 9 06:33:08 2015 -0300
     strsplit_len: use strlen() directly instead of a remaining_len variable
 
 commit 8c98e07eab423ad7926d8e4fa742b60117652eb1
-Merge: 7866d2b 50775e9
+Merge: 7866d2bc 50775e92
 Author: dequis <dx@dxzone.com.ar>
 Date:   Sun Nov 8 14:28:18 2015 -0300
 
     Merge remote-tracking branch 'origin/master' into bracketed-paste
 
+commit 4f8974f66e434cfe5b47fa143728488758b3833e
+Merge: 3c95f6aa 50775e92
+Author: Todd A. Pratt <ae88925@gmail.com>
+Date:   Mon Nov 2 08:08:38 2015 -0500
+
+    Merge branch 'master' of github.com:toddpratt/irssi
+
+commit 3c95f6aae9826c10a50c4a0f12c16fca6038410c
+Author: Todd A. Pratt <ae88925@gmail.com>
+Date:   Mon Nov 2 08:00:52 2015 -0500
+
+    Make C-w and M-backspace work right.
+
 commit 50775e92e64561837e6c805fc8fef19aedaafeb4
-Merge: 8d1f667 58a1664
+Merge: 8d1f6671 58a16648
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Nov 2 00:15:58 2015 +0100
 
@@ -998,7 +3515,7 @@ Date:   Mon Nov 2 00:15:58 2015 +0100
     Add xterm's keypad enter, meta-O-M to "key return" bindings
 
 commit 8d1f667100fdd5ff331f4f9e4b922c4a9db7c53d
-Merge: 897ceed 2127fd3
+Merge: 897ceedc 2127fd36
 Author: dx <dx@dxzone.com.ar>
 Date:   Sun Nov 1 13:40:54 2015 -0300
 
@@ -1007,7 +3524,7 @@ Date:   Sun Nov 1 13:40:54 2015 -0300
     Fix warnings
 
 commit 897ceedc16fd2a24e75529480a7b7bc6ca769073
-Merge: 0184b4c 06bf25b
+Merge: 0184b4c3 06bf25bf
 Author: dx <dx@dxzone.com.ar>
 Date:   Fri Oct 30 04:09:00 2015 -0300
 
@@ -1016,7 +3533,7 @@ Date:   Fri Oct 30 04:09:00 2015 -0300
     Fix quote around macro argument
 
 commit 0184b4c3bf8a03af1f8840a549b050487a85dcd1
-Merge: 7ab38f2 8094e87
+Merge: 7ab38f29 8094e87c
 Author: dx <dx@dxzone.com.ar>
 Date:   Wed Oct 28 18:22:04 2015 -0300
 
@@ -1080,7 +3597,7 @@ Date:   Fri Oct 23 04:25:57 2015 -0300
     changes the way it iterates over the string to be much less confusing.
 
 commit 7ab38f29edb59941281723d7031d41d93fae06bd
-Merge: 79fa2fc f540ec9
+Merge: 79fa2fcb f540ec9d
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Thu Oct 8 09:18:04 2015 +0200
 
@@ -1111,7 +3628,7 @@ Date:   Tue Oct 6 04:51:16 2015 -0300
     Fixes #327
 
 commit 79fa2fcb598ac4a9c6caa4d94162ec98f14dfee5
-Merge: 15a40ea 0140e7c
+Merge: 15a40ea6 0140e7c6
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Sun Oct 4 20:22:36 2015 +0200
 
@@ -1126,7 +3643,7 @@ Date:   Sun Oct 4 11:56:54 2015 +0200
     Fix the indentation.
 
 commit 15a40ea6d34ac159dd7cc80bcee38ff3c0850a01
-Merge: 48375c3 a475d57
+Merge: 48375c3f a475d571
 Author: dx <dx@dxzone.com.ar>
 Date:   Sat Oct 3 22:15:17 2015 -0300
 
@@ -1159,7 +3676,7 @@ Date:   Sat Oct 3 18:50:23 2015 +0200
     Simplify Travis config.
 
 commit 5e8523c037bc55aaf8d00a35433657d568dfdeb0
-Merge: da3f2f0 b68a30c
+Merge: da3f2f0d b68a30cd
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Oct 3 14:33:02 2015 +0200
 
@@ -1200,7 +3717,7 @@ Date:   Fri Oct 2 13:48:23 2015 -0300
     Lemon broke it a few commits ago.
 
 commit 9c5f6780b286a919bc625011e8571af206e26e86
-Merge: bd696a0 b545bc9
+Merge: bd696a09 b545bc96
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Fri Oct 2 09:39:10 2015 -0700
 
@@ -1209,7 +3726,7 @@ Date:   Fri Oct 2 09:39:10 2015 -0700
     Fix a memory leak.
 
 commit bd696a096ee782c3662a0bd81e0939357fdfb447
-Merge: c3e4664 db5ae4a
+Merge: c3e46648 db5ae4ad
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Fri Oct 2 09:33:03 2015 -0700
 
@@ -1267,7 +3784,7 @@ Date:   Fri Oct 2 12:39:08 2015 +0200
     g_get_current_dir() returns a heap-allocated string.
 
 commit c3e466487044b38923efce58f9db3a6d0b6d6fee
-Merge: acbe2ec 0823289
+Merge: acbe2eca 0823289f
 Author: dx <dx@dxzone.com.ar>
 Date:   Fri Oct 2 07:22:48 2015 -0300
 
@@ -1276,7 +3793,7 @@ Date:   Fri Oct 2 07:22:48 2015 -0300
     Limit recursion depth of key/combo expansion in key_states_scan()
 
 commit acbe2ecac299d4f6770c60747776cbea290bee3f
-Merge: 8217147 cfff402
+Merge: 8217147a cfff402f
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Oct 2 11:48:11 2015 +0200
 
@@ -1322,7 +3839,7 @@ Date:   Thu Oct 1 21:14:30 2015 +0200
     Removing network will now also remove all attached servers
 
 commit 8217147a805af081010578b0dcd7fe42fede1425
-Merge: fb6375c 00176db
+Merge: fb6375c6 00176dbf
 Author: dx <dx@dxzone.com.ar>
 Date:   Thu Oct 1 01:48:06 2015 -0300
 
@@ -1339,7 +3856,7 @@ Date:   Tue Sep 29 17:34:35 2015 +0200
     Fixes #310
 
 commit fb6375c6f9c1191590420482aea634644aa228eb
-Merge: 3e4926d b04b5f0
+Merge: 3e4926d8 b04b5f0f
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Sep 29 12:00:44 2015 +0200
 
@@ -1360,7 +3877,7 @@ Date:   Tue Sep 29 10:39:49 2015 +0200
     Add sasl info to /network list output if available
 
 commit 3e4926d87bb1f5a54d188a2cb6b15f223e01c444
-Merge: 696bc43 0f066aa
+Merge: 696bc43b 0f066aac
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Sep 28 05:34:38 2015 +0200
 
@@ -1479,7 +3996,7 @@ Date:   Tue Sep 8 00:40:25 2015 +0200
     supported by all the VTs.
 
 commit 696bc43baca1b7be2711046803a58856eedc5e6b
-Merge: 18989e7 6f9fc5d
+Merge: 18989e76 6f9fc5d5
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Sun Sep 27 10:04:24 2015 +0200
 
@@ -1497,7 +4014,7 @@ Date:   Sun Sep 27 02:15:14 2015 -0300
     So I'm adding what nei told me to do.
 
 commit 18989e76dbf42d39ce1906d37cf5bfcc43422f32
-Merge: 815862b 1a2c479
+Merge: 815862b6 1a2c479b
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Sat Sep 26 19:07:54 2015 +0200
 
@@ -1515,7 +4032,7 @@ Date:   Sat Sep 26 18:53:10 2015 +0200
     username and the password on a chatnet basis.
 
 commit 815862b68899c72e5587002c37cec286df0c82f2
-Merge: fc3c0a8 a2277e8
+Merge: fc3c0a84 a2277e84
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Thu Sep 24 18:04:29 2015 +0200
 
@@ -1536,7 +4053,7 @@ Date:   Thu Sep 24 11:59:18 2015 +0200
     Added functionality to create dir if dir specified in rawlog filename
 
 commit fc3c0a84205885e5914c7e0812b35a4acbabc3b0
-Merge: 3daadfa b984f1f
+Merge: 3daadfa4 b984f1fa
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Thu Sep 24 10:05:30 2015 +0200
 
@@ -1558,7 +4075,7 @@ Date:   Wed Sep 23 23:39:37 2015 -0300
     [2]: http://bugs.irssi.org/index.php?do=details&task_id=867
 
 commit 3daadfa4a2c19757050ba934c5c112905763db9b
-Merge: 33e90c5 7ae7422
+Merge: 33e90c5a 7ae74229
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Sep 23 20:13:25 2015 +0200
 
@@ -1567,7 +4084,7 @@ Date:   Wed Sep 23 20:13:25 2015 +0200
     Add multi-prefix to list of capabilities to request
 
 commit 33e90c5ae3b91577c0caa6390c7f7fd6186768f1
-Merge: ce70288 9da445a
+Merge: ce702884 9da445ab
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Sep 23 20:11:47 2015 +0200
 
@@ -1608,7 +4125,7 @@ Date:   Wed Sep 23 13:37:14 2015 -0300
     This reverts commit d222c11f74a5662df59e00e7ae6c8105179a804e.
 
 commit ce702884889165a775d66b0eb248009cd0ac75bb
-Merge: f247a43 d3df165
+Merge: f247a43b d3df165e
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Sep 23 18:52:14 2015 +0200
 
@@ -1648,7 +4165,7 @@ Date:   Tue Sep 22 19:35:10 2015 -0300
     sig_message_irc_op_public: fix nickmode lookup, use cleantarget instead
 
 commit 618a636f7ca2a7b915bedc1cba2860e2b948a2a2
-Merge: f326206 3f2eaf1
+Merge: f3262067 3f2eaf1d
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Sep 23 00:07:03 2015 +0200
 
@@ -1681,7 +4198,7 @@ Date:   Tue Sep 22 22:39:44 2015 +0200
     Remove unused variables that crept into the nick_match_msg_everywhere function
 
 commit f32620673ed26e9e4e730b021b46dc1a4e6cb720
-Merge: 2d69deb f5f3d7c
+Merge: 2d69deb0 f5f3d7cc
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Sep 22 22:00:31 2015 +0200
 
@@ -1698,7 +4215,7 @@ Date:   Tue Sep 22 21:59:17 2015 +0200
     Revert "Network and IPv{4,6} related changes"
 
 commit 2d69deb0a36516bac9514c6d53a1389b0a4b031a
-Merge: 5ced71e 5648296
+Merge: 5ced71e1 56482961
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Sep 22 17:43:31 2015 +0200
 
@@ -1707,7 +4224,7 @@ Date:   Tue Sep 22 17:43:31 2015 +0200
     Network and IPv{4,6} related changes
 
 commit 5ced71e1ac5cf74e46115ade90fa9004e6fe1493
-Merge: 85223a9 99f074b
+Merge: 85223a9b 99f074b0
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Sep 22 12:20:35 2015 +0200
 
@@ -1760,7 +4277,7 @@ Date:   Mon Sep 21 22:53:53 2015 -0300
     http://bugs.irssi.org/index.php?do=details&task_id=817
 
 commit 85223a9b6b0c8a68abba367756763e3fd641be89
-Merge: 211e84c f39723f
+Merge: 211e84c1 f39723f6
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Sep 21 23:00:31 2015 +0200
 
@@ -1781,7 +4298,7 @@ Date:   Thu Sep 17 00:55:31 2015 -0300
     times less than what the size parameter of memmove() should be.
 
 commit 211e84c1e968b0b13ecb0921479bc862ed76df3c
-Merge: 0912a11 2f9cca8
+Merge: 0912a110 2f9cca8e
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Sep 21 18:47:09 2015 +0200
 
@@ -1805,7 +4322,7 @@ Date:   Mon Sep 21 13:54:13 2015 +0200
     by using getaddrinfo and some proper hints.
 
 commit 0912a1105058829559529e2ae7d62daccb8337f6
-Merge: a44c4b8 203c009
+Merge: a44c4b82 203c0093
 Author: dx <dx@dxzone.com.ar>
 Date:   Sun Sep 20 19:19:49 2015 -0300
 
@@ -1840,7 +4357,7 @@ Date:   Sun Sep 20 22:51:13 2015 +0200
     Fix formatting warnings.
 
 commit 9cf4dfd23d10e735d43f7e7355fe718f2a7995cb
-Merge: 519955e 29cf546
+Merge: 519955eb 29cf546e
 Author: dx <dx@dxzone.com.ar>
 Date:   Sun Sep 20 16:49:48 2015 -0300
 
@@ -1885,7 +4402,7 @@ Date:   Sun Sep 20 21:01:25 2015 +0200
     Use g_string_append() instead of g_string_append_c() for string.
 
 commit 06040fb30bc0503696794ff6097cd55eff332bb5
-Merge: 24d32c2 9586766
+Merge: 24d32c28 9586766d
 Author: LemonBoy <thatlemon@gmail.com>
 Date:   Sat Sep 19 23:58:16 2015 +0200
 
@@ -1900,7 +4417,7 @@ Date:   Sat Sep 19 18:27:48 2015 -0300
     Closes #169
 
 commit efc8f5f18758dc27c93f7f4b662daceada583257
-Merge: 9556062 061fb34
+Merge: 9556062a 061fb347
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Sat Sep 19 23:09:29 2015 +0200
 
@@ -1909,7 +4426,7 @@ Date:   Sat Sep 19 23:09:29 2015 +0200
     Clear the ICRNL flag
 
 commit 9556062a9d6a47a051d3d8d8737f918f27b66101
-Merge: 3e7c8a6 f37f6ac
+Merge: 3e7c8a6f f37f6ac0
 Author: dx <dx@dxzone.com.ar>
 Date:   Sat Sep 19 17:02:11 2015 -0300
 
@@ -1918,7 +4435,7 @@ Date:   Sat Sep 19 17:02:11 2015 -0300
     Add two missing #include "fe-irc-channels.h"
 
 commit 3e7c8a6f26f399578dbffd4b60405a5b21b4acba
-Merge: 2b13e79 54a2faf
+Merge: 2b13e793 54a2fafb
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Sat Sep 19 13:24:19 2015 +0200
 
@@ -1949,7 +4466,7 @@ Date:   Fri Sep 18 23:56:17 2015 -0300
     Fixes #285
 
 commit 2b13e793c4872711bc046363303cca4bc060e017
-Merge: 7b46dae 51496cd
+Merge: 7b46dae1 51496cd0
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Sat Sep 19 02:53:25 2015 +0200
 
@@ -2027,7 +4544,7 @@ Date:   Thu Sep 10 01:02:44 2015 +0200
     specified for each chatnet.
 
 commit 7b46dae1825fc90d97163b40cdca2ffaceb2e13c
-Merge: 762c1d7 4346c2a
+Merge: 762c1d7f 4346c2a6
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Thu Sep 10 01:37:08 2015 +0200
 
@@ -2042,7 +4559,7 @@ Date:   Wed Sep 9 23:55:00 2015 +0200
     Move the function prototypes in a separate header
 
 commit 762c1d7f2c7478f1e98f847352e6cb3ca889c580
-Merge: a8ec9aa b5b73cb
+Merge: a8ec9aa3 b5b73cb4
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Sep 9 22:55:24 2015 +0200
 
@@ -2051,7 +4568,7 @@ Date:   Wed Sep 9 22:55:24 2015 +0200
     Send smkx/rmkx sequence at terminal init
 
 commit a8ec9aa3d88f39ba6963eb239a36bb961fca47bb
-Merge: e948aaa 21c1e4e
+Merge: e948aaa4 21c1e4e9
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Sep 9 22:51:40 2015 +0200
 
@@ -2136,7 +4653,7 @@ Date:   Wed Aug 26 09:34:48 2015 +0300
     instead of g_strconcat() to return the pointer to hostname.
 
 commit e948aaa4bab4064e0ff492906bdd301a9a38799e
-Merge: d2c9f30 a393c67
+Merge: d2c9f309 a393c675
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Aug 24 22:27:51 2015 +0200
 
@@ -2145,7 +4662,7 @@ Date:   Mon Aug 24 22:27:51 2015 +0200
     Introduce check for git commands in autogen
 
 commit d2c9f309775b0263937c0e0c8a9b15496d46135a
-Merge: 14c7c04 b0e7c18
+Merge: 14c7c048 b0e7c183
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Aug 24 22:22:01 2015 +0200
 
@@ -2162,7 +4679,7 @@ Date:   Thu Aug 20 23:37:34 2015 +0200
     Patch by @dequis
 
 commit 14c7c0484c79ac42df2b17241e584c0c30c3b4ef
-Merge: 6fcafc5 92d03fe
+Merge: 6fcafc59 92d03fe1
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Tue Jul 28 18:48:04 2015 +0200
 
@@ -2213,7 +4730,7 @@ Date:   Sun Jun 14 11:57:11 2015 -0300
     Rename /proxy command to /irssiproxy for clarity
 
 commit 29fb0d98023de26e643b213177ecb9fbb73d83f8
-Merge: 7beffbd 6fcafc5
+Merge: 7beffbdc 6fcafc59
 Author: dequis <dx@dxzone.com.ar>
 Date:   Sun Jun 14 10:42:41 2015 -0300
 
@@ -2231,7 +4748,7 @@ Date:   Fri Jun 12 21:13:27 2015 +0200
     1k+ windows are now the default formatting (#223)
 
 commit fb5513ef4ae6a8b4e325a973d8f9e63d0e2487d5
-Merge: b90402b a79f150
+Merge: b90402b7 a79f150a
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Fri Jun 12 20:48:50 2015 +0200
 
@@ -2267,7 +4784,7 @@ Date:   Fri Jun 12 19:40:15 2015 +0200
     will poke coekie about it.
 
 commit 788f181ecb956addf17fe3c5bddc6a56a97b8681
-Merge: 4cc6fda d222c11
+Merge: 4cc6fdaa d222c11f
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Fri Jun 12 19:06:48 2015 +0200
 
@@ -2299,7 +4816,7 @@ Date:   Fri Jun 12 17:23:49 2015 +0200
     Clarify the help for /LIST (#228)
 
 commit 01510b7d9efd4caa1e41780488658c130224d9cd
-Merge: 7978d58 ae742f3
+Merge: 7978d582 ae742f3f
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Fri Jun 12 16:44:07 2015 +0200
 
@@ -2308,7 +4825,7 @@ Date:   Fri Jun 12 16:44:07 2015 +0200
     lastlog doc fix
 
 commit 7978d5820223347b16a19f45bda23dee2fc98ec1
-Merge: c122a2a fa782ae
+Merge: c122a2a2 fa782ae6
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Fri Jun 12 16:43:43 2015 +0200
 
@@ -2355,7 +4872,7 @@ Date:   Thu Feb 12 00:07:22 2015 +0100
     Implement support for IRCv3.1 CAP negotiation
 
 commit c122a2a226363114e11f32072395e2f06ad6a450
-Merge: 9540a60 6b56f09
+Merge: 9540a60c 6b56f098
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Apr 21 00:17:40 2015 +0200
 
@@ -2364,7 +4881,7 @@ Date:   Tue Apr 21 00:17:40 2015 +0200
     Change a hash lookup so it compiles
 
 commit 9540a60c5267055e1dfea0aca179da3172f70c69
-Merge: c7b428b be8c3c3
+Merge: c7b428bd be8c3c37
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Apr 21 00:14:39 2015 +0200
 
@@ -2379,7 +4896,7 @@ Date:   Sun Apr 19 13:14:54 2015 +0200
     Change g_hash_table_contains() for compatibility with glib < 2.32
 
 commit c7b428bdafc749ec3a2407c3dc1f271a013c1702
-Merge: eb0f090 9f77dd8
+Merge: eb0f0907 9f77dd80
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Apr 18 16:25:18 2015 +0200
 
@@ -2394,7 +4911,7 @@ Date:   Sat Apr 18 13:53:07 2015 +1000
     trivial: Minor cosmetic changes fixing docs as per review from ahf.
 
 commit eb0f09073cf15eb033f098d716006a9a1d67fdef
-Merge: 03be286 ee3eaa5
+Merge: 03be2861 ee3eaa54
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Fri Apr 17 21:23:03 2015 +0200
 
@@ -2403,7 +4920,7 @@ Date:   Fri Apr 17 21:23:03 2015 +0200
     Make config parser more robust
 
 commit 03be2861dcec9e8d088be6a0cae2848388923dab
-Merge: ef5ac43 9890dac
+Merge: ef5ac430 9890daca
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Fri Apr 17 21:13:18 2015 +0200
 
@@ -2412,7 +4929,7 @@ Date:   Fri Apr 17 21:13:18 2015 +0200
     Change all strcmp() to g_strcmp0() to handle nulls gracefully
 
 commit ef5ac430c75a3a551991aff8dae08ceeaca25d3f
-Merge: 9ffe52e 349ed35
+Merge: 9ffe52ec 349ed35c
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Fri Apr 17 21:10:00 2015 +0200
 
@@ -2465,7 +4982,7 @@ Date:   Tue Apr 7 22:39:05 2015 -0300
         sed -i 's/strcmp(/g_strcmp0(/g' **/*.c
 
 commit 9ffe52ec5e3f0643e7ddd12f4d21c0788d2f8cea
-Merge: 8d2ea2d f5331a3
+Merge: 8d2ea2d7 f5331a3d
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Apr 8 03:32:45 2015 +0200
 
@@ -2474,7 +4991,7 @@ Date:   Wed Apr 8 03:32:45 2015 +0200
     Make sure NO_ACT isn't cleared when -actcolor %n is used
 
 commit 8d2ea2d7cea464a583a22fe8a6dffb420fbdfe72
-Merge: ac5aebb 28aaa65
+Merge: ac5aebb9 28aaa653
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Apr 7 21:19:43 2015 +0200
 
@@ -2503,7 +5020,7 @@ Date:   Tue Apr 7 12:13:45 2015 +0300
     Bug fix - docdir is ignored during installation.
 
 commit ac5aebb91f2743326015d0f790a383767cbf7115
-Merge: 1f87dd3 895ac10
+Merge: 1f87dd36 895ac10c
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Mar 1 11:44:28 2015 +0100
 
@@ -2556,7 +5073,7 @@ Date:   Tue Jun 24 23:01:06 2014 -0700
     Change "proxy client connected" to "proxy client connecting" to avoid being confused by clients that have connected but not necessarily authenticated. Emit "proxy client connected" once authenticated, keeping the name for backwards compatibility.
 
 commit 1f87dd361eabf3b161014d8466aaaa466a76300f
-Merge: 8657cd2 6ce8a64
+Merge: 8657cd22 6ce8a641
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Feb 21 11:59:59 2015 +0100
 
@@ -2575,7 +5092,7 @@ Date:   Fri Feb 20 14:05:58 2015 +0100
     got removed in error while cleaning up warnings.
 
 commit 8657cd22cfc538275b5a4ebd85406fc5bdf39aca
-Merge: 6b08cbe 8e8bc5f
+Merge: 6b08cbe9 8e8bc5fd
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Feb 17 11:04:49 2015 +0100
 
@@ -2634,7 +5151,7 @@ Date:   Wed Jan 7 03:40:34 2015 +0100
     cache later on to make the config parser more robust.
 
 commit 6b08cbe906bc2f13a34aca3195f8808d709c160c
-Merge: 8e64aee 1b3e746
+Merge: 8e64aee4 1b3e7464
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Feb 17 01:10:38 2015 +0100
 
@@ -2643,7 +5160,7 @@ Date:   Tue Feb 17 01:10:38 2015 +0100
     Include commit and if the tree is dirty in builds of -head versions
 
 commit 8e64aee42a0692360ef108b11aa035fdd04b0a89
-Merge: dd58bd5 09f23d0
+Merge: dd58bd5f 09f23d06
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Feb 16 22:15:04 2015 +0100
 
@@ -2663,7 +5180,7 @@ Date:   Sat Dec 20 19:46:12 2014 -0300
     the one used in the Travis CI environment by default
 
 commit dd58bd5f7b616dbdd927d7828205b8635d3f76f9
-Merge: e2462b7 b4b4ebf
+Merge: e2462b78 b4b4ebfa
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Feb 16 17:28:08 2015 +0100
 
@@ -2696,7 +5213,7 @@ Date:   Sun Feb 8 12:39:23 2015 +0200
     Added a -date parameter to /lastlog to prepend each row with the row's date
 
 commit e2462b78399af7ce5339d97b0ae87aa280d608c6
-Merge: 93ef4d0 378cab2
+Merge: 93ef4d0a 378cab29
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Sun Feb 1 23:39:15 2015 +0100
 
@@ -2711,7 +5228,7 @@ Date:   Sun Feb 1 20:24:05 2015 -0200
     Fix comment in default.theme: msgownnick -> ownnick
 
 commit 93ef4d0aa676498cbd1218258d72aebd76245720
-Merge: dff7e04 a26a909
+Merge: dff7e049 a26a909a
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Sun Feb 1 22:51:49 2015 +0100
 
@@ -2728,7 +5245,7 @@ Date:   Sun Feb 1 19:21:59 2015 +0100
     Correct some confusing inaccuracies and document a parameters that got lost on the rewrite.
 
 commit dff7e049b8c4406ea718955a147032196b5b708c
-Merge: 2027e73 7ca9c86
+Merge: 2027e739 7ca9c864
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Sat Jan 31 16:40:18 2015 +0100
 
@@ -2743,7 +5260,7 @@ Date:   Sat Jan 31 11:49:01 2015 -0300
     /help lastlog: Clarify usage of -<level> parameter
 
 commit 2027e73977388ec79deeefb63ec2f932443c76f9
-Merge: b1de3c3 4bf9e1f
+Merge: b1de3c3f 4bf9e1f1
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Jan 17 23:33:32 2015 +0100
 
@@ -2758,7 +5275,7 @@ Date:   Sat Jan 17 08:11:10 2015 -0500
     Do not let the ctcp action of an inital query go into the status window.
 
 commit b1de3c3f38e8ce78f5072d801d362cc69ce3a40e
-Merge: b2fe861 dfc65d9
+Merge: b2fe8611 dfc65d95
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Tue Jan 13 19:26:19 2015 +0100
 
@@ -2773,7 +5290,7 @@ Date:   Tue Jan 13 18:44:16 2015 +0100
     Remove splitlong.pl, it is enabled natively (#1)
 
 commit b2fe8611563c6478fd856f825eb5c5cc3e3f100b
-Merge: 9abdeb8 db62ddf
+Merge: 9abdeb86 db62ddfd
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jan 5 01:05:14 2015 +0100
 
@@ -2782,7 +5299,7 @@ Date:   Mon Jan 5 01:05:14 2015 +0100
     Die if the wrong type of node is found when traversing config
 
 commit 9abdeb8611977e0ab56ce3e30ee9561a7e8cb204
-Merge: 1136ea9 f81a54b
+Merge: 1136ea91 f81a54b9
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jan 5 01:03:58 2015 +0100
 
@@ -2791,7 +5308,7 @@ Date:   Mon Jan 5 01:03:58 2015 +0100
     Try to split long lines on spaces
 
 commit 1136ea915a3ba4345d59c2863c83f12e41f72069
-Merge: 89cdcec 77a90ef
+Merge: 89cdcecf 77a90eff
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Dec 16 20:41:22 2014 +0100
 
@@ -2800,7 +5317,7 @@ Date:   Tue Dec 16 20:41:22 2014 +0100
     Fix reset of attributes with ansi
 
 commit 89cdcecf76ffeaa24761a71399a475830e6bd012
-Merge: cd7a30b d9deafe
+Merge: cd7a30bf d9deafe5
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Dec 16 20:39:33 2014 +0100
 
@@ -2809,7 +5326,7 @@ Date:   Tue Dec 16 20:39:33 2014 +0100
     Speed up /reload when there are many ignores.
 
 commit cd7a30bf9ade0e979b47c1b67bf770e13bfe82d6
-Merge: bbf84d4 367d8ef
+Merge: bbf84d41 367d8efc
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Dec 16 20:28:56 2014 +0100
 
@@ -2818,7 +5335,7 @@ Date:   Tue Dec 16 20:28:56 2014 +0100
     Fix blinking/bold text in terminals with no color support
 
 commit bbf84d41a48f7e76487d8a4bfd5345fc252c7d9c
-Merge: 1c4495e 9d4ea89
+Merge: 1c4495ec 9d4ea891
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Dec 16 19:47:23 2014 +0100
 
@@ -2827,7 +5344,7 @@ Date:   Tue Dec 16 19:47:23 2014 +0100
     Include references when generating FAQ with Lynx
 
 commit 1c4495ec77265dd6c1c2c1fa7c88426fc68f5450
-Merge: 1f2b171 c855fef
+Merge: 1f2b1718 c855fef0
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Dec 16 19:44:20 2014 +0100
 
@@ -2860,7 +5377,7 @@ Date:   Sun Dec 14 18:21:40 2014 -0300
     in the context of the original commit, 96a292d4.
 
 commit 1f2b17181963d81ef431f8cbb900efdf3369203c
-Merge: 08b390b a057cfe
+Merge: 08b390b1 a057cfec
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Thu Dec 11 23:26:40 2014 +0100
 
@@ -2877,7 +5394,7 @@ Date:   Mon Dec 8 21:28:02 2014 +0100
     Documentation fix for #185
 
 commit dbcfb7060b48a9618d226daaa9fe407dc684ecc5
-Merge: d87c494 8e29a70
+Merge: d87c494d 8e29a70a
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Dec 6 16:12:03 2014 +0100
 
@@ -2886,7 +5403,7 @@ Date:   Sat Dec 6 16:12:03 2014 +0100
     Update old bug URLs
 
 commit d87c494d893e22bb172f9f9e8f2378606b29114a
-Merge: bbd7333 1edfced
+Merge: bbd73339 1edfcedd
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Dec 6 16:11:15 2014 +0100
 
@@ -2895,7 +5412,7 @@ Date:   Sat Dec 6 16:11:15 2014 +0100
     Receive 'self messages' in the right query window
 
 commit bbd733392446951f41d04c88cbab9a46ccec31d5
-Merge: c01e026 f285332
+Merge: c01e026c f285332c
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Dec 6 16:09:11 2014 +0100
 
@@ -2904,7 +5421,7 @@ Date:   Sat Dec 6 16:09:11 2014 +0100
     typo fixes - https://github.com/vlajos/misspell_fixer
 
 commit c01e026c73bb0a030e2d104e73db70c1b2795512
-Merge: 8c477f4 86d263d
+Merge: 8c477f49 86d263dd
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Dec 3 16:58:35 2014 +0100
 
@@ -2919,7 +5436,7 @@ Date:   Wed Dec 3 09:43:24 2014 +0100
     Check for unix sockets when reconnecting
 
 commit 8c477f498a2556a2bd37ac5afacc1fc999ea7153
-Merge: 688fc81 0bba34b
+Merge: 688fc817 0bba34bb
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Nov 26 17:34:31 2014 +0100
 
@@ -2962,7 +5479,7 @@ Date:   Tue Oct 28 10:50:26 2014 +0100
     reported by Christopher Ohlsson (dmnc)
 
 commit 688fc817dd9958f66e3be603dd0ee8ecc97d649d
-Merge: 65a2ff6 3ea2a8d
+Merge: 65a2ff64 3ea2a8da
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Oct 27 12:37:54 2014 +0100
 
@@ -3001,7 +5518,7 @@ Date:   Sat Oct 25 17:00:27 2014 +0200
     At some point in the past few years, Flyspray changed its URL scheme from id=nnn to task_id=nnn, which broke some old comments in the source. Update those comments to URLs that still work.
 
 commit 65a2ff645926259f04c2683f742a6f7ad0bbc86d
-Merge: 31ee20e 7938af8
+Merge: 31ee20e5 7938af80
 Author: tomaw <tom@tomaw.net>
 Date:   Mon Oct 20 21:16:36 2014 +0100
 
@@ -3026,7 +5543,7 @@ Date:   Sat Oct 11 18:47:39 2014 +0200
     assumes that the terminal encoding has ASCII spaces.
 
 commit 31ee20e559bea19ed77376c4758e44c457eb9fb4
-Merge: 136efda 7847bdf
+Merge: 136efda1 7847bdf6
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Thu Oct 16 09:27:06 2014 +0200
 
@@ -3079,7 +5596,7 @@ Date:   Sat Oct 11 10:44:46 2014 +0200
     Prepare for 0.8.17
 
 commit ec0360b921847ebf3f3002ea34e9265646a44350
-Merge: 3d6051a d9ea224
+Merge: 3d6051a0 d9ea2246
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Oct 6 20:43:01 2014 +0200
 
@@ -3088,7 +5605,7 @@ Date:   Mon Oct 6 20:43:01 2014 +0200
     Fix use-after-free bug with cached settings values
 
 commit 3d6051a03e4d29f67d68c39399f29d9896bdde82
-Merge: a2121ef 42a34a7
+Merge: a2121efe 42a34a78
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Oct 1 21:55:56 2014 +0200
 
@@ -3097,7 +5614,7 @@ Date:   Wed Oct 1 21:55:56 2014 +0200
     Make line splitting fail-safe
 
 commit a2121efed3c51beee3a26ef769f280c88bc551e6
-Merge: 6884a74 d68ee06
+Merge: 6884a74b d68ee06a
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Oct 1 21:54:00 2014 +0200
 
@@ -3117,7 +5634,7 @@ Date:   Sun Sep 28 15:48:48 2014 +0200
     Fixes: #143
 
 commit 6884a74b29dfd1097b4aade39434ed23bb82ad7c
-Merge: 503cbeb 5123992
+Merge: 503cbeb3 51239925
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Thu Sep 11 20:20:49 2014 +0200
 
@@ -3162,7 +5679,7 @@ Date:   Sun Aug 31 18:34:30 2014 +0200
     Prepare for irssi 0.8.17-rc2.
 
 commit 16784756b824749369b380dcdfb09270e3b59a87
-Merge: d40c070 9f6c76b
+Merge: d40c0704 9f6c76b0
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Aug 26 21:49:43 2014 +0200
 
@@ -3196,7 +5713,7 @@ Date:   Sat Aug 9 12:05:28 2014 +0100
     Include commit and if the tree is dirty in builds of -head versions
 
 commit d40c0704f0bc5df3ac3b0ae7dcbfbf5f83a8f840
-Merge: 2346d3b 836d386
+Merge: 2346d3b6 836d3868
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Aug 9 12:24:45 2014 +0200
 
@@ -3217,7 +5734,7 @@ Date:   Sat Aug 9 11:40:37 2014 +0200
     than sorry.
 
 commit 2346d3b62fd4ce5211e57b67263c046e6ea6db59
-Merge: 22d4dc7 6a5f04b
+Merge: 22d4dc72 6a5f04b2
 Author: tomaw <tom@tomaw.net>
 Date:   Fri Aug 8 18:57:50 2014 +0100
 
@@ -3250,7 +5767,7 @@ Date:   Tue Aug 5 22:00:30 2014 +0200
     Rewrote the syntax documentation of U-Z commands.
 
 commit b9f532568b92444488ce00c1734013e035d40f56
-Merge: 18a0cfa b602372
+Merge: 18a0cfa9 b602372e
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Aug 5 21:21:37 2014 +0200
 
@@ -3259,7 +5776,7 @@ Date:   Tue Aug 5 21:21:37 2014 +0200
     fix mirc_blink_fix
 
 commit 18a0cfa9159dd71595e0651532fe90d734df713e
-Merge: 1933c92 1dbc3db
+Merge: 1933c925 1dbc3dba
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Aug 5 21:21:02 2014 +0200
 
@@ -3301,7 +5818,7 @@ Date:   Wed Jul 30 23:12:39 2014 +0200
     Updated the documentation for LIST.
 
 commit 5a4e535cd70e1f03c071ac7cccc95e4c526957a5
-Merge: 0836e59 07e37c2
+Merge: 0836e591 07e37c23
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Jul 30 22:24:24 2014 +0200
 
@@ -3363,7 +5880,7 @@ Date:   Fri Jul 25 17:05:19 2014 +0100
     Fix typo in help for network command
 
 commit 924f26144887552af4f4b459c29ccfda31c7bb77
-Merge: e7f83c1 1cf7017
+Merge: e7f83c1d 1cf7017a
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Thu Jul 24 21:52:01 2014 +0200
 
@@ -3403,7 +5920,7 @@ Date:   Thu Jul 24 00:09:48 2014 +0200
     are working.
 
 commit e7f83c1dd2743a8f4f0d240f4550d6f52e6250c0
-Merge: 5ddf127 41fab07
+Merge: 5ddf127f 41fab070
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Jul 23 23:58:22 2014 +0200
 
@@ -3495,7 +6012,7 @@ Date:   Tue Jul 22 19:55:44 2014 +0200
     and elinks adds a "Visible links" line as well.
 
 commit 5ddf127f6d5e32450ce4db10d756f924cdbc946b
-Merge: 6e68b83 8e062b7
+Merge: 6e68b837 8e062b7b
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jul 20 19:37:37 2014 +0200
 
@@ -3535,7 +6052,7 @@ Date:   Mon Jul 14 13:19:31 2014 +0200
     Fixing a typo.
 
 commit 58b42997ff4de0a4daa548e022f1f263124128a8
-Merge: cb1d358 16743c5
+Merge: cb1d3580 16743c5c
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jul 13 21:27:10 2014 +0200
 
@@ -3564,7 +6081,7 @@ Date:   Sun Jul 13 14:10:40 2014 +0200
     Fixed an example of QUOTE
 
 commit d023d7d839ba4d165e1c9e7f53bc9a622de4a9f9
-Merge: 9fd1e2f 6e45d68
+Merge: 9fd1e2f5 6e45d683
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Sat Jul 12 22:41:28 2014 +0200
 
@@ -3623,7 +6140,7 @@ Date:   Wed Jul 9 18:21:39 2014 +0200
     letter N.
 
 commit c8dd54c2f669f023538670b28a7593cf14aa3d8e
-Merge: 7ee7bf7 a5a7fdb
+Merge: 7ee7bf79 a5a7fdbe
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Jul 8 21:10:01 2014 +0200
 
@@ -3650,7 +6167,7 @@ Date:   Tue Jul 8 13:42:06 2014 +0200
     because that is often used in path names
 
 commit 05979c8d9f67cac7a80b496dc4e87b98df846399
-Merge: 31da4e8 7fe4782
+Merge: 31da4e86 7fe47826
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Tue Jul 8 12:00:45 2014 +0200
 
@@ -3684,7 +6201,7 @@ Date:   Tue Jul 8 01:38:08 2014 +0100
     show it.
 
 commit 31da4e86237a51dcd73db4991c2697921731f05a
-Merge: a9ff985 663bd7e
+Merge: a9ff985a 663bd7ee
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jul 7 23:51:26 2014 +0200
 
@@ -3699,7 +6216,7 @@ Date:   Mon Jul 7 22:41:38 2014 +0100
     Add some more helpful hints about packages to install to configure output
 
 commit a9ff985a919b90ab047d9d98d982b2cab8cd9565
-Merge: b2c3db4 d309341
+Merge: b2c3db4d d3093418
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jul 7 22:49:29 2014 +0200
 
@@ -3723,7 +6240,7 @@ Date:   Mon Jul 7 22:26:04 2014 +0200
     initialization of the list by itself.
 
 commit 09a1801186bdc682f8d0e7ad8c049e7f93172665
-Merge: 5e8947a 225d149
+Merge: 5e8947a8 225d1499
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jul 7 22:16:23 2014 +0200
 
@@ -3740,7 +6257,7 @@ Date:   Mon Jul 7 19:47:51 2014 +0200
     Rewrote the syntax documentation for all commands starting with L.
 
 commit 99b629ab2040b1a4ed9a07fcf0f3998d4c1bad5d
-Merge: 10e4ad9 3257794
+Merge: 10e4ad9c 3257794b
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jul 7 18:27:57 2014 +0200
 
@@ -3908,14 +6425,14 @@ Date:   Fri Jun 13 06:39:02 2014 +0200
     iconv to properly split multi-byte encoded (and recoded) messages.
 
 commit 43baf71efd8d7323a2d6ae939c3c6350fef70f72
-Merge: 4c6ba66 b03b65e
+Merge: 4c6ba664 b03b65e0
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Sun Jul 6 23:21:23 2014 +0200
 
     Merge branch 'master' of https://github.com/irssi/irssi
 
 commit b03b65e0294f5802c9bbe8ddf8446f09b3ba366a
-Merge: 19b636e dac67a5
+Merge: 19b636e2 dac67a56
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jul 6 23:05:34 2014 +0200
 
@@ -3983,7 +6500,7 @@ Date:   Sun Jul 6 19:56:13 2014 +0100
     adding a new API.
 
 commit 2ff95c0649a95d2b6370eb6eae4f7a95db770ad4
-Merge: 1bf4753 c104627
+Merge: 1bf47539 c1046274
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jul 6 19:58:26 2014 +0200
 
@@ -4001,7 +6518,7 @@ Date:   Sun Jul 6 18:56:17 2014 +0100
     with CFLAGS="-Werror -Wall".
 
 commit 1bf4753914b1ea71ebdc336f8986dd5040b8a398
-Merge: 4ca8d56 6b0a546
+Merge: 4ca8d568 6b0a5462
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jul 6 19:38:21 2014 +0200
 
@@ -4128,7 +6645,7 @@ Date:   Sat Jul 5 22:16:35 2014 +0200
     Syntax documentation rewrite for H-I-commands
 
 commit 1be75a4bef76e66e1a66b781c75d2627754a232d
-Merge: ed51629 940566b
+Merge: ed516295 940566b1
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Sat Jul 5 19:49:58 2014 +0200
 
@@ -4145,7 +6662,7 @@ Date:   Sat Jul 5 20:47:06 2014 +0300
     add trailing dot for consistency; mention that existing connections are kept
 
 commit ed516295143a46fe310ed1999646110604001f35
-Merge: 4c8fe09 a9d9756
+Merge: 4c8fe096 a9d9756d
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Fri Jul 4 23:48:41 2014 +0200
 
@@ -4204,7 +6721,7 @@ Date:   Thu Jul 3 17:41:15 2014 +0200
     letter C.
 
 commit fd3676e40783e7a24ace7cb652dea72411737fdd
-Merge: 0a22174 96a292d
+Merge: 0a221742 96a292d4
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jul 2 23:17:36 2014 +0200
 
@@ -4221,7 +6738,7 @@ Date:   Wed Jul 2 22:35:17 2014 +0200
     Rewrote the syntax documentation for all the commands starting with B.
 
 commit 712ef12542a2847a8ab1d6648735f7b5c963a6ed
-Merge: b2f265f aa7492d
+Merge: b2f265f4 aa7492d0
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Wed Jul 2 22:26:46 2014 +0200
 
@@ -4234,7 +6751,7 @@ Date:   Wed Jul 2 22:25:33 2014 +0200
     Rewrote the syntax documentation for all the commands starting with A.
 
 commit aa7492d0991d32f2d64c6ce959ceb46aec7aafbd
-Merge: f779e04 96701b6
+Merge: f779e04a 96701b6c
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jul 2 21:17:51 2014 +0200
 
@@ -4243,7 +6760,7 @@ Date:   Wed Jul 2 21:17:51 2014 +0200
     Make it more obvious if -pattern wasn't provided to a regexp /ignore
 
 commit f779e04a9d4357ce4bcfb31079053d8262fbfc2a
-Merge: b9ba58d 0086211
+Merge: b9ba58d2 00862112
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jul 2 21:15:45 2014 +0200
 
@@ -4252,7 +6769,7 @@ Date:   Wed Jul 2 21:15:45 2014 +0200
     Warn with error if regexp ignore fails to parse
 
 commit b9ba58d25f1acdf0843b04a7c37f2e34de502854
-Merge: f077280 16088a7
+Merge: f0772806 16088a7a
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jul 2 21:12:38 2014 +0200
 
@@ -4273,7 +6790,7 @@ Date:   Mon Jun 30 22:27:22 2014 +0200
     Aligned the /NETWORK documentation with docs/manual.txt
 
 commit 9a9b77a6f52c07ec0ce18f279be2264f317dbe68
-Merge: be3f303 0d1758a
+Merge: be3f3034 0d1758a2
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Mon Jun 30 22:22:11 2014 +0200
 
@@ -4286,7 +6803,7 @@ Date:   Mon Jun 30 22:18:07 2014 +0200
     Removed docs/help from the .gitignore
 
 commit 0d1758a2b5d727d82b4cb286cd7682873f2c279d
-Merge: 735c621 d823823
+Merge: 735c6216 d823823c
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Mon Jun 30 21:47:50 2014 +0200
 
@@ -4295,7 +6812,7 @@ Date:   Mon Jun 30 21:47:50 2014 +0200
     Suggest using ^ so this doesn't pop-up a NickServ window
 
 commit 735c6216752cfdf0d60632b54fe728cb07d10fcb
-Merge: b68c168 9fad15f
+Merge: b68c168f 9fad15fa
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Mon Jun 30 21:37:38 2014 +0200
 
@@ -4304,7 +6821,7 @@ Date:   Mon Jun 30 21:37:38 2014 +0200
     Point out more modules in README
 
 commit b68c168f94e8c9b5f45ab9430ffae064fefd5c9c
-Merge: 2e6f16c 70e49f6
+Merge: 2e6f16c0 70e49f67
 Author: Geert Hauwaerts <geert@hauwaerts.be>
 Date:   Mon Jun 30 21:21:22 2014 +0200
 
@@ -4471,7 +6988,7 @@ Date:   Tue May 3 15:40:34 2011 +0100
     touched.
 
 commit 2e6f16c0faf345245c5a224de529827a51203d1c
-Merge: 5885977 e71c9f1
+Merge: 58859774 e71c9f1b
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jun 30 00:07:14 2014 +0200
 
@@ -4480,7 +6997,7 @@ Date:   Mon Jun 30 00:07:14 2014 +0200
     add print_text_after_time to specify time stamp for lines
 
 commit 588597744e7efb38ab87fef9e70b1428fe654067
-Merge: 2b6bba3 fa70021
+Merge: 2b6bba3f fa70021a
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 29 17:16:40 2014 +0200
 
@@ -4495,7 +7012,7 @@ Date:   Sun Jun 29 15:09:32 2014 +0100
     Update crash.txt to point at github
 
 commit 2b6bba3fd2019158990f13d9e8913fd3bbb20b61
-Merge: aaa0cb6 6accf50
+Merge: aaa0cb6e 6accf509
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 29 14:32:15 2014 +0200
 
@@ -4504,7 +7021,7 @@ Date:   Sun Jun 29 14:32:15 2014 +0200
     Use PREFIX from 005 to decide if a nick flag is of op level
 
 commit aaa0cb6e031b067f4d94abda2ccfc2e0ed1ecf7c
-Merge: cce0ff8 c5d81c5
+Merge: cce0ff80 c5d81c59
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 29 14:27:12 2014 +0200
 
@@ -4513,7 +7030,7 @@ Date:   Sun Jun 29 14:27:12 2014 +0200
     Correct use of perl stack macros
 
 commit cce0ff80a2080d551c706eab71ef0e3e5bf6e31f
-Merge: 17b9bb1 211422c
+Merge: 17b9bb12 211422cb
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 29 14:24:20 2014 +0200
 
@@ -4522,7 +7039,7 @@ Date:   Sun Jun 29 14:24:20 2014 +0200
     Move PUTBACK to within the scope which uses the stack
 
 commit 17b9bb12bf1c5c89f7880641ecde1fb17f2b5b22
-Merge: 113f172 f0925de
+Merge: 113f1724 f0925de1
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 29 14:21:00 2014 +0200
 
@@ -4581,7 +7098,7 @@ Date:   Sat Jun 21 11:19:47 2014 -0400
     'configure.in'
 
 commit 113f1724d72724c1bb3e2111c0ce92a3cafd67fa
-Merge: b8c2915 9d6cd87
+Merge: b8c2915d 9d6cd87b
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Fri Jun 27 14:41:54 2014 +0200
 
@@ -4590,7 +7107,7 @@ Date:   Fri Jun 27 14:41:54 2014 +0200
     Replace deprecated g_basename with g_path_get_basename.
 
 commit b8c2915d79a1e0ccec92e627b716fe0a6af81fc6
-Merge: e4051eb f58a461
+Merge: e4051eb4 f58a461c
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Fri Jun 27 14:31:04 2014 +0200
 
@@ -4599,7 +7116,7 @@ Date:   Fri Jun 27 14:31:04 2014 +0200
     get rid of PL_na
 
 commit e4051eb42e7ab9965c9e523c443dca26326ef73a
-Merge: da3f426 43df6e4
+Merge: da3f426e 43df6e42
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Fri Jun 27 14:25:52 2014 +0200
 
@@ -4608,7 +7125,7 @@ Date:   Fri Jun 27 14:25:52 2014 +0200
     Define PERL_NO_GET_CONTEXT in all perl source files
 
 commit da3f426edbac2703f3bcf0ac04aca69918ec57dc
-Merge: c26a634 051d158
+Merge: c26a634f 051d1587
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Fri Jun 27 14:24:06 2014 +0200
 
@@ -4694,7 +7211,7 @@ Date:   Mon Jun 16 11:45:26 2014 -0400
     Replace deprecated g_basename with g_path_get_basename.
 
 commit c26a634fe6f65f44cdd036d2657fe4335ed6e309
-Merge: dcbcb5f 5419a4b
+Merge: dcbcb5f0 5419a4b3
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Jun 21 10:59:55 2014 +0200
 
@@ -4703,7 +7220,7 @@ Date:   Sat Jun 21 10:59:55 2014 +0200
     Fix compiler warning.
 
 commit dcbcb5f04d2041a3103694344295441e0997f19f
-Merge: 5fe1445 70a5503
+Merge: 5fe14450 70a55030
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Jun 21 10:53:00 2014 +0200
 
@@ -4712,7 +7229,7 @@ Date:   Sat Jun 21 10:53:00 2014 +0200
     Avoid potential null dereferences.
 
 commit 5fe144503d9a282ea66ba9962dd4e8c568dbb78c
-Merge: 9d0d4d9 444f9e4
+Merge: 9d0d4d94 444f9e48
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sat Jun 21 10:46:46 2014 +0200
 
@@ -4745,7 +7262,7 @@ Date:   Thu Jun 19 09:56:57 2014 -0400
     Avoid potential null dereferences.
 
 commit 9d0d4d9437649ed96381120e68a8d4035f6ded7e
-Merge: ea704df 7d87a02
+Merge: ea704df7 7d87a025
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Thu Jun 19 00:15:36 2014 +0200
 
@@ -4754,7 +7271,7 @@ Date:   Thu Jun 19 00:15:36 2014 +0200
     NO_ACT level to ignore activity
 
 commit ea704df7e0f7e388b156e7de3dab7d2ea133d2eb
-Merge: b7c1fbd b05b6cd
+Merge: b7c1fbd2 b05b6cde
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Thu Jun 19 00:00:54 2014 +0200
 
@@ -4778,7 +7295,7 @@ Date:   Thu Jan 9 15:23:47 2014 +0100
     ignore activity notifications
 
 commit b7c1fbd2b96a38cd1025cc353ac19cf3a5b2894c
-Merge: 48d9fec 908913b
+Merge: 48d9fec8 908913b5
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jun 18 23:15:47 2014 +0200
 
@@ -4793,7 +7310,7 @@ Date:   Wed Jun 18 23:11:00 2014 +0200
     Add initial NEWS entries for 0.8.17-head
 
 commit bb11725a52637a760fbe4e9b40d970518ec175b4
-Merge: 53e5f9f 24ea87b
+Merge: 53e5f9f2 24ea87bd
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jun 18 22:56:37 2014 +0200
 
@@ -4802,7 +7319,7 @@ Date:   Wed Jun 18 22:56:37 2014 +0200
     fix implementation of format_get_text script api
 
 commit 53e5f9f26a95f74b616afeacdad5acaa97770650
-Merge: 8c08eef 21bf59f
+Merge: 8c08eef8 21bf59f4
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jun 18 22:53:34 2014 +0200
 
@@ -4811,7 +7328,7 @@ Date:   Wed Jun 18 22:53:34 2014 +0200
     Correct the packages of the scripting API
 
 commit 8c08eef87a6642b8cf7b7a23a0bc15cd3c896033
-Merge: 3212ef2 fc4a4d2
+Merge: 3212ef2b fc4a4d24
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jun 18 22:53:01 2014 +0200
 
@@ -4837,7 +7354,7 @@ Date:   Mon Jun 16 15:35:38 2014 +0000
     This reverts commit b832f1f7b2c4a692786d5d52904a2bdf4d14354f.
 
 commit 3212ef2bdb7011bd0c5a62ff2eced5a1d9e19a46
-Merge: cae13ec e3c688d
+Merge: cae13ec5 e3c688d0
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jun 16 16:58:29 2014 +0200
 
@@ -4852,7 +7369,7 @@ Date:   Mon Jun 16 14:47:38 2014 +0000
     Add -usermode to /NETWORK syntax
 
 commit cae13ec5298b9827cc34ad783903393a5678d67f
-Merge: b4a8a3f 0e17da4
+Merge: b4a8a3f7 0e17da4a
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jun 16 14:56:50 2014 +0200
 
@@ -4861,7 +7378,7 @@ Date:   Mon Jun 16 14:56:50 2014 +0200
     Document that /UPGRADE doesn't work with SSL
 
 commit b4a8a3f7e5585cad956480f9e6cdb51891b3084c
-Merge: 0331970 92928f1
+Merge: 0331970d 92928f1c
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jun 16 02:16:27 2014 +0200
 
@@ -4900,7 +7417,7 @@ Date:   Sun Jun 15 23:57:47 2014 +0100
     Update usercount to version in scripts git
 
 commit 0331970d64db01bd2db0d86a253393938b2539f1
-Merge: d1e60a3 a8c52d8
+Merge: d1e60a3b a8c52d8c
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Mon Jun 16 00:27:07 2014 +0200
 
@@ -4927,7 +7444,7 @@ Date:   Mon Sep 16 14:59:32 2013 +0200
     Disallow unloading of static modules
 
 commit 75d7e1b0bbf02b2453e3bcc678d0fc47fe00134d
-Merge: 1545e01 9e47f34
+Merge: 1545e014 9e47f34c
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 15 22:36:57 2014 +0200
 
@@ -4942,7 +7459,7 @@ Date:   Sun Jun 15 16:20:58 2014 -0400
     g_strcasecmp -> g_ascii_strcasecmp
 
 commit 1545e01447d2234b9e352c75f0a4b28300e560d0
-Merge: 279db87 c40c54d
+Merge: 279db87d c40c54d7
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 15 22:15:25 2014 +0200
 
@@ -4969,7 +7486,7 @@ Date:   Sun Jun 15 16:00:26 2014 -0400
     irssi was already doing.
 
 commit b8d748a2482155f4b0ed3c749be6b06793ee26d4
-Merge: 53f50d3 831bd1d
+Merge: 53f50d3d 831bd1d1
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 15 21:58:32 2014 +0200
 
@@ -4984,7 +7501,7 @@ Date:   Sun Jun 15 21:00:34 2014 +0100
     Fix error to refer to elinks, as that is what it checks for
 
 commit 53f50d3dfa79899f3362411d989c4dfdc1a9b952
-Merge: 63011c2 5b2d189
+Merge: 63011c2b 5b2d189a
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 15 21:57:42 2014 +0200
 
@@ -5003,7 +7520,7 @@ Date:   Sun Jun 15 15:40:08 2014 -0400
     checking variable found to silence the warning.
 
 commit 63011c2bf8f6d5c32a7793105db1702ee4c36e66
-Merge: 57f138c 138d4f4
+Merge: 57f138c0 138d4f45
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 15 21:31:10 2014 +0200
 
@@ -5027,7 +7544,7 @@ Date:   Fri Aug 3 17:03:21 2012 +0200
     Remove nonexistant usage from man page
 
 commit a68eb46a246bae7821f6c8f987c48180d98737a4
-Merge: 20cbbe5 8d5142f
+Merge: 20cbbe58 8d5142f0
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 15 19:59:10 2014 +0200
 
@@ -5066,7 +7583,7 @@ Date:   Sun Jun 15 17:12:41 2014 +0200
     Add .travis.yml
 
 commit 83e347b9a9677a4719f929b115a55bcd7add65ce
-Merge: 1d45fdf b8d8925
+Merge: 1d45fdfa b8d8925e
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Sun Jun 15 16:46:19 2014 +0200
 
@@ -5090,7 +7607,7 @@ Date:   Wed Jan 8 13:45:22 2014 +0100
     support local perl
 
 commit 8be1e1001a75a29a2fddc9e0c65d55116ca65c4b
-Merge: 4445864 190d00b
+Merge: 44458643 190d00bd
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jun 11 17:35:16 2014 +0200
 
@@ -5111,7 +7628,7 @@ Date:   Wed Jun 11 17:31:34 2014 +0200
     README.md: New issues should be opened on GitHub, minor grammar fixes
 
 commit 44458643bf74d9ed49ce9e01c876d58c40684694
-Merge: 3876cd9 c5ad61b
+Merge: 3876cd94 c5ad61b4
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jun 11 14:43:24 2014 +0200
 
@@ -5126,7 +7643,7 @@ Date:   Wed Jun 11 13:54:01 2014 +0200
     fix deprecated perl warnings in scriptassist by removing all occurences of "defined"
 
 commit 3876cd9417a4820f2010c39ebf6e7bb95cd9c937
-Merge: 6a840c1 d4a7d64
+Merge: 6a840c17 d4a7d649
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jun 11 12:46:49 2014 +0200
 
@@ -5135,7 +7652,7 @@ Date:   Wed Jun 11 12:46:49 2014 +0200
     fix segfault with xmpp query in layout
 
 commit 6a840c17bf4a65103322545452842573faddaa49
-Merge: a6507f8 9ee8e66
+Merge: a6507f82 9ee8e664
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Wed Jun 11 12:39:49 2014 +0200
 
@@ -5162,7 +7679,7 @@ Date:   Tue Jun 10 19:48:53 2014 +0200
     Our official channel is #irssi on freenode from now on
 
 commit 2ca6f858eb77943e1e09bfb7f49cd76c1e6c9af8
-Merge: 5ca9287 fcb6783
+Merge: 5ca92871 fcb67831
 Author: Alexander Færøy <ahf@0x90.dk>
 Date:   Tue Jun 10 19:47:43 2014 +0200
 

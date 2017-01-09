@@ -1,12 +1,115 @@
+v1.0.0 2017-01-03  The Irssi team <staff@irssi.org>
+	* Removed --disable-ipv6 (#408).
+	* /connect Network now aborts with an error if no servers have been
+	  added to that network (#443).
+	* /dcc commands now use quotes around spaces consistently.
+	* bell_beeps was removed (#524, #565).
+	* Switch to GRegex instead of regex.h (#412).
+	+ irssiproxy can now forward all tags through a single
+	  port. By Lukas Mai (mauke, #425).
+	+ irssiproxy can also listen on unix sockets. By Lukas Mai (#427).
+	+ send channel -botcmds immediately when no mask is specified (#175, #399).
+	+ the kill buffer now remembers consecutive kills.
+	  New bindings were added: yank_next_cutbuffer and append_next_kill
+	  By Todd A. Pratt (#353, #414, #455)
+	+ connections will avoid looking up IPv6 addresses if the machine does
+	  not have an IPv6 address assigned (exact behaviour is implementation
+	  defined, #410).
+	+ Fix potential crash if scripts insert undef values into the completion
+	  list (#413).
+	+ Paste warning is now also shown on pasting overlong
+	  lines. By Manish Goregaokar (#426).
+	+ autolog_ignore_targets and activity_hide_targets learn a new syntax
+	      tag/* and * to ignore whole networks or everything.
+	  By Jari Matilainen (vague666, #437)
+	+ /hilight got a -matchcase flag to hilight case
+	  sensitively. By Thibault B (isundil, #421, #476).
+	+ Always build irssi with TLS support.
+	+ Rename SSL to TLS in the code and add -tls_* versions of the -ssl_*
+	  options to /CONNECT and /SERVER, but make sure the -ssl_* options continue
+	  to work.
+	+ Use TLS for Freenode, EFnet, EsperNet, OFTC, Rizon, and IRC6 in the default
+	  configuration.
+	+ Display TLS connection information upon connect. You can disable this by
+	  setting tls_verbose_connect to FALSE.
+	+ Add -tls_pinned_cert and -tls_pinned_pubkey for x509 and public key pinning.
+
+	  The values needed for -tls_pinned_cert and -tls_pinned_pubkey is shown
+	  when connecting to a TLS enabled IRC server, but you can also find the
+	  values like this: Start by downloading the certificate from a given IRC
+	  server:
+
+	      $ openssl s_client -connect chat.freenode.net:6697 < /dev/null 2>/dev/null | \
+	        openssl x509 > freenode.cert
+
+	  Find the value for -tls_pinned_cert:
+
+	      $ openssl x509 -in freenode.cert -fingerprint -sha256 -noout
+
+	  Find the value for -tls_pinned_pubkey:
+
+	      $ openssl x509 -in freenode.cert -pubkey -noout | \
+	        openssl pkey -pubin -outform der | \
+	        openssl dgst -sha256 -c | \
+	        tr a-z A-Z
+
+	+ Remove support for DANE validation of TLS certificates.
+
+	  There wasn't enough support in the IRC community to push for this on the
+	  majority of bigger IRC networks. If you believe this should be
+	  reintroduced into irssi, then please come up with an implementation that
+	  does not rely on the libval library. It is causing a lot of troubles for
+	  our downstream maintainers.
+
+	+ /names and $[...] now uses utf8 string operations. By Xavier
+          G. (#40, #411, #471, #480).
+	+ New setting completion_nicks_match_case (#488).
+	+ /channel /server /network now support modify subcommand. By
+	  Jari Matilainen (#338, #498).
+	+ Irssi::signal_remove now works with coderefs. By Tom Feist (shabble, #512).
+	+ /script reset got an -autorun switch (#540, #538).
+	+ cap_toggle can now be called from Perl, and fields
+	  cap_active and cap_supported can be inspected (#542).
+	+ Make it possible to disable empty line completion. By Lauri
+	  Tirkkonen (lotheac, #574).
+	+ New option sasl_disconnect_on_failure to disconnect when
+	  SASL log-in failed (#514).
+	- IP addresses are no longer stored when resolve_reverse_lookup is
+	  used.
+	- Removed broken support for curses (#521).
+	- Removed broken dummy mode (#526).
+	- Fix terminal state after suspend (#450, #452).
+	- Improve Perl library path detection (#479, #132).
+	- Reconnect now works on unix connections (#493).
+	- Fix completion warnings (#125, #496, FS#124).
+	- Fix a crash in the --more-- item (#501).
+	- Fix a display issue in /unignore (#517, bdo#577202).
+	- Fix a crash in some netsplits (#529, #500).
+	- Fix crashes with some invalid config (#550, #551, #563, #564, #587, #581, #570).
+	- Add support for SASL Fragmentation. By Kenny Root (kruton, #506).
+	- Improve netsplit dumping (#420, #465).
+	- Improve responsibility under DCC I/O strain (#578, #159).
+	- Fix query nick change on open (#580, #586).
+	- Correct a few help texts.
+
+v0.8.21 2017-01-03  The Irssi team <staff@irssi.org>
+	- Correct a NULL pointer dereference in the nickcmp function found by
+	  Joseph Bisch (GL#1)
+	- Correct an out of bounds read in certain incomplete control codes
+	  found by Joseph Bisch (GL#2)
+	- Correct an out of bounds read in certain incomplete character
+	  sequences found by Hanno Böck and independently by J. Bisch (GL#3)
+	- Correct an error when receiving invalid nick message (GL#4, #466)
+
 v0.8.20 2016-09-16  The Irssi team <staff@irssi.org>
 	- Correct the name of an emitted sasl signal (#484)
 	- Correct the prototype for the 'message private' signal (#515)
 	- Corrections in away and hilight help text (#477, #518)
-	- /squery and /servlist commands have been restored.
+	- /squery and /servlist commands have been restored (#461).
 	- Where Irssi would previously only report "System error" on connect,
-	  it will now try harder to retrieve the system error message.
+	  it will now try harder to retrieve the system error message (#467).
 	- Fixed issue with +channels not working properly (#533)
-	- Fixed crash in optchan when item has no server (#485)
+	- Fixed crash in optchan when item has no server (#485, bdo#826525)
 	- Fixed random remote crash in the nicklist handling (#529)
 	- Fixed remote crash due to incorrect bounds checking on
 	  formats, reported by Gabriel Campana and Adrien Guinet from
@@ -14,16 +117,17 @@ v0.8.20 2016-09-16  The Irssi team <staff@irssi.org>
 
 v0.8.19 2016-03-23  The Irssi team <staff@irssi.org>
 	- Fixed regression when joining and parting channels on IRCnet (#435)
-	- Fixed SASL EXTERNAL (#432)
+	- Fixed SASL EXTERNAL. By Mantas Mikulėnas (grawity, #432)
 	- Fixed regression when not using SASL (#438)
-	- Fixed incorrect SSL disconnects when using SSL from modules/scripts
-	  (#439)
+	- Fixed incorrect SSL disconnects when using SSL from modules/scripts.
+	  By Will Storey (horgh, #439)
 	- Fixed regression where proxy_string could not be configured or
-	  certain file transfers could not be accepted (#445)
-	- Fixed storing layout of !channels (#183)
-	- Fixed restoration of bracketed paste mode on quit (#449)
+	  certain file transfers could not be accepted (#445, #446)
+	- Fixed storing layout of !channels (#183, #405)
+	- Fixed restoration of bracketed paste mode on quit (#449, #457)
 	- Make the usage of meta-O for cursor keys configurable with
 	      /set term_appkey_mode off
+	  (#430, #459)
 
 v0.8.18 2016-02-13  The Irssi team <staff@irssi.org>
 	* Modules will now require to define a
