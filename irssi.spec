@@ -4,7 +4,7 @@
 #
 Name     : irssi
 Version  : 1.0.0
-Release  : 7
+Release  : 8
 URL      : https://github.com/irssi/irssi/releases/download/1.0.0/irssi-1.0.0.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.0.0/irssi-1.0.0.tar.xz
 Summary  : No detailed summary available
