@@ -1,3 +1,96 @@
+commit 5f6c38c329f3d9574db863d330df876a456c5940
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 3 20:46:20 2017 +0100
+
+    tag as 1.0.1
+
+commit 97b182089eec8cc158313c424b453dcaa39e05af
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Fri Feb 3 11:49:16 2017 +0000
+
+    Merge branch 'dub-the-wub' into 'master'
+    
+    Prevent a memory leak during the processing of the SASL response.
+    
+    See merge request !8
+
+commit ca5e9bd623862bd9a640bf8799aafa53502b79f6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Jan 21 03:52:31 2017 +0100
+
+    Merge pull request #624 from ailin-nemui/mail_pl
+    
+    sync mail.pl
+
+commit 1f42d2aa950e4d70bf4c4aebae3a7040bd710cf3
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Sun Jan 15 22:33:42 2017 +0100
+
+    Merge pull request #619 from hannob/master
+    
+    perl_parse needs NULL terminated parameter list.
+
+commit d63c93ae1dbb1254a92e8e4fafc39fe8d69d00ae
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Fri Jan 13 22:36:44 2017 +0100
+
+    Merge pull request #613 from ailin-nemui/fix_completion
+    
+    fix regression in completion
+
+commit 929c9477477a4ccf03626388499192d8003b96d5
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Sun Jan 8 21:55:39 2017 +0100
+
+    Merge pull request #608 from tijko/master
+    
+    Follow g_strsplit with call to g_strfreev
+
+commit 3a3b34fc633fe8e045bf4b696c41857c9f8c5ba5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 6 17:00:09 2017 +0100
+
+    Merge pull request #606 from or4n/master
+    
+    Fix syntax on /help SERVER example
+
+commit 8dbf186ad6e808c269fa10c22444c89df63f2d7d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 6 16:37:09 2017 +0100
+
+    Merge pull request #604 from dequis/solaris
+    
+    Add OPENSSL_NO_EC for solaris 11.3, see issue #598
+
+commit 7c49ed2d17d2325d7bceef632ac38b66a44e8b63
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 6 12:44:02 2017 +0100
+
+    Merge pull request #602 from McDutchie/master
+    
+    make irssi --with-perl build with separate object directory
+
+commit f97d5f2648bbff1103e472b952b68ea08694886a
+Merge: ea7826b0 69e112fb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 6 17:08:06 2017 +0100
+
+    Merge pull request #603 from dequis/pining-for-the-freenodes
+    
+    NEWS: Avoid explicitly mentioning freenode in the pinning examples
+
+commit 69e112fbd1b44a6f9f3380167c12bbe0f76693a1
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Jan 6 11:20:49 2017 -0300
+
+    NEWS: Avoid explicitly mentioning freenode in the pinning examples
+    
+    They have proper certs, so using them as an example is wrong.
+    Particularly worse since they started using letsencrypt recently so
+    every server has a different cert and pubkey.
+    
+    We'll figure out how to link this from the release notes later.
+
 commit ea7826b0ec097b9fdc29336ff7fe7074052773f5
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Jan 3 16:41:41 2017 +0100
