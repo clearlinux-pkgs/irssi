@@ -1,3 +1,77 @@
+commit 2a53853f369b47e42e32e183c8109e3d63808899
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Fri Mar 10 17:41:04 2017 +0100
+
+    tag as 1.0.2
+
+commit a0c34463a56c1fae963f6f76a7dfef07d4decc6a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Mar 10 17:13:20 2017 +0100
+
+    Merge pull request #669 from dequis/expand-double-backslash
+    
+    expand_escape: expand double backslash as a backslash
+    (cherry picked from commit 26187d1d30f589d10300de2798f5a3ec4b0c1a3d)
+
+commit 9d1adffc754e066ca7a3032657e3aecb42d6aefe
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Mar 8 09:45:40 2017 +0100
+
+    Merge pull request #667 from ailin-nemui/fix-dcc-get
+    
+    fix dcc get
+    
+    fixes #656
+    (cherry picked from commit d57c64adeb7b251c5347212239ed0d7b7abe5547)
+
+commit 554586cddfeae080c85478ce09d62e65fe350e67
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Sat Mar 4 20:35:17 2017 +0000
+
+    Merge branch 'd-minor' into 'master'
+    
+    Prevent some potential null-pointer deferences.
+    
+    See merge request !9
+    (cherry picked from commit 7ef22687f9291ef10072cc55bc64e3db3ad5a546)
+
+commit dfffb0e9d8a1dea9e1471d9d85b2074c22e9c2a0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Feb 5 22:20:31 2017 +0100
+
+    Merge pull request #628 from LemonBoy/openssl-compat
+    
+    Support OpenSSL 1.1.0.
+    (cherry picked from commit ff5dd3673ee6b60d95e89dd89aa3605c79a93ac1)
+
+commit 39e591468dec8c1acc49603c65d827b44f8d9497
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Fri Mar 10 17:18:18 2017 +0100
+
+    Merge branch 'netjoin-timeout' into 'master'
+    
+    fe-netjoin: remove irc servers on "server disconnected" signal
+    
+    Closes #7
+    
+    See merge request !10
+    
+    (cherry picked from commit 77b2631c78461965bc9a7414aae206b5c514e1b3)
+
+commit c111e091336b67b9aa5abddda9cf381e6ab49a04
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Mar 4 21:36:01 2017 +0100
+
+    Merge pull request #652 from LemonBoy/trailing-arg
+    
+    Properly check the command arguments in tail place.
+
+commit 0ada284a257cfb08da984a78dab24c3ddaf09ec7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Feb 5 21:33:19 2017 +0100
+
+    amend forgotten fix
+
 commit 5f6c38c329f3d9574db863d330df876a456c5940
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Feb 3 20:46:20 2017 +0100
