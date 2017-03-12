@@ -6,7 +6,7 @@
 #
 Name     : irssi
 Version  : 1.0.2
-Release  : 10
+Release  : 11
 URL      : https://github.com/irssi/irssi/releases/download/1.0.2/irssi-1.0.2.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.0.2/irssi-1.0.2.tar.xz
 Source99 : https://github.com/irssi/irssi/releases/download/1.0.2/irssi-1.0.2.tar.xz.asc
@@ -65,7 +65,11 @@ doc components for the irssi package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489333831
+export SOURCE_DATE_EPOCH=1489334272
+export CFLAGS="$CFLAGS -fstack-protector-strong "
+export FCFLAGS="$CFLAGS -fstack-protector-strong "
+export FFLAGS="$CFLAGS -fstack-protector-strong "
+export CXXFLAGS="$CXXFLAGS -fstack-protector-strong "
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -77,7 +81,7 @@ export no_proxy=localhost
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1489333831
+export SOURCE_DATE_EPOCH=1489334272
 rm -rf %{buildroot}
 %make_install
 
