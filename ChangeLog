@@ -1,3 +1,118 @@
+commit 68bb0c6e488916d1880e249c61f1e638f23b1d62
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Mon Jun 5 16:25:53 2017 +0200
+
+    tag as 1.0.3
+
+commit 712e02960a85208c7800a593e2b4f21dc06dfad9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue May 30 13:14:10 2017 +0200
+
+    Merge pull request #711 from ailin-nemui/24bit-reset
+    
+    do not reset true colour bit on colour reset
+    (cherry picked from commit 2d0a9b4ca30ab09ccf5a84d267a824e2a2059d70)
+
+commit 18df0934b5c7e71ef6fe942ab201179b09314b16
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu May 18 15:39:02 2017 +0200
+
+    Merge pull request #707 from mh-source/patch-1
+    
+    dcc.in: fixed typo 'resolved' -> 'resolves'
+    (cherry picked from commit aac20b15132e0facee14bd9b721d6bfa9251a172)
+
+commit d5bdf00ba6f3125e8348d3aed02667c71c8d2ccf
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jun 2 14:47:38 2017 +0200
+
+    Merge pull request #706 from dequis/parse-uint
+    
+    Add parse_uint function to improve integer overflow handling
+    (cherry picked from commit 31b9d115b065570020ce9be1a1d8cd49212f70a9)
+
+commit d8167908d00f0c8ba39bcac14cf0f49046cdca0e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun May 14 09:40:55 2017 +0200
+
+    Merge pull request #705 from ailin-nemui/nicklist-performance
+    
+    improve nicklist performance
+    (cherry picked from commit 476f19f1235d7d28ede002be3c7a249952124058)
+
+commit 54215ce9588f594a87bad0080e1694e269e301ba
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun May 14 09:44:26 2017 +0200
+
+    Merge pull request #702 from vague666/server_modify_notls
+    
+    Added support for -notls and -notls_verify
+    (cherry picked from commit 10cea6169694808ab2bf2caf9451cfac2db0d9da)
+
+commit 81c42d4da97a4b8f7f9436147497e193dc974406
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu May 4 12:31:32 2017 +0200
+
+    Merge pull request #698 from ailin-nemui/master
+    
+    detect Netbsd terminfo
+    (cherry picked from commit f24ad9a36605f54ac8583ec3e223ccdfe30bb666)
+
+commit 2520ea338192837f9e9f3748d69505e6ef842d4a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Apr 7 21:22:48 2017 +0200
+
+    Merge pull request #688 from josephbisch/fix-687
+    
+    Add syntax info for completion
+    (cherry picked from commit 411ace0a15483d44b4bd0016f586108630cd5142)
+
+commit 35e56cdb75296a6aa377701600eca9393ea67b67
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Apr 6 17:37:23 2017 +0200
+
+    Merge pull request #685 from josephbisch/fix-462
+    
+    Fix strange history behavior when history is empty
+    (cherry picked from commit 3f69e718044ac87eeb5144be6113c2be33261cd0)
+
+commit 7fc08ba0e50a9dc1fb986e087aa6e3115f01badc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 21 15:47:16 2017 +0100
+
+    Merge pull request #680 from Stevie-O/slow-startup-with-glib-2.49.3
+    
+    Fix slow startup with glib 2.49.3
+    (cherry picked from commit 3d4ba86a91b4f246665259c1e2100f5768e89237)
+
+commit 7b4106fe0c9b0c2b1fc8c87a02d2f92646cb1d50
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Apr 4 12:27:50 2017 +0200
+
+    Merge pull request #677 from rrebello/openssl-misc
+    
+    OpenSSL support detection and documentation fixes
+    (cherry picked from commit 590056d3c33a0efc126f35c7c0a7389282158855)
+
+commit 1f1868c532c4493e16f20925fc77f7d6f83b6d47
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Mon Jun 5 15:12:16 2017 +0200
+
+    Merge remote-tracking branch 'gitlab/security'
+    
+    (cherry picked from commit fb08fc7f1aa6b2e616413d003bf021612301ad55)
+
+commit 8724b4a7a74486a62b801c11a4fcd394db04ecc9
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Fri Mar 31 20:06:14 2017 +0000
+
+    Merge branch 'off-by-one-fix' into 'master'
+    
+    Fix off by one error with char_expandos
+    
+    See merge request !11
+    (cherry picked from commit d5e23f97a7f98177bedc1842430a1199785bee20)
+
 commit 2a53853f369b47e42e32e183c8109e3d63808899
 Author: Ailin Nemui <ailin@z30a.localdomain>
 Date:   Fri Mar 10 17:41:04 2017 +0100
