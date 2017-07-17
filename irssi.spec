@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x00CCB587DDBEF0E1 (staff@irssi.org)
 #
 Name     : irssi
-Version  : 1.0.3
-Release  : 13
-URL      : https://github.com/irssi/irssi/releases/download/1.0.3/irssi-1.0.3.tar.xz
-Source0  : https://github.com/irssi/irssi/releases/download/1.0.3/irssi-1.0.3.tar.xz
-Source99 : https://github.com/irssi/irssi/releases/download/1.0.3/irssi-1.0.3.tar.xz.asc
+Version  : 1.0.4
+Release  : 14
+URL      : https://github.com/irssi/irssi/releases/download/1.0.4/irssi-1.0.4.tar.xz
+Source0  : https://github.com/irssi/irssi/releases/download/1.0.4/irssi-1.0.4.tar.xz
+Source99 : https://github.com/irssi/irssi/releases/download/1.0.4/irssi-1.0.4.tar.xz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -61,14 +61,14 @@ doc components for the irssi package.
 
 
 %prep
-%setup -q -n irssi-1.0.3
+%setup -q -n irssi-1.0.4
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1496836301
+export SOURCE_DATE_EPOCH=1500260173
 export CFLAGS="$CFLAGS -fstack-protector-strong "
 export FCFLAGS="$CFLAGS -fstack-protector-strong "
 export FFLAGS="$CFLAGS -fstack-protector-strong "
@@ -84,7 +84,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1496836301
+export SOURCE_DATE_EPOCH=1500260173
 rm -rf %{buildroot}
 %make_install
 

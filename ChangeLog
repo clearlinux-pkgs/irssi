@@ -1,3 +1,72 @@
+commit 527c19803b56cc0ec84050ca63d992fbecadac1e
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Wed Jul 5 17:12:30 2017 +0200
+
+    tag as 1.0.4
+
+commit bfa3bd896702db5359a6663ed0591dd16519eec8
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Wed Jul 5 21:18:22 2017 +0200
+
+    Merge pull request #729 from irssi/clear-help
+    
+    More accurately describe clear
+    
+    (cherry picked from commit b12f86e5e6fe576e731feab2a73325c74e980924)
+
+commit 8778d1c95a6e75c3c96e997ec6a022d5af300f2f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jun 23 17:58:08 2017 +0200
+
+    Merge pull request #723 from ailin-nemui/odd_expand_escapes
+    
+    fix weird n-fold unescaping in expand_escapes
+    
+    (cherry picked from commit 1ff2f61f090a61f3bdf0bdee5c52a7907d56acfd)
+
+commit dbce2d447ab757cd2df148b9d2a31ec2c70a3517
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jun 23 18:00:52 2017 +0200
+
+    Merge pull request #722 from dequis/back-to-the-future
+    
+    parse_time_interval: Allow negative time in settings
+    
+    (cherry picked from commit 2b209348bd2a90afbe1782b0b321d99892b7002b)
+
+commit efaa2eeb88056a5f88655f571d18d429a413f185
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jun 23 17:58:40 2017 +0200
+
+    Merge pull request #721 from dequis/unexpected-exits
+    
+    term-terminfo: Avoid switching out of alt screen on unexpected exits
+    (cherry picked from commit c56919768e1072985aab1377714ea5038417cd4d)
+
+commit 1bcd7a8dd09e59f01d5c42b43182a0466f604bd5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jun 7 00:15:05 2017 +0200
+
+    Merge pull request #714 from dequis/dcc-fname-gcc-warnings
+    
+    fe-dcc-(get|send): Fix some -Wpointer-compare with newer gcc
+    
+    (cherry picked from commit 5e9a3ad80cb1bb5b8655d5fff6ee9d1dfc4419a1)
+
+commit 5e46c6dda0993aff058baba03726d4454139ccfe
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Wed Jul 5 14:47:30 2017 +0000
+
+    Merge branch 'security' into 'master'
+    
+    Security
+    
+    Closes #10
+    
+    See merge request !17
+    
+    (cherry picked from commit 5e26325317c72a04c1610ad952974e206384d291)
+
 commit 68bb0c6e488916d1880e249c61f1e638f23b1d62
 Author: Ailin Nemui <ailin@z30a.localdomain>
 Date:   Mon Jun 5 16:25:53 2017 +0200
