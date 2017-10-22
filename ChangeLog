@@ -1,3 +1,53 @@
+commit 7a770022be9a77aeda7af4b7090fb780a23c3b4e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 20 17:15:30 2017 +0200
+
+    tag as 1.0.5
+
+commit eef318301421b0ade7f184543f7165df583744c2
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 13 17:14:47 2017 +0200
+
+    Merge pull request #769 from horgh/horgh/error-check-server-connect
+    
+    Set host to an empty string on error
+
+commit 404eb0995e3b3ac87d59430250644827a421ed23
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Oct 8 18:50:19 2017 +0200
+
+    Merge pull request #763 from rbisewski/master
+    
+    Improvements to statusbar documentation and help text.
+
+commit dd53f3fc9601e3d6a07dffe85b985f309a4e87a1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Aug 10 16:49:32 2017 +0200
+
+    Merge pull request #737 from ailin-nemui/fix-733
+    
+    Revert "Merge pull request #452 from LemonBoy/terminfo-cup"
+
+commit d2ccea03d4bc7dd76b5cdf2df64e2416858fe014
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jul 26 10:57:05 2017 +0200
+
+    Merge pull request #719 from LemonBoy/sasl-disable-none
+    
+    Setting sasl_mechanism to '' disables the auth
+
+commit 43e44d553d44e313003cee87e6ea5e24d68b84a1
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Fri Oct 20 13:31:26 2017 +0000
+
+    Merge branch 'security' into 'master'
+    
+    Security
+    
+    Closes GL#12, GL#13, GL#14, GL#15, GL#16
+    
+    See merge request irssi/irssi!23
+
 commit 527c19803b56cc0ec84050ca63d992fbecadac1e
 Author: Ailin Nemui <ailin@z30a.localdomain>
 Date:   Wed Jul 5 17:12:30 2017 +0200
