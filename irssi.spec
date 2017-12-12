@@ -6,7 +6,7 @@
 #
 Name     : irssi
 Version  : 1.0.5
-Release  : 16
+Release  : 17
 URL      : https://github.com/irssi/irssi/releases/download/1.0.5/irssi-1.0.5.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.0.5/irssi-1.0.5.tar.xz
 Source99 : https://github.com/irssi/irssi/releases/download/1.0.5/irssi-1.0.5.tar.xz.asc
@@ -14,6 +14,7 @@ Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: irssi-bin
+Requires: irssi-lib
 Requires: irssi-doc
 Requires: irssi-data
 BuildRequires : glib-dev
@@ -44,6 +45,7 @@ data components for the irssi package.
 %package dev
 Summary: dev components for the irssi package.
 Group: Development
+Requires: irssi-lib
 Requires: irssi-bin
 Requires: irssi-data
 Provides: irssi-devel
@@ -60,6 +62,15 @@ Group: Documentation
 doc components for the irssi package.
 
 
+%package lib
+Summary: lib components for the irssi package.
+Group: Libraries
+Requires: irssi-data
+
+%description lib
+lib components for the irssi package.
+
+
 %prep
 %setup -q -n irssi-1.0.5
 
@@ -68,12 +79,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1513039421
+export SOURCE_DATE_EPOCH=1513041398
 export CFLAGS="$CFLAGS -fstack-protector-strong "
 export FCFLAGS="$CFLAGS -fstack-protector-strong "
 export FFLAGS="$CFLAGS -fstack-protector-strong "
 export CXXFLAGS="$CXXFLAGS -fstack-protector-strong "
-%configure --disable-static --with-perl-lib=vendor
+%configure --disable-static --with-perl-lib=site
 make V=1  %{?_smp_mflags}
 
 %check
@@ -84,24 +95,20 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1513039421
+export SOURCE_DATE_EPOCH=1513041398
 rm -rf %{buildroot}
 %make_install
 
 %files
 %defattr(-,root,root,-)
-/Irssi.pm
-/Irssi/Irc.pm
-/Irssi/TextUI.pm
-/Irssi/UI.pm
-/auto/Irssi/.packlist
-/auto/Irssi/Irc/.packlist
-/auto/Irssi/Irc/Irc.so
-/auto/Irssi/Irssi.so
-/auto/Irssi/TextUI/.packlist
-/auto/Irssi/TextUI/TextUI.so
-/auto/Irssi/UI/.packlist
-/auto/Irssi/UI/UI.so
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/Irssi.pm
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/Irssi/Irc.pm
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/Irssi/TextUI.pm
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/Irssi/UI.pm
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/auto/Irssi/.packlist
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/auto/Irssi/Irc/.packlist
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/auto/Irssi/TextUI/.packlist
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/auto/Irssi/UI/.packlist
 
 %files bin
 %defattr(-,root,root,-)
@@ -364,3 +371,10 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc /usr/share/doc/irssi/*
 %doc /usr/share/man/man1/*
+
+%files lib
+%defattr(-,root,root,-)
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/auto/Irssi/Irc/Irc.so
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/auto/Irssi/Irssi.so
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/auto/Irssi/TextUI/TextUI.so
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/auto/Irssi/UI/UI.so
