@@ -6,7 +6,7 @@
 #
 Name     : irssi
 Version  : 1.0.5
-Release  : 15
+Release  : 16
 URL      : https://github.com/irssi/irssi/releases/download/1.0.5/irssi-1.0.5.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.0.5/irssi-1.0.5.tar.xz
 Source99 : https://github.com/irssi/irssi/releases/download/1.0.5/irssi-1.0.5.tar.xz.asc
@@ -68,12 +68,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1508687676
+export SOURCE_DATE_EPOCH=1513039421
 export CFLAGS="$CFLAGS -fstack-protector-strong "
 export FCFLAGS="$CFLAGS -fstack-protector-strong "
 export FFLAGS="$CFLAGS -fstack-protector-strong "
 export CXXFLAGS="$CXXFLAGS -fstack-protector-strong "
-%configure --disable-static
+%configure --disable-static --with-perl-lib=vendor
 make V=1  %{?_smp_mflags}
 
 %check
@@ -84,12 +84,24 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1508687676
+export SOURCE_DATE_EPOCH=1513039421
 rm -rf %{buildroot}
 %make_install
 
 %files
 %defattr(-,root,root,-)
+/Irssi.pm
+/Irssi/Irc.pm
+/Irssi/TextUI.pm
+/Irssi/UI.pm
+/auto/Irssi/.packlist
+/auto/Irssi/Irc/.packlist
+/auto/Irssi/Irc/Irc.so
+/auto/Irssi/Irssi.so
+/auto/Irssi/TextUI/.packlist
+/auto/Irssi/TextUI/TextUI.so
+/auto/Irssi/UI/.packlist
+/auto/Irssi/UI/UI.so
 
 %files bin
 %defattr(-,root,root,-)

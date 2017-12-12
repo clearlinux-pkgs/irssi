@@ -2,3 +2,4 @@ commitmsg
 *.log
 *.tar.*
 results
+*.log.*
