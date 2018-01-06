@@ -1,42 +1,80 @@
-commit 7a770022be9a77aeda7af4b7090fb780a23c3b4e
+commit fe6e377beb57a11ce47683055834722e0ed6ba2b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 5 00:04:58 2018 +0100
+
+    tag as 1.0.6
+
+commit cacb48e4f458bc419ae90c5f2f219dacf769a814
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Nov 14 08:50:06 2017 +0100
+
+    Merge pull request #788 from LemonBoy/fix-787
+    
+    Keep a copy of the strings coming from the config
+    
+    (cherry picked from commit 933fac7e9d4d1cea93887cb38bab51c938a8c687)
+
+commit aea58025194811d9a92ad7a8d708476e43a4816e
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Thu Jan 4 22:29:29 2018 +0000
+
+    Merge branch 'security' into 'master'
+    
+    Security
+    
+    Closes GL#18, GL#19, GL#20, GL#21
+    
+    See merge request irssi/irssi!29
+    
+    (cherry picked from commit 9df3d92598108b6e68fcc5521cd1fab8462d7ec5)
+
+commit b00b45cf2181a8d40817b000c9a851ce4469d0b5
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Oct 20 17:15:30 2017 +0200
 
     tag as 1.0.5
 
-commit eef318301421b0ade7f184543f7165df583744c2
+commit 11f0d046dee47c1965eeeab21faf9219b8144a98
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Oct 13 17:14:47 2017 +0200
 
     Merge pull request #769 from horgh/horgh/error-check-server-connect
     
     Set host to an empty string on error
+    
+    (cherry picked from commit 437fbef6eb8f605320841cba119d3abbb3571a75)
 
-commit 404eb0995e3b3ac87d59430250644827a421ed23
+commit 2d0f7bcc5072ca5df1e02797119706c3a60a2f3f
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Sun Oct 8 18:50:19 2017 +0200
 
     Merge pull request #763 from rbisewski/master
     
     Improvements to statusbar documentation and help text.
+    
+    (cherry picked from commit 016fd344362ddcc4b1a0781df9ac2416acc54e69)
 
-commit dd53f3fc9601e3d6a07dffe85b985f309a4e87a1
+commit d2bfd44c16a10888a88ee3676a514c474c91c902
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Thu Aug 10 16:49:32 2017 +0200
 
     Merge pull request #737 from ailin-nemui/fix-733
     
     Revert "Merge pull request #452 from LemonBoy/terminfo-cup"
+    
+    (cherry picked from commit 13471013f31be1e2f459dfce9bc7425800b2824b)
 
-commit d2ccea03d4bc7dd76b5cdf2df64e2416858fe014
+commit 32d0daf87e7b59e473a78494cf6bdf8c89a48174
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Jul 26 10:57:05 2017 +0200
 
     Merge pull request #719 from LemonBoy/sasl-disable-none
     
     Setting sasl_mechanism to '' disables the auth
+    
+    (cherry picked from commit 7b97edf9d1de8c270e4482c85d142303e07525c9)
 
-commit 43e44d553d44e313003cee87e6ea5e24d68b84a1
+commit 29f0ed96d55448f8baad21af6f2b1efdcbbd7000
 Author: Nei <ailin.nemui@gmail.com>
 Date:   Fri Oct 20 13:31:26 2017 +0000
 
@@ -47,6 +85,8 @@ Date:   Fri Oct 20 13:31:26 2017 +0000
     Closes GL#12, GL#13, GL#14, GL#15, GL#16
     
     See merge request irssi/irssi!23
+    
+    (cherry picked from commit 0557a2cb7c03483012b1557ccb0b23fe0becc264)
 
 commit 527c19803b56cc0ec84050ca63d992fbecadac1e
 Author: Ailin Nemui <ailin@z30a.localdomain>
