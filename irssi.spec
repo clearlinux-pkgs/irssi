@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x00CCB587DDBEF0E1 (staff@irssi.org)
 #
 Name     : irssi
-Version  : 1.0.6
-Release  : 18
-URL      : https://github.com/irssi/irssi/releases/download/1.0.6/irssi-1.0.6.tar.xz
-Source0  : https://github.com/irssi/irssi/releases/download/1.0.6/irssi-1.0.6.tar.xz
-Source99 : https://github.com/irssi/irssi/releases/download/1.0.6/irssi-1.0.6.tar.xz.asc
+Version  : 1.1.0
+Release  : 19
+URL      : https://github.com/irssi/irssi/releases/download/1.1.0/irssi-1.1.0.tar.gz
+Source0  : https://github.com/irssi/irssi/releases/download/1.1.0/irssi-1.1.0.tar.gz
+Source99 : https://github.com/irssi/irssi/releases/download/1.1.0/irssi-1.1.0.tar.gz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -18,11 +18,12 @@ Requires: irssi-lib
 Requires: irssi-doc
 Requires: irssi-data
 BuildRequires : glib-dev
+BuildRequires : glibc-staticdev
 BuildRequires : ncurses-dev
 BuildRequires : pkgconfig(openssl)
 
 %description
-# Irssi
+# [Irssi](https://irssi.org/)
 [![Build Status](https://travis-ci.org/irssi/irssi.svg?branch=master)](https://travis-ci.org/irssi/irssi)
 
 %package bin
@@ -72,14 +73,14 @@ lib components for the irssi package.
 
 
 %prep
-%setup -q -n irssi-1.0.6
+%setup -q -n irssi-1.1.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1515255226
+export SOURCE_DATE_EPOCH=1516057863
 export CFLAGS="$CFLAGS -fstack-protector-strong "
 export FCFLAGS="$CFLAGS -fstack-protector-strong "
 export FFLAGS="$CFLAGS -fstack-protector-strong "
@@ -95,7 +96,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1515255226
+export SOURCE_DATE_EPOCH=1516057863
 rm -rf %{buildroot}
 %make_install
 
@@ -252,6 +253,7 @@ rm -rf %{buildroot}
 /usr/include/irssi/irssi-version.h
 /usr/include/irssi/src/common.h
 /usr/include/irssi/src/core/args.h
+/usr/include/irssi/src/core/capsicum.h
 /usr/include/irssi/src/core/channel-rec.h
 /usr/include/irssi/src/core/channel-setup-rec.h
 /usr/include/irssi/src/core/channels-setup.h
@@ -263,6 +265,7 @@ rm -rf %{buildroot}
 /usr/include/irssi/src/core/core.h
 /usr/include/irssi/src/core/expandos.h
 /usr/include/irssi/src/core/ignore.h
+/usr/include/irssi/src/core/iregex.h
 /usr/include/irssi/src/core/levels.h
 /usr/include/irssi/src/core/line-split.h
 /usr/include/irssi/src/core/log.h
@@ -274,6 +277,7 @@ rm -rf %{buildroot}
 /usr/include/irssi/src/core/net-disconnect.h
 /usr/include/irssi/src/core/net-nonblock.h
 /usr/include/irssi/src/core/net-sendbuffer.h
+/usr/include/irssi/src/core/network-openssl.h
 /usr/include/irssi/src/core/network.h
 /usr/include/irssi/src/core/nick-rec.h
 /usr/include/irssi/src/core/nicklist.h
@@ -301,6 +305,7 @@ rm -rf %{buildroot}
 /usr/include/irssi/src/fe-common/core/chat-completion.h
 /usr/include/irssi/src/fe-common/core/command-history.h
 /usr/include/irssi/src/fe-common/core/completion.h
+/usr/include/irssi/src/fe-common/core/fe-capsicum.h
 /usr/include/irssi/src/fe-common/core/fe-channels.h
 /usr/include/irssi/src/fe-common/core/fe-common-core.h
 /usr/include/irssi/src/fe-common/core/fe-core-commands.h
@@ -308,6 +313,7 @@ rm -rf %{buildroot}
 /usr/include/irssi/src/fe-common/core/fe-messages.h
 /usr/include/irssi/src/fe-common/core/fe-queries.h
 /usr/include/irssi/src/fe-common/core/fe-recode.h
+/usr/include/irssi/src/fe-common/core/fe-settings.h
 /usr/include/irssi/src/fe-common/core/fe-tls.h
 /usr/include/irssi/src/fe-common/core/fe-windows.h
 /usr/include/irssi/src/fe-common/core/formats.h
