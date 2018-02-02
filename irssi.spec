@@ -6,7 +6,7 @@
 #
 Name     : irssi
 Version  : 1.1.0
-Release  : 19
+Release  : 20
 URL      : https://github.com/irssi/irssi/releases/download/1.1.0/irssi-1.1.0.tar.gz
 Source0  : https://github.com/irssi/irssi/releases/download/1.1.0/irssi-1.1.0.tar.gz
 Source99 : https://github.com/irssi/irssi/releases/download/1.1.0/irssi-1.1.0.tar.gz.asc
