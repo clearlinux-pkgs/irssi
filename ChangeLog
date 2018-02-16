@@ -1,3 +1,125 @@
+commit 8cec161a8f252fd8d57677eb961ffd87987b9d30
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Feb 13 12:56:25 2018 +0100
+
+    tag as 1.1.1
+
+commit 84473ad57c67c796e385e8c1c72f76036e31d91e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 15 00:55:30 2018 +0100
+
+    Merge tag '1.0.7' into integrate/1.0.7
+    
+    (cherry picked from commit 666ddc2ecdd9ad7bc966c78565a5fd9985e099c8)
+
+commit 0921f36828f00264d05fd8c7719b22495d622e10
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Feb 13 10:09:06 2018 +0100
+
+    Merge pull request #845 from ailin-nemui/funny-bug
+    
+    warn if there is non-portable code in the test-driver
+    
+    (cherry picked from commit c2c879e8c55afcb8a737e4535c8d878407807040)
+
+commit 72f81af9f0427b512675acf18fc9e5734a687725
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Feb 4 11:27:02 2018 +0100
+
+    Merge pull request #831 from ailin-nemui/openssl-x509
+    
+    Do not use X509_STORE on OpenSSL < 1.0.2
+    
+    (cherry picked from commit 9c494a88a306d386870cd5fc78c9527bd66c1c7a)
+
+commit 88a83989a6651575f32a0ef286af93b3af53a6f7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 16 19:12:00 2018 +0100
+
+    Merge pull request #816 from ailin-nemui/fix-test-libs
+    
+    fix test builds on some platforms
+    
+    (cherry picked from commit 1b7f32838557a4805029cfb17710148a948b11bf)
+
+commit e80d6d3093c737b50f301134891c7cf0c15df87c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 2 14:09:10 2018 +0100
+
+    Merge pull request #818 from ailin-nemui/test-tap-backward-compat
+    
+    add backwards compatible code for running tap tests
+    
+    (cherry picked from commit 17aafe974b6251fecff4198d3dd3ab9cf1620b78)
+
+commit 4f7d98fe15df2ef9d4eaa5e9968bed9677920d6e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 30 17:39:13 2018 +0100
+
+    Merge pull request #834 from williamjacksn/patch-1
+    
+    Fix typo in help text for /ISON command
+    
+    (cherry picked from commit 6d42c4f949ab7d3d403d2f31d6a816961a180e2b)
+
+commit 044d6c3803ab7b4b9537fc18995fa323f4f77a57
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 5 22:25:33 2018 +0100
+
+    Merge pull request #836 from ailin-nemui/resize
+    
+    Fix resizing of windows when used incorrectly
+    
+    (cherry picked from commit 3c1bc5f9162c90aa247d024422699710419658f6)
+
+commit b85c6fe9febabec5326ad7767ebd60eceb546869
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 8 22:25:03 2018 +0100
+
+    Merge pull request #842 from ailin-nemui/themeoob
+    
+    Fix oob in escaped theme string
+    
+    (cherry picked from commit 7c31f7adc5685074d25a32737c9743089850675c)
+
+commit 957cbe75611743be40cb50297d9b9690bd357ec4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 5 22:24:17 2018 +0100
+
+    Merge pull request #837 from ailin-nemui/no-show
+    
+    check the error condition of mainwindow_create
+    
+    (cherry picked from commit 442f6f08b4d99e86c3961be71638abec0f0f8070)
+
+commit 890e9ed5292d133f0d417797f68ebfc562a81312
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Tue Feb 13 09:51:22 2018 +0000
+
+    Merge branch 'security' into 'master'
+    
+    Security
+    
+    See merge request irssi/irssi!34
+    
+    (cherry picked from commit b0d9cb33cd9ef9da7c331409e8b7c57a6f3aef3f)
+
+commit 78b5f34e13661bd1a441d4b25fcbcee5bffe08d9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 5 22:26:32 2018 +0100
+
+    Merge pull request #824 from dequis/more-netsplit-revert
+    
+    Revert more of the netsplit print optimisation to fix crashes
+    
+    (cherry picked from commit cfcc021c81eea84bd982a64764f62e163128acf3)
+
+commit 78af0c219a5cf65fc6bed104b4b9157460096425
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 15 09:05:31 2018 +0100
+
+    clarify deprecated fn in news
+
 commit 96e6c86dc7e5c527780e5a6e346449ea1cb663d9
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Jan 8 14:43:54 2018 +0100

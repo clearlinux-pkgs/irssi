@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x00CCB587DDBEF0E1 (staff@irssi.org)
 #
 Name     : irssi
-Version  : 1.1.0
-Release  : 20
-URL      : https://github.com/irssi/irssi/releases/download/1.1.0/irssi-1.1.0.tar.gz
-Source0  : https://github.com/irssi/irssi/releases/download/1.1.0/irssi-1.1.0.tar.gz
-Source99 : https://github.com/irssi/irssi/releases/download/1.1.0/irssi-1.1.0.tar.gz.asc
+Version  : 1.1.1
+Release  : 21
+URL      : https://github.com/irssi/irssi/releases/download/1.1.1/irssi-1.1.1.tar.gz
+Source0  : https://github.com/irssi/irssi/releases/download/1.1.1/irssi-1.1.1.tar.gz
+Source99 : https://github.com/irssi/irssi/releases/download/1.1.1/irssi-1.1.1.tar.gz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -73,18 +73,18 @@ lib components for the irssi package.
 
 
 %prep
-%setup -q -n irssi-1.1.0
+%setup -q -n irssi-1.1.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1516057863
-export CFLAGS="$CFLAGS -fstack-protector-strong "
-export FCFLAGS="$CFLAGS -fstack-protector-strong "
-export FFLAGS="$CFLAGS -fstack-protector-strong "
-export CXXFLAGS="$CXXFLAGS -fstack-protector-strong "
+export SOURCE_DATE_EPOCH=1518749139
+export CFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs "
+export FCFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs "
+export FFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs "
+export CXXFLAGS="$CXXFLAGS -fstack-protector-strong -mzero-caller-saved-regs "
 %configure --disable-static --with-perl-lib=site
 make  %{?_smp_mflags}
 
@@ -96,7 +96,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1516057863
+export SOURCE_DATE_EPOCH=1518749139
 rm -rf %{buildroot}
 %make_install
 
