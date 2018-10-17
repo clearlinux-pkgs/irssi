@@ -1,2 +1,2 @@
---with-perl-lib=site
+--with-perl-lib=vendor
 

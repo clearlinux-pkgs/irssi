@@ -1,5 +1,13 @@
-commitmsg
+.*~
+*~
+*.swp
+.repo-index
 *.log
+build.log.round*
 *.tar.*
-results
-*.log.*
+*.tgz
+!*.tar.*.*
+*.zip
+commitmsg
+results/
+rpms/
