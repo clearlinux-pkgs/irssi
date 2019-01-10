@@ -1,3 +1,153 @@
+commit 7bf94c28a0a8c6be8ec5840f09a5b5d343f42374
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 8 21:46:17 2019 +0100
+
+    tag as 1.1.2
+
+commit 7616687f6a211e8dac7308e05be99d80357c0a73
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Oct 2 00:09:01 2018 +0200
+
+    Merge pull request #949 from ailin-nemui/help-narrow
+    
+    Fix insufficient size of help column when the window width is small
+    
+    (cherry picked from commit f207e844f1299933b6e508c54804e27f42844547)
+
+commit eab3608651016936335f85c896faf0b3312e5be7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Oct 2 00:08:30 2018 +0200
+
+    Merge pull request #948 from ailin-nemui/invalid-startline
+    
+    invalidate startline and bottom_startline when hidden
+    
+    (cherry picked from commit 011372ecdd966531c1fd6638a3c5b239c27112ed)
+
+commit 33dcf7a337df5af14df13567618c822e2043ee0a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:35:47 2018 +0200
+
+    Merge pull request #919 from ailin-nemui/uafs
+    
+    Use-after-frees
+    
+    (cherry picked from commit afb3daaf65095447f0b0ce64f68363f6f17dcd34)
+
+commit dccab4c5f83605f92f8b17678b6d4931ae80f5b3
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 8 21:39:35 2019 +0100
+
+    Merge pull request #971 from ailin-nemui/paste-join-lines
+    
+    fix paste_join_multiline
+    
+    (cherry picked from commit 257cb2f5f91cbc08b20199f92a5d1923bc5ca4f2)
+
+commit acdfeb216a4af9248e3c2ce922978f3485cc4f6c
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Tue Jul 24 09:38:02 2018 +0200
+
+    Merge pull request #895 from janikrabe/master
+    
+    Keep errstr set to NULL if errno is not set
+    
+    (cherry picked from commit 88f77cb6f8fbbd553dfe45db9aede8a6d8905b49)
+
+commit ad4faa77e4ca7ee1caf71f3222fab97c3f323d16
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:37:10 2018 +0200
+
+    Merge pull request #914 from ailin-nemui/textbuffer_lineinfo
+    
+    properly record line info on empty lines
+    
+    (cherry picked from commit e5759a7fb708fe461a35bf3bf37852cfbbaa2498)
+
+commit bc7dac6d7c28cf21ba5ad3a65298dbd29910c167
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 18 16:57:36 2018 +0100
+
+    Merge pull request #982 from yarda/coverity
+    
+    Fixed problem found by Coverity Scan
+    
+    (cherry picked from commit c044fe397e1c235d91361bc60a74e6d2839f0237)
+
+commit a98bb2009d5c8d0a06e46c4a5bc737f3a48ce5ba
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:34:14 2018 +0200
+
+    Merge pull request #927 from DomT4/perl_mojave
+    
+    configure: fix Perl detection on macOS Mojave
+    (cherry picked from commit 0346638547adb63f5a1d9c74be0c77106ad6cfa9)
+
+commit 0f978ce28eae85449b740e33ee4bc623a5101515
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 23 00:28:47 2018 +0100
+
+    run syncscripts.sh
+
+commit d50fe73c4ed9004e67d3c9edbf24b0f386eba453
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 15 19:46:32 2018 +0100
+
+    Merge pull request #849 from ailin-nemui/news-update
+    
+    add additional notes to NEWS
+    
+    (cherry picked from commit a72e706667e963a013ca8c8fd02af1c74ffbd40d)
+
+commit 85320f106c325b50e402d13a00d9636e047ebe13
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:35:32 2018 +0200
+
+    Merge pull request #920 from irssi/ailin-nemui-urchlay
+    
+    Add information about crash on unload to perl.txt
+    
+    (cherry picked from commit 735730299385c6e9173f1f46e7f8d529634dd1fa)
+
+commit 1e88d4631ec295774af71942727550c3d8228df1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 19 02:08:08 2018 +0200
+
+    Merge pull request #965 from ailin-nemui/fix-signal-emit
+    
+    Fix wrong signal emission arg count
+    
+    (cherry picked from commit 524f31b026051a9692b8978d5013f9e43efcfa82)
+
+commit 2d803ddd66f607d19737cf35dfd19d2681249d8b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Sep 20 17:37:50 2018 +0200
+
+    Merge pull request #930 from ailin-nemui/fix-928
+    
+    fix accessing unallocated text when checking entry position
+    
+    (cherry picked from commit 708ba06dbc30dcec99cf057a1f36fc9857308b72)
+
+commit 5216d091c92c2a4afc869d700381528375e9f9c8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 5 10:47:12 2018 +0200
+
+    Merge pull request #951 from dwfreed/patch-1
+    
+    fe-text: clear hidelevel in layout if default
+    (cherry picked from commit b96a41cf3daff342ae04fa59d8f2c903dffe0f2b)
+
+commit 7b637e87557adb6633c2554c8ae3641667229edd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 15 17:23:40 2018 +0100
+
+    Merge pull request #861 from ailin-nemui/stay-hidden
+    
+    in fact hidden levels should not be re-set when you run /set
+    
+    (cherry picked from commit 3f217ae14951afac8a98ec7bb1a497b3a1c0cf8b)
+
 commit 8cec161a8f252fd8d57677eb961ffd87987b9d30
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Feb 13 12:56:25 2018 +0100

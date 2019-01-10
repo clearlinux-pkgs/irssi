@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x00CCB587DDBEF0E1 (staff@irssi.org)
 #
 Name     : irssi
-Version  : 1.1.1
-Release  : 32
-URL      : https://github.com/irssi/irssi/releases/download/1.1.1/irssi-1.1.1.tar.gz
-Source0  : https://github.com/irssi/irssi/releases/download/1.1.1/irssi-1.1.1.tar.gz
-Source99 : https://github.com/irssi/irssi/releases/download/1.1.1/irssi-1.1.1.tar.gz.asc
+Version  : 1.1.2
+Release  : 33
+URL      : https://github.com/irssi/irssi/releases/download/1.1.2/irssi-1.1.2.tar.xz
+Source0  : https://github.com/irssi/irssi/releases/download/1.1.2/irssi-1.1.2.tar.xz
+Source99 : https://github.com/irssi/irssi/releases/download/1.1.2/irssi-1.1.2.tar.xz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -94,14 +94,14 @@ man components for the irssi package.
 
 
 %prep
-%setup -q -n irssi-1.1.1
+%setup -q -n irssi-1.1.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1544169268
+export SOURCE_DATE_EPOCH=1547100844
 export CFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
 export FCFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
 export FFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
@@ -117,7 +117,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1544169268
+export SOURCE_DATE_EPOCH=1547100844
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/irssi
 cp COPYING %{buildroot}/usr/share/package-licenses/irssi/COPYING
