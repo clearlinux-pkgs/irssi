@@ -1,248 +1,1973 @@
-commit 7bf94c28a0a8c6be8ec5840f09a5b5d343f42374
+commit bd2ff8c99c41f35430a945e888db828a9925dce7
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Jan 8 21:46:17 2019 +0100
+Date:   Mon Feb 11 18:05:57 2019 +0100
 
-    tag as 1.1.2
+    tag as 1.2.0
 
-commit 7616687f6a211e8dac7308e05be99d80357c0a73
+commit 22fdb94d1b961545e8e35930512b63cf1ff83e2d
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Oct 2 00:09:01 2018 +0200
+Date:   Mon Feb 11 18:04:59 2019 +0100
 
-    Merge pull request #949 from ailin-nemui/help-narrow
-    
-    Fix insufficient size of help column when the window width is small
-    
-    (cherry picked from commit f207e844f1299933b6e508c54804e27f42844547)
+    run syncscripts.sh
 
-commit eab3608651016936335f85c896faf0b3312e5be7
+commit 48a6d04aded516a8eead31b1e78544efb3b7e367
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Oct 2 00:08:30 2018 +0200
+Date:   Mon Feb 11 18:04:46 2019 +0100
 
-    Merge pull request #948 from ailin-nemui/invalid-startline
-    
-    invalidate startline and bottom_startline when hidden
-    
-    (cherry picked from commit 011372ecdd966531c1fd6638a3c5b239c27112ed)
+    run syncdocs.sh
 
-commit 33dcf7a337df5af14df13567618c822e2043ee0a
+commit 6239a8b791ca452a364fb9ec6c475e8c3c1f2a14
+Merge: ea41726b 8543b874
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Sep 4 09:35:47 2018 +0200
+Date:   Mon Feb 11 17:33:30 2019 +0100
 
-    Merge pull request #919 from ailin-nemui/uafs
+    Merge pull request #1000 from ailin-nemui/window-bounds-type
     
-    Use-after-frees
-    
-    (cherry picked from commit afb3daaf65095447f0b0ce64f68363f6f17dcd34)
+    Store window bounds type
 
-commit dccab4c5f83605f92f8b17678b6d4931ae80f5b3
+commit 8543b874a25d0caa2c62db155346a24cdf3c2afa
+Author: Ailin Nemui <ailin@devio.us>
+Date:   Wed Jan 30 11:17:36 2019 +0100
+
+    store type of window binds
+
+commit ea41726b3e1df0e64eb9621f38494716b94d209f
+Merge: a25b4e5d 346211ee
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Jan 8 21:39:35 2019 +0100
+Date:   Mon Feb 11 09:49:04 2019 +0100
 
-    Merge pull request #971 from ailin-nemui/paste-join-lines
+    Merge pull request #1011 from ahf/otr-compiler-warning-fix
     
-    fix paste_join_multiline
-    
-    (cherry picked from commit 257cb2f5f91cbc08b20199f92a5d1923bc5ca4f2)
+    Use memcpy() instead of strncpy() to silence the compiler warning.
 
-commit acdfeb216a4af9248e3c2ce922978f3485cc4f6c
-Author: LemonBoy <LemonBoy@users.noreply.github.com>
-Date:   Tue Jul 24 09:38:02 2018 +0200
+commit 346211eeeb34e73a931b822f1496f696ed3970f5
+Author: Alexander Færøy <ahf@irssi.org>
+Date:   Sat Feb 9 22:42:13 2019 +0100
 
-    Merge pull request #895 from janikrabe/master
-    
-    Keep errstr set to NULL if errno is not set
-    
-    (cherry picked from commit 88f77cb6f8fbbd553dfe45db9aede8a6d8905b49)
+    Use memcpy() instead of strncpy() to silence the compiler warning.
 
-commit ad4faa77e4ca7ee1caf71f3222fab97c3f323d16
+commit a25b4e5db25f57706073d77fd5ef741b46ab3f61
+Merge: b4ad4309 9f9aada8
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Sep 4 09:37:10 2018 +0200
+Date:   Fri Feb 8 14:37:31 2019 +0100
 
-    Merge pull request #914 from ailin-nemui/textbuffer_lineinfo
+    Merge pull request #999 from ailin-nemui/mad-protocol
     
-    properly record line info on empty lines
-    
-    (cherry picked from commit e5759a7fb708fe461a35bf3bf37852cfbbaa2498)
+    do not touch uninitialised protocols on item restore
 
-commit bc7dac6d7c28cf21ba5ad3a65298dbd29910c167
+commit b4ad430939fe127f859d75a8cb24e524c119f7d2
+Merge: ee86cc19 034752ad
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Feb 5 01:08:19 2019 +0100
+
+    Merge pull request #1004 from ailin-nemui/fix-get_extent
+    
+    fix gui_input_get_extent
+
+commit 034752ade3b9d951c716d50d3f4d1e40fe9e110c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 4 14:33:41 2019 +0100
+
+    fix gui_input_get_extent
+    
+    it was causing a free of data with [transfer=none]
+
+commit ee86cc197ebc7ceb7d59da94d3c7c84035787c42
+Merge: ff18e796 5b530737
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Feb 2 18:21:08 2019 +0100
+
+    Merge pull request #1003 from ailin-nemui/fix-1002
+    
+    correct fix for #997
+
+commit 5b530737d480eaac5943bcf270aa82b592e7ed3b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Feb 2 14:51:09 2019 +0100
+
+    correct fix for #997
+
+commit ff18e79661ecd6c08530f8179faf9b8a7fa71774
+Merge: 0cdbb2e8 f9beedd2
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Feb 2 14:34:59 2019 +0100
+
+    Merge pull request #994 from ailin-nemui/fix-993
+    
+    add more config checks and assertions in statusbar code
+
+commit 0cdbb2e8216a30e019a0dd310038a9c9be9e2c3e
+Merge: aa80f1de b1d6cb7f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 1 14:29:21 2019 +0100
+
+    Merge pull request #1001 from ailin-nemui/fix-997
+    
+    add missing NULL check
+
+commit b1d6cb7f26c521d3d5f9e7da214bc91b89453a93
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 1 13:18:50 2019 +0100
+
+    add missing NULL check
+
+commit 9f9aada83bc3baabdfe70befb78eaf02544a0c7b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 29 21:33:39 2019 +0100
+
+    do not touch uninitialised protocols on item restore
+
+commit aa80f1de6164c2b31c2dfa4568bd851b894eaeca
+Merge: 9ec2c8ce 3af2ce87
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 29 00:30:43 2019 +0100
+
+    Merge pull request #990 from ailin-nemui/mainwin_activity
+    
+    add activity_hide_visible setting
+
+commit f9beedd2d03b7a622e9686c71910e380fab88511
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 22 15:24:52 2019 +0100
+
+    add more config checks and assertions
+
+commit 9ec2c8cee4222c73229cffdf3c342e1f03be251f
+Merge: fa9463cb b8cfd9d6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 16 09:47:49 2019 +0100
+
+    Merge pull request #988 from ailin-nemui/version
+    
+    show output of git describe as PACKAGE_VERSION
+
+commit 3af2ce8731b721616c5c112434a810bca32a62e1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 15 21:00:43 2019 +0100
+
+    add activity_hide_visible setting
+
+commit fa9463cb026a9ded270d30a3c437ab8217ab751e
+Merge: dfe3c312 b080405c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 14 10:17:52 2019 +0100
+
+    Merge pull request #989 from ailin-nemui/split-syntax
+    
+    update sidewayssplit syntax
+
+commit b080405c6ae2e469c8718f77cf6c3e7fd17a6ac5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 9 23:46:57 2019 +0100
+
+    update sidewayssplit syntax
+
+commit b8cfd9d6affc0f72a82e75a8be5207bb357c76bc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 9 21:11:01 2019 +0100
+
+    show output of git describe as PACKAGE_VERSION
+    
+    also fixes GNUism in sed call
+
+commit dfe3c31283df810b4bcdbe2d746a0b3da516689f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 9 15:33:22 2019 +0100
+
+    update issue references
+
+commit 3d1980599a9115c095713f1a82edf67afda64e4f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 9 15:20:45 2019 +0100
+
+    Merge tag '1.1.2' into integrate/1.1.2
+
+commit d57203e926768f592e676d4926f6c5833d4220d0
+Merge: c7ce0f32 8c303674
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 9 09:29:29 2019 +0100
+
+    Merge pull request #978 from ailin-nemui/fix-974
+    
+    Fix inconsistent escaping from expand_escapes
+
+commit 8c30367452dd592027917ce92bcebe9301d2c87a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 8 15:48:12 2019 +0100
+
+    rename function
+
+commit c7ce0f320b86147e2189066c002d8fc1f9a55426
+Merge: c044fe39 821e8af9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 18 20:53:08 2018 +0100
+
+    Merge pull request #985 from ailin-nemui/automake
+    
+    automake warns that subdir-objects will be enabled in 2.0
+
+commit c044fe397e1c235d91361bc60a74e6d2839f0237
+Merge: 40f5edf1 4f26ad74
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Dec 18 16:57:36 2018 +0100
 
     Merge pull request #982 from yarda/coverity
     
     Fixed problem found by Coverity Scan
-    
-    (cherry picked from commit c044fe397e1c235d91361bc60a74e6d2839f0237)
 
-commit a98bb2009d5c8d0a06e46c4a5bc737f3a48ce5ba
+commit 35f5e5f278444ecbbd3610292d9569d3a2f51ce1
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Sep 4 09:34:14 2018 +0200
+Date:   Sun Nov 25 13:57:17 2018 +0100
 
-    Merge pull request #927 from DomT4/perl_mojave
-    
-    configure: fix Perl detection on macOS Mojave
-    (cherry picked from commit 0346638547adb63f5a1d9c74be0c77106ad6cfa9)
+    up abi
 
-commit 0f978ce28eae85449b740e33ee4bc623a5101515
+commit 7e6e3cd503b3619a22709db66234cd4aeefa866f
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Fri Feb 23 00:28:47 2018 +0100
+Date:   Sun Nov 25 13:41:46 2018 +0100
+
+    Add escape_string_escape function for expand_escapes
+    
+    To avoid expanding, tab completion escapes the completion list. But the
+    escape_string function escapes too much for the expand_escapes code. Add
+    a function that only escapes the backslashes.
+
+commit 821e8af9fecdda2f25f18d5cc0be965b06e05362
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Dec 7 09:52:23 2018 +0100
+
+    automake warns that subdir-objects will be enabled in 2.0
+
+commit 4f26ad74f50b6d68bee0b75d69507cb8a9c413aa
+Author: Jaroslav Škarvada <jskarvad@redhat.com>
+Date:   Tue Dec 4 16:03:04 2018 +0100
+
+    Fixed problem found by Coverity Scan
+    
+    Fixes #981
+    
+    Signed-off-by: Jaroslav Škarvada <jskarvad@redhat.com>
+
+commit 40f5edf1059fab4c2f4b23356994c2e1c37a083c
+Merge: 1c6f2560 10f41e06
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Dec 4 17:01:33 2018 +0100
+
+    Merge pull request #979 from ailin-nemui/completion-keep-word
+    
+    add keep_word setting to completion
+
+commit 1c6f2560989f49197cbc5c3cd41bd46ade11cc20
+Merge: dcb412eb 288f220f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Nov 29 10:18:16 2018 +0100
+
+    Merge pull request #973 from ailin-nemui/perl-wcwidth
+    
+    expose wcwidth and related to perl
+
+commit dcb412eb8b0add3cfb6e3bc015886f795abb92ef
+Merge: 257cb2f5 482a3a5b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Nov 26 18:52:02 2018 +0100
+
+    Merge pull request #975 from NattyNarwhal/ibmi
+    
+    Fix irssi build on IBM i and AIX
+
+commit 482a3a5bdd7bf3755c67d678b7e74f72cfbaaecb
+Author: Calvin Buckley <calvin@cmpct.info>
+Date:   Mon Nov 26 09:56:04 2018 -0400
+
+    Remove unneeded comment
+
+commit bed0a3309f4f452f5ebf6d5d5becf869da190d7a
+Author: Calvin Buckley <calvin@cmpct.info>
+Date:   Sun Nov 25 15:00:34 2018 +0000
+
+    Revert back to using original version of the configure script
+    
+            * IBM i rpmbuild environments set the magic variables for
+              building w/ 64-bit binutils automatically, and one can
+              set this for themselves with `OBJECT_MODE=64` when
+              buildings. Remove this.
+    
+            * The subdir-objects change will need to be made due to
+              upstream autotools making it mandatory in the future, but
+              that isn't my decision to make.
+
+commit a634b34ba48d7e050bb125d86205e58a5dc00c3d
+Author: Calvin Buckley <calvin@cmpct.info>
+Date:   Sun Nov 25 14:50:47 2018 +0000
+
+    Rename cap_* funcs to irc_cap_*
+    
+    Some systems often "namespace" cap_ for themselves, and so irssi's
+    usage can conflict with their own. Bump ABI for this.
+
+commit 10f41e067eef33e30a211279d69160b5c7721f96
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Nov 25 14:19:57 2018 +0100
+
+    fix backward completion
+
+commit 88b16491956f0a882cc61fffa6a76d469006a87d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Nov 25 14:16:08 2018 +0100
+
+    add keep_word setting to completion
+
+commit 257cb2f5f91cbc08b20199f92a5d1923bc5ca4f2
+Merge: 6c40567d c1fb9a84
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Nov 19 16:07:00 2018 +0100
+
+    Merge pull request #971 from ailin-nemui/paste-join-lines
+    
+    fix paste_join_multiline
+
+commit 795e7ec16240613dd13e8378128bb5fa66b6dc93
+Author: Calvin Buckley <calvin@cmpct.info>
+Date:   Mon Nov 19 14:18:34 2018 +0000
+
+    Fix build on IBM i
+    
+            * Lots of warnings about subdirectories. Set an automake
+              option to deal with this.
+    
+            * Set an ar flag for explicit 64-bit when on IBM i, due to
+              it defaulting to 64-bit output with official gcc by default.
+
+commit 4380f3820e5504b039d4a1ed0853c4442fa251b1
+Author: Calvin Buckley <calvin@cmpct.info>
+Date:   Mon Nov 19 13:58:51 2018 +0000
+
+    Fix compilation of irc/core on AIX and IBM i
+    
+    There's a function in the standard library of these OSes that conflict
+    with this function. Prefix it with `irc_`.
+
+commit 288f220f875d4e4f00e86dd809c04aa805b49991
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Nov 13 00:14:15 2018 +0100
+
+    fix width of byte codepoints
+
+commit deaa1da55e3250badbdb3a769989cf5525b301e2
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Nov 12 14:11:27 2018 +0100
+
+    cast to unsigned char
+
+commit 9e5e5d8625714c58546fad00b9d95bce7f3a1afb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Nov 12 13:14:02 2018 +0100
+
+    expose wcwidth and related to perl
+
+commit 6c40567dab5298d2452ecb5438ffe11997055dfd
+Merge: 60d23649 4537d85b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Nov 12 13:02:41 2018 +0100
+
+    Merge pull request #957 from ailin-nemui/rawlog
+    
+    Improve rawlog performance
+
+commit 4537d85b0b1e3bbd5240e379d015752423381e9a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Nov 9 11:32:00 2018 +0100
+
+    reverse queue
+
+commit 60d2364989b50ed8b76076022dde39690dc95416
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Nov 9 11:11:10 2018 +0100
 
     run syncscripts.sh
+    
+    sync buf.pl to version 3.00
+    sync usercount.pl to version 1.20
 
-commit d50fe73c4ed9004e67d3c9edbf24b0f386eba453
+commit c1fb9a840201131982f2c2e1ff8737436f495841
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Thu Feb 15 19:46:32 2018 +0100
+Date:   Fri Nov 9 11:06:13 2018 +0100
 
-    Merge pull request #849 from ailin-nemui/news-update
-    
-    add additional notes to NEWS
-    
-    (cherry picked from commit a72e706667e963a013ca8c8fd02af1c74ffbd40d)
+    fix paste_join_multiline
 
-commit 85320f106c325b50e402d13a00d9636e047ebe13
+commit 83e98da2ffa295723b10f63ec41211f70ea87153
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Sep 4 09:35:32 2018 +0200
+Date:   Fri Nov 9 11:05:52 2018 +0100
 
-    Merge pull request #920 from irssi/ailin-nemui-urchlay
-    
-    Add information about crash on unload to perl.txt
-    
-    (cherry picked from commit 735730299385c6e9173f1f46e7f8d529634dd1fa)
+    add test for paste_join_multiline
 
-commit 1e88d4631ec295774af71942727550c3d8228df1
+commit 9d2429c027770a711aa6ea6be86545e7966ec1ba
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Nov 9 10:57:37 2018 +0100
+
+    test line joining
+
+commit 2847b751e359bde8eb5dc3d89f57575c3b5f0948
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Oct 29 17:51:48 2018 +0100
+
+    design.txt is now sourced from website
+    
+    also run syncdocs, fixes missing placeholder in startup-HOWTO
+
+commit 8054b5c2bd41497485a9abe1b198b7366f413078
+Merge: 275e0e84 ec577f92
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Oct 29 10:35:08 2018 +0100
+
+    Merge pull request #967 from vague666/hide_targets_no_item
+    
+    allow activity_hide_targets to hide activity in itemless windows
+
+commit 275e0e84ad8d085bb3515934c96b4b5b87e3c257
+Merge: 524f31b0 3061f5d8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Oct 29 10:33:50 2018 +0100
+
+    Merge pull request #968 from vague666/only_log_saved_channels
+    
+    Only log saved channels
+
+commit ec577f9265fff6b36b0e25c3e1a04ef8f0aee9d6
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Sat Oct 27 20:52:14 2018 +0200
+
+    typo
+
+commit f7966d9c081641ff5b1adca2bd8c217a331bcaa6
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Sat Oct 27 20:51:29 2018 +0200
+
+    allow activity_hide_targets to hide activity in itemless windows
+
+commit 3061f5d848f6f487e8c73a5d5846b7a860ca5466
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Sat Oct 27 20:00:15 2018 +0200
+
+    make sure only channels are checked
+
+commit 2093530e7590f91608d43f4617d8faf76ebf56ee
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Sat Oct 27 16:08:36 2018 +0200
+
+    Make it possible to only autolog saved channels
+
+commit 524f31b026051a9692b8978d5013f9e43efcfa82
+Merge: bc1d82a7 f11b629b
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Oct 19 02:08:08 2018 +0200
 
     Merge pull request #965 from ailin-nemui/fix-signal-emit
     
     Fix wrong signal emission arg count
-    
-    (cherry picked from commit 524f31b026051a9692b8978d5013f9e43efcfa82)
 
-commit 2d803ddd66f607d19737cf35dfd19d2681249d8b
+commit f11b629b2fa65ce355ce122c7c1482e8cba229db
+Author: Doug Freed <dwfreed@mtu.edu>
+Date:   Sun Sep 30 05:54:22 2018 +0000
+
+    Fix issues pointed out by e38774cc
+
+commit bc1d82a757ffbc56c7faabfe5aa60140ccc4d4fc
+Merge: 6ca13dd5 cbc27062
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Thu Sep 20 17:37:50 2018 +0200
+Date:   Thu Oct 18 15:15:50 2018 +0200
 
-    Merge pull request #930 from ailin-nemui/fix-928
+    Merge pull request #964 from ailin-nemui/fixes
     
-    fix accessing unallocated text when checking entry position
-    
-    (cherry picked from commit 708ba06dbc30dcec99cf057a1f36fc9857308b72)
+    fix duplicate include guard and link libs of test
 
-commit 5216d091c92c2a4afc869d700381528375e9f9c8
+commit 6ca13dd5cda0b6dbbdfb4c0e63ec161c2609bd40
+Merge: 8bbf9c69 8b1afbd3
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Oct 17 12:31:52 2018 +0200
+
+    Merge pull request #905 from horgh/horgh/topic-regression
+    
+    Add tests for topic events
+
+commit cbc27062e7f7d501623ee52614bc8012f1d5a97a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Oct 17 00:58:49 2018 +0200
+
+    fix duplicate include guard
+
+commit da15279fa3ce8a965f6d77e4483811ce94a8f9ea
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Oct 17 00:58:39 2018 +0200
+
+    fix flood test libs
+
+commit 8bbf9c696c2d2a896e2dd45c0b12ec7758f23e28
+Merge: 4eff3f15 81f3d6db
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Oct 9 17:16:21 2018 +0200
+
+    Merge pull request #962 from horgh/horgh/comments-and-indentation
+    
+    Fix some indentation and add some comments
+
+commit 81f3d6dbc1133bc72ec1f3211e7eef7027bae157
+Author: Will Storey <will@summercat.com>
+Date:   Mon Oct 8 20:23:36 2018 -0700
+
+    Comment colour code meaning
+
+commit 08b4d6c031fbc816f35e2cd1d57adfbb6ba4e3db
+Author: Will Storey <will@summercat.com>
+Date:   Mon Oct 8 20:23:22 2018 -0700
+
+    Fix some space indentation
+
+commit 4eff3f154d8f8511e38113ae485c584a8f61d1b5
+Merge: a30fbd6c cdcb50f4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Oct 8 18:18:54 2018 +0200
+
+    Merge pull request #959 from ailin-nemui/notice-routing
+    
+    Route notices intended for channels into the channel
+
+commit cdcb50f413537177ff50478b766b570fb7bae057
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Oct 8 17:41:46 2018 +0200
+
+    add a setting
+
+commit a30fbd6cfb647a06a7f0341703ad7b00dcd05dbc
+Merge: 3257ce3b 80f9f169
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Oct 7 10:23:19 2018 +0200
+
+    Merge pull request #961 from ailin-nemui/no-topic-glitch
+    
+    Show the proper TXT when topic was unset
+
+commit 3257ce3b13fe8607876b9ef650ef0f761170b69f
+Merge: 49d83b59 2200bd36
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Oct 7 10:21:29 2018 +0200
+
+    Merge pull request #958 from ailin-nemui/window-number-cmd
+    
+    Make /1/2/3/... a setting
+
+commit 49d83b5945f0628a17561371161067d94a8b69b9
+Merge: cee9d09d ff7f4a22
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Oct 7 10:19:02 2018 +0200
+
+    Merge pull request #956 from irssi/ailin-nemui/kill-cubes
+    
+    Remove cubes from irssi.conf
+
+commit 80f9f16939b65536c5fc3ae1fedb885b84c82855
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Oct 6 20:14:49 2018 +0200
+
+    Show the proper TXT when topic was unset
+
+commit 8b1afbd3557e605f35cf4dab16d49cb4c89ca496
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Oct 6 19:26:36 2018 +0200
+
+    revert core changes
+
+commit 08ac2ee5beebdfd374caccf76a7e63da67b40798
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 5 16:13:47 2018 +0200
+
+    refactor cnotice test into function
+
+commit d2dbcc19993a8cf33258d0989b05305be34336a4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 5 15:37:27 2018 +0200
+
+    Route notices intended for channels into the channel
+
+commit 2200bd3656f0790554bf3c949cce5224ec588a44
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 5 13:46:39 2018 +0200
+
+    Make /1/2/3/... a setting
+
+commit cee9d09debc176ac6a4f3c310b04001644588f40
+Merge: d815c880 ca1ec21d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 5 10:49:50 2018 +0200
+
+    Merge pull request #955 from ailin-nemui/split-width-bug
+    
+    fix and document window width on screen width dependency
+
+commit d815c88050562ba15dcbccccb4cd2e0460e681a4
+Merge: b96a41cf c4bf228e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Oct 5 10:48:25 2018 +0200
+
+    Merge pull request #953 from dwfreed/fix-printtext.h
+    
+    Use ##__VA_ARGS__ extension to allow for argument-less ...
+
+commit b96a41cf3daff342ae04fa59d8f2c903dffe0f2b
+Merge: f207e844 b264540f
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Oct 5 10:47:12 2018 +0200
 
     Merge pull request #951 from dwfreed/patch-1
     
     fe-text: clear hidelevel in layout if default
-    (cherry picked from commit b96a41cf3daff342ae04fa59d8f2c903dffe0f2b)
 
-commit 7b637e87557adb6633c2554c8ae3641667229edd
+commit 1e2547eb92e8a681540925a0da3867a879afd696
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Oct 4 09:33:07 2018 +0200
+
+    fixup perl side
+
+commit ff0daf5870909b250e377ffa438c4fe0ebc2f8ce
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Oct 4 09:31:08 2018 +0200
+
+    actually create the queue, too
+
+commit 95692d4d86c4a39697d16e937a452a662e6ba448
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Oct 4 09:21:54 2018 +0200
+
+    up abi
+
+commit 05fd64dd1611610e2efe596718c657343db839e1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Oct 4 09:21:46 2018 +0200
+
+    improve rawlog perf
+
+commit ff7f4a2207c19c2d5e67edc61c24b1f9781fe1c5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Oct 2 16:27:28 2018 +0200
+
+    Remove cubes from irssi.conf
+    
+    This is long and ugly and better done externally (script)
+
+commit f207e844f1299933b6e508c54804e27f42844547
+Merge: 011372ec 04daf62d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Oct 2 00:09:01 2018 +0200
+
+    Merge pull request #949 from ailin-nemui/help-narrow
+    
+    Fix insufficient size of help column when the window width is small
+
+commit 011372ecdd966531c1fd6638a3c5b239c27112ed
+Merge: f5e587a8 8684ccb4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Oct 2 00:08:30 2018 +0200
+
+    Merge pull request #948 from ailin-nemui/invalid-startline
+    
+    invalidate startline and bottom_startline when hidden
+
+commit ca1ec21dc21563e63a91d4e307dc5ad0490e6cc4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Oct 1 09:13:15 2018 +0200
+
+    fix and document window width on screen width dependency
+
+commit c4bf228e6c2a045f4906b38e9eaf2591cc4f984e
+Author: Doug Freed <dwfreed@mtu.edu>
+Date:   Sun Sep 30 05:38:13 2018 +0000
+
+    Fix check for C99 in printtext.h
+
+commit f5e587a83b0f3569a8024b54713667d55e157370
+Author: Doug Freed <dwfreed@mtu.edu>
+Date:   Sat Sep 29 18:37:10 2018 -0400
+
+    Fix 01f961c
+
+commit 7ab52e73c6492ef65b61eba40ee04fbd330765e5
+Merge: 630c6f7e 76b934d1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Sep 29 22:03:06 2018 +0200
+
+    Merge pull request #947 from ailin-nemui/rsplit-collapse
+    
+    Fix broken display after resizing many windows very small
+
+commit 630c6f7e1448bf5bccd476eb820189db9fc343b0
+Merge: 116e202d db005007
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Sep 29 22:02:29 2018 +0200
+
+    Merge pull request #946 from ailin-nemui/resize-freeze
+    
+    fix irssi being stuck when resized very small
+
+commit 116e202d2221fe4019886a830b2d3296d64f1e07
+Merge: cdfd75da 01f961cd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Sep 29 22:02:10 2018 +0200
+
+    Merge pull request #938 from ailin-nemui/hide-hidden-act
+    
+    Don't trigger activity on hidden lines by default
+
+commit b264540f4ed5e273835a2d5feb10decb18a4fed6
+Author: Doug Freed <dwfreed@mtu.edu>
+Date:   Sat Sep 29 07:13:32 2018 -0400
+
+    fe-text: clear hidelevel in layout if default
+    
+    This is required, otherwise setting the hidelevel to the default will
+    not be written in the layout and so won't persist.
+
+commit 04daf62dbf9a1668b5eb12b64f90701b11f374ca
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Sep 28 14:30:39 2018 +0200
+
+    Fix insufficient size of help column when the window width is small
+
+commit 8684ccb45c267fdeaaa779fce9323047aa5a9e38
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Sep 28 11:40:50 2018 +0200
+
+    invalidate startline and bottom_startline when hidden
+    
+    this was overlooked when adding hidden line support. if the lines are
+    removed, Irssi has to update the startline. It does that by "scrolling"
+    the lines to the proper place. The scroll function was adjusted to
+    calculate 0 for hidden lines, thus it would miss them.
+
+commit 76b934d18e81ffbfa1e7480396d47fcced9394e8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 26 15:19:44 2018 +0200
+
+    Fix broken display after resizing many windows very small
+
+commit db005007cf3c951ace57b1810b30248fe371e4be
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Sep 26 14:16:09 2018 +0200
+
+    fix irssi being stuck when resized very small
+
+commit 01f961cdf1d009ea4a8adc55fd6688f81dbb76c6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 17 12:56:06 2018 +0200
+
+    Don't trigger activity on hidden lines by default
+    
+    This is controlled by a new activity_hide_window_hidelevel setting.
+
+commit cdfd75da9803ec54520b08fc6219f889d60c6bdf
+Merge: 57857856 cad79f1d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Sep 23 11:22:46 2018 +0200
+
+    Merge pull request #941 from dwfreed/window_default_hidelevel
+    
+    Add window_default_hidelevel setting
+
+commit 57857856a66f9923c656a7d1ad777530c6b77832
+Merge: ee92e3af f231a59e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Sep 23 11:22:31 2018 +0200
+
+    Merge pull request #937 from ailin-nemui/hidden-ignores
+    
+    correctly separate ignore flags (no_act, hidden) from level
+
+commit f231a59e81a7487dc46ad58fbdbde90d3b750435
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Sep 20 17:50:35 2018 +0200
+
+    properly document the ignore_match_level so I understand it next time
+
+commit ee92e3aff289788208c0e71d9b318640577b4c4b
+Merge: 708ba06d 20dcf4e5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Sep 20 17:38:03 2018 +0200
+
+    Merge pull request #939 from ailin-nemui/fix-modules
+    
+    some header fixes for C modules
+
+commit 708ba06dbc30dcec99cf057a1f36fc9857308b72
+Merge: a7af259d 74e8371b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Sep 20 17:37:50 2018 +0200
+
+    Merge pull request #930 from ailin-nemui/fix-928
+    
+    fix accessing unallocated text when checking entry position
+
+commit a7af259dd1ded503460458bf8042c47060fa153d
+Merge: 90165c0c 3f0a4ef1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 18 21:14:55 2018 +0200
+
+    Merge pull request #929 from ailin-nemui/oddcommands
+    
+    Remove incorrectly copied automake commands from fuzzer
+
+commit cad79f1db74787c68951e166cdc68af21ec67301
+Author: Doug Freed <dwfreed@mtu.edu>
+Date:   Mon Sep 17 14:34:06 2018 +0000
+
+    Fix compilation warning
+
+commit 074e6cf768b9c153b64a916b4b2d332d8ba6bef4
+Author: Doug Freed <dwfreed@mtu.edu>
+Date:   Mon Sep 17 14:26:25 2018 +0000
+
+    fe-text: only save non-default window hidelevel
+    
+    This will only save the window hidelevel in the layout if it differs
+    from window_default_hidelevel.
+
+commit cb6279c63bbb98a419f9f72495b8a8232a3e7529
+Author: Doug Freed <dwfreed@mtu.edu>
+Date:   Mon Sep 17 13:28:46 2018 +0000
+
+    fe-text: add window_default_hidelevel setting
+    
+    Allows specifying the hidelevel that new windows get by default.
+
+commit 011d9437d158ae815cfab55a5e2c0b0a57430353
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 17 13:08:43 2018 +0200
+
+    oops
+
+commit 7e9f8c694b38ae785771fb837fb0a4a434b614d3
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 17 12:48:42 2018 +0200
+
+    simplify ignore hidden/no_act code
+
+commit b9a274a81d4020b4a1c5809b150ec869c897f17b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Sep 17 12:26:13 2018 +0200
+
+    correctly separate ignore flags (no_act, hidden) from level
+
+commit 20dcf4e53e05f61ed6e901f203e6f1ab90bc2bea
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Sep 14 12:44:41 2018 +0200
+
+    fix compilation of python module
+
+commit c174247502ebffe615f1e55ba7a5010856db41d3
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Sep 14 11:59:05 2018 +0200
+
+    fix compilation of theme-indent module
+
+commit 90165c0ceca996b1b95dc15de6f85051b4555365
+Merge: 7f14d4d7 c80946bc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Sep 7 23:05:11 2018 +0200
+
+    Merge pull request #931 from ailin-nemui/fix-629
+    
+    Disconnect SASL properly in case the sasl module got unloaded from server
+
+commit c80946bcf5f1a9c48213fd718a8c8bffc6dd1307
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 15:50:58 2018 +0200
+
+    Disconnect SASL properly in case the sasl module got unloaded from server
+    
+    stops from getting on the network when sasl is unavailable
+    
+    fixes #629
+
+commit 74e8371bde8143535da46a833835313d75ae8f4e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 14:12:03 2018 +0200
+
+    fix accessing unallocated text when checking entry position
+    
+    fixes #928
+
+commit 3f0a4ef1970a164d7bce64e2fa887036fd162236
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 10:17:20 2018 +0200
+
+    Remove incorrectly copied automake commands from fuzzer
+
+commit 7f14d4d74409889e153efa8f0eaea289d9ef5400
+Merge: d93cd632 10f63266
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 10:02:52 2018 +0200
+
+    Merge pull request #896 from phillid/winch-redraw
+    
+    Don't ignore SIGWINCH when window size is unchanged
+
+commit d93cd63243afccc454594bffcc944f02f45a8554
+Merge: e5759a7f 32944893
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:52:21 2018 +0200
+
+    Merge pull request #917 from dequis/wcwidth-wrapper
+    
+    Add a wrapper of wcwidth() that picks the best implementation
+
+commit e5759a7fb708fe461a35bf3bf37852cfbbaa2498
+Merge: afb3daaf af1e4d6e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:37:10 2018 +0200
+
+    Merge pull request #914 from ailin-nemui/textbuffer_lineinfo
+    
+    properly record line info on empty lines
+
+commit 329448939ba8f9cc9803d4b3045d517b0ab0f9aa
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:36:45 2018 +0200
+
+    Fix gnu wcwidth
+
+commit afb3daaf65095447f0b0ce64f68363f6f17dcd34
+Merge: 73573029 e450a7f8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:35:47 2018 +0200
+
+    Merge pull request #919 from ailin-nemui/uafs
+    
+    Use-after-frees
+
+commit 735730299385c6e9173f1f46e7f8d529634dd1fa
+Merge: 8261b2a7 82702de0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:35:32 2018 +0200
+
+    Merge pull request #920 from irssi/ailin-nemui-urchlay
+    
+    Add information about crash on unload to perl.txt
+
+commit 8261b2a7c892c032690124abd7babb262df3a96b
+Merge: d5b43003 3351c54a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:35:21 2018 +0200
+
+    Merge pull request #922 from dequis/fix-new-config-file-write
+    
+    Fix /save not working if the config didn't previously exist
+
+commit d5b43003f03b6a98774221963fd28e98d45ad558
+Merge: 03466385 e2e27d18
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:34:31 2018 +0200
+
+    Merge pull request #925 from dequis/mkdir-config-strerror
+    
+    Improve error message when failing to create the config dir
+
+commit 0346638547adb63f5a1d9c74be0c77106ad6cfa9
+Merge: 1bbd9f39 04497ed6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Sep 4 09:34:14 2018 +0200
+
+    Merge pull request #927 from DomT4/perl_mojave
+    
+    configure: fix Perl detection on macOS Mojave
+
+commit 04497ed69d35cf44b0700437bf427f48dbc42871
+Author: Dominyk Tiller <dominyktiller@gmail.com>
+Date:   Mon Sep 3 00:30:48 2018 +0100
+
+    configure: fix Perl detection on macOS Mojave
+    
+    Apple has significantly changed the way `perl` is structured in macOS
+    Mojave/10.14, which is due to ship stable this month. The `perl`
+    restructuring has been an issue for a while but I recently obtained
+    confirmation from Apple the changes were intentional & consequently not
+    something that was going to be walked back before Mojave reaches its
+    stable release.
+    
+    As of 10.14 the Perl headers are moving inside the SDK, instead of
+    residing in `/System` directly. There's a flag to tell Clang to look
+    inside the SDK without projects having to explicitly locate the SDK &
+    fiddle with the location themselves, which is `-iwithsysroot`, and
+    that's what `perl` outputs now when `configure` checks
+    `perl -MExtUtils::Embed -e ccopts`:
+    
+    ```
+      -g -pipe -fno-common -DPERL_DARWIN -fno-strict-aliasing -fstack-protector  -iwithsysroot /System/Library/Perl/5.18/darwin-thread-multi-2level/CORE
+    ```
+    
+    The latter bit of that was previously
+    `-I/System/Library/Perl/5.18/darwin-thread-multi-2level/CORE`. The
+    problem here is that `configure` filters out flags that start with a
+    lowercase `i` and consequently the Perl elements fail to build. This
+    tiny patch fixes that issue, restoring Perl support to `irssi` when
+    built on macOS 10.14.
+
+commit e2e27d1809684a6745d7b449561aeb5f30a42a74
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Sep 2 01:20:09 2018 -0300
+
+    Improve error message when failing to create the config dir
+
+commit 3351c54a2f8ac2add41ba7ce829c215a65d3c923
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Sep 1 19:12:17 2018 -0300
+
+    Fix /save not working if the config didn't previously exist
+    
+    realpath() was supposed to resolve symlinks but it also fails with
+    ENOENT (no such file or directory) if the file just isn't there.
+
+commit 82702de047237550d1299cb9b7461a952e6cc74d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Aug 29 09:09:58 2018 +0200
+
+    Add information about crash on unload to perl.txt
+    
+    reported by urchlay: http://urchlay.naptime.net/repos/misc-scripts/tree/selfunload.pl
+
+commit 7b09cac9ec0ce7e549ae8fecf4db8b8d811c18b1
+Author: Will Storey <will@summercat.com>
+Date:   Mon Aug 27 21:04:54 2018 -0700
+
+    Call functions via signals rather than directly
+    
+    This allows us to leave functions static.
+
+commit b11932d24f01703d07eb0f7a0de6c226ebcde195
+Author: Will Storey <will@summercat.com>
+Date:   Mon Aug 27 21:04:23 2018 -0700
+
+    Make channel event functions static again
+
+commit 0edb64c4dc731065705f3303307f20b3ccb5674a
+Author: Will Storey <will@summercat.com>
+Date:   Sat Aug 11 10:52:39 2018 -0700
+
+    Add test files to .gitignore
+
+commit 6f38d67d87f2ef443172cca4d9ee82300d9f5ca4
+Author: Will Storey <will@summercat.com>
+Date:   Sat Aug 11 10:49:47 2018 -0700
+
+    Add tests for channel change events
+
+commit 2ccb312b8b56db9585a4801184c064bfd3e3ff90
+Author: Will Storey <will@summercat.com>
+Date:   Sat Aug 11 10:49:26 2018 -0700
+
+    Expose functions for testing
+
+commit 2d6033542e0e47072d61ef442430c3014e3b430f
+Author: Will Storey <will@summercat.com>
+Date:   Sat Aug 11 10:48:00 2018 -0700
+
+    Add functions to override irssi dir and config
+    
+    Setting up to test is easier this way.
+
+commit 04db359a6d0f6d8630c2439fb26b7420ecc48582
+Author: Will Storey <will@summercat.com>
+Date:   Thu Aug 9 13:49:46 2018 -0700
+
+    Handle topic info numeric separately from topic & topic numeric
+    
+    As we called the same function for the topic info numeric, we ended up
+    losing the topic as that numeric does not include it. We now call a
+    different function to handle this case more carefully. Fixes #903.
+
+commit bbca1a5a0fa59567fc3082263dc5e9b087e02da6
+Author: Will Storey <will@summercat.com>
+Date:   Mon Aug 27 20:50:17 2018 -0700
+
+    Revert "Revert "Flag topic as unset if it is zero length""
+    
+    This reverts commit 817179a7606b616795cf67e24505526dded34381.
+
+commit 1bbd9f393cef1dd3cd785aa59584564be1270314
+Merge: 73a89c2a 7d3eb47a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Aug 27 10:13:20 2018 +0200
+
+    Merge pull request #909 from meribold/master
+    
+    Fix `/save` replacing symlinks with regular files
+
+commit 7b70d051da10e6ea54cc118e8f7f254ddd07f6c1
+Author: dequis <dx@dxzone.com.ar>
+Date:   Mon Aug 27 00:14:01 2018 -0300
+
+    wcwidth-wrapper: avoid cast with a tiny wrapper, julia_wcwidth()
+
+commit 92804cb1aa753fa1f5e9b588a4bd7125bc98ce49
+Author: dequis <dx@dxzone.com.ar>
+Date:   Mon Aug 27 00:01:47 2018 -0300
+
+    gui-windows: make the wcwidth_impl global var into static
+
+commit 73a89c2a6ddfc60bc5560063e4f238021a4deec5
+Merge: 19d84bc1 24f1ed7e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Aug 26 21:27:12 2018 +0200
+
+    Merge pull request #918 from dequis/unhandled-cap-subcommand-list
+    
+    irc-cap: Don't show warning on CAP LIST response
+
+commit e450a7f8c1c74132625d0a884f0ca851abd69197
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Aug 24 02:27:45 2018 -0300
+
+    modules_deinit: Fix -Werror=declaration-after-statement
+
+commit ade2f87fe599773886a044b7c29a482622dfaea4
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Aug 24 02:19:42 2018 -0300
+
+    Fix use after free introduced by the use after free patch
+
+commit 9dd836b87663929ae540b6b3c724c53b24e512ba
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Aug 24 02:11:22 2018 -0300
+
+    Fix "discards ‘const’ qualifier" warnings
+
+commit 071ada830bd77055107220a420c96b41702f8cc2
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Aug 23 14:21:37 2018 +0200
+
+    up abi
+
+commit 610ab2dafac4668732733009b079ebcf585dee9f
+Author: coypu@sdf.org <coypu@sdf.org>
+Date:   Sat Aug 11 22:28:14 2018 +0000
+
+    Use-after-frees
+    
+    Hi folks!
+    
+    I tried clang-static-analyzer on irssi 1.1.1, it seems like it
+    finds some things. Here's a diff, but there might be more that you would
+    want to check, or choose to work differently.
+    
+    (in special-vars.c, ret is commands->data sometime)
+    
+    I hope it's not too much trouble if reported as a confidential bug.
+    Thanks.
+
+commit b2a429bfb45c63d6518ff8af5d8861618434bdae
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Aug 23 14:03:53 2018 +0200
+
+    update line cache on switching wcwidth implementation
+
+commit 3ef0b9b3d06ae1c004fa1e140042eefe00acb9c0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Aug 23 14:03:16 2018 +0200
+
+    move "auto" to default instead
+
+commit b95ce3e812b1d7218b6e5cea47084160cce84da7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Aug 23 13:16:50 2018 +0200
+
+    add julia's utf8proc wcwidth implementation
+
+commit 24f1ed7edb7d8498fdc6ec34e7727bca93fde74d
+Author: dequis <dx@dxzone.com.ar>
+Date:   Thu Aug 23 03:22:30 2018 -0300
+
+    irc-cap: Don't show warning on CAP LIST response
+
+commit 0d8632943d8fb526fbd4d853c86294d0037c43f6
+Author: dequis <dx@dxzone.com.ar>
+Date:   Thu Aug 23 02:02:33 2018 -0300
+
+    Add a wrapper of wcwidth() that picks the best implementation
+    
+    This adds a i_wcwidth() function that replaces mk_wcwidth(), and a
+    'wcwidth_implementation' setting to pick which one it wraps.
+    
+    Values:
+    
+    - old: uses our local mk_wcwidth() which implements unicode 5.0
+    - system: uses the libc-provided wcwidth(), which may be better or worse
+      than ours depending on how up to date the system is.
+    - auto: tests the system one against two characters that became
+      fullwidth in unicode 5.2 and 9.0 respectively. If either of them pass,
+      pick the system implementation, otherwise pick ours.
+    
+    It defaults to auto.
+    
+    mk_wcwidth() is still preferable in some cases, since the way it uses
+    ranges for fullwidth characters means most CJK blocks are covered even
+    if their characters didn't exist back then.
+    
+    The "system" implementation is also wrapped to never return -1, but to
+    assume those unknown characters use one cell. Quoting the code:
+    
+        /* Treat all unknown characters as taking one cell. This is
+         * the reason mk_wcwidth and other outdated implementations
+         * mostly worked with newer unicode, while glibc's wcwidth
+         * needs updating to recognize new characters.
+         *
+         * Instead of relying on that, we keep the behavior of assuming
+         * one cell even for glibc's implementation, which is still
+         * highly accurate and less of a headache overall.
+         */
+
+commit af1e4d6e34317452ac32380bed795aecb00f5d88
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Aug 21 09:21:23 2018 +0200
+
+    initialise the line to zeros
+
+commit a19b503a31fa4fb31c2e6ee79ffdc18bf4a87db0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Aug 21 00:31:12 2018 +0200
+
+    properly record line info on empty lines
+
+commit 19d84bc16e80268f0df2a09b56022c5273f6fc95
+Merge: 22ce5423 4f5f62ac
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Wed Aug 15 14:26:43 2018 -0400
+
+    Merge pull request #913 from josephbisch/server-fuzz
+    
+    Add server-fuzz to fe-fuzz
+
+commit 4f5f62ac63697d23e8a4d432f181a85c45a49d5e
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Wed Aug 15 11:11:09 2018 -0400
+
+    Add server-fuzz to fe-fuzz
+    
+    Based on test-796.c in the tests directory.
+
+commit 22ce54231e8299afa850b0fb38a9f7ffea2f8604
+Merge: 85df01d1 817179a7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Aug 13 14:59:55 2018 +0200
+
+    Merge pull request #911 from irssi/revert-897-horgh/topic-unset
+    
+    Revert "Flag topic as unset if it is zero length"
+
+commit 817179a7606b616795cf67e24505526dded34381
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Aug 13 14:43:25 2018 +0200
+
+    Revert "Flag topic as unset if it is zero length"
+
+commit 7d3eb47ab51a93defb267912704e84b3241b4db6
+Author: Lukas Waymann <meribold@gmail.com>
+Date:   Sun Aug 12 10:55:47 2018 +0000
+
+    Fix potential `rename(3)` across file systems
+    
+    Make sure the temporary file in the `config_write` function is created
+    on the same file system as the file we `rename` it to later.
+
+commit 764f8215a9dad09b93832fdbb0c87eb1b0e6e773
+Author: Lukas Waymann <meribold@gmail.com>
+Date:   Sun Aug 12 07:22:14 2018 +0000
+
+    Fix `/save` replacing symlinks with regular files
+    
+    A side-effect of 8deb618 is that `/save` may replace configuration files
+    that are symlinks with regular files.  Fix this by resolving all
+    symlinks before renaming the temporary file.
+
+commit 85df01d1338e759b7cac18414ff98a7dce98e2c4
+Merge: 0c94d44f f3909b8b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Aug 6 14:36:20 2018 +0200
+
+    Merge pull request #901 from dwfreed/patch-1
+    
+    core/ignore: fix #900
+
+commit 10f632664989117afe6d4496a419f712fbb4c3b6
+Author: David Phillips <david@sighup.nz>
+Date:   Tue Jul 24 19:31:45 2018 +1200
+
+    Redraw on SIGWINCH when screen size hasn't changed
+    
+    Some programs and users send SIGWINCH as a request for the client to redraw
+    in the event of session detachment/reattachment (e.g. abduco). A well-formed
+    terminal will only send SIGWINCH when the window size has changed, so there
+    is no need to optimise this case out.
+
+commit f3909b8bcb509bbb57d685ec5a2b9f93097b5755
+Author: Doug Freed <dwfreed@mtu.edu>
+Date:   Fri Aug 3 17:07:06 2018 -0400
+
+    core/ignore: fix #900
+
+commit 0c94d44f52a3689e36887df836e4c3fbf67ff77e
+Merge: ffd7ecc8 d84a2444
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Aug 2 13:42:24 2018 +0200
+
+    Merge pull request #892 from dwfreed/fix-ignore-flags
+    
+    core/ignore: fix ignore_match_level handling of flag levels
+
+commit ffd7ecc8bf470eb08cd48ad9ba3c5692266890e7
+Merge: c7e50f48 b114b11e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jul 31 09:34:15 2018 +0200
+
+    Merge pull request #897 from horgh/horgh/topic-unset
+    
+    Flag topic as unset if it is zero length
+
+commit b114b11e36598157b7b014cc8d4325fbf04c9b1e
+Author: dequis <dx@dxzone.com.ar>
+Date:   Mon Jul 30 23:45:56 2018 -0300
+
+    channel_change_topic: change one strlen == 0 to *str == '\0'
+
+commit c7e50f48e5434a1732b9e6e6745bc7dc58e22235
+Merge: 88f77cb6 1ab679bf
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jul 25 11:32:06 2018 +0200
+
+    Merge pull request #886 from vague666/set_item_format
+    
+    remove = from format because people get confused by it
+
+commit 15840ac27bd05e710ae13afe1a3c29853d2d6a0b
+Author: Will Storey <will@summercat.com>
+Date:   Tue Jul 24 18:31:57 2018 -0700
+
+    If we receive a 0 length topic, record it as unset
+    
+    Fixes #888.
+    
+    Previously we showed that there was a topic set when using /topic, just
+    an empty one. This was different than how we show such topics when
+    initially joining a channel. Now we say that the topic is unset in both
+    cases.
+
+commit b9e301362db545a4108b5d08c7eda45441a475f5
+Author: Will Storey <will@summercat.com>
+Date:   Tue Jul 24 18:30:51 2018 -0700
+
+    Ignore vim editor files
+
+commit 0e187cf9cfb99c19f3dc9cf532fb5bac92dd1145
+Author: Will Storey <will@summercat.com>
+Date:   Tue Jul 24 18:29:31 2018 -0700
+
+    Fix typo in comment
+
+commit 88f77cb6f8fbbd553dfe45db9aede8a6d8905b49
+Merge: b382bd12 4f45828f
+Author: LemonBoy <LemonBoy@users.noreply.github.com>
+Date:   Tue Jul 24 09:38:02 2018 +0200
+
+    Merge pull request #895 from janikrabe/master
+    
+    Keep errstr set to NULL if errno is not set
+
+commit 4f45828ff3de2952fa2d6be8515e67986213e7a8
+Author: Janik Rabe <info@janikrabe.com>
+Date:   Wed Jul 18 21:12:38 2018 +0300
+
+    Keep errstr set to NULL if errno is not set
+    
+    Don't use errno if it is not set and show the default error message
+    instead. This prevents messages like "SSL handshake failed: Success"
+    from being shown.
+
+commit d84a24444fbef8af6ae72888cfc3a539e0a1f005
+Author: Doug Freed <dwfreed@mtu.edu>
+Date:   Fri Jun 29 09:00:38 2018 -0400
+
+    core/ignore: fix ignore_match_level handling of flag levels
+
+commit b382bd12328c794b038a3dfd66adeec17f0b9324
+Merge: daf6ce86 ba2554dd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jun 15 14:28:09 2018 +0200
+
+    Merge pull request #884 from vague666/ignore_hidden
+    
+    Added HIDDEN level to ignores
+
+commit 1ab679bf32028b175c14f977659af540550bba47
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Thu Jun 14 20:02:30 2018 +0200
+
+    remove = from format because people get confused by it
+
+commit ba2554dd1485259b95b4b37f281c989086b24739
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Sat Jun 9 05:55:25 2018 +0200
+
+    missing space
+
+commit d2e1caf7205220c9fd73861604de8248eb07f0d6
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Thu Jun 7 15:17:46 2018 +0200
+
+    simplifying code
+
+commit 1547248e9448c22476a56c630ee18d95a57dc05f
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Wed Jun 6 11:03:44 2018 +0200
+
+    simplify code
+
+commit ac3af3fb56d98b884d03646e3c15435c8a435bf3
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Wed Jun 6 10:00:38 2018 +0200
+
+    these were bitflags
+
+commit db3b671328d0e6890b17c23baf9d4280d086e89b
+Author: vague666 <jari.matilainen@gmail.com>
+Date:   Tue Jun 5 14:43:37 2018 +0200
+
+    Added HIDDEN level to ignores
+
+commit daf6ce86cb668d24f278dca91846fc7b8619757d
+Merge: 0a0c755b 631650bd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue May 8 07:17:10 2018 +0200
+
+    Merge pull request #878 from irssi/revert-873-empty_lines
+    
+    Revert "record line info on empty lines"
+
+commit 631650bd8ab467af8347b5d9b51b2b0193adfe63
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon May 7 21:22:43 2018 +0200
+
+    Revert "record line info on empty lines"
+
+commit 0a0c755b89c932f058899011d73bedf3a516a8d5
+Merge: e19d6ee2 3075cbc6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Apr 24 16:21:58 2018 +0200
+
+    Merge pull request #875 from irssi/ailin-nemui-compile-oldtest
+    
+    Fix test compilation on old glib
+
+commit 3075cbc6fb383024b87563611021f9fb712182fd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Apr 24 14:00:30 2018 +0200
+
+    Fix test compilation on old glib
+    
+    e.g. Debian 7
+
+commit e19d6ee21930a4892b922d751477c4dabad15050
+Merge: 0caf884e 34b31e84
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Apr 24 13:58:25 2018 +0200
+
+    Merge pull request #873 from ailin-nemui/empty_lines
+    
+    record line info on empty lines
+
+commit 0caf884e9231656b80aa244d04146c27193dd9f2
+Merge: 13b2f349 8deb6182
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Apr 24 13:58:15 2018 +0200
+
+    Merge pull request #871 from dequis/atomic-config-write
+    
+    Make config_write more atomic to prevent truncation when out of space
+
+commit 13b2f349b68bbef2550238c62519ab2acf013855
+Merge: 68302f2d d0151fd5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Apr 24 13:58:04 2018 +0200
+
+    Merge pull request #870 from dequis/fe-cap
+    
+    Add fe-cap to show messages for CAP-related events in the UI
+
+commit 34b31e8451829e7b515a60cf12183203a059d1c4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Apr 16 16:19:54 2018 +0200
+
+    record line info on empty lines
+
+commit 68302f2d1fb1908ccac56b50ddf70abdb02f9aa5
+Merge: b2b1ac67 8607a5fa
+Author: dx <dx@dxzone.com.ar>
+Date:   Wed Apr 11 19:25:25 2018 -0300
+
+    Merge pull request #869 from dequis/missing-cap-3-2-signals-doc
+    
+    signals.txt: add missing 'server cap new|delete' signals
+
+commit 8deb6182c692904733544568479035b31fe1007e
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Apr 8 15:52:09 2018 -0300
+
+    Make config_write more atomic to prevent truncation when out of space
+    
+    This is modeled after glib's g_file_set_contents. It doesn't use that
+    function directly because the writing is done with GIOChannel
+    streaming-like writes and g_file_set_contents expects the whole thing to
+    be in-memory.
+    
+    Main differences with g_file_set_contents:
+    
+    - complete lack of win32 special casing (cygwin/WSL should work though)
+    - no fallocate() (linux only, but we don't know the size upfront, anyway)
+    - always calls fsync (glib skips it on btrfs or when not overwriting)
+    
+    Other than that, it's the same old mkstemp + fsync + rename.
+
+commit d0151fd5a21cf026afa67239ad79f23bc26f0a10
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Apr 8 01:26:11 2018 -0300
+
+    Add fe-cap to show messages for CAP-related events in the UI
+    
+    Replaces cap.pl
+
+commit af5ee997e7544eb59ed509ef8fb79ec449756e90
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sun Apr 8 01:24:48 2018 -0300
+
+    Add "server cap req" signal, emitted before requesting caps
+
+commit 8607a5fa78ba44db51cc75a020e1a53c4e04a057
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Apr 7 21:47:38 2018 -0300
+
+    signals.txt: add missing 'server cap new|delete' signals
+    
+    Emitted by cap_emit_signal in irc/core/irc-cap.c, added as part of the
+    CAP 3.2 PR merged recentlyish.
+
+commit b2b1ac670879ed49ebf87acc4e33212a21e8df66
+Merge: 4d5a7507 c08685a1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Apr 6 10:50:58 2018 +0200
+
+    Merge pull request #866 from ailin-nemui/reconnects
+    
+    This is a simple change which might fix #130
+    
+    The lookup_servers are also disconnected if the lookup/SSL handshake doesn't succeed in time. I'm not perfectly sure if this is the master fix but it does seem to be an issue that servers can be stuck in lookup, especially for SSL. See the issue for a reproducer
+
+commit 4d5a7507196c7f5337c846417650bb3c54d523b2
+Merge: 8bf21620 407680ef
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Apr 3 09:10:16 2018 +0200
+
+    Merge pull request #868 from dequis/libgcrypt-m4
+    
+    Add libgcrypt.m4 so autogen doesn't require libgcrypt-dev
+
+commit 407680efdc662787ecbd1297d1f4781acdb5168c
+Author: dequis <dx@dxzone.com.ar>
+Date:   Mon Apr 2 12:30:59 2018 -0300
+
+    Add libgcrypt.m4 so autogen doesn't require libgcrypt-dev
+
+commit 8bf2162053df088e3327245e2e2681591b7b8ecc
+Merge: 0c1db8f2 138eca07
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Apr 2 08:36:53 2018 +0200
+
+    Merge pull request #858 from ailin-nemui/sbar
+    
+    change the statusbar commands so that no accidential status bars are created
+
+commit 0c1db8f2aee4aa5040a16518adb71f57dc953985
+Merge: 9fa8c32b 0b2f5b0a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Mar 31 13:04:35 2018 +0200
+
+    Merge pull request #854 from irssi/ahf/otr
+    
+    OTR support, take 2
+
+commit 0b2f5b0a1e30932b07245c508a673eb0e9b6ab37
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Mar 31 01:51:47 2018 -0300
+
+    otr: fix blatant lies in help text
+
+commit 4501917cae4523d11fb049a5d20e5582bb0893ea
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Mar 31 01:46:10 2018 -0300
+
+    otr: rename module.c to otr-module.c
+
+commit c08685a1a3e4a719fcfe8f30a338a91db8c3b8d1
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 19 16:06:46 2018 +0100
+
+    also reconnect lookup_servers
+
+commit 2830d91a89277052ee8e6978a41a7773c9fe5025
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 29 22:41:12 2018 +0200
+
+    use precompiled libotr
+
+commit a3b9e2370fd02eb6a400744e31d7db27c8fe92b8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Mar 29 22:00:40 2018 +0200
+
+    up abi
+
+commit 7d7c6975edc13d6f285c00dfc8a4f1a98ffa6702
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Mar 28 23:36:03 2018 -0300
+
+    otr: add target param to the unencrypted 'message private' signal
+    
+    Same case as the previous commit.
+
+commit dd7dc7ca7d0b04ae2d522a209845c453bfd9aab5
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Mar 28 23:06:47 2018 -0300
+
+    otr: fix missing 'target' param in 'message private' signal
+    
+    Fixes warnings like these on '/msg yourself'
+    
+    -!- Irssi: critical privmsg_get_query: assertion 'nick != NULL' failed
+    -!- Irssi: critical query_find: assertion 'nick != NULL' failed
+
+commit b52cf1015eaa4d759c9377df35a56988655dce89
+Author: dequis <dx@dxzone.com.ar>
+Date:   Wed Mar 28 22:40:17 2018 -0300
+
+    otr: add KEY_GEN_STARTED state to avoid starting it twice
+    
+    Fun race condition there, got this when testing with the jabber
+    xmlconsole open in bitlbee
+
+commit 9fa8c32b9e2f80e308d1ed780490f6d2dfd6bb05
+Merge: 7fc59d2d 17920ab5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 27 06:47:25 2018 +0200
+
+    Merge pull request #865 from woohooyeah/master
+    
+    fix build with LibreSSL 2.7.0/2.7.1
+
+commit 17920ab5aa11be86dc15c83fce8f5d879f104ed8
+Merge: 25a44dac 7fc59d2d
+Author: Dorian Harmans <dorian@woohooyeah.nl>
+Date:   Mon Mar 26 22:50:54 2018 +0200
+
+    Merge remote-tracking branch 'upstream/master'
+
+commit 7fc59d2d1016e28eced6dbcaddc1e1865fe0ebe8
+Merge: 191e0ac8 c7ca8102
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 26 12:46:04 2018 +0200
+
+    Merge pull request #862 from ailin-nemui/line_is_null
+    
+    fix a crash when trying to append to a NULL line
+
+commit 25a44dacf4114f33f3a887f358c02f4fd9938427
+Author: Dorian Harmans <dorian@woohooyeah.nl>
+Date:   Fri Mar 23 21:35:35 2018 +0100
+
+    fix build with LibreSSL 2.7.0
+
+commit 138eca0749dd05a4a16df9e43d87af2143b224f2
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 20 18:11:12 2018 +0100
+
+    fix build
+
+commit ee04cd503ff70a1aed79cdb2c9f787c98b075182
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 20 17:59:11 2018 +0100
+
+    add disabled txt
+
+commit 977c2c0a0d911e3b7b43387ed19c5bfee565c617
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 20 17:53:03 2018 +0100
+
+    refactor common parts
+
+commit 501c150ec21b1dceeecc0c201d22fc1bad161cf4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 20 17:39:08 2018 +0100
+
+    make new status bar actually work
+
+commit 191e0ac84ed42b51395ff9659b4f6169a1fcb3aa
+Merge: 7d99ff05 6b0e1409
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 20 10:30:39 2018 +0100
+
+    Merge pull request #802 from ailin-nemui/test-796
+    
+    Test for segfault on disconnect during signal processing
+
+commit 7d99ff05cd9f15c4fbdfc54de58abdc2bc5b7778
+Merge: 6ffbd0ab 6e6a96d8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Mar 20 10:30:01 2018 +0100
+
+    Merge pull request #803 from ailin-nemui/bug-796-test
+    
+    Postpone server cleanup until after unref
+
+commit 6ffbd0ab546218145a82befe0871e6ccafabe9db
+Merge: 3f217ae1 77a671c0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 19 16:23:27 2018 +0100
+
+    Merge pull request #859 from ailin-nemui/delkeys
+    
+    make default keybinds deletable
+
+commit c8191b33155ae7ee1ebb07d87b8e001f75188eeb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 12 09:41:53 2018 +0100
+
+    abi bump
+
+commit 61c58b7690e9eec159ba32e5ea40809ed17ef424
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 19 10:35:39 2018 +0100
+
+    actually check which of add or modify was called
+
+commit d845ee7361886599f6ffa4f403b44a3f45fd88db
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 19 09:18:42 2018 +0100
+
+    change the statusbar commands so that no accidenal status bars are created
+
+commit 77a671c03726969525367f36429c448a3a0aaae8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 19 09:11:02 2018 +0100
+
+    update bind help
+
+commit c7ca8102c002287f492ca71f2193ee9b269f5bf5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Mar 17 13:36:38 2018 +0100
+
+    fix a crash when trying to append to a NULL line
+    
+    reported by @vague666
+
+commit 65a139aa9e8a7cb7a7a123ab57ee05836c9e89ea
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Mar 16 12:44:04 2018 +0100
+
+    move no window printing code
+
+commit 3f217ae14951afac8a98ec7bb1a497b3a1c0cf8b
+Merge: 575daf4a b7906b87
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Thu Mar 15 17:23:40 2018 +0100
 
     Merge pull request #861 from ailin-nemui/stay-hidden
     
     in fact hidden levels should not be re-set when you run /set
-    
-    (cherry picked from commit 3f217ae14951afac8a98ec7bb1a497b3a1c0cf8b)
 
-commit 8cec161a8f252fd8d57677eb961ffd87987b9d30
+commit 8d07f52bae6fa7e85988125293f08a72e39de8c3
+Author: Alexander Færøy <ahf@irssi.org>
+Date:   Thu Mar 15 14:01:50 2018 +0100
+
+    Add ABI check for otr_core module.
+
+commit b7906b87065829029f3b7ea21eb29699f7dc21fc
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Feb 13 12:56:25 2018 +0100
+Date:   Thu Mar 15 10:06:29 2018 +0100
 
-    tag as 1.1.1
+    in fact hidden levels should not be re-set when you run /set
 
-commit 84473ad57c67c796e385e8c1c72f76036e31d91e
+commit 7ec6c500b4abed6f3a93a7afaba26ba08ca09be9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Mar 12 17:46:26 2018 +0100
+
+    make default keybinds deletable
+
+commit 575daf4af7680c537e6d1cba513b3fb6307cd292
+Merge: 6a3a3873 097a9f49
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Mar 10 13:11:39 2018 +0100
+
+    Merge pull request #852 from dequis/document-cat-seek
+    
+    Document second parameter (seek position) of /cat command
+
+commit 6a3a3873e9a8d905a9ed3a2656792cb94223155f
+Merge: 1178f753 76d958a8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Mar 10 13:11:09 2018 +0100
+
+    Merge pull request #857 from LemonBoy/config-case
+    
+    Compare channels/networks fields case-insensitively
+
+commit 76d958a87fea1d744f45a9e022cf980752c7ea73
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Fri Mar 9 17:36:28 2018 +0100
+
+    More g_strcmp0 -> g_ascii_strcasecmp
+
+commit fb9f5174c2f85c113dac8dbc1d146fe530e53e44
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Thu Mar 8 20:35:00 2018 +0100
+
+    Compare channels/networks fields case-insensitively
+    
+    Fixes #856
+
+commit 1178f753cf07cbbfd000d6b0fccf5a5dd7b54b5b
+Merge: ad4324d2 0b057b4f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Mar 7 07:33:10 2018 +0100
+
+    Merge pull request #855 from ailin-nemui/sync
+    
+    run syncdocs.sh and syncscripts.sh
+
+commit 0b057b4ff43cfc560f67fe8312830289534de7d5
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Mar 7 02:22:58 2018 +0100
+
+    run syncdocs.sh and syncscripts.sh
+    
+    Sync startup howto to fd1ed2227d529a7ee00d6206caa871ee40c08b69
+    Sync scriptassist to (2003020806) 211cd515ec87cf9a5d893e97894c2e4b58952f19
+
+commit 7a4bfc16021e7762bd8e6c5d11d0f913101dc5b4
+Author: Alexander Færøy <ahf@irssi.org>
+Date:   Tue Feb 27 00:04:56 2018 +0100
+
+    Better wording.
+
+commit 016b42baea9d7dcd2a284f873246c06259c560dd
+Author: Alexander Færøy <ahf@0x90.dk>
+Date:   Sun Jan 4 01:57:21 2015 +0100
+
+    Add OTR support.
+    
+    This patch adds support for the OTR protocol to irssi. This is an import
+    of the external irssi-otr project that we are now taking over
+    maintership for.
+    
+    Major thanks to the original authors of Irssi-OTR: Uli Meis and David
+    Goulet. Thanks to the OTR community in #OTR on OFTC, thanks to everyone
+    who have helped testing the patches and submitted UI suggestions.
+
+commit 097a9f4988333b1d445ba70df006da6ef26bfaa9
+Author: dequis <dx@dxzone.com.ar>
+Date:   Fri Feb 16 10:09:48 2018 -0300
+
+    Document second parameter (seek position) of /cat command
+
+commit ad4324d24210f30646575b8bcbae8b50d2149224
+Merge: a72e7066 203f6c53
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 16 13:57:05 2018 +0100
+
+    Merge pull request #851 from ailin-nemui/theme-block-tree
+    
+    unblock theme elements when processing finished
+
+commit 203f6c532947e8b7c7e30fad91220aad083c7f08
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 16 13:46:29 2018 +0100
+
+    also unblock theme elements when processing finished
+
+commit a72e706667e963a013ca8c8fd02af1c74ffbd40d
+Merge: 0b9beeb0 5c60e72b
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 15 19:46:32 2018 +0100
+
+    Merge pull request #849 from ailin-nemui/news-update
+    
+    add additional notes to NEWS
+
+commit 0b9beeb01d4ff3890120ace913884fcd915e4b26
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 15 01:17:11 2018 +0100
+
+    Merge tag '1.1.1' into integrate/1.1.1
+
+commit 666ddc2ecdd9ad7bc966c78565a5fd9985e099c8
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Thu Feb 15 00:55:30 2018 +0100
 
     Merge tag '1.0.7' into integrate/1.0.7
-    
-    (cherry picked from commit 666ddc2ecdd9ad7bc966c78565a5fd9985e099c8)
 
-commit 0921f36828f00264d05fd8c7719b22495d622e10
+commit 5c60e72b118b9efb09639ea26e2a70d06899431f
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Feb 13 10:09:06 2018 +0100
+Date:   Thu Feb 15 00:44:19 2018 +0100
 
-    Merge pull request #845 from ailin-nemui/funny-bug
+    add additional notes to NEWS
     
-    warn if there is non-portable code in the test-driver
-    
-    (cherry picked from commit c2c879e8c55afcb8a737e4535c8d878407807040)
+    (synced back from github releases)
 
-commit 72f81af9f0427b512675acf18fc9e5734a687725
+commit dd2e3e6d1c619e7ff2fae5bef4e31fe3c9342722
+Merge: a2bc308d e289d34b
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Sun Feb 4 11:27:02 2018 +0100
+Date:   Wed Feb 14 21:21:24 2018 +0100
 
-    Merge pull request #831 from ailin-nemui/openssl-x509
+    Merge pull request #848 from ailin-nemui/align-exhaust
     
-    Do not use X509_STORE on OpenSSL < 1.0.2
-    
-    (cherry picked from commit 9c494a88a306d386870cd5fc78c9527bd66c1c7a)
+    limit alignment padding to a screenful
 
-commit 88a83989a6651575f32a0ef286af93b3af53a6f7
+commit e289d34b9a50b46f57698980e899b71f0069abda
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Jan 16 19:12:00 2018 +0100
+Date:   Wed Feb 14 15:04:16 2018 +0100
 
-    Merge pull request #816 from ailin-nemui/fix-test-libs
+    limit alignment padding to a screenful
     
-    fix test builds on some platforms
-    
-    (cherry picked from commit 1b7f32838557a4805029cfb17710148a948b11bf)
+    Credit to Oss-Fuzz
 
-commit e80d6d3093c737b50f301134891c7cf0c15df87c
+commit a2bc308dca885c294d6f63e12b6353115a0f38fe
+Merge: c01f6df9 a6fcd543
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Fri Feb 2 14:09:10 2018 +0100
+Date:   Tue Feb 13 12:58:07 2018 +0100
 
-    Merge pull request #818 from ailin-nemui/test-tap-backward-compat
+    Merge pull request #846 from ailin-nemui/padding
     
-    add backwards compatible code for running tap tests
-    
-    (cherry picked from commit 17aafe974b6251fecff4198d3dd3ab9cf1620b78)
+    improve padding performance
 
-commit 4f7d98fe15df2ef9d4eaa5e9968bed9677920d6e
+commit a6fcd5432e495aea416ebae28d44111eadf19b82
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Tue Jan 30 17:39:13 2018 +0100
+Date:   Tue Feb 13 12:31:22 2018 +0100
 
-    Merge pull request #834 from williamjacksn/patch-1
+    improve padding performance
     
-    Fix typo in help text for /ISON command
-    
-    (cherry picked from commit 6d42c4f949ab7d3d403d2f31d6a816961a180e2b)
+    Credit to Oss-Fuzz
 
-commit 044d6c3803ab7b4b9537fc18995fa323f4f77a57
+commit c01f6df9573f3a5596bdb4c319faa109567f4221
+Merge: b0d9cb33 3cbcb4fe
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Mon Feb 5 22:25:33 2018 +0100
+Date:   Tue Feb 13 11:10:21 2018 +0100
 
-    Merge pull request #836 from ailin-nemui/resize
+    Merge pull request #844 from CatboxParadox/perms
     
-    Fix resizing of windows when used incorrectly
-    
-    (cherry picked from commit 3c1bc5f9162c90aa247d024422699710419658f6)
+    dcc get shouldn't fail when file attrs can't be changed
 
-commit b85c6fe9febabec5326ad7767ebd60eceb546869
-Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Thu Feb 8 22:25:03 2018 +0100
-
-    Merge pull request #842 from ailin-nemui/themeoob
-    
-    Fix oob in escaped theme string
-    
-    (cherry picked from commit 7c31f7adc5685074d25a32737c9743089850675c)
-
-commit 957cbe75611743be40cb50297d9b9690bd357ec4
-Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Mon Feb 5 22:24:17 2018 +0100
-
-    Merge pull request #837 from ailin-nemui/no-show
-    
-    check the error condition of mainwindow_create
-    
-    (cherry picked from commit 442f6f08b4d99e86c3961be71638abec0f0f8070)
-
-commit 890e9ed5292d133f0d417797f68ebfc562a81312
+commit b0d9cb33cd9ef9da7c331409e8b7c57a6f3aef3f
+Merge: c2c879e8 12483c68
 Author: Nei <ailin.nemui@gmail.com>
 Date:   Tue Feb 13 09:51:22 2018 +0000
 
@@ -251,60 +1976,560 @@ Date:   Tue Feb 13 09:51:22 2018 +0000
     Security
     
     See merge request irssi/irssi!34
-    
-    (cherry picked from commit b0d9cb33cd9ef9da7c331409e8b7c57a6f3aef3f)
 
-commit 78b5f34e13661bd1a441d4b25fcbcee5bffe08d9
+commit c2c879e8c55afcb8a737e4535c8d878407807040
+Merge: ccfb2dab adc812b6
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Feb 13 10:09:06 2018 +0100
+
+    Merge pull request #845 from ailin-nemui/funny-bug
+    
+    warn if there is non-portable code in the test-driver
+
+commit 3cbcb4fe85ec3233aa36b56a047470df5d4221f3
+Author: Staron, Martin <martin.staron@mavenir.com>
+Date:   Mon Feb 12 12:04:46 2018 +0100
+
+    dcc get shouldn't fail when file attrs can't be changed
+
+commit adc812b6b6ed2df2c670586e5308cb767955dddd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Feb 13 00:03:17 2018 +0100
+
+    add a peculiar bug check to autogen
+
+commit ccfb2dabcf5eed702ce28245ba8e7de81c1ec6bb
+Merge: 946876b1 5c5ed641
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 12 10:54:42 2018 +0100
+
+    Merge pull request #832 from ailin-nemui/netsplit-crash
+    
+    try to make sure the server is still good enough to call ischannel when printing netsplit/join
+
+commit 5c5ed64180a6b76315ee7b8c6000ee64ad5877a7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 25 15:33:24 2018 +0100
+
+    try to make sure the server is still good enough to call ischannel when printing netsplit/join
+
+commit 946876b1e9db5d764cecb3f884fc3075765dc94d
+Merge: 7c31f7ad 16912e1a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 9 11:49:23 2018 +0100
+
+    Merge pull request #843 from ailin-nemui/glib238
+    
+    restore compat with glib <2.40
+
+commit 7c31f7adc5685074d25a32737c9743089850675c
+Merge: 02712942 e32e9d63
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 8 22:25:03 2018 +0100
+
+    Merge pull request #842 from ailin-nemui/themeoob
+    
+    Fix oob in escaped theme string
+
+commit 16912e1a911a503d1ee83ea42dd20c0d5b543e9a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 8 14:41:02 2018 +0100
+
+    restore compat with glib <2.40
+
+commit e32e9d63c67ab95ef0576154680a6c52334b97af
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 8 14:11:23 2018 +0100
+
+    Do not read beyond end of escaped string
+    
+    Credit to OSS-Fuzz
+
+commit 02712942e033c467da1c473c34fb4d631e0a0d23
+Merge: 538bd914 4c662acf
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Feb 7 21:23:39 2018 +0100
+
+    Merge pull request #835 from ailin-nemui/theme-stack
+    
+    protect theme recursion
+
+commit 538bd9148e1afa6ac2e251528425064fe8940e4b
+Merge: f8fbc1e1 1e6d7874
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Feb 7 21:22:18 2018 +0100
+
+    Merge pull request #840 from ailin-nemui/caps
+    
+    ensure cap_supported is existent yet
+
+commit 1e6d787401b548cf3d5cc57d9a0d0f25f1254bf7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Feb 7 11:07:22 2018 +0100
+
+    ensure cap_supported is existent yet
+
+commit 12483c688ae231ce5367d080720c22253855a5ce
+Merge: a73659e0 84f03e01
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Tue Feb 6 06:46:11 2018 +0000
+
+    Merge branch 'sasl-timeout' into 'security'
+    
+    Fix Sasl timeout error
+    
+    See merge request irssi/irssi!33
+
+commit a73659e0ea5d50c4da7a4da805cda13068098646
+Merge: 41e2b535 0909d47e
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Tue Feb 6 06:45:54 2018 +0000
+
+    Merge branch 'soperise' into 'security'
+    
+    Soperise
+    
+    See merge request irssi/irssi!32
+
+commit 41e2b535ef13d23f71d7e99c19afa913e9c257c3
+Merge: c25e1221 e91da9e4
+Author: Nei <ailin.nemui@gmail.com>
+Date:   Tue Feb 6 06:45:32 2018 +0000
+
+    Merge branch 'nonick' into 'security'
+    
+    please give us nicks
+    
+    See merge request irssi/irssi!31
+
+commit f8fbc1e1ab9b01c651c7da0652eac8631894c44c
+Merge: 81831806 26073347
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 5 22:29:35 2018 +0100
+
+    Merge pull request #775 from LemonBoy/caps_kv
+    
+    CAP 3.2 support
+
+commit 81831806132608d5111ffb24efd2a2469c62d197
+Merge: cfcc021c 2185c4dd
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 5 22:28:08 2018 +0100
+
+    Merge pull request #764 from GinjaNinja32/colorful-input
+    
+    Add color support for input bar
+
+commit cfcc021c81eea84bd982a64764f62e163128acf3
+Merge: 3c1bc5f9 a4f99ae7
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Feb 5 22:26:32 2018 +0100
 
     Merge pull request #824 from dequis/more-netsplit-revert
     
     Revert more of the netsplit print optimisation to fix crashes
+
+commit 3c1bc5f9162c90aa247d024422699710419658f6
+Merge: 442f6f08 b33ce255
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Feb 5 22:25:33 2018 +0100
+
+    Merge pull request #836 from ailin-nemui/resize
     
-    (cherry picked from commit cfcc021c81eea84bd982a64764f62e163128acf3)
+    Fix resizing of windows when used incorrectly
 
-commit 78af0c219a5cf65fc6bed104b4b9157460096425
+commit 442f6f08b4d99e86c3961be71638abec0f0f8070
+Merge: c25e1221 5b5bfef0
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Mon Jan 15 09:05:31 2018 +0100
+Date:   Mon Feb 5 22:24:17 2018 +0100
 
-    clarify deprecated fn in news
+    Merge pull request #837 from ailin-nemui/no-show
+    
+    check the error condition of mainwindow_create
 
-commit 96e6c86dc7e5c527780e5a6e346449ea1cb663d9
+commit b33ce255a9df6e951d90f3d3c519b005dacb7010
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
-Date:   Mon Jan 8 14:43:54 2018 +0100
+Date:   Sun Feb 4 11:18:22 2018 +0100
 
-    tag as 1.1.0
+    check for negative bound
 
-commit 07621508e5970eeefa4769b226ee61a50ce14770
+commit c25e1221494e20cb96b4a541b9027dbfd8836711
+Merge: 9c494a88 12d08f79
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Feb 4 11:28:25 2018 +0100
+
+    Merge pull request #822 from Manishearth/autocomplete-colon
+    
+    Insert colons after completing nicks preceded by a list of other autocompleted nicks
+
+commit 9c494a88a306d386870cd5fc78c9527bd66c1c7a
+Merge: 17aafe97 af087e11
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sun Feb 4 11:27:02 2018 +0100
+
+    Merge pull request #831 from ailin-nemui/openssl-x509
+    
+    Do not use X509_STORE on OpenSSL < 1.0.2
+
+commit 2185c4ddb36e1b53548674c2e6ebf95448f2c587
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Feb 3 23:19:27 2018 +0100
+
+    up abi
+
+commit 17aafe974b6251fecff4198d3dd3ab9cf1620b78
+Merge: 6d42c4f9 5bae9a94
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 2 14:09:10 2018 +0100
+
+    Merge pull request #818 from ailin-nemui/test-tap-backward-compat
+    
+    add backwards compatible code for running tap tests
+
+commit 9072e988194a36186bd98db844b8285e3f37069a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 10 17:49:32 2018 +0100
+
+    change color -> extents (malloc based)
+
+commit 84f03e01467b90a4251987b32b2813ee976b357c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 2 10:27:51 2018 +0100
+
+    do not reuse sasl timeout
+
+commit 5b5bfef03596d95079c728f65f523570dd7b03aa
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 2 10:05:37 2018 +0100
+
+    check the error condition of mainwindow_create
+
+commit f0bd434eb0b0fbeaecc10c3cc355100fbf90947a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Feb 2 09:50:08 2018 +0100
+
+    stop the madness
+
+commit 4c662acf957502af186aa631d185d6edca709e15
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 1 13:52:12 2018 +0100
+
+    another replaces fix
+    
+    Credit to OSS-Fuzz
+
+commit 12360fb2c06b8f11db6a7348426851fac8de8a93
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Feb 1 10:21:31 2018 +0100
+
+    protect theme recursion
+
+commit 6d42c4f949ab7d3d403d2f31d6a816961a180e2b
+Merge: 8028dcff 7f4de37f
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 30 17:39:13 2018 +0100
+
+    Merge pull request #834 from williamjacksn/patch-1
+    
+    Fix typo in help text for /ISON command
+
+commit 7f4de37fbfc3a052f46619b629d7a2ea8b03ebb3
+Author: William Jackson <william@subtlecoolness.com>
+Date:   Tue Jan 30 10:31:13 2018 -0600
+
+    Fix typo in help text for /ISON command
+
+commit 8028dcff93b2d51a7938451082d7d71e750b7e58
+Merge: b5380fff 6dfe5bc8
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 30 11:20:40 2018 +0100
+
+    Merge pull request #830 from g-elfling/master
+    
+    Add Shift-Tab completion to gui-readline
+
+commit b5380fff53241168cd0de4e8fc1cbfa38b1c4cb9
+Merge: 243ae4be 126189bb
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 30 11:20:02 2018 +0100
+
+    Merge pull request #833 from ailin-nemui/rrrreplaces
+    
+    we probably should not try to replace replaces
+
+commit 126189bb374d436280885f0f878a5075feed2fbc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 25 15:54:20 2018 +0100
+
+    we probably should not try to replace replaces
+    
+    Credit to OSS-Fuzz
+
+commit a4f99ae746efb121185fe76c392a64d743a9eb92
+Author: dequis <dx@dxzone.com.ar>
+Date:   Sat Jan 20 19:58:05 2018 -0300
+
+    Revert more of the netsplit print optimisation to fix crashes
+    
+    Now iterating over all servers to avoid crashes on server_ischannel(),
+    which is a macro for server->ischannel(), so it dies horribly when it's
+    null. Doesn't help that IS_IRC_SERVER() always returns true on null.
+
+commit 0909d47e5b5ab08cd07970a374e311f7f54be547
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 25 16:10:21 2018 +0100
+
+    Check that server is still existent when using /oper
+
+commit e91da9e4098e449dc36eaa15354aff67650e7703
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 25 16:05:47 2018 +0100
+
+    please give us nicks
+
+commit af087e110373090e65184aebc3515555f64f4a33
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Thu Jan 25 15:08:26 2018 +0100
+
+    fix sequence error
+
+commit f5aa829bd084d279f9ae7eb27a52ea674adfed5d
+Author: Ailin Nemui <ailin@z30a.localdomain>
+Date:   Thu Jan 25 15:01:34 2018 +0100
+
+    Do not use X509_STORE on OpenSSL < 1.0.2
+
+commit 6dfe5bc8361dab212653f19d611286ac93a32638
+Author: Niklas Luokkala <niklas.luokkala@gmail.com>
+Date:   Wed Jan 24 22:12:09 2018 +0200
+
+    modified gui-readline based on the suggestions made to the pull request
+
+commit 260733475c2b701c35024a3b4fbe900751b45341
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Jan 24 10:55:20 2018 +0100
+
+    Accept CAPs with an empty value (KEY=)
+
+commit b0b40be82e046785562fdb18dca3b1afb1b08a2b
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Wed Jan 24 10:47:40 2018 +0100
+
+    Deprecate gslist_remove_string
+    
+    It is not used anymore and it leaks memory.
+
+commit 474ee8ee70c9ff9c69487746a9740355f38a01b2
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Jan 7 12:44:28 2018 +0100
+
+    Address some minor stylish nits
+
+commit 0ba1b1f2a4f0b2be6bb1077d54dda546f3db46ad
+Author: Niklas Luokkala <niklas.luokkala@gmail.com>
+Date:   Wed Jan 24 01:49:28 2018 +0200
+
+    removed unnecessary repetition
+
+commit d14dbbd09338f5cd8d14c1ec15bcf3c7fd43a3c7
+Author: Niklas Luokkala <niklas.luokkala@gmail.com>
+Date:   Wed Jan 24 00:15:29 2018 +0200
+
+    Add Shift-Tab completion to gui-readline
+
+commit 12d08f79bbec3582fe079ec5a5d0f91002f62037
+Author: Manish Goregaokar <manishsmail@gmail.com>
+Date:   Fri Jan 19 18:34:30 2018 +0530
+
+    Insert colons after completing nicks preceded by a list of other autocompleted nicks
+    
+    When pinging two people, typing `nick1<tab> nick2<tab> message` for
+    autocompletion will get you `nick1: nick2 message`, which is kinda
+    confusing.
+    
+    We only insert the colon after the first autocompleted nick,
+    because if a nick is used in the middle of the sentence it's mentioning
+    the person but not targeting the message at them.
+    
+    However, this breaks down when we try to ping a list of people. There
+    should be a colon in front of each separating the names from the
+    message. only having a colon at the end of the nick list works too,
+    but it seems like the IRC convention is to just use multiple colons.
+    
+    This patch makes it so that autocompleting a nick after a list of
+    existing autocompleted nicks at the beginning of the message
+    will include a colon.
+
+commit 5bae9a94c83b8ce21e21b18963db1aa43807c932
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 18 12:02:29 2018 +0100
+
+    add backwards compatible code for running tap tests
+
+commit 0f1b3873fe5b99cf8af9bc58d1a982dd5f0f66bd
+Author: GinjaNinja32 <ginjaninja32@gmail.com>
+Date:   Sat Oct 7 13:59:46 2017 +0100
+
+    Don't accept pos<0 or len<0 in gui_entry_set_color
+
+commit 13b93c8c05dafd4f45ca7153ae165d6afd0ba157
+Author: GinjaNinja32 <ginjaninja32@gmail.com>
+Date:   Fri Oct 6 20:35:29 2017 +0100
+
+    Apply changes based on review feedback
+
+commit 925ae6e6adfae0b8924cfeca2a2b0ac99b042bce
+Author: GinjaNinja32 <ginjaninja32@gmail.com>
+Date:   Fri Oct 6 18:36:42 2017 +0100
+
+    Add color support for input bar
+
+commit 243ae4be84d422322f20be1b715dc0b00ef9c32d
+Merge: 1b7f3283 d983ad1a
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 17 11:05:01 2018 +0100
+
+    Merge pull request #814 from l2dy/website
+    
+    Update Irssi website URLs to use https
+
+commit 1b7f32838557a4805029cfb17710148a948b11bf
+Merge: ef8111ee e7c9b3af
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 16 19:12:00 2018 +0100
+
+    Merge pull request #816 from ailin-nemui/fix-test-libs
+    
+    fix test builds on some platforms
+
+commit d983ad1a878103448231c8fd56fbc9c4b8f7f501
+Author: Zero King <l2dy@icloud.com>
+Date:   Tue Jan 16 15:23:54 2018 +0000
+
+    Update Irssi website URLs
+
+commit e7c9b3afb82f4db3958f4f08cb706aadcbd12d2c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Jan 16 11:05:47 2018 +0100
+
+    fix test builds on some platforms
+
+commit ef8111eebe3c9d35ef9754f68c9f7df0aea7058e
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 15 21:54:52 2018 +0100
+
+    Merge branch 'maint/1.1.0' into integrate/1.1.0
+
+commit fd711d708366dae86d97ea25a42a93227181ee13
+Merge: 4512e268 182673ed
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Mon Jan 15 12:26:48 2018 -0500
+
+    Merge pull request #813 from josephbisch/fuzz-theme-load
+    
+    Add theme_load to fe-fuzz
+
+commit 182673ed05a5b5cb79d104df83f34fcc163a9c7e
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Mon Jan 15 11:59:01 2018 -0500
+
+    Add theme_load to fe-fuzz
+
+commit 4512e2683ab2e9c680d7fa7e68906225ea266e91
+Merge: 7de1378d 15705432
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Mon Jan 15 10:53:21 2018 -0500
+
+    Merge pull request #780 from josephbisch/fuzz-event-get-params
+    
+    Add event_get_params to fe-fuzz
+
+commit 7de1378dab8081932d9096e19ae3d0921e560230
+Merge: b3b68a4a fa850840
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Sun Jan 14 20:51:25 2018 +0100
 
     Merge pull request #812 from ailin-nemui/tape-netsplit
     
     revert netsplit print optimisation
-    
-    (cherry picked from commit 7de1378dab8081932d9096e19ae3d0921e560230)
 
-commit 1d649e5d001adb9f194abd0d40e9cb1a4a3e7977
+commit fa8508404f4c4a02749cae5148662e2322c2abf0
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 10 20:08:15 2018 +0100
+
+    revert netsplit print optimisation
+    
+    this reverts part of #465
+    
+    unfortunately we need to further refine the initial patch
+    
+     - when filtering by channel, the whole split is cleaned up nevertheless
+     - something similar happens for the netjoins
+     - furthermore, we cannot wait only for PUBLIC msgs, j/p/q are equivalently relevant for temporal integrity
+
+commit b3b68a4ae79c83b68f72dfe2b7f3c21ed5463c9e
+Merge: d4bd0d02 4041f297
 Author: LemonBoy <LemonBoy@users.noreply.github.com>
 Date:   Wed Jan 10 12:15:24 2018 +0100
 
     Merge pull request #808 from vague666/perl_hidden_level
     
     Add perl access to hidden_level in TEXT_BUFFER_VIEW_REC
-    
-    (cherry picked from commit b3b68a4ae79c83b68f72dfe2b7f3c21ed5463c9e)
 
-commit 1c285284ad96d393b7fc2afde93a839721e86072
+commit 4041f29711e5a6745175d0ae046e68e34f034bf4
+Author: Jari Matilainen <jari.matilainen@istone.se>
+Date:   Tue Jan 9 23:16:26 2018 +0100
+
+    Changed spaces to tab
+
+commit f2e73a7046358ed948b14180c70bab5dba5364cc
+Author: Jari Matilainen <jari.matilainen@istone.se>
+Date:   Tue Jan 9 23:15:08 2018 +0100
+
+    Add perl access to hidden_level in TEXT_BUFFER_VIEW_REC
+
+commit d4bd0d02fb7ea076e9431123445d76638c7b76ad
+Merge: 2e286066 3b1ee8e7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 8 14:33:39 2018 +0100
+
+    Merge pull request #807 from ailin-nemui/fix-real-length-test
+    
+    fix format_real_length expected test result
+
+commit 2e28606635495f903a3f24cdf1c248e60e802866
+Merge: a6663c58 b8e3c5d0
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Mon Jan 8 14:33:12 2018 +0100
 
     Merge pull request #806 from ailin-nemui/fix-tests-old-glib
     
     only use nonfatal assertions for GLib that actually supports it
+
+commit 3b1ee8e7e7e9d01190d906ae5af6d3dd7dbd9a63
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 8 13:47:25 2018 +0100
+
+    change expected format_real_length test result
     
-    (cherry picked from commit 2e28606635495f903a3f24cdf1c248e60e802866)
+    This change from 0 -> 4 was introduced by #697 and is thus expected
+
+commit b8e3c5d00e80a2bf24cfbb063e2e4916ef01147d
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 8 13:33:40 2018 +0100
+
+    only use nonfatal assertions for GLib that actually supports it
+    
+    Fixes tests on Debian 7 and RHEL 6
+
+commit a6663c58d4364c371e82d718f0ed5460df6d8b36
+Merge: f83ba5a5 ded4e4d9
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Mon Jan 8 12:20:20 2018 +0100
+
+    Merge pull request #697 from ailin-nemui/rsplit
+    
+    sideways split support for Irssi
 
 commit f83ba5a5bb1f42384ba06710fc074e960f0a662f
 Merge: 2e0815bf f9c83659
@@ -329,6 +2554,133 @@ Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Sun Jan 7 20:01:00 2018 +0100
 
     Fix space in message
+
+commit fed791ed9100552edbe643d8b3d0e0bc271e88d4
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Oct 30 17:41:16 2017 +0100
+
+    Fix a problem with multiline responses
+    
+    Do not clear the whole table every time a response is received.
+
+commit 4b9fcbc15ae3561c34944e30e24fd1d54346bb99
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Oct 29 16:06:36 2017 +0100
+
+    Nicer error message when a duplicate CAP in LS
+
+commit f3a535564880d73b75263b685794a7165e56f9bd
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Oct 29 16:03:28 2017 +0100
+
+    Match LS instead of checking the first letter only
+
+commit 6c45ab0493e42bca08016ad70a54bb523282b7b8
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sun Oct 29 15:59:51 2017 +0100
+
+    Command names may be in lower-case
+    
+    Do not take the string case into account when comparing the command
+    name.
+
+commit c00132ac4cf78702b4f72fc6a0085432bcef2fac
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Tue Oct 24 15:47:06 2017 +0200
+
+    Simplify the code
+    
+    Early exit, simpler code.
+
+commit 9160ddaffd45b03c523320ef8f71bb3a8a9fb87a
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Oct 23 21:23:59 2017 +0200
+
+    Keep processing the CAPs on error
+    
+    If an invalid CAP is found we keep going by parsing the next one.
+
+commit cd107deb463934f7a8611cdc8d17b861a93d97f9
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Oct 23 21:19:51 2017 +0200
+
+    Prevent a memory leak
+    
+    When a CAP DEL is received the key/val pair is not stored in the
+    hashtable at all so just free them when we're done.
+
+commit 74409aa85071390a3969fffa21c08a6736efe314
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Oct 23 20:08:19 2017 +0200
+
+    Miscellaneous fixes
+    
+    Stylistic stuff, please ignore.
+
+commit f683e81880ac4408693582df3ec11d640684c78d
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Mon Oct 23 12:42:37 2017 +0200
+
+    Prevent a NULL pointer deference
+    
+    Always create the cap_supported table when a CAP event is received.
+
+commit 432368bdc6b941c1ff6319748b357bd5bae1bb6e
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Oct 21 17:40:45 2017 +0200
+
+    Use strcmp instead of g_strcmp0
+    
+    There's no need to use the latter.
+
+commit cfc8c9f8e2d982ee3ebff7afa1d1bdeb04003029
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Oct 21 17:38:06 2017 +0200
+
+    Properly dispose the GSList chains
+    
+    We forgot to free the link and the data, oops.
+
+commit f4d811ddf51ce03e90e0417a6c25baeb9aa48353
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Oct 21 17:11:43 2017 +0200
+
+    Handle CAP {ADD,DEL} from cap-notify
+    
+    This is the last piece of the puzzle.
+
+commit 8c87766132b7dbb75d8a49548ff7c97037ea983b
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Oct 21 11:23:44 2017 +0200
+
+    Parse multiline responses to CAP LS
+    
+    The parsing logic isn't too elegant because of the optional parameter
+    used for signaling if a response has a continuation one.
+
+commit 57827ca743e95a6b6ad830fab03f46efaf1d9069
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Oct 21 10:44:53 2017 +0200
+
+    Don't free the hash table if there's none
+    
+    Glib doesn't like that and shows a harmless warning.
+
+commit d21706e1cc78284d5e7b2d69ebe4873e459d0e9b
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Oct 21 10:35:49 2017 +0200
+
+    Factor out the parsing function
+    
+    This is also needed for CAP NEW and CAP DEL.
+
+commit 98836f8b7ee058c32d54562903676c4d16f83aa4
+Author: LemonBoy <thatlemon@gmail.com>
+Date:   Sat Oct 21 10:21:03 2017 +0200
+
+    Parse the K/V form in CAP LS
+    
+    This is a prerequisite for the IRC v3.2 compliance.
 
 commit 0d5e353ef1be253106ed66417b270d03b2b91ed3
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
@@ -394,6 +2746,57 @@ Date:   Sat Jan 6 20:02:31 2018 +0100
 
     Update fe-common-core.c
 
+commit ded4e4d98df3c8df20119574c145fe1a736ee994
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Sat Jan 6 01:05:35 2018 +0100
+
+    fix redraw
+
+commit 63d8e884ddb970d6a8b5c6a7a546f0283d38a055
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue May 9 15:05:03 2017 +0200
+
+    fix some more
+
+commit 4e71a1f485d9a546cb92ad94e8918a2363a88b03
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Tue Apr 25 00:42:53 2017 +0200
+
+    sideways split support for Irssi
+    
+    warning:
+    
+    * may be buggy
+    
+    This commit adds support for sideways splits into Irssi. To that regard,
+    there are a number of new commands available
+    
+    the "R" commands:
+            /window new rsplit - make a new sideways split
+            /window rshow - show an existing window to the right
+            /window rgrow/rshrink/rsize/rbalance
+             - manipulate the size of your sideways split windows
+    
+    the "D" commands:
+            /window dup/ddown/dleft/dright
+             - navigate the windows directionally, as an alternative to
+               /window up/down that you can bind to some key
+            /window move dleft/dright - the same for moving
+    
+    Enjoy!
+
+commit 451019d05dfabbac2463f0d835c5113ac140c5c4
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri May 5 14:45:13 2017 +0200
+
+    make format_real_length left-collecting
+
+commit 6e6a96d8c1eb8a51404d34809382e54eea46a9f7
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 5 23:05:39 2018 +0100
+
+    fix uaf in signal path
+
 commit b111f038ddb7b5079f9901dd282fd4733390b1ba
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Fri Jan 5 23:15:24 2018 +0100
@@ -404,6 +2807,12 @@ Date:   Fri Jan 5 23:15:24 2018 +0100
     with error, send " " instead
     
     Fixes FS#902
+
+commit eb18904840cc7d4a6830bf0711f4682af50f1abc
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Fri Jan 5 22:13:23 2018 +0100
+
+    fix crash in notifylist
 
 commit 3c7185c5ad61de24f9d1bc39240c8145665fba44
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
@@ -476,6 +2885,48 @@ Date:   Thu Jan 4 22:19:21 2018 +0000
     
     See merge request irssi/irssi!28
 
+commit c9b3d87eb7ef2ce99f659d7e567fc83629439142
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Wed Jan 3 12:26:02 2018 +0100
+
+    Postpone server cleanup until after unref
+    
+    Add a new signal, server destroyed, that is supposed to run the clean up
+    tasks of server disconnected. This is so that some structures will stay
+    around longer.
+
+commit 6b0e14099655bf4d94a19dff252cce89b2858c93
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 4 23:01:28 2018 +0100
+
+    show destroyed event
+
+commit bffced54981c191f5bac4f9611e4691fe442e58c
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 4 21:11:00 2018 +0100
+
+    Update test-796.c
+    
+    odd space
+
+commit 3b7b868bb11faf74c872ecf606c4eef189e31725
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 4 16:43:58 2018 +0100
+
+    finish test case
+
+commit c7cd49f8d7e83302c0f21f4449cddac528d28eea
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 4 16:18:07 2018 +0100
+
+    first bug case, exposes broken server object in chat-completion
+
+commit 5bddfe7b7336f6b48408c72955dbcb664cc4dc97
+Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
+Date:   Thu Jan 4 14:29:57 2018 +0100
+
+    add new test skeleton
+
 commit cc17837a9b326ec9100a35981348fa0f5d6316fa
 Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Wed Jan 3 15:51:51 2018 +0100
@@ -510,6 +2961,18 @@ Date:   Wed Jan 3 10:35:58 2018 +0000
     Prevent a UAF error during the execution of some commands
     
     See merge request irssi/irssi!24
+
+commit 15705432e1fb88d9f784cb3fc12c89f8f9164043
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Tue Jan 2 20:22:38 2018 -0500
+
+    Remove outdated comment
+
+commit ef07b3c60c80a828f529a2075246185d7d0b5b25
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Tue Jan 2 20:21:07 2018 -0500
+
+    Remove redundant if case
 
 commit 48e909dde758efe19d4cd707b742370a042d0559
 Merge: ba6681de b0637ad6
@@ -732,6 +3195,30 @@ Date:   Fri Nov 3 16:37:04 2017 +0100
     The "HILIGHT_REC" structure used to keep a pointer to the "servertag"
     string, owned by the "CONFIG_NODE", causing a double-free.
 
+commit 532527ffa6a5eaccdbf607a2dc3d0e6ef884fce9
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Thu Nov 2 11:56:53 2017 -0400
+
+    Use gchar and g_strndup in fe-fuzz
+
+commit f4b89044f075038d29089435f7620a068507d80e
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Thu Nov 2 11:48:30 2017 -0400
+
+    Fix malloc parameter in fe-fuzz
+    
+    It is fairly safe to assume that sizeof(char) will always be 1 anyway
+    and replace the size calculation with a comment explaining the
+    calculation.
+
+commit f9d69597ef1e204640d5ce104061717aca0d213a
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Thu Nov 2 11:44:57 2017 -0400
+
+    Remove unnecessary malloc cast in fe-fuzz
+    
+    We compile this as C code, so the cast is unnecessary.
+
 commit 60c31219a278330498e695e4d7fca05ea69962e4
 Author: Jari Matilainen <jari.matilainen@istone.se>
 Date:   Tue Oct 24 12:02:30 2017 +0200
@@ -844,6 +3331,12 @@ Author: ailin-nemui <ailin-nemui@users.noreply.github.com>
 Date:   Tue Oct 24 22:04:13 2017 +0200
 
     fix key length checker to actually do some work
+
+commit 84fc92635acd4d513049794fdbc574b79ac1c5d5
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Date:   Tue Oct 24 13:27:11 2017 -0400
+
+    Add event_get_params to fe-fuzz
 
 commit cfa51c5ae2c06f4b93f443c986ec0bc316c860a4
 Merge: 816df6d1 233be9f5

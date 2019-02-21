@@ -1,8 +1,13 @@
 libc.so.6
+libcrypt.so.1
 libcrypto.so.1.1
+libdl.so.2
 libglib-2.0.so.0
 libgmodule-2.0.so.0
+libm.so.6
+libnsl.so.1
 libperl.so
 libpthread.so.0
 libssl.so.1.1
 libtinfo.so.6
+libutil.so.1
