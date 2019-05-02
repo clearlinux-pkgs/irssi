@@ -1,3 +1,106 @@
+v1.2.0 2019-02-11 The Irssi team <staff@irssi.org>
+	! Contains all changes from 1.1.2
+	* Improved the /STATUSBAR commands (#858)
+	* /SET no longer shows `=' between setting and value (#886)
+	* /CUBES removed from default config (available as script)
+          (#956)
+	* /1 /2 /3 ... removed from default config (available as new
+          setting window_number_commands) (#958)
+	* Always redraw the screen on resize. By David Phillips (#896)
+	* Private notices intended for channels are now displayed on
+	  the channel (new setting notice_channel_context) (#959)
+	+ Imported the "Off-the-record" module into Irssi tree (#854,
+	  #589, #196)
+	+ Initial support for sideways split windows (#697, #431,
+	  #224, #807, FS#310, #947, #955, #989)
+	+ Change the implementation of `wcwidth'. This is used to
+	  calculate the width of emojis on your terminal screen (#917,
+	  #720)
+	+ Make the wcwidth functions available from Perl (#973):
+	      string_width(str)
+	      string_chars_for_width(str, width)
+	      wcwidth(char)
+	+ Added completion_keep_word setting (#979)
+	+ Allow activity_hide_targets to hide activity in itemless
+	  windows (#967, #997, #1001, #1003)
+	+ Added activity_hide_visible setting (#990)
+	+ Allow hiding of lines through the /IGNORE system (#901,
+	  #900, #892, #890, #884, #937)
+	+ Add window_default_hidelevel setting. By Doug Freed (#941)
+	+ Add activity_hide_window_hidelevel setting, defaulting to ON
+	  (#938)
+	+ Add autolog_only_saved_channels setting, to autolog only
+	  channels that are in the config (#968)
+	+ Add format support for the input line. By Ben Paxton,
+	  originally by Jonas Hurrelmann (#764, FS#621, #1004)
+	      use Irssi::TextUI;
+	      gui_input_set_extent(pos, text)
+	      gui_input_set_extents(pos, len, left, right)
+	      gui_input_clear_extents(pos, len)
+	      gui_input_get_extent(pos)
+	      gui_input_get_text_and_extents()
+	      gui_input_set_text_and_extents(...)
+	+ Parsing of IRCv3 CAP 3.2 (#775, #869)
+	+ Show CAP-related events in the user interface (#918, #916,
+	  #870, #704)
+	+ Continue using separators when addressing multiple nicks
+	  with tab completion. By Manish Goregaokar (#822)
+	+ Bind Shift-tab by default. By Niklas Luokkala (#830, #829)
+	+ Fuzzing more things (#913, #780, #813)
+	- Disconnect SASL properly in case the SASL module got
+          unloaded from server (#931, #629, #618, #616)
+	- Fix backward completion jumping to the first instead of last
+          word (#979)
+	- Improve empty topic handling (#961, #905, #911, #897, #888)
+	- Prevent config truncation when no space left. By dequis and
+          Lukas Waymann (#922, #925, #910, #909, #906, #871, #817)
+	- Also time-out servers in lookup phase (#866, #130)
+	- Fix build with LibreSSL 2.7. By Dorian Harmans (#865)
+	- Fix a crash when appending to a textbuffer without
+          line. Reported by Jari Matilainen (#862)
+	- Fix segfault on sending large messages (#803, #796, #802)
+	- Fix segfault on invalid statusbar config (#993, #994)
+	- Fix random memory writes on restoring queries of foreign
+          protocols (#999, #1000)
+	- Make default keybinds deletable (#859, #507)
+	- Fix freeze when resizing Irssi very small (#946)
+	- Compare channels case-insensitively, avoiding confusions
+          with the config file (#857, #856)
+	- Fix DCC GET on Android. By Martin Staron (#844)
+	- Improve rawlog performance (#957)
+	- Fix nick escaping erroneously escaping quotes (#978, #974,
+          #709)
+	- Protect against theme recursion, improve padding
+          performance, limit alignment padding. Credit to Oss-Fuzz
+          (#835, #851, #850, #846, #848)
+	- Fix recursive loop in replaces (#833, GL#23)
+	- Fix headers for compilation of C modules (#939)
+	- Documentation. By Zero King (#814). (#852)
+	- Sync NEWS, docs, scripts (#849, #855)
+	- Build system (#868, #867, #985, #988)
+	- Fix build on IBM i and AIX. By Calvin Buckley (#975)
+	- Misc fixes (#840, #839, #843, #953, #962). Tests (#806,
+          #875, #905, #964, #1011). Fuzzing (#929).
+
+v1.1.2 2019-01-09 The Irssi team <staff@irssi.org>
+	- Fix the resetting of window hiddenlevel (#861)
+	- Fix clearing of hidelevel in layout (#951)
+	- Fix accessing unallocated text when checking entry position
+          (#928, #930)
+	- Fix uninitialised memory on empty lines (#873, GL#31, #878,
+          #877, #907, #914)
+	- Fix use-after-free on expiration of hidden lines (#948)
+	- Fix use-after-frees. By Maya Rashish (#919)
+	- Fix out of bounds access in help display when window width
+          is small (#949)
+	- Fix paste_join_multiline (#970, #971)
+	- Correctly check for errno when displaying SSL errors. By
+          Janik Rabe (#895)
+	- Fix wrong signal emission argument count (#965)
+	- Documentation (#920). Sync NEWS, scripts (#849)
+	- Fix Perl detection on MacOS. By Dominyk Tiller (#927)
+	- Misc fixes. By Jaroslav Škarvada (#981, #982)
+
 v1.1.1 2018-02-15 The Irssi team <staff@irssi.org>
 	! Contains all changes from 1.0.7
 	- Restore compatibility with OpenSSL < 1.0.2 (#820, #831)
@@ -9,7 +112,7 @@ v1.0.7 2018-02-15 The Irssi team <staff@irssi.org>
 	- Prevent use after free error during the execution of some
 	  commands. Found by Joseph Bisch (GL#17, GL!24).
 	- Revert netsplit print optimisation due to crashes (#465, #809,
-          #812, #819, #824).
+          #812, #819, #824, #832).
 	- Fix use after free when SASL messages are received in
           unexpected order (GL#26, GL!33).
 	- Fix null pointer dereference in the tab completion when an
@@ -25,6 +128,9 @@ v1.0.7 2018-02-15 The Irssi team <staff@irssi.org>
 	- Minor help correction. By William Jackson (#834).
 
 v1.1.0 2018-01-15 The Irssi team <staff@irssi.org>
+	! Warning. Irssi is broken and will crash with OpenSSL < 1.0.2
+          due to openssl/openssl commit
+          5b4b9ce976fce09a7a92e2f25b91a1635cb840fe
 	* Colour is now re-set when reaching a comma, matching mIRC
 	  behaviour (#742, #740, #790)
 	* Irssi now shows the initial nick and name on first start
@@ -104,6 +210,9 @@ v1.1.0 2018-01-15 The Irssi team <staff@irssi.org>
 	- Fix space issue in glib-2.0.m4 (#621)
 
 v1.0.6 2018-01-07 The Irssi team <staff@irssi.org>
+	! Note: Code and aliases using `$($'-like constructs are no
+          longer supported due to issue GL#18. Sorry about the
+          inconvenience.
 	- Fix invalid memory access when reading hilight configuration
           (#787, #788).
 	- Fix null pointer dereference when the channel topic is set
@@ -147,6 +256,7 @@ v1.0.4 2017-07-07  The Irssi team <staff@irssi.org>
 	- Minor help update (#729).
 
 v1.0.3 2017-06-06  The Irssi team <staff@irssi.org>
+	! Regression info in 1.0.3: #716 Warnings on start up: invalid time '-1'
 	- Fix out of bounds read when scanning expandos (GL!11).
 	- Fix invalid memory access with quoted filenames in DCC
 	  (GL#8, GL!12).
@@ -165,6 +275,7 @@ v1.0.3 2017-06-06  The Irssi team <staff@irssi.org>
 	- Minor typo correction in help. By Michael Hansen (#707).
 
 v1.0.2 2017-03-10  The Irssi team <staff@irssi.org>
+	! Warning. Irssi is broken on GLib 2.46 (bgo#755496)
 	- Prevent some null-pointer crashes (GL!9).
 	- Fix compilation with OpenSSL 1.1.0 (#628, #597).
 	- Correct dereferencing of already freed server objects during
@@ -303,6 +414,8 @@ v0.8.20 2016-09-16  The Irssi team <staff@irssi.org>
 	  Quarkslab.
 
 v0.8.19 2016-03-23  The Irssi team <staff@irssi.org>
+	! If your cursor keys stopped working, try this first: `/bind
+          meta-O key meta2'
 	- Fixed regression when joining and parting channels on IRCnet (#435)
 	- Fixed SASL EXTERNAL. By Mantas Mikulėnas (grawity, #432)
 	- Fixed regression when not using SASL (#438)
@@ -318,11 +431,15 @@ v0.8.19 2016-03-23  The Irssi team <staff@irssi.org>
 
 v0.8.18 2016-02-13  The Irssi team <staff@irssi.org>
 	* Modules will now require to define a
+
 	      void MODULENAME ## _abicheck(int *version)
+
 	  method to ensure that they are compiled against the correct Irssi
 	  version.
 	* The signature of "message private" has been changed to
+
 	      5: server, message, nick, address, target
+
 	  in order to support "self messages". Module authors should
 	  implement this change if they are using this signal.
 	* Removing networks will now remove all attached servers and channels
@@ -335,12 +452,14 @@ v0.8.18 2016-02-13  The Irssi team <staff@irssi.org>
 	  effect for anyone given that it has been unsupported for several years.
 	+ CAP SASL PLAIN login is now supported natively.
 	+ Paste bracket markers can be requested from terminal with
+
 	      /set paste_use_bracketed_mode on
+
 	+ "Self messages" generated by some bouncers can now be received in the
 	  proper window.
 	+ Try to split long lines on spaces to avoid words being splitted. Adds
-	  a new option: 'split_line_on_space' which defaults to on.
-	+ Add setting hilight_nick_matches_everywhere (#56).
+	  a new option: `split_line_on_space' which defaults to on.
+	+ Add setting `hilight_nick_matches_everywhere' (#56).
 	+ The config parser is more robust and prints out better diagnostics on
 	  incorrect config files.
 	+ Ctrl+^ (FS#721) and Ctrl+J can now be bound.

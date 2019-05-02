@@ -5,12 +5,12 @@
 # Source0 file verified with key 0x00CCB587DDBEF0E1 (staff@irssi.org)
 #
 Name     : irssi
-Version  : 1.1.1
-Release  : 35
-URL      : https://github.com/irssi/irssi/releases/download/1.1.1/irssi-1.1.1.tar.gz
-Source0  : https://github.com/irssi/irssi/releases/download/1.1.1/irssi-1.1.1.tar.gz
-Source99 : https://github.com/irssi/irssi/releases/download/1.1.1/irssi-1.1.1.tar.gz.asc
-Summary  : Modular text mode IRC client with Perl scripting
+Version  : 1.2.0
+Release  : 36
+URL      : https://github.com/irssi/irssi/releases/download/1.2.0/irssi-1.2.0.tar.xz
+Source0  : https://github.com/irssi/irssi/releases/download/1.2.0/irssi-1.2.0.tar.xz
+Source99 : https://github.com/irssi/irssi/releases/download/1.2.0/irssi-1.2.0.tar.xz.asc
+Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: irssi-bin = %{version}-%{release}
@@ -94,18 +94,19 @@ man components for the irssi package.
 
 
 %prep
-%setup -q -n irssi-1.1.1
+%setup -q -n irssi-1.2.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1555800115
-export CFLAGS="$CFLAGS -fcf-protection=full -fstack-protector-strong "
-export FCFLAGS="$CFLAGS -fcf-protection=full -fstack-protector-strong "
-export FFLAGS="$CFLAGS -fcf-protection=full -fstack-protector-strong "
-export CXXFLAGS="$CXXFLAGS -fcf-protection=full -fstack-protector-strong "
+export SOURCE_DATE_EPOCH=1556834629
+export LDFLAGS="${LDFLAGS} -fno-lto"
+export CFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
+export FCFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
+export FFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
+export CXXFLAGS="$CXXFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
 %configure --disable-static --with-perl-lib=vendor
 make  %{?_smp_mflags}
 
@@ -117,7 +118,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1555800115
+export SOURCE_DATE_EPOCH=1556834629
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/irssi
 cp COPYING %{buildroot}/usr/share/package-licenses/irssi/COPYING
@@ -204,6 +205,7 @@ cp COPYING %{buildroot}/usr/share/package-licenses/irssi/COPYING
 /usr/share/irssi/help/notify
 /usr/share/irssi/help/op
 /usr/share/irssi/help/oper
+/usr/share/irssi/help/otr
 /usr/share/irssi/help/part
 /usr/share/irssi/help/ping
 /usr/share/irssi/help/query
@@ -358,8 +360,16 @@ cp COPYING %{buildroot}/usr/share/package-licenses/irssi/COPYING
 /usr/include/irssi/src/fe-common/irc/module.h
 /usr/include/irssi/src/fe-common/irc/notifylist/module-formats.h
 /usr/include/irssi/src/fe-common/irc/notifylist/module.h
+/usr/include/irssi/src/fe-text/gui-printtext.h
+/usr/include/irssi/src/fe-text/gui-windows.h
+/usr/include/irssi/src/fe-text/mainwindows.h
 /usr/include/irssi/src/fe-text/statusbar-item.h
+/usr/include/irssi/src/fe-text/statusbar.h
+/usr/include/irssi/src/fe-text/term.h
+/usr/include/irssi/src/fe-text/textbuffer-view.h
+/usr/include/irssi/src/fe-text/textbuffer.h
 /usr/include/irssi/src/irc/core/bans.h
+/usr/include/irssi/src/irc/core/channel-events.h
 /usr/include/irssi/src/irc/core/channel-rejoin.h
 /usr/include/irssi/src/irc/core/ctcp.h
 /usr/include/irssi/src/irc/core/irc-cap.h
