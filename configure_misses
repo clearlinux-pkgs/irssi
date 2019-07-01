@@ -1,2 +1,4 @@
-Configure miss: utf8proc_version in -lutf8proc
+Configure miss: utf8proc.h usability
+Configure miss: utf8proc.h presence
+Configure miss: utf8proc.h
 Configure miss: cap_enter in -lc

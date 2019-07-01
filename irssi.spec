@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x00CCB587DDBEF0E1 (staff@irssi.org)
 #
 Name     : irssi
-Version  : 1.2.0
-Release  : 36
-URL      : https://github.com/irssi/irssi/releases/download/1.2.0/irssi-1.2.0.tar.xz
-Source0  : https://github.com/irssi/irssi/releases/download/1.2.0/irssi-1.2.0.tar.xz
-Source99 : https://github.com/irssi/irssi/releases/download/1.2.0/irssi-1.2.0.tar.xz.asc
+Version  : 1.2.1
+Release  : 37
+URL      : https://github.com/irssi/irssi/releases/download/1.2.1/irssi-1.2.1.tar.xz
+Source0  : https://github.com/irssi/irssi/releases/download/1.2.1/irssi-1.2.1.tar.xz
+Source99 : https://github.com/irssi/irssi/releases/download/1.2.1/irssi-1.2.1.tar.xz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -94,19 +94,19 @@ man components for the irssi package.
 
 
 %prep
-%setup -q -n irssi-1.2.0
+%setup -q -n irssi-1.2.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1556834629
-export LDFLAGS="${LDFLAGS} -fno-lto"
-export CFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
-export FCFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
-export FFLAGS="$CFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
-export CXXFLAGS="$CXXFLAGS -fstack-protector-strong -mzero-caller-saved-regs=used "
+export SOURCE_DATE_EPOCH=1562019432
+export GCC_IGNORE_WERROR=1
+export CFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
+export FCFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
+export FFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
+export CXXFLAGS="$CXXFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
 %configure --disable-static --with-perl-lib=vendor
 make  %{?_smp_mflags}
 
@@ -118,7 +118,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1556834629
+export SOURCE_DATE_EPOCH=1562019432
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/irssi
 cp COPYING %{buildroot}/usr/share/package-licenses/irssi/COPYING
