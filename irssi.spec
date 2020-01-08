@@ -6,18 +6,18 @@
 #
 Name     : irssi
 Version  : 1.2.2
-Release  : 38
+Release  : 39
 URL      : https://github.com/irssi/irssi/releases/download/1.2.2/irssi-1.2.2.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.2.2/irssi-1.2.2.tar.xz
-Source1 : https://github.com/irssi/irssi/releases/download/1.2.2/irssi-1.2.2.tar.xz.asc
+Source1  : https://github.com/irssi/irssi/releases/download/1.2.2/irssi-1.2.2.tar.xz.asc
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: irssi-bin = %{version}-%{release}
 Requires: irssi-data = %{version}-%{release}
-Requires: irssi-lib = %{version}-%{release}
 Requires: irssi-license = %{version}-%{release}
 Requires: irssi-man = %{version}-%{release}
+Requires: irssi-perl = %{version}-%{release}
 BuildRequires : glib-dev
 BuildRequires : glibc-staticdev
 BuildRequires : ncurses-dev
@@ -48,7 +48,6 @@ data components for the irssi package.
 %package dev
 Summary: dev components for the irssi package.
 Group: Development
-Requires: irssi-lib = %{version}-%{release}
 Requires: irssi-bin = %{version}-%{release}
 Requires: irssi-data = %{version}-%{release}
 Provides: irssi-devel = %{version}-%{release}
@@ -67,16 +66,6 @@ Requires: irssi-man = %{version}-%{release}
 doc components for the irssi package.
 
 
-%package lib
-Summary: lib components for the irssi package.
-Group: Libraries
-Requires: irssi-data = %{version}-%{release}
-Requires: irssi-license = %{version}-%{release}
-
-%description lib
-lib components for the irssi package.
-
-
 %package license
 Summary: license components for the irssi package.
 Group: Default
@@ -93,15 +82,25 @@ Group: Default
 man components for the irssi package.
 
 
+%package perl
+Summary: perl components for the irssi package.
+Group: Default
+Requires: irssi = %{version}-%{release}
+
+%description perl
+perl components for the irssi package.
+
+
 %prep
 %setup -q -n irssi-1.2.2
+cd %{_builddir}/irssi-1.2.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1567095763
+export SOURCE_DATE_EPOCH=1578520579
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
 export FCFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
@@ -118,22 +117,14 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1567095763
+export SOURCE_DATE_EPOCH=1578520579
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/irssi
-cp COPYING %{buildroot}/usr/share/package-licenses/irssi/COPYING
+cp %{_builddir}/irssi-1.2.2/COPYING %{buildroot}/usr/share/package-licenses/irssi/5b7133eb834d48c168df46a8eb5a2eb3f2ddb034
 %make_install
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/Irssi.pm
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/Irssi/Irc.pm
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/Irssi/TextUI.pm
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/Irssi/UI.pm
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Irssi/.packlist
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Irssi/Irc/.packlist
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Irssi/TextUI/.packlist
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Irssi/UI/.packlist
 
 %files bin
 %defattr(-,root,root,-)
@@ -410,17 +401,25 @@ cp COPYING %{buildroot}/usr/share/package-licenses/irssi/COPYING
 %defattr(0644,root,root,0755)
 %doc /usr/share/doc/irssi/*
 
-%files lib
-%defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Irssi/Irc/Irc.so
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Irssi/Irssi.so
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Irssi/TextUI/TextUI.so
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Irssi/UI/UI.so
-
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/irssi/COPYING
+/usr/share/package-licenses/irssi/5b7133eb834d48c168df46a8eb5a2eb3f2ddb034
 
 %files man
 %defattr(0644,root,root,0755)
 /usr/share/man/man1/irssi.1
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Irssi.pm
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Irssi/Irc.pm
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Irssi/TextUI.pm
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Irssi/UI.pm
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Irssi/.packlist
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Irssi/Irc/.packlist
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Irssi/Irc/Irc.so
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Irssi/Irssi.so
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Irssi/TextUI/.packlist
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Irssi/TextUI/TextUI.so
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Irssi/UI/.packlist
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Irssi/UI/UI.so
