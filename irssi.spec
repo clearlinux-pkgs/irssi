@@ -6,7 +6,7 @@
 #
 Name     : irssi
 Version  : 1.2.3
-Release  : 44
+Release  : 45
 URL      : https://github.com/irssi/irssi/releases/download/1.2.3/irssi-1.2.3.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.2.3/irssi-1.2.3.tar.xz
 Source1  : https://github.com/irssi/irssi/releases/download/1.2.3/irssi-1.2.3.tar.xz.asc
@@ -102,10 +102,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
 export SOURCE_DATE_EPOCH=1618241625
 export GCC_IGNORE_WERROR=1
-export CFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
-export FCFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
-export FFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
-export CXXFLAGS="$CXXFLAGS -fno-lto -fstack-protector-strong -mzero-caller-saved-regs=used "
+export CFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
+export FCFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
+export FFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
+export CXXFLAGS="$CXXFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
 %configure --disable-static --with-perl-lib=vendor
 make  %{?_smp_mflags}
 
