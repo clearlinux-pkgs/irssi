@@ -411,15 +411,15 @@ cp %{_builddir}/irssi-1.2.3/COPYING %{buildroot}/usr/share/package-licenses/irss
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Irssi.pm
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Irssi/Irc.pm
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Irssi/TextUI.pm
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Irssi/UI.pm
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/Irssi/.packlist
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/Irssi/Irc/.packlist
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/Irssi/Irc/Irc.so
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/Irssi/Irssi.so
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/Irssi/TextUI/.packlist
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/Irssi/TextUI/TextUI.so
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/Irssi/UI/.packlist
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/Irssi/UI/UI.so
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/Irssi.pm
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/Irssi/Irc.pm
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/Irssi/TextUI.pm
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/Irssi/UI.pm
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Irssi/.packlist
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Irssi/Irc/.packlist
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Irssi/Irc/Irc.so
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Irssi/Irssi.so
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Irssi/TextUI/.packlist
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Irssi/TextUI/TextUI.so
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Irssi/UI/.packlist
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Irssi/UI/UI.so
