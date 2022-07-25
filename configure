@@ -1,1 +1,2 @@
---with-perl-lib=vendor
+-Dwith-perl-lib=vendor
+-Dwith-otr=no

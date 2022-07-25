@@ -5,27 +5,28 @@
 # Source0 file verified with key 0x00CCB587DDBEF0E1 (staff@irssi.org)
 #
 Name     : irssi
-Version  : 1.2.3
-Release  : 53
-URL      : https://github.com/irssi/irssi/releases/download/1.2.3/irssi-1.2.3.tar.xz
-Source0  : https://github.com/irssi/irssi/releases/download/1.2.3/irssi-1.2.3.tar.xz
-Source1  : https://github.com/irssi/irssi/releases/download/1.2.3/irssi-1.2.3.tar.xz.asc
-Summary  : No detailed summary available
+Version  : 1.4.2
+Release  : 54
+URL      : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz
+Source0  : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz
+Source1  : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz.asc
+Summary  : Irssi chat client
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: irssi-bin = %{version}-%{release}
 Requires: irssi-data = %{version}-%{release}
+Requires: irssi-lib = %{version}-%{release}
 Requires: irssi-license = %{version}-%{release}
 Requires: irssi-man = %{version}-%{release}
 Requires: irssi-perl = %{version}-%{release}
+BuildRequires : buildreq-meson
 BuildRequires : glib-dev
-BuildRequires : glibc-staticdev
 BuildRequires : ncurses-dev
 BuildRequires : pkgconfig(openssl)
 
 %description
-# [Irssi](https://irssi.org/)
-[![Build Status](https://travis-ci.org/irssi/irssi.svg?branch=master)](https://travis-ci.org/irssi/irssi)
+# [Irssi](https://irssi.org)
+![Build Status](https://github.com/irssi/irssi/workflows/Check%20Irssi/badge.svg?branch=master)
 
 %package bin
 Summary: bin components for the irssi package.
@@ -48,6 +49,7 @@ data components for the irssi package.
 %package dev
 Summary: dev components for the irssi package.
 Group: Development
+Requires: irssi-lib = %{version}-%{release}
 Requires: irssi-bin = %{version}-%{release}
 Requires: irssi-data = %{version}-%{release}
 Provides: irssi-devel = %{version}-%{release}
@@ -64,6 +66,16 @@ Requires: irssi-man = %{version}-%{release}
 
 %description doc
 doc components for the irssi package.
+
+
+%package lib
+Summary: lib components for the irssi package.
+Group: Libraries
+Requires: irssi-data = %{version}-%{release}
+Requires: irssi-license = %{version}-%{release}
+
+%description lib
+lib components for the irssi package.
 
 
 %package license
@@ -92,36 +104,35 @@ perl components for the irssi package.
 
 
 %prep
-%setup -q -n irssi-1.2.3
-cd %{_builddir}/irssi-1.2.3
+%setup -q -n irssi-1.4.2
+cd %{_builddir}/irssi-1.4.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1654287684
+export SOURCE_DATE_EPOCH=1658769863
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
 export FCFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
 export FFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
 export CXXFLAGS="$CXXFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
-%configure --disable-static --with-perl-lib=vendor
-make  %{?_smp_mflags}
+CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain -Dwith-perl-lib=vendor \
+-Dwith-otr=no  builddir
+ninja -v -C builddir
 
 %check
 export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make %{?_smp_mflags} check
+meson test -C builddir --print-errorlogs
 
 %install
-export SOURCE_DATE_EPOCH=1654287684
-rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/irssi
-cp %{_builddir}/irssi-1.2.3/COPYING %{buildroot}/usr/share/package-licenses/irssi/5b7133eb834d48c168df46a8eb5a2eb3f2ddb034
-%make_install
+cp %{_builddir}/irssi-%{version}/COPYING %{buildroot}/usr/share/package-licenses/irssi/5b7133eb834d48c168df46a8eb5a2eb3f2ddb034
+DESTDIR=%{buildroot} ninja -C builddir install
 
 %files
 %defattr(-,root,root,-)
@@ -250,14 +261,11 @@ cp %{_builddir}/irssi-1.2.3/COPYING %{buildroot}/usr/share/package-licenses/irss
 /usr/share/irssi/scripts/autoop.pl
 /usr/share/irssi/scripts/autorejoin.pl
 /usr/share/irssi/scripts/buf.pl
-/usr/share/irssi/scripts/command.pl
 /usr/share/irssi/scripts/dns.pl
 /usr/share/irssi/scripts/kills.pl
 /usr/share/irssi/scripts/mail.pl
 /usr/share/irssi/scripts/mlock.pl
-/usr/share/irssi/scripts/msg-event.pl
 /usr/share/irssi/scripts/quitmsg.pl
-/usr/share/irssi/scripts/redirect.pl
 /usr/share/irssi/scripts/scriptassist.pl
 /usr/share/irssi/scripts/usercount.pl
 /usr/share/irssi/themes/colorless.theme
@@ -303,6 +311,7 @@ cp %{_builddir}/irssi-1.2.3/COPYING %{buildroot}/usr/share/package-licenses/irss
 /usr/include/irssi/src/core/query-rec.h
 /usr/include/irssi/src/core/rawlog.h
 /usr/include/irssi/src/core/recode.h
+/usr/include/irssi/src/core/refstrings.h
 /usr/include/irssi/src/core/server-connect-rec.h
 /usr/include/irssi/src/core/server-rec.h
 /usr/include/irssi/src/core/server-setup-rec.h
@@ -357,6 +366,7 @@ cp %{_builddir}/irssi-1.2.3/COPYING %{buildroot}/usr/share/package-licenses/irss
 /usr/include/irssi/src/fe-text/statusbar-item.h
 /usr/include/irssi/src/fe-text/statusbar.h
 /usr/include/irssi/src/fe-text/term.h
+/usr/include/irssi/src/fe-text/textbuffer-formats.h
 /usr/include/irssi/src/fe-text/textbuffer-view.h
 /usr/include/irssi/src/fe-text/textbuffer.h
 /usr/include/irssi/src/irc/core/bans.h
@@ -396,10 +406,16 @@ cp %{_builddir}/irssi-1.2.3/COPYING %{buildroot}/usr/share/package-licenses/irss
 /usr/include/irssi/src/irc/notifylist/notifylist.h
 /usr/include/irssi/src/lib-config/iconfig.h
 /usr/include/irssi/src/lib-config/module.h
+/usr/lib64/pkgconfig/irssi-1.pc
 
 %files doc
 %defattr(0644,root,root,0755)
 %doc /usr/share/doc/irssi/*
+
+%files lib
+%defattr(-,root,root,-)
+/usr/lib64/irssi/modules/libfe_perl.so
+/usr/lib64/irssi/modules/libperl_core.so
 
 %files license
 %defattr(0644,root,root,0755)
