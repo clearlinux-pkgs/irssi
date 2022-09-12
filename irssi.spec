@@ -6,7 +6,7 @@
 #
 Name     : irssi
 Version  : 1.4.2
-Release  : 54
+Release  : 55
 URL      : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz
 Source1  : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz.asc
