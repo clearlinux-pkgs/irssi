@@ -6,7 +6,7 @@
 #
 Name     : irssi
 Version  : 1.4.2
-Release  : 55
+Release  : 56
 URL      : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz
 Source1  : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz.asc
@@ -112,12 +112,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1658769863
+export SOURCE_DATE_EPOCH=1664936612
 export GCC_IGNORE_WERROR=1
-export CFLAGS="$CFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
-export FCFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
-export FFLAGS="$FFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
-export CXXFLAGS="$CXXFLAGS -fno-lto -fstack-protector-strong -fzero-call-used-regs=used "
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain -Dwith-perl-lib=vendor \
 -Dwith-otr=no  builddir
 ninja -v -C builddir
@@ -131,7 +131,7 @@ meson test -C builddir --print-errorlogs
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/irssi
-cp %{_builddir}/irssi-%{version}/COPYING %{buildroot}/usr/share/package-licenses/irssi/5b7133eb834d48c168df46a8eb5a2eb3f2ddb034
+cp %{_builddir}/irssi-%{version}/COPYING %{buildroot}/usr/share/package-licenses/irssi/5b7133eb834d48c168df46a8eb5a2eb3f2ddb034 || :
 DESTDIR=%{buildroot} ninja -C builddir install
 
 %files
