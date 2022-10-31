@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x00CCB587DDBEF0E1 (staff@irssi.org)
 #
 Name     : irssi
-Version  : 1.4.2
-Release  : 56
-URL      : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz
-Source0  : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz
-Source1  : https://github.com/irssi/irssi/releases/download/1.4.2/irssi-1.4.2.tar.xz.asc
+Version  : 1.4.3
+Release  : 57
+URL      : https://github.com/irssi/irssi/releases/download/1.4.3/irssi-1.4.3.tar.xz
+Source0  : https://github.com/irssi/irssi/releases/download/1.4.3/irssi-1.4.3.tar.xz
+Source1  : https://github.com/irssi/irssi/releases/download/1.4.3/irssi-1.4.3.tar.xz.asc
 Summary  : Irssi chat client
 Group    : Development/Tools
 License  : GPL-2.0
@@ -104,15 +104,15 @@ perl components for the irssi package.
 
 
 %prep
-%setup -q -n irssi-1.4.2
-cd %{_builddir}/irssi-1.4.2
+%setup -q -n irssi-1.4.3
+cd %{_builddir}/irssi-1.4.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1664936612
+export SOURCE_DATE_EPOCH=1667227043
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
