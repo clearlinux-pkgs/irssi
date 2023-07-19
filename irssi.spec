@@ -7,7 +7,7 @@
 #
 Name     : irssi
 Version  : 1.4.4
-Release  : 59
+Release  : 60
 URL      : https://github.com/irssi/irssi/releases/download/1.4.4/irssi-1.4.4.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.4.4/irssi-1.4.4.tar.xz
 Source1  : https://github.com/irssi/irssi/releases/download/1.4.4/irssi-1.4.4.tar.xz.asc
@@ -117,12 +117,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680272994
+export SOURCE_DATE_EPOCH=1689799952
 export GCC_IGNORE_WERROR=1
-export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain -Dwith-perl-lib=vendor \
 -Dwith-otr=no  builddir
 ninja -v -C builddir
@@ -415,7 +415,7 @@ DESTDIR=%{buildroot} ninja -C builddir install
 
 %files doc
 %defattr(0644,root,root,0755)
-%doc /usr/share/doc/irssi/*
+/usr/share/doc/irssi/*
 
 %files lib
 %defattr(-,root,root,-)
