@@ -9,7 +9,7 @@
 #
 Name     : irssi
 Version  : 1.4.5
-Release  : 64
+Release  : 65
 URL      : https://github.com/irssi/irssi/releases/download/1.4.5/irssi-1.4.5.tar.xz
 Source0  : https://github.com/irssi/irssi/releases/download/1.4.5/irssi-1.4.5.tar.xz
 Source1  : https://github.com/irssi/irssi/releases/download/1.4.5/irssi-1.4.5.tar.xz.asc
